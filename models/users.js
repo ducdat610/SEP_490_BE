@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const usersSchema = new mongoose.Schema(
   {
     fullname: {
       type: String,
@@ -10,9 +10,9 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    avatar:{
-        type: String,
-        default: "",
+    avatar: {
+      type: String,
+      default: "",
     },
     gmail: {
       type: String,
@@ -43,11 +43,23 @@ const userSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+    isBan: {
+      type: Boolean,
+      default: false,
+    },
+    bankId: {
+      type: Schema.Types.ObjectId,
+      ref: "banks",
+    },
+    isSpaceOwners:{
+      type: Boolean,
+      default: false,
+    }
   },
   {
     timestamps: true,
   }
 );
 
-const User = mongoose.model("users", userSchema);
-export default User;
+const Users = mongoose.model("users", usersSchema);
+export default Users;
