@@ -1,2 +1,3 @@
 import userDao from "./users.js";
-export { userDao };
+import spaceDao from "./spaces.js";
+export { userDao,spaceDao };
