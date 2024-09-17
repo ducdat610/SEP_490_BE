@@ -1,0 +1,39 @@
+[
+    {
+      "bankName": "VP Bank",
+      "accountNumber": "123456789",
+      "createdAt": "2024-09-17T12:00:00Z",
+      "updatedAt": "2024-09-17T12:00:00Z"
+    },
+    {
+      "bankName": "TP Bank",
+      "accountNumber": "987654321",
+      "createdAt": "2024-09-17T12:00:00Z",
+      "updatedAt": "2024-09-17T12:00:00Z"
+    },
+    {
+      "bankName": "MB Bank",
+      "accountNumber": "1122334455",
+      "createdAt": "2024-09-17T12:00:00Z",
+      "updatedAt": "2024-09-17T12:00:00Z"
+    },
+    {
+      "bankName": "VIB",
+      "accountNumber": "5566778899",
+      "createdAt": "2024-09-17T12:00:00Z",
+      "updatedAt": "2024-09-17T12:00:00Z"
+    },
+    {
+      "bankName": "BIDV",
+      "accountNumber": "6677889900",
+      "createdAt": "2024-09-17T12:00:00Z",
+      "updatedAt": "2024-09-17T12:00:00Z"
+    },
+    {
+      "bankName": "Agribank",
+      "accountNumber": "9988776655",
+      "createdAt": "2024-09-17T12:00:00Z",
+      "updatedAt": "2024-09-17T12:00:00Z"
+    }
+  ]
+  
