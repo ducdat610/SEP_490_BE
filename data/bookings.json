@@ -1,0 +1,17 @@
+[
+    {
+        "userId": "64b9f1d58ed1c92f087b56fd",
+        "spaceId": "64b9f1d58ed1c92f087b56fe",
+        "checkIn": "2024-09-20T09:00:00Z",
+        "checkOut": "2024-09-20T18:00:00Z",
+        "items": [
+            "64b9f1d58ed1c92f087b5701",
+            "64b9f1d58ed1c92f087b5702"
+        ],
+        "status": "đang chờ thanh toán",
+        "notes": "Vui lòng chuẩn bị phòng trước.",
+        "cancelReason": null,
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+    }
+]
