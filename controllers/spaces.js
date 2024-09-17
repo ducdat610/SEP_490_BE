@@ -7,3 +7,7 @@ const getAllSpaces = async (req, res) =>{
     res.status(500).json({error:error.toString()})
   }
 }
+export default {
+    getAllSpaces
+  };
+  
