@@ -1,7 +1,7 @@
-import { Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const rulesSchema = new Schema({
-  rule: {
+  text: {
     type: String,
     required: true,
   },

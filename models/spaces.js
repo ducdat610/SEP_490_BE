@@ -19,7 +19,8 @@ const spacesSchema = new Schema(
       required: true,
     },
     rules: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "rules",
       required: true,
     },
     pricePerHour: {
