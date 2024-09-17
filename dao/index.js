@@ -1,2 +1,3 @@
 import userDao from "./users.js";
-export { userDao };
+import reviewDao from "./reviews.js";
+export { userDao, reviewDao };

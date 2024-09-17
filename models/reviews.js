@@ -10,6 +10,10 @@ const reviewsSchema = new Schema(
       min: 1,
       max: 5,
     },
+    spaceId: {
+      type: mongoose.Schema.Types.ObjectId,
+        ref: "spaces",
+    },
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
