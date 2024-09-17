@@ -14,12 +14,13 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    capacity: {
+    area: {
       type: String,
       required: true,
     },
     rules: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "rules",
       required: true,
     },
     pricePerHour: {
