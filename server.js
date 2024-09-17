@@ -3,6 +3,7 @@ import * as dotenv from 'dotenv';
 import express, { json } from "express";
 
 import connectDB from "./database.js";
+import { userRouter } from "./routes/index.js";
 
 dotenv.config();
 //Tạo 1 constant 'app'
@@ -11,11 +12,11 @@ const app = express();
 app.use(cors());
 app.use(json());
 
-//Kích hoạt router hoạt động định tuyến cho các request của client
-
 app.get("/", (req, res) => {
   res.send("<h1>Welcom to</h1>");
 });
+app.use("/users", userRouter);
+
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

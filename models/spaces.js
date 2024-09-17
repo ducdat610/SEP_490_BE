@@ -34,18 +34,18 @@ const spacesSchema = new Schema(
       default: "available",
     },
     categories: {
-      type: Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "categories",
       required: true,
     },
     appliancesId: {
-      type: Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "appliances",
       required: true,
     },
     reviews: [
       {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "reviews",
         require: false,
       },
