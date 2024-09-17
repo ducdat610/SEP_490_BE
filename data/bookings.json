@@ -8,8 +8,8 @@
             "64b9f1d58ed1c92f087b5701",
             "64b9f1d58ed1c92f087b5702"
         ],
-        "status": "awaiting payment",
-        "notes": "Please prepare the room in advance.",
+        "status": "đang chờ thanh toán",
+        "notes": "Vui lòng chuẩn bị phòng trước.",
         "cancelReason": null,
         "createdAt": "2024-09-17T12:00:00Z",
         "updatedAt": "2024-09-17T12:00:00Z"
