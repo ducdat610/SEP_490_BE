@@ -14,7 +14,7 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    capacity: {
+    area: {
       type: String,
       required: true,
     },

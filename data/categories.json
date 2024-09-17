@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Studios",
+        "description": "Professional studios equipped with lighting and backgrounds, ideal for photo shoots, videos, or creative projects.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      },
+      {
+        "name": "Event Spaces",
+        "description": "Large spaces suitable for hosting events, parties, or community activities.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      },
+      {
+        "name": "Showrooms",
+        "description": "Spaces for product display, typically used for product launches or exhibitions.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      },
+      {
+        "name": "Workshop Venue",
+        "description": "Spaces designed to accommodate work sessions, training, or events related to learning and practical activities.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      },
+      {
+        "name": "Entertainment Spaces",
+        "description": "An entertainment space designed to host a variety of activities, including live performances, film screenings, gaming events, and social gatherings. This versatile venue features state-of-the-art audiovisual equipment, flexible seating arrangements, and a dynamic atmosphere to enhance any entertainment experience. Whether for concerts, parties, or interactive events, our entertainment space provides the perfect setting for memorable and engaging experiences.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      },
+      {
+        "name": "PentHouse",
+        "description": "PentHouse is a luxurious entertainment venue designed for exclusive events and high-profile gatherings. With its stunning panoramic views, modern décor, and top-of-the-line audiovisual equipment, PentHouse offers an unparalleled setting for hosting upscale parties, corporate events, and private celebrations. The spacious and stylish environment ensures a memorable experience, combining elegance with state-of-the-art amenities for an exceptional event.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      },
+      {
+        "name": "Service Space",
+        "description": "Service Space is a versatile area designed to support various professional and operational needs. Ideal for customer service operations, support functions, or business services, this space is equipped with essential amenities and technology to ensure efficient and effective service delivery.",
+        "createdAt": "2024-09-17T12:00:00Z",
+        "updatedAt": "2024-09-17T12:00:00Z"
+      }
+]
