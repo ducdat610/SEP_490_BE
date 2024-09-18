@@ -37,4 +37,26 @@ usersRouter.post("/reset-password/:id/:token", (req, res) => {
       }
     });
   });
+  usersRouter.put("/:username", async (req, res, next) => {
+    try {
+      const { username } = req.params;
+      const updatedUserData = req.body; // Dữ liệu người dùng được gửi từ client
+  
+      const updatedUser = await User.findOneAndUpdate(
+        { username: username },
+        updatedUserData,
+        { new: true } 
+      );
+  
+      if (!updatedUser) {
+        throw createError(404, `Người dùng ${username} không tồn tại`);
+      }
+  
+      res.send(updatedUser); // Trả về thông tin người dùng đã được cập nhật
+    } catch (error) {
+      next(error);
+    }
+  });
+
+
 export default usersRouter;
