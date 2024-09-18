@@ -12,8 +12,7 @@ import { userController } from "../controllers/index.js";
 import jwt from "jsonwebtoken";
 
 const usersRouter = express.Router();
-usersRouter.get("/", userController.getAllUsers);
-usersRouter.get("/:username", userController.getUserByUserName);
+
 usersRouter.put("/changepass/:username", userController.changePass);
 usersRouter.post("/forgot-password", userController.forgetPass);
 usersRouter.post("/register", async (req, res, next) => {
@@ -63,6 +62,27 @@ usersRouter.post("/register", async (req, res, next) => {
     next(error);
   }
 });
+
+usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
+  try {
+    const users = await Users.find({}).exec();
+    if (users.length === 0) throw createError(404, "Không tìm thấy người dùng");
+    res.send(users);
+  } catch (error) {
+    next(error);
+  }
+});
+usersRouter.get("/:username", verifyAccessToken, async (req, res, next) => {
+  try {
+    const username = req.params.username;
+    const user = await Users.findOne({ username: username }).exec();
+    if (!user) throw createError(404, `Người dùng ${username} không tồn tại`);
+    res.send(user);
+  } catch (error) {
+    next(error);
+  }
+});
+
 usersRouter.post("/login", async (req, res, next) => {
   try {
     const { username, password } = req.body;
@@ -116,7 +136,7 @@ usersRouter.post("/refresh-token", async (req, res, next) => {
     next(error);
   }
 });
-usersRouter.put("/:username", async (req, res, next) => {
+usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
   try {
     const { username } = req.params;
     const updatedUserData = req.body; // Dữ liệu người dùng được gửi từ client
