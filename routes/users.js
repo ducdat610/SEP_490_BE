@@ -101,6 +101,42 @@ usersRouter.post("/login", async (req, res, next) => {
 usersRouter.delete("/logout", async (req, res, next) => {
   res.send("Đường dẫn Đăng xuất");
 });
+usersRouter.post("/refresh-token", async (req, res, next) => {
+  try {
+    const { refreshToken } = req.body;
+    if (!refreshToken)
+      throw createError.BadRequest("Refresh token không hợp lệ");
+    const userId = await verifyRefreshToken(refreshToken);
+    if (userId) {
+      const accessToken = await signAccessToken(userId);
+      const newRefreshToken = await signRefreshToken(userId);
+      res.send({ accessToken, refreshToken: newRefreshToken });
+    }
+  } catch (error) {
+    next(error);
+  }
+});
+usersRouter.put("/:username", async (req, res, next) => {
+  try {
+    const { username } = req.params;
+    const updatedUserData = req.body; // Dữ liệu người dùng được gửi từ client
+
+    const updatedUser = await Users.findOneAndUpdate(
+      { username: username },
+      updatedUserData,
+      { new: true }
+    );
+
+    if (!updatedUser) {
+      throw createError(404, `Người dùng ${username} không tồn tại`);
+    }
+
+    res.send(updatedUser); // Trả về thông tin người dùng đã được cập nhật
+  } catch (error) {
+    next(error);
+  }
+});
+
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
   const { id, token } = req.params;
   const { password } = req.body;
