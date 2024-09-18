@@ -1,9 +1,9 @@
 import cors from "cors";
-import * as dotenv from 'dotenv';
+import * as dotenv from "dotenv";
 import express, { json } from "express";
 
 import connectDB from "./database.js";
-import { userRouter } from "./routes/index.js";
+import { userRouter, spaceRouter, rulesRouter } from "./routes/index.js";
 
 dotenv.config();
 //Tạo 1 constant 'app'
@@ -16,19 +16,22 @@ app.get("/", (req, res) => {
   res.send("<h1>Welcom to</h1>");
 });
 app.use("/users", userRouter);
-
-
+app.use("/spaces", spaceRouter);
+app.use("/rules", rulesRouter);
 app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
 });
 
-const Port = process.env.PORT || 9999
+const Port = process.env.PORT || 9999;
 
 //Lắng nghe các request gửi tới web server tại port
 
 app.listen(Port, async () => {
-    connectDB();
-    console.log(`web server running on http://localhost:${Port}`);
-})
+  connectDB();
+  console.log(`web server running on http://localhost:${Port}`);
+});

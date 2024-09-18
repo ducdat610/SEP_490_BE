@@ -1,3 +1,4 @@
+import Joi from "joi";
 import createError from "http-errors";
 import Users from "../models/users.js";
 import express from "express";
@@ -12,19 +13,54 @@ import { userController } from "../controllers/index.js";
 import jwt from "jsonwebtoken";
 
 const usersRouter = express.Router();
-
 usersRouter.put("/changepass/:username", userController.changePass);
 usersRouter.post("/forgot-password", userController.forgetPass);
+// Schema validation bằng Joi cho đăng ký người dùng
+const registerSchema = Joi.object({
+  username: Joi.string().alphanum().min(3).max(30).required().messages({
+    "string.base": `"username" phải là một chuỗi ký tự`,
+    "string.empty": `"username" không được bỏ trống`,
+    "string.min": `"username" phải có ít nhất 3 ký tự`,
+    "string.max": `"username" không được vượt quá 30 ký tự`,
+    "any.required": `"username" là bắt buộc`,
+  }),
+  password: Joi.string().min(8).required().messages({
+    "string.empty": `"password" không được bỏ trống`,
+    "string.min": `"password" phải có ít nhất 8 ký tự`,
+    "any.required": `"password" là bắt buộc`,
+  }),
+  fullname: Joi.string().required().messages({
+    "string.empty": `"fullname" không được bỏ trống`,
+    "any.required": `"fullname" là bắt buộc`,
+  }),
+  gmail: Joi.string().email().required().messages({
+    "string.email": `"gmail" phải đúng định dạng email`,
+    "any.required": `"gmail" là bắt buộc`,
+  }),
+});
+
+// Schema validation bằng Joi cho đăng nhập
+const loginSchema = Joi.object({
+  username: Joi.string().required().messages({
+    "string.empty": `"username" hoặc "gmail" không được bỏ trống`,
+    "any.required": `"username" hoặc "gmail" là bắt buộc`,
+  }),
+  password: Joi.string().required().messages({
+    "string.empty": `"password" không được bỏ trống`,
+    "any.required": `"password" là bắt buộc`,
+  }),
+});
+
+// Đăng ký người dùng mới
 usersRouter.post("/register", async (req, res, next) => {
   try {
-    const { username, password, fullname, gmail } = req.body;
-
-    // Kiểm tra các trường bắt buộc
-    if (!username || !password || !fullname || !gmail) {
-      throw createError.BadRequest(
-        "Yêu cầu nhập đầy đủ tên người dùng, mật khẩu và gmail"
-      );
+    // Validate dữ liệu nhập vào
+    const { error } = registerSchema.validate(req.body);
+    if (error) {
+      throw createError.BadRequest(error.details[0].message); // Trả về lỗi validation
     }
+
+    const { username, password, fullname, gmail } = req.body;
 
     // Kiểm tra xem username đã tồn tại chưa
     const existingUserByUsername = await Users.findOne({ username }).exec();
@@ -57,34 +93,21 @@ usersRouter.post("/register", async (req, res, next) => {
     const accessToken = await signAccessToken(savedUser._id);
 
     // Gửi phản hồi cho client
-    res.send({ accessToken, newUser });
+    res.status(201).send({ accessToken, newUser });
   } catch (error) {
     next(error);
   }
 });
 
-usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
-  try {
-    const users = await Users.find({}).exec();
-    if (users.length === 0) throw createError(404, "Không tìm thấy người dùng");
-    res.send(users);
-  } catch (error) {
-    next(error);
-  }
-});
-usersRouter.get("/:username", verifyAccessToken, async (req, res, next) => {
-  try {
-    const username = req.params.username;
-    const user = await Users.findOne({ username: username }).exec();
-    if (!user) throw createError(404, `Người dùng ${username} không tồn tại`);
-    res.send(user);
-  } catch (error) {
-    next(error);
-  }
-});
-
+// Đăng nhập người dùng
 usersRouter.post("/login", async (req, res, next) => {
   try {
+    // Validate dữ liệu nhập vào
+    const { error } = loginSchema.validate(req.body);
+    if (error) {
+      throw createError.BadRequest(error.details[0].message);
+    }
+
     const { username, password } = req.body;
 
     // Tìm người dùng bằng username hoặc gmail đã đăng kí
@@ -156,7 +179,15 @@ usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
     next(error);
   }
 });
-
+usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
+  try {
+    const users = await Users.find({}).exec();
+    if (users.length === 0) throw createError(404, "Không tìm thấy người dùng");
+    res.send(users);
+  } catch (error) {
+    next(error);
+  }
+});
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
   const { id, token } = req.params;
   const { password } = req.body;
@@ -176,4 +207,5 @@ usersRouter.post("/reset-password/:id/:token", (req, res) => {
     }
   });
 });
+
 export default usersRouter;

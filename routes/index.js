@@ -1,4 +1,4 @@
 import userRouter from "./users.js";
-export{
-  userRouter
-}
+import spaceRouter from "./space.js";
+import rulesRouter from "./rules.js";
+export { userRouter, spaceRouter, rulesRouter };
