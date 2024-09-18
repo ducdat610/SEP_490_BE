@@ -156,6 +156,29 @@ usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
     next(error);
   }
 });
+usersRouter.put("/upgrade", verifyAccessToken, async (req, res, next) => {
+  try {
+    const userId = req.userId; // Lấy userId từ middleware authenticateToken
+    const user = await Users.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Kiểm tra nếu người dùng đã là spaceowner
+    if (user.isSpaceOwners) {
+      return res.status(400).json({ message: "User is already a space owner" });
+    }
+
+    // Cập nhật người dùng thành space owner
+    user.isSpaceOwners = true;
+    await user.save();
+
+    res.status(200).json({ message: "Account upgraded to space owner", user });
+  } catch (error) {
+    next(error);
+  }
+});
 
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
   const { id, token } = req.params;
