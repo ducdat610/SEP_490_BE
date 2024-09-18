@@ -22,4 +22,16 @@ const forgotPass = async (gmail) => {
     }
   };
 
-export default {fetchAllUsers,forgotPass, fetchUserByUsername};
+const updateUserProfile = async (username, userData) => {
+  try {
+    return await User.findOneAndUpdate(
+      { username: username },
+      userData,
+      { new: true }
+    );
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
+
+export default {fetchAllUsers,forgotPass, fetchUserByUsername, updateUserProfile};
