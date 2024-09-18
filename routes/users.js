@@ -67,7 +67,7 @@ usersRouter.post("/login", async (req, res, next) => {
   try {
     const { username, password } = req.body;
 
-    // Tìm người dùng bằng username hoặc gmail
+    // Tìm người dùng bằng username hoặc gmail đã đăng kí
     const user = await Users.findOne({
       $or: [{ username: username }, { gmail: username }],
     }).exec();
