@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const usersSchema = new mongoose.Schema(
+const usersSchema = new Schema(
   {
     fullname: {
       type: String,
@@ -48,7 +48,7 @@ const usersSchema = new mongoose.Schema(
       default: false,
     },
     bankId: {
-      type: Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "banks",
     },
     isSpaceOwners:{
