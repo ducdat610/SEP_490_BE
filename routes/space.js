@@ -8,8 +8,23 @@ import {
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
 const spaceRouter = express();
+spaceRouter.post("/", async (req, res, next) => {
+  const {
+    name,
+    description,
+    location,
+    area,
+    rulesId,
+    pricePerHour,
+    categories,
+    appliancesId,
+    reviews,
+  } = req.body;
+  try {
+  } catch (error) {}
+});
 spaceRouter.get("/:id", async (req, res, next) => {
-  const { spaceId } = req.params;
+  const { spaceId } = req.body;
   try {
     const space = await Spaces.findOne({ spaceId }).exec();
     if (!space) {
