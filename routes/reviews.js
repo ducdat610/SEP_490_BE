@@ -6,4 +6,5 @@ reviewRouter.get('/:id', reviewController.getReviewBySId)
 reviewRouter.delete('/:id', reviewController.deleteReviewBySId)
 reviewRouter.put('/:id', reviewController.editReviewBySId)
 reviewRouter.post('/', reviewController.createReview)
+reviewRouter.post('/:id/replies', reviewController.addReplyToReview)
 export default reviewRouter;

@@ -12,12 +12,19 @@ const reviewsSchema = new Schema(
     },
     spaceId: {
       type: mongoose.Schema.Types.ObjectId,
-        ref: "spaces",
+      ref: "spaces",
     },
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
     },
+    replies: [
+      {
+        text: String,
+        userId: { type: mongoose.Schema.Types.ObjectId, ref: "users" },
+        createdAt: { type: Date, default: Date.now },
+      },
+    ],
   },
   {
     timestamps: true,
