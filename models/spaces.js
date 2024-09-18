@@ -18,7 +18,7 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    rules: [
+    rulesId: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "rules",

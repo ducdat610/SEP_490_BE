@@ -188,6 +188,16 @@ usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
     next(error);
   }
 });
+usersRouter.get("/:username", async (req, res, next) => {
+  const { username } = req.params;
+  try {
+    const users = await Users.findOne({ username: username }).exec();
+    if (users.length === 0) throw createError(404, "Username not found");
+    res.send(users);
+  } catch (error) {
+    next(error);
+  }
+});
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
   const { id, token } = req.params;
   const { password } = req.body;
