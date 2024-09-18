@@ -38,4 +38,13 @@ const editReviewBySId = async (req, res) => {
     res.status(500).json({ message: error.toString() });
   }
 };
-export default { getReviewBySId, deleteReviewBySId, editReviewBySId };
+const createReview = async (req, res) => {
+    try {
+        const {text, rating, spaceId, userId} = req.body
+        const newReview = await reviewDao.createReview(text, rating, spaceId, userId)
+        res.status(201).json({ message: "review added successfully", newReview });
+    } catch (error) {
+        res.status(500).json({message: error.toString()})
+    }
+}
+export default { getReviewBySId, deleteReviewBySId, editReviewBySId,createReview };
