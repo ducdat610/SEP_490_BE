@@ -98,7 +98,9 @@ usersRouter.post("/login", async (req, res, next) => {
     next(error);
   }
 });
-
+usersRouter.delete("/logout", async (req, res, next) => {
+  res.send("Đường dẫn Đăng xuất");
+});
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
   const { id, token } = req.params;
   const { password } = req.body;
