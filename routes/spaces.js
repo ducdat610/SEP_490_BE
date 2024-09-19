@@ -60,5 +60,5 @@ spaceRouter.get("/similar/:id", async (req, res, next) => {
     next(error);
   }
 });
-//spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
+
 export default spaceRouter;
