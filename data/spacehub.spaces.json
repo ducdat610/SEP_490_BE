@@ -67,5 +67,45 @@
     "reviews": [],
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Serepok Coworking Space",
+    "description": "Serepok Coworking Space là một trong những nơi có văn phòng trọn gói lớn nhất ở trung tâm Quận 1. Các văn phòng tràn ngập ánh sáng tự nhiên được thiết kế để tối đa hiệu quả công việc và giảm thiểu sự phân tâm",
+    "location": "District 1",
+    "area": "42m2",
+    "rules": "Không mở nhạc lớn hoặc gọi điện. Không gian làm việc yên tĩnh.",
+    "pricePerHour": "20",
+    "images": [
+      "http://noithat247.net/n280/uu-nhuoc-diem-cua-viec-xay-dung-phong-lam-viec-rieng.html",
+      "https://saigoncoworking.com/vi/van-phong-rieng-coworking/"
+    ],
+    "status": "cleaning",
+    "categoriesId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "appliancesId": "",
+    "reviews": [],
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Hanoi Secret Garden",
+    "description": "Hanoi Secret Garden tất cả các căn có thiết kế gồm khu vực ghế ngồi, TV màn hình phẳng có truyền hình cáp, cùng phòng tắm riêng có trang bị đồ vệ sinh cá nhân miễn phí, vòi xịt/chậu rửa vệ sinh và vòi sen. Một số căn có ban công và/hoặc sân trong nhìn ra thành phố hoặc khu vườn.",
+    "location": "182 Hàng Bông, Quận Hoàn Kiếm, Hà Nội, Việt Nam",
+    "area": "42m2",
+    "rules": "Không mở nhạc lớn hoặc gọi điện. Không gian làm việc yên tĩnh.",
+    "pricePerHour": "20",
+    "images": [
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415708123.jpg?k=7f399bb9b10c049c6c7a1c98f45b13b3b5df0b9d6a23733627bd60866ee61ff8&o=&hp=1",
+      "https://cf.bstatic.com/xdata/images/hotel/max1280x900/415707997.jpg?k=5392b9f3efe2d7f1c4b7f48ee4fa14df3056dc99fbf7856a1527eaf668abe03d&o=&hp=1"
+    ],
+    "status": "cleaning",
+    "categoriesId": {
+      "$oid": "66eafbb0cb37101e8e8f894a"
+    },
+    "appliancesId": "",
+    "reviews": [],
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   }
 ]
