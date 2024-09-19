@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "66ec2326852fda495f95ffce"
+  },
+  "text": "Trải nghiệm tuyệtttttttttt.",
+  "rating": 2,
+  "spaceId": {
+    "$oid": "66eafc44cb37101e8e8f8951"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c1"
+  },
+  "replies": [
+    {
+      "text": "thật à",
+      "userId": {
+        "$oid": "66ec23a6852fda495f95ffd2"
+      },
+      "_id": {
+        "$oid": "66ec24a4852fda495f95ffd5"
+      },
+      "createdAt": {
+        "$date": "2024-09-19T13:18:28.086Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-19T13:12:06.537Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-19T13:18:28.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ec23a6852fda495f95ffd2"
+  },
+  "text": "Trải nghiệm tuyệt luôn.",
+  "rating": 2,
+  "spaceId": {
+    "$oid": "66eafc44cb37101e8e8f8952"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c2"
+  },
+  "replies": [],
+  "createdAt": {
+    "$date": "2024-09-19T13:14:14.080Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-19T13:14:14.080Z"
+  },
+  "__v": 0
+}]

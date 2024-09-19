@@ -42,23 +42,24 @@ const createReviewsBySId = async (text, rating, spaceId, userId) => {
   }
 };
 const addReplyToReview = async (id, replyData) => {
-  try {
-    const review = await Reviews.findById(id);
-    if (review) {
-      review.replies.push(replyData);
-      await review.save();
-      return review;
-    } else {
-      throw new Error("Review not found");
+
+    try {
+      const review = await Reviews.findById(id);
+      if (review) {
+        review.replies.push(replyData);
+        await review.save();
+        return review;
+      } else {
+        throw new Error("Review not found");
+      }
+    } catch (error) {
+      throw new Error(error.toString());
     }
-  } catch (error) {
-    throw new Error(error.toString());
-  }
-};
+  };
 export default {
   fetchReviewBySId,
   deleteReviewBySId,
   editReviewBySId,
   createReviewsBySId,
-  addReplyToReview,
+  addReplyToReview
 };

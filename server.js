@@ -10,6 +10,7 @@ import {
   categoriesRouter,
   reviewRouter,
   cartRouter,
+
 } from "./routes/index.js";
 
 dotenv.config();
@@ -28,6 +29,7 @@ app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/rules", rulesRouter);
 app.use("/categories", categoriesRouter);
+
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
