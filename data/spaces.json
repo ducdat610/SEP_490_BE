@@ -5,7 +5,7 @@
         "location": "City Center Studio Hub",
         "area": "30m2",
         "rules": "Không hút thuốc. Xử lý thiết bị cẩn thận. Dọn dẹp sau buổi làm việc.",
-        "pricePerHour": "40",
+        "pricePerHour": 40,
         "images": [
             "https://www.yourstudiovn.com/uploads/14480652_1228352917223552_1893527332350591752_o.jpg",
             "https://shop28decor.com/ct/uploads/2023/03/Screenshot-2023-03-24-115858.jpg"
@@ -23,7 +23,7 @@
         "location": "Tech Hub Building",
         "area": "42m2",
         "rules": "Không mở nhạc lớn hoặc gọi điện. Không gian làm việc yên tĩnh.",
-        "pricePerHour": "20",
+        "pricePerHour": 20,
         "images": [
             "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
             "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/1704388518510-UZYFGU4IA0F9DCJ97PLU/317A8133-HDR.jpg"

@@ -24,7 +24,7 @@ const spacesSchema = new Schema(
       required: true,
     },
     pricePerHour: {
-      type: String,
+      type: Number,
       required: true,
     },
     images: [{ type: String }],
