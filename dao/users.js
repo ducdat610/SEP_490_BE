@@ -14,6 +14,7 @@ const fetchUserByUsername = async (username) =>{
     throw new Error(error.toString());
   }
 }
+//up
 const forgotPass = async (gmail) => {
     try {
       return await Users.findOne({ gmail: gmail }).exec();
