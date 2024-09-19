@@ -52,7 +52,7 @@ spaceRouter.get("/similar/:id", async (req, res, next) => {
       .exec();
 
     if (similarSpaces.length === 0) {
-      throw createError(404, "Không tìm thấy không giantương tự");
+      throw createError(404, "Không tìm thấy không gian tương tự");
     }
 
     res.send(similarSpaces);
