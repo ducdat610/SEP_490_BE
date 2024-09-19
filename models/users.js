@@ -47,9 +47,16 @@ const usersSchema = new Schema(
       type: Boolean,
       default: false,
     },
-    bankId: {
+    bankAccounts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "bankAccount",
+      },
+    ],
+    defaultBankAccount: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "banks",
+      ref: "bankAccount",
+      default: null,
     },
     isSpaceOwners: {
       type: Boolean,
