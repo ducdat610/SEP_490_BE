@@ -13,13 +13,14 @@ const getListSpacesOfUser = async (req, res) => {
     res.status(500).json({ message: error.toString() });
   }
 };
-const deleteSpaces = async (req, res) => {
+const deleteListCartOfUser = async (req, res) => {
   try {
-    const listSpaces = await cartDao.removeListSpaceOfUser(req.params.id);
-    if (listSpaces) {
-      res.status(200).json(listSpaces);
+    const cartId = req.params.id;
+    const cartList = await cartDao.removeListSpaceOfUser(cartId);
+    if (cartList) {
+      res.status(200).json(cartList);
     } else {
-      res.status(404).json({ message: "Not found spaces" });
+      res.status(404).json("Not Found");
     }
   } catch (error) {
     res.status(500).json({ message: error.toString() });
@@ -34,4 +35,4 @@ const addSpacesToCart = async (req, res) => {
     res.status(500).json({message:error.toString()})
   }
 }
-export default { getListSpacesOfUser, deleteSpaces,addSpacesToCart };
+export default { getListSpacesOfUser, deleteListCartOfUser,addSpacesToCart };

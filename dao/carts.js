@@ -26,4 +26,9 @@ const removeListSpaceOfUser = async (spaceId) => {
     throw new Error(error.toString());
   }
 };
-export default { fetchListSpaceOfUser, removeListSpaceOfUser, addSpacesToCart };
+
+export default {
+  fetchListSpaceOfUser,
+  removeListSpaceOfUser,
+  addSpacesToCart,
+};
