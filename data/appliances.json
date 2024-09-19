@@ -1,6 +1,37 @@
-{
+[{
     "name": "Máy chiếu",
     "description": "Máy chiếu 4K chất lượng cao cho các bài thuyết trình và cuộc họp.",
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Wi-Fi",
+    "description": "Kết nối Internet tốc độ cao, hỗ trợ các nhu cầu công việc trực tuyến, upload ảnh, livestream, hoặc điều khiển thiết bị từ xa.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Hệ thống Điều Hòa Không Khí",
+    "description": " Điều hòa nhiệt độ giúp không gian luôn thoáng mát, phù hợp cho các buổi chụp ảnh dài hoặc vào mùa nóng.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Phông nền đa dạng",
+    "description": " Cung cấp nhiều loại phông nền khác nhau (trắng, đen, xám, màu sắc, họa tiết) để phù hợp với các concept chụp ảnh khác nhau.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Khu vực nghỉ ngơi",
+    "description": " Có ghế sofa hoặc khu vực nghỉ để khách hàng, người mẫu hoặc ekip có thể thư giãn trong lúc chờ đợi.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
+  },
+  {
+    "name": "Phòng vệ sinh riêng",
+    "description": "Cung cấp phòng vệ sinh riêng sạch sẽ và tiện nghi ngay trong khuôn viên.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   }
+]
