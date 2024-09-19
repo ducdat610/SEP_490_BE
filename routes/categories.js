@@ -12,10 +12,13 @@ categoriesRouter.get("/", async (req, res, next) => {
   try {
     const categories = await Categories.find({}).exec();
     if (categories.length === 0) {
-      res.status(404 + "Not Found");
+      return res.status(404).json({ message: "Not Found" });
     }
     res.status(200).json(categories);
-  } catch (error) {}
+  } catch (error) {
+    console.error(error); // Ghi log lỗi để dễ dàng theo dõi
+    res.status(500).json({ message: "Internal Server Error" });
+  }
 });
 categoriesRouter.post("/", async (req, res, next) => {
   const { name, description } = req.body;
