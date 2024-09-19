@@ -14,7 +14,7 @@
       "https://shop28decor.com/ct/uploads/2023/03/Screenshot-2023-03-24-115858.jpg"
     ],
     "status": "available",
-    "categories": {
+    "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8945"
     },
     "appliancesId": "",
