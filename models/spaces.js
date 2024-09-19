@@ -18,11 +18,14 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    rules: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "rules",
-      required: true,
-    },
+    rulesId: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "rules",
+        required: true,
+      },
+    ],
+
     pricePerHour: {
       type: Number,
       required: true,
@@ -33,7 +36,7 @@ const spacesSchema = new Schema(
       enum: ["not available", "cleaning ", "available"],
       default: "available",
     },
-    categories: {
+    categoriesId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "categories",
       required: true,
