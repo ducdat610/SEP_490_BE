@@ -1,5 +1,4 @@
 import express from "express";
-import { spaceController } from "../controllers/index.js";
 import createError from "http-errors";
 import {
   signAccessToken,
