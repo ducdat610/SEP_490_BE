@@ -3,7 +3,12 @@ import * as dotenv from "dotenv";
 import express, { json } from "express";
 
 import connectDB from "./database.js";
-import { userRouter, spaceRouter, rulesRouter } from "./routes/index.js";
+import {
+  userRouter,
+  spaceRouter,
+  rulesRouter,
+  categoriesRouter,
+} from "./routes/index.js";
 
 dotenv.config();
 //Tạo 1 constant 'app'
@@ -18,6 +23,7 @@ app.get("/", (req, res) => {
 app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/rules", rulesRouter);
+app.use("/categories", categoriesRouter);
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
