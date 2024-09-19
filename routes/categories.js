@@ -38,4 +38,5 @@ categoriesRouter.post("/", async (req, res, next) => {
   }
 });
 categoriesRouter.put("/:id", async (req, res, next) => {});
+
 export default categoriesRouter;
