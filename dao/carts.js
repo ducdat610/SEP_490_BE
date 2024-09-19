@@ -26,9 +26,20 @@ const removeListSpaceOfUser = async (spaceId) => {
     throw new Error(error.toString());
   }
 };
+const updateCart = async (id, Uquantity) => {
+  try {
+    const space = await Carts.findOneAndUpdate({ _id: id }, Uquantity, {
+      new: true,
+    });
+    return space;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 
 export default {
   fetchListSpaceOfUser,
   removeListSpaceOfUser,
   addSpacesToCart,
+  updateCart,
 };
