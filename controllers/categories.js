@@ -1,3 +1,4 @@
+
 import { categoriesDao } from "../dao/index.js"
 
 const getAllCategories = async (req, res) =>{

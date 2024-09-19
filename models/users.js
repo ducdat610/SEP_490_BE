@@ -16,7 +16,7 @@ const usersSchema = new Schema(
     },
     gmail: {
       type: String,
-      default: "",
+      required: true,
     },
     password: {
       type: String,
@@ -47,14 +47,21 @@ const usersSchema = new Schema(
       type: Boolean,
       default: false,
     },
-    bankId: {
+    bankAccounts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "bankAccount",
+      },
+    ],
+    defaultBankAccount: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "banks",
+      ref: "bankAccount",
+      default: null,
     },
-    isSpaceOwners:{
+    isSpaceOwners: {
       type: Boolean,
       default: false,
-    }
+    },
   },
   {
     timestamps: true,
