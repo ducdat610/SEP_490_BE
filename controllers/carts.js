@@ -25,4 +25,13 @@ const deleteSpaces = async (req, res) => {
     res.status(500).json({ message: error.toString() });
   }
 };
-export default { getListSpacesOfUser, deleteSpaces };
+const addSpacesToCart = async (req, res) => {
+  try {
+    const {userId, spaceId, categoriesId, quantity} = req.body;
+    const newSpaceItem = await cartDao.addSpacesToCart(userId, spaceId, categoriesId, quantity)
+    res.status(200).json({message:"Space added to cart successfully",newSpaceItem})
+  } catch (error) {
+    res.status(500).json({message:error.toString()})
+  }
+}
+export default { getListSpacesOfUser, deleteSpaces,addSpacesToCart };

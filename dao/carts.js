@@ -9,6 +9,15 @@ const fetchListSpaceOfUser = async (id) => {
     return listSpaces;
   } catch (error) {}
 };
+
+const addSpacesToCart = async (userId, spaceId, categoriesId, quantity) => {
+  try {
+    const newSpaceItem = new Carts({ userId, spaceId, categoriesId, quantity });
+    await newSpaceItem.save();
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 const removeListSpaceOfUser = async (spaceId) => {
   try {
     const listSpace = await Carts.deleteMany({ spaceId: spaceId }).exec();
@@ -17,4 +26,4 @@ const removeListSpaceOfUser = async (spaceId) => {
     throw new Error(error.toString());
   }
 };
-export default { fetchListSpaceOfUser, removeListSpaceOfUser };
+export default { fetchListSpaceOfUser, removeListSpaceOfUser, addSpacesToCart };
