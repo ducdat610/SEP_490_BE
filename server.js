@@ -8,6 +8,8 @@ import {
   spaceRouter,
   rulesRouter,
   categoriesRouter,
+  reviewRouter,
+  cartRouter,
 } from "./routes/index.js";
 
 dotenv.config();

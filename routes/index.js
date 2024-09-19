@@ -1,5 +1,14 @@
 import userRouter from "./users.js";
-import spaceRouter from "./space.js";
+import spaceRouter from "./spaces.js";
 import rulesRouter from "./rules.js";
 import categoriesRouter from "./categories.js";
-export { userRouter, spaceRouter, rulesRouter, categoriesRouter };
+import reviewRouter from "./reviews.js";
+import cartRouter from "./carts.js";
+export {
+  userRouter,
+  spaceRouter,
+  rulesRouter,
+  categoriesRouter,
+  reviewRouter,
+  cartRouter,
+};
