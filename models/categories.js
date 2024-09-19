@@ -4,8 +4,8 @@ const categoriesSchema = new Schema(
     {
         name: {
           type: String,
-          required: true,
-          unique: true,
+          required: [true, "Space name is required"],
+          unique: [true, "Space name is not duplicate"],
         },
         description: {
           type: String,
