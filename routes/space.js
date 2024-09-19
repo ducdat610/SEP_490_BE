@@ -7,6 +7,7 @@ import {
   verifyRefreshToken,
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
+import { spaceController } from "../controllers/index.js";
 const spaceRouter = express();
 spaceRouter.post("/", async (req, res, next) => {
   const {
@@ -35,4 +36,5 @@ spaceRouter.get("/:id", async (req, res, next) => {
     next(error);
   }
 });
+spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
 export default spaceRouter;

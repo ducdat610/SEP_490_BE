@@ -20,6 +20,8 @@ app.use(json());
 app.get("/", (req, res) => {
   res.send("<h1>Welcom to</h1>");
 });
+app.use("/reviews", reviewRouter);
+app.use("/carts", cartRouter);
 app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/rules", rulesRouter);
