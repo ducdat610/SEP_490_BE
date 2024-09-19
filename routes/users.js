@@ -117,6 +117,11 @@ usersRouter.post("/login", async (req, res, next) => {
 
     if (!user) throw createError.NotFound("User not registered");
 
+    // Check if the user is banned
+    if (user.isBan) {
+      return res.status(403).json({ message: "User is banned" }); // 403 Forbidden
+    }
+
     // Kiểm tra mật khẩu
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch)
@@ -141,6 +146,7 @@ usersRouter.post("/login", async (req, res, next) => {
     next(error);
   }
 });
+
 usersRouter.delete("/logout", async (req, res, next) => {
   res.send("Đường dẫn Đăng xuất");
 });
