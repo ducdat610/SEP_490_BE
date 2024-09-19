@@ -15,7 +15,11 @@ const cartsSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "categories",
     required: true,
-  }
+  },
+  quantity: {
+    type: Number,
+    required: true,
+  },
 });
 const Carts = new mongoose.model("carts", cartsSchema);
 export default Carts;

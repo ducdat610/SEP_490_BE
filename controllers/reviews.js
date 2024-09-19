@@ -41,7 +41,8 @@ const editReviewBySId = async (req, res) => {
 const createReview = async (req, res) => {
   try {
     const { text, rating, spaceId, userId } = req.body;
-    const newReview = await reviewDao.createReview(
+
+    const newReview = await reviewDao.createReviewsBySId(
       text,
       rating,
       spaceId,

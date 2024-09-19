@@ -4,11 +4,13 @@ import express, { json } from "express";
 
 import connectDB from "./database.js";
 import {
-  cartRouter,
+  userRouter,
+  spaceRouter,
+  rulesRouter,
   categoriesRouter,
   reviewRouter,
-  spaceRouter,
-  userRouter,
+  cartRouter,
+
 } from "./routes/index.js";
 
 dotenv.config();
@@ -21,10 +23,11 @@ app.use(json());
 app.get("/", (req, res) => {
   res.send("<h1>Welcom to</h1>");
 });
-app.use("/users", userRouter);
 app.use("/reviews", reviewRouter);
-app.use("/spaces", spaceRouter);
 app.use("/carts", cartRouter);
+app.use("/users", userRouter);
+app.use("/spaces", spaceRouter);
+app.use("/rules", rulesRouter);
 app.use("/categories", categoriesRouter);
 
 app.use(function (req, res, next) {
