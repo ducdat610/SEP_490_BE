@@ -19,9 +19,7 @@ bookingRouter.get("/", async (req, res, next) => {
   }
 });
 
-
-// Thêm booking mới
-
+// tạo mới booking
 bookingRouter.post("/", async (req, res, next) => {
   try {
     const {
@@ -30,46 +28,28 @@ bookingRouter.post("/", async (req, res, next) => {
       checkIn,
       checkOut,
       notes,
-      status,
-      email,
-      address,
-      appointment_date,
-      timeslotId,
-      order_status,
-      pet_info,
     } = req.body;
 
-    if (!userId) {
-      return res.status(400).json({ error: "Missing userId in request body" });
+    // Check for required fields
+    if (!userId || !spaceId || !checkIn || !checkOut ) {
+      return res.status(400).json({ error: "Missing required fields" });
     }
 
-    const timeslot = await Timeslot.findById(timeslotId);
-    if (!timeslot) {
-      return res.status(400).json({ error: "Timeslot not found" });
-    }
-    if (timeslot.availableSlots <= 0) {
-      return res
-        .status(400)
-        .json({ error: "No available slots for this timeslot" });
-    }
 
-    const newBooking = new Booking({
+    // Create a new booking
+    const newBooking = new Bookings({
       userId,
-      service_type,
-      customer_name,
-      phone_number,
-      email,
-      address,
-      appointment_date,
-      timeslot: timeslotId,
-      order_status,
-      pet_info,
+      spaceId,
+      checkIn,
+      checkOut,
+      notes,
+      status: "awaiting payment", // Set default status
     });
 
+    // Save the new booking
     const savedBooking = await newBooking.save();
 
-    timeslot.availableSlots -= 1;
-    await timeslot.save();
+
 
     res.status(201).json(savedBooking);
   } catch (error) {
