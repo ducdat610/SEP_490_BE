@@ -15,5 +15,5 @@ const appliancesSchema = new Schema(
     timestamps: true,
   }
 );
-const Appliance = mongoose.model("appliances", appliancesSchema);
-export default Appliance;
+const Appliances = mongoose.model("appliances", appliancesSchema);
+export default Appliances;
