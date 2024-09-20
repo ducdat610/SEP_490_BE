@@ -10,6 +10,7 @@ import {
   categoriesRouter,
   reviewRouter,
   cartRouter,
+  bookingRouter
 
 } from "./routes/index.js";
 
@@ -29,6 +30,7 @@ app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/rules", rulesRouter);
 app.use("/categories", categoriesRouter);
+app.use("/bookings", bookingRouter);
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

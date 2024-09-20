@@ -13,7 +13,7 @@ import Spaces from "../models/spaces.js";
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
 
-
+// tim kiem space
 spaceRouter.get('/search/:name', async (req, res, next) => {
   try {
     const name = req.params.name
@@ -86,6 +86,8 @@ spaceRouter.post("/", async (req, res, next) => {
   try {
   } catch (error) { }
 });
+
+// get theo id
 spaceRouter.get("/:id", async (req, res, next) => {
   const { spaceId } = req.body;
   try {
