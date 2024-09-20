@@ -18,11 +18,14 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    rulesId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "rules",
-      required: true,
-    },
+    rulesId: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "rules",
+        required: true,
+      },
+    ],
+
     pricePerHour: {
       type: String,
       required: true,
