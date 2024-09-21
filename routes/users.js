@@ -50,6 +50,44 @@ const loginSchema = Joi.object({
     "any.required": `"password" là bắt buộc`,
   }),
 });
+//Update tài khoản mặc định cho người dùng
+
+usersRouter.put("/def/:userId", async (req, res, next) => {
+  const { userId } = req.params; // Lấy userId từ URL
+  const { defaultBankAccountId } = req.body; // Lấy defaultBankAccountId từ body
+
+  try {
+    // Kiểm tra xem tài khoản ngân hàng có tồn tại hay không
+    const bankAccount = await BankAccount.findById(defaultBankAccountId);
+    if (!bankAccount) {
+      return res
+        .status(404)
+        .json({ error: "Tài khoản ngân hàng không tồn tại" });
+    }
+
+    // Kiểm tra xem tài khoản ngân hàng có thuộc về người dùng không
+    if (bankAccount.user.toString() !== userId) {
+      return res
+        .status(403)
+        .json({ error: "Tài khoản ngân hàng không thuộc về người dùng này" });
+    }
+
+    // Cập nhật tài khoản ngân hàng mặc định cho người dùng
+    const updatedUser = await Users.findByIdAndUpdate(
+      userId,
+      { defaultBankAccount: defaultBankAccountId }, // Cập nhật trường defaultBankAccount
+      { new: true } // Trả về phiên bản đã cập nhật
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ error: "Người dùng không tìm thấy" });
+    }
+
+    res.json(updatedUser); // Gửi phản hồi với thông tin người dùng đã cập nhật
+  } catch (err) {
+    next(createError(500, "Lỗi khi cập nhật tài khoản ngân hàng mặc định"));
+  }
+});
 
 // Đăng ký người dùng mới
 usersRouter.post("/register", async (req, res, next) => {
