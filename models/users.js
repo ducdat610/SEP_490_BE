@@ -67,6 +67,6 @@ const usersSchema = new Schema(
     timestamps: true,
   }
 );
-
+// user
 const Users = mongoose.model("users", usersSchema);
 export default Users;
