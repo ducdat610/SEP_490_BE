@@ -42,7 +42,6 @@ bankAccountRouter.post("/", async (req, res) => {
       bank,
       accountNumber,
     }).exec();
-    rr;
 
     if (bankAccountExist) {
       return res
