@@ -5,6 +5,7 @@ import categoriesRouter from "./categories.js";
 import reviewRouter from "./reviews.js";
 import cartRouter from "./carts.js";
 import bookingRouter from "./bookings.js";
+import appliancesRouter from "./appliances.js";
 export {
   userRouter,
   spaceRouter,
@@ -12,6 +13,7 @@ export {
   categoriesRouter,
   reviewRouter,
   cartRouter,
-  bookingRouter
+  bookingRouter,
+  appliancesRouter
 };
 

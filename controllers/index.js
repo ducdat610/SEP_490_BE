@@ -3,13 +3,15 @@ import reviewController from "./reviews.js";
 import spaceController from "./spaces.js";
 import cartController from "./carts.js";
 import categoriesController from "./categories.js";
+import appliancesController from "./appliances.js";
 
 export {
     userController,
     reviewController,
     spaceController,
     cartController,
-    categoriesController
+    categoriesController,
+    appliancesController
 }
 
 
