@@ -6,6 +6,7 @@ import categoriesController from "./categories.js";
 import appliancesController from "./appliances.js";
 import reportsController from "./reports.js";
 import reasonsController from "./reasons.js";
+import sendEmailBookingCompleted from "./bookings.js";
 
 export {
   userController,
@@ -16,4 +17,5 @@ export {
   appliancesController,
   reportsController,
   reasonsController,
+  sendEmailBookingCompleted
 };

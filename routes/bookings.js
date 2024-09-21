@@ -1,7 +1,11 @@
 import express from "express";
 import Bookings from "../models/bookings.js";
+import { sendEmailBookingCompleted } from "../controllers/index.js";
+import Users from "../models/users.js";
 
 const bookingRouter = express.Router();
+
+bookingRouter.get
 
 //list danh sách booking
 bookingRouter.get("/", async (req, res, next) => {
@@ -61,15 +65,25 @@ bookingRouter.post("/", async (req, res, next) => {
 // Cập nhật trạng thái booking và lý do nếu chuyển thành 'cancel' api cho user
 bookingRouter.put("/update-status/:id", async (req, res, next) => {
   try {
-    const { cancelReason } = req.body; // Ensure the naming is consistent with the schema
+    const { status, cancelReason } = req.body; // Ensure the naming is consistent with the schema
+    if (status !== "completed" && status !== "canceled") {
+      return res.status(400).json({ message: "Invalid status value" });
+    }
+
     const updatedBooking = await Bookings.findByIdAndUpdate(
       req.params.id,
-      { status: "canceled", cancelReason }, // Update status and cancelReason fields
+      { status, cancelReason: status === "canceled" ? cancelReason : undefined }, // Cập nhật cancelReason chỉ khi status là "canceled"
       { new: true }
     );
 
     if (!updatedBooking) {
       return res.status(404).json({ message: "Không tìm thấy booking" });
+    }
+    // Nếu trạng thái là "completed", gửi email
+
+    if (status === "completed") {
+      const tenantEmail = updatedBooking.userId.gmail; // Giả sử bạn có trường email trong user
+      await sendEmailBookingCompleted.sendEmailBookingCompleted(tenantEmail, updatedBooking);
     }
 
     res.json(updatedBooking);
