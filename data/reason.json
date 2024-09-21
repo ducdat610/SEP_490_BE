@@ -1,0 +1,33 @@
+[
+    {
+      "_id": "650c9e5d1234567890abcdef",
+      "text": "Đây là tin rác",
+      "category": "Nội dung không phù hợp"
+    },
+    {
+      "_id": "650c9e5d1234567890abcdf1",
+      "text": "Ngôn từ thù địch hoặc biểu tượng thù ghét",
+      "category": "Ngôn từ thù địch"
+    },
+    {
+      "_id": "650c9e5d1234567890abcdf4",
+      "text": "Thông tin sai lệch",
+      "category": "Thông tin sai"
+    },
+    {
+      "_id": "650c9e5d1234567890abcdf5",
+      "text": "Lừa đảo hoặc gian lận",
+      "category": "Gian lận"
+    },
+    {
+      "_id": "650c9e5d1234567890abcdf6",
+      "text": "Vi phạm sở hữu trí tuệ",
+      "category": "Pháp lý"
+    },
+    {
+      "_id": "650c9e5d1234567890abcdf8",
+      "text": "Lý do khác",
+      "category": "Khác"
+    }
+  ]
+  

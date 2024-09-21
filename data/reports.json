@@ -1,12 +1,16 @@
 [
-    {
-      "reason": "Không gian không như quảng cáo",
-      "userId": "64f5a4c3e66f9b2a8c3b9e73",
-      "spaceId": "64f5a56be66f9b2a8c3b9e74"
+  {
+    "reasonId": {
+      "$oid": "650c9e5d1234567890abcdf4"
     },
-    {
-      "reason": "Cơ sở vật chất không sạch sẽ",
-      "userId": "64f5a4e3e66f9b2a8c3b9e77",
-      "spaceId": "64f5a5dbe66f9b2a8c3b9e78"
-    }
-  ]
+    "userId": "64f5a4c3e66f9b2a8c3b9e73",
+    "spaceId": "64f5a56be66f9b2a8c3b9e74"
+  },
+  {
+    "reasonId": {
+      "$oid": "650c9e5d1234567890abcdf5"
+    },
+    "userId": "64f5a4e3e66f9b2a8c3b9e77",
+    "spaceId": "64f5a5dbe66f9b2a8c3b9e78"
+  }
+]

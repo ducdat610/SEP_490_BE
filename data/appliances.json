@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 [{
+=======
+[
+  {
+>>>>>>> 36f5592b4f9a8c9585f3af91313da8bd19baefd5
     "name": "Máy chiếu",
     "description": "Máy chiếu 4K chất lượng cao cho các bài thuyết trình và cuộc họp.",
     "createdAt": "2024-09-17T12:00:00Z",
@@ -34,4 +39,8 @@
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   }
+<<<<<<< HEAD
 ]
+=======
+]
+>>>>>>> 36f5592b4f9a8c9585f3af91313da8bd19baefd5
