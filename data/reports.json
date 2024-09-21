@@ -1,16 +1,24 @@
 [
   {
     "reasonId": {
-      "$oid": "66eafbb0cb37101e8e8f8948"
+      "$oid": "650c9e5d1234567890abcdf1"
     },
-    "userId": "64f5a4c3e66f9b2a8c3b9e73",
-    "spaceId": "64f5a56be66f9b2a8c3b9e74"
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c2"
+    },
+    "spaceId": {
+      "$oid": "66eafc44cb37101e8e8f8951"
+    }
   },
   {
     "reasonId": {
-      "$oid": "66eafbb0cb37101e8e8f8949"
+      "$oid": "650c9e5d1234567890abcdf4"
     },
-    "userId": "64f5a4e3e66f9b2a8c3b9e77",
-    "spaceId": "64f5a5dbe66f9b2a8c3b9e78"
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c1"
+    },
+    "spaceId": {
+      "$oid": "66eafc44cb37101e8e8f8954"
+    }
   }
 ]

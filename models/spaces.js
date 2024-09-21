@@ -38,7 +38,7 @@ const spacesSchema = new Schema(
     },
     status: {
       type: String,
-      enum: ["not available", "cleaning ", "available"],
+      enum: ["not available", "Đang dọn dẹp ", "Còn trống"],
       default: "available",
     },
     categoriesId: {
@@ -58,6 +58,10 @@ const spacesSchema = new Schema(
         require: false,
       },
     ],
+    reportCount:{
+      type: Number,
+      default: 0,
+    }
   },
   {
     timestamps: true,
