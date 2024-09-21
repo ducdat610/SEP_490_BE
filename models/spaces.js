@@ -31,6 +31,11 @@ const spacesSchema = new Schema(
       required: true,
     },
     images: [{ type: String }],
+    censorship: {
+      type: String,
+      enum: ["Chờ duyệt", "Chấp nhận ", "Từ chối"],
+      default: "Chờ duyệt",
+    },
     status: {
       type: String,
       enum: ["not available", "cleaning ", "available"],

@@ -3,13 +3,17 @@ import reviewController from "./reviews.js";
 import spaceController from "./spaces.js";
 import cartController from "./carts.js";
 import categoriesController from "./categories.js";
+import appliancesController from "./appliances.js";
+import reportsController from "./reports.js";
+import reasonsController from "./reasons.js";
 
 export {
-    userController,
-    reviewController,
-    spaceController,
-    cartController,
-    categoriesController
-}
-
-
+  userController,
+  reviewController,
+  spaceController,
+  cartController,
+  categoriesController,
+  appliancesController,
+  reportsController,
+  reasonsController,
+};
