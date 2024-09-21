@@ -193,7 +193,7 @@ usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
         select: "bank accountNumber",
         populate: {
           path: "bank",
-          select: "bankName",
+          select: "bankName ",
         },
       })
       .populate({

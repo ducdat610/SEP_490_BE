@@ -41,6 +41,7 @@ bankAccountRouter.post("/", async (req, res) => {
     const bankAccountExist = await BankAccount.findOne({
       bank,
       accountNumber,
+      d,
     }).exec();
 
     if (bankAccountExist) {
