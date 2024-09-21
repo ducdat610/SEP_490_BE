@@ -1,28 +1,23 @@
 [
     {
       "_id": "650c9e5d1234567890abcdef",
-      "text": "Đây là tin rác",
-      "category": "Nội dung không phù hợp"
+      "text": "Đây là tin rác"
     },
     {
       "_id": "650c9e5d1234567890abcdf1",
-      "text": "Ngôn từ thù địch hoặc biểu tượng thù ghét",
-      "category": "Ngôn từ thù địch"
+      "text": "Ngôn từ thù địch hoặc biểu tượng thù ghét"
     },
     {
       "_id": "650c9e5d1234567890abcdf4",
-      "text": "Thông tin sai lệch",
-      "category": "Thông tin sai"
+      "text": "Thông tin sai lệch"
     },
     {
       "_id": "650c9e5d1234567890abcdf5",
-      "text": "Lừa đảo hoặc gian lận",
-      "category": "Gian lận"
+      "text": "Lừa đảo hoặc gian lận"
     },
     {
       "_id": "650c9e5d1234567890abcdf8",
-      "text": "Lý do khác",
-      "category": "Khác"
+      "text": "Lý do khác"
     }
   ]
   
