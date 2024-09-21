@@ -1,0 +1,16 @@
+[
+  {
+    "reasonId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "userId": "64f5a4c3e66f9b2a8c3b9e73",
+    "spaceId": "64f5a56be66f9b2a8c3b9e74"
+  },
+  {
+    "reasonId": {
+      "$oid": "66eafbb0cb37101e8e8f8949"
+    },
+    "userId": "64f5a4e3e66f9b2a8c3b9e77",
+    "spaceId": "64f5a5dbe66f9b2a8c3b9e78"
+  }
+]

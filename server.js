@@ -7,8 +7,8 @@ import {
   cartRouter,
   categoriesRouter,
   reviewRouter,
-  spaceRouter,
-  userRouter,
+  cartRouter,
+
 } from "./routes/index.js";
 
 dotenv.config();
@@ -27,6 +27,9 @@ app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/carts", cartRouter);
 app.use("/categories", categoriesRouter);
+app.use("/appliances", appliancesRouter);
+app.use("/reports", reportRouter);
+app.use("/reasons", reasonsRouter);
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
