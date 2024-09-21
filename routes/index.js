@@ -18,5 +18,5 @@ export {
   bookingRouter,
   appliancesRouter,
   reportRouter,
-  reasonsRouter
+  reasonsRouter,
 };

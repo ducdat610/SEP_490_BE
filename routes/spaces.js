@@ -151,6 +151,28 @@ spaceRouter.get("/:id", async (req, res, next) => {
 
 spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)
 
+
+// Từ chối post 
+spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
+  try {
+    const { rulesId } = req.body; 
+    const updatedPost = await Spaces.findByIdAndUpdate(
+      req.params.id,
+      { censorship: "Từ chối", rulesId }, 
+      { new: true }
+    );
+
+    if (!updatedPost) {
+      return res.status(404).json({ message: "Không tìm thấy post" });
+    }
+
+    res.json(updatedPost);
+  } catch (error) {
+    next(error);
+  }
+});
+
+
 export default spaceRouter;
 
 
