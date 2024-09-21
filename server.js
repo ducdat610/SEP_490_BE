@@ -14,7 +14,7 @@ import {
 dotenv.config();
 //Tạo 1 constant 'app'
 const app = express();
-//Thêm middleware kiểm soát dữ liệu của Request
+//Thêm middleware kiểm soát dữ liệu của Requestt
 app.use(cors());
 app.use(json());
 
