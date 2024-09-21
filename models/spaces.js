@@ -58,6 +58,10 @@ const spacesSchema = new Schema(
         require: false,
       },
     ],
+    reportCount:{
+      type: Number,
+      default: 0,
+    }
   },
   {
     timestamps: true,
