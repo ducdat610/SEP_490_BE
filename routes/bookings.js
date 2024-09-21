@@ -20,21 +20,21 @@ bookingRouter.get("/", async (req, res, next) => {
 });
 
 // tạo mới booking
+
 bookingRouter.post("/", async (req, res, next) => {
   try {
-    const {
-      userId,
-      spaceId,
-      checkIn,
-      checkOut,
-      notes,
-    } = req.body;
+    const { userId, spaceId, checkIn, checkOut, timeSlot, notes } = req.body;
 
     // Check for required fields
-    if (!userId || !spaceId || !checkIn || !checkOut ) {
+    if (!userId || !spaceId || !checkIn || !checkOut || !timeSlot) {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
+    // Validate the time slot
+    const { startTime, endTime } = timeSlot;
+    if (!startTime || !endTime) {
+      return res.status(400).json({ error: "Invalid time slot" });
+    }
 
     // Create a new booking
     const newBooking = new Bookings({
@@ -42,14 +42,13 @@ bookingRouter.post("/", async (req, res, next) => {
       spaceId,
       checkIn,
       checkOut,
+      timeSlot: { startTime, endTime },
       notes,
-      status: "awaiting payment", // Set default status
+      status: "awaiting payment",
     });
 
     // Save the new booking
     const savedBooking = await newBooking.save();
-
-
 
     res.status(201).json(savedBooking);
   } catch (error) {
