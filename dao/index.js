@@ -4,5 +4,16 @@ import spaceDao from "./spaces.js";
 import cartDao from "./carts.js";
 import categoriesDao from "./categories.js";
 import appliancesDao from "./appliances.js";
+import reportsDao from "./reports.js";
+import reasonsDao from "./reasons.js";
 
-export { userDao, reviewDao, spaceDao, cartDao, categoriesDao, appliancesDao };
+export {
+  userDao,
+  reviewDao,
+  spaceDao,
+  cartDao,
+  categoriesDao,
+  appliancesDao,
+  reportsDao,
+  reasonsDao,
+};
