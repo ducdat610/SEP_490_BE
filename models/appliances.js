@@ -10,10 +10,15 @@ const appliancesSchema = new Schema(
       type: String,
       required: false,
     },
+    isCustom: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
   }
 );
-const Appliance = mongoose.model("appliances", appliancesSchema);
-export default Appliance;
+
+const Appliances = mongoose.model("appliances", appliancesSchema);
+export default Appliances;

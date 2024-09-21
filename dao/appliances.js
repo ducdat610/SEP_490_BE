@@ -1,12 +1,25 @@
-import Appliance from "../models/appliances.js";
+import Appliances from "../models/appliances.js";
 
 const fetchAllAppliances = async () => {
   try {
-    const listAppliances = await Appliance.find({}).exec();
-    return listAppliances;
+    const allAppliances = await Appliances.find({isCustom: false}).exec();
+    return allAppliances;
   } catch (error) {
-    throw new Error(error.toString());
+    throw new Error(error.message);
   }
 };
 
-export default { fetchAllAppliances };
+
+
+// Thêm tiện ích tùy chỉnh vào database
+export const addCustomAppliance = async (applianceData) => {
+  try {
+    const newAppliance = new Appliances(applianceData);
+    await newAppliance.save();
+    return newAppliance;
+  } catch (error) {
+    throw new Error("Error adding custom appliance");
+  }
+};
+
+export default { fetchAllAppliances, addCustomAppliance };

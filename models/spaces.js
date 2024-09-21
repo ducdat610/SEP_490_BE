@@ -31,21 +31,28 @@ const spacesSchema = new Schema(
       required: true,
     },
     images: [{ type: String }],
+    censorship: {
+      type: String,
+      enum: ["Chờ duyệt", "Chấp nhận ", "Từ chối"],
+      default: "Chờ duyệt",
+    },
     status: {
       type: String,
-      enum: ["not available", "cleaning ", "available"],
-      default: "available",
+      enum: ["not available", "Đang dọn dẹp ", "Còn trống"],
+      default: "not available",
     },
     categoriesId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "categories",
       required: true,
     },
-    appliancesId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "appliances",
-      required: true,
-    },
+    appliancesId: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "appliances",
+        required: true,
+      },
+    ],
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -53,6 +60,10 @@ const spacesSchema = new Schema(
         require: false,
       },
     ],
+    reportCount:{
+      type: Number,
+      default: 0,
+    }
   },
   {
     timestamps: true,
