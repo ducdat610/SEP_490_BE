@@ -74,7 +74,7 @@ bookingRouter.put("/update-status/:id", async (req, res, next) => {
       req.params.id,
       { status, cancelReason: status === "canceled" ? cancelReason : undefined }, // Cập nhật cancelReason chỉ khi status là "canceled"
       { new: true }
-    );
+    ).populate("userId");
 
     if (!updatedBooking) {
       return res.status(404).json({ message: "Không tìm thấy booking" });
@@ -83,6 +83,8 @@ bookingRouter.put("/update-status/:id", async (req, res, next) => {
 
     if (status === "completed") {
       const tenantEmail = updatedBooking.userId.gmail; // Giả sử bạn có trường email trong user
+      console.log(tenantEmail);
+      
       await sendEmailBookingCompleted.sendEmailBookingCompleted(tenantEmail, updatedBooking);
     }
 

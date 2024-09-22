@@ -11,7 +11,7 @@ const sendEmailBookingCompleted = async (tenantEmail, bookingDetails) => {
 
   const mailOptions = {
     from: "toan20022222@gmail.com",
-    to: "phongop2k6@gmail.com",
+    to: tenantEmail,
     subject: 'Booking Confirmation',
     text: `Your booking is confirmed! Details: ${JSON.stringify(bookingDetails)}`,
   };
