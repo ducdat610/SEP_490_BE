@@ -39,6 +39,11 @@ const bookingsSchema = new Schema(
       type: String,
       required: false,
     },
+    timeSlot: {
+      startTime: { type: String, required: true }, 
+      endTime: { type: String, required: true },   
+    },
+
   },
   { timeseries: true }
 );

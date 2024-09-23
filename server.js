@@ -10,6 +10,7 @@ import {
   categoriesRouter,
   reviewRouter,
   cartRouter,
+  bookingRouter,
   bankRouter,
   bankAccountRouter,
   appliancesRouter,
@@ -34,6 +35,7 @@ app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/rules", rulesRouter);
 app.use("/categories", categoriesRouter);
+app.use("/bookings", bookingRouter);
 app.use("/bank", bankRouter);
 app.use("/bankaccount", bankAccountRouter);
 app.use("/appliances", appliancesRouter);
