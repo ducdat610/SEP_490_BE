@@ -86,7 +86,7 @@ spaceRouter.get("/similar/:id", async (req, res, next) => {
   }
 });
 
-// GET route to fetch all spaces
+// GET route to fetch all spaces f
 spaceRouter.get("/", async (req, res, next) => {
   try {
     const spaces = await Spaces.find({}).populate("categoriesId").exec();
