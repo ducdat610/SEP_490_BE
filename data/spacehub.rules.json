@@ -1,6 +1,8 @@
 [
   {
-    "_id": "66ed8eca5af2082abdf9727e",
+    "_id": {
+      "$oid": "66ed8eca5af2082abdf9727e"
+    },
     "rules": [
       " Thời gian sử dụng: Người thuê phải sử dụng studio đúng theo thời gian đã đăng ký. Nếu muốn kéo dài thời gian, cần phải thông báo và được sự đồng ý từ chủ sở hữu.",
       " Sử dụng thiết bị: Sử dụng thiết bị và không gian một cách cẩn thận. Mọi thiết bị hoặc dụng cụ trong studio cần được bảo quản, không được làm hỏng hoặc mất. Nếu xảy ra thiệt hại, người thuê phải bồi thường.",
@@ -8,7 +10,9 @@
     ]
   },
   {
-    "_id": "66ed8eca5af2082abdf9727f",
+    "_id": {
+      "$oid": "66ed8eca5af2082abdf9727f"
+    },
     "rules": [
       " Thời gian làm việc: Người thuê cần tuân thủ giờ làm việc đã thỏa thuận. Nếu cần sử dụng ngoài giờ, phải được sự chấp thuận của chủ sở hữu văn phòng.",
       " Trang thiết bị văn phòng: Người thuê phải sử dụng các trang thiết bị văn phòng (bàn, ghế, máy in, v.v.) một cách cẩn thận. Nếu có hư hỏng, người thuê chịu trách nhiệm sửa chữa hoặc bồi thường.",

@@ -1,6 +1,7 @@
 import { spaceController } from "../controllers/index.js";
 import express from "express";
 
+import Spaces from "../models/spaces.js";
 import createError from "http-errors";
 import {
   signAccessToken,
@@ -8,7 +9,6 @@ import {
   verifyRefreshToken,
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
-import Spaces from "../models/spaces.js";
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
@@ -17,7 +17,7 @@ spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.get('/search/:name', async (req, res, next) => {
   try {
     const name = req.params.name
-    const rgx = (pattern) => new RegExp(`.*${pattern}.*`);
+    const rgx = (pattern) => new RegExp(.*${pattern}.*);
     const searchRgx = rgx(name);
 
     const searchResult = await Spaces.find({ name: { $regex: searchRgx, $options: "i" } })
@@ -37,11 +37,11 @@ spaceRouter.get("/filter", async (req, res, next) => {
 
     // Lọc theo địa chỉ
     if (location) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, 'i'); // i: không phân biệt chữ hoa/thường
+      const rgx = (pattern) => new RegExp(.*${pattern}.*, 'i'); // i: không phân biệt chữ hoa/thường
       filter.location = { $regex: rgx(location) };
     }
     if (area) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, 'i');
+      const rgx = (pattern) => new RegExp(.*${pattern}.*, 'i');
       filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
     }
 
@@ -75,7 +75,7 @@ spaceRouter.post("/", spaceController.createNewSpace);
 
 
 // get theo id
-spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)
+spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)  
 
 // so sánh
 spaceRouter.get("/compare-spaces", async (req, res) => {
@@ -149,9 +149,6 @@ spaceRouter.get("/:id", async (req, res, next) => {
   }
 });
 
-spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)
-
-
 // Từ chối post 
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
@@ -174,5 +171,3 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
 
 
 export default spaceRouter;
-
-
