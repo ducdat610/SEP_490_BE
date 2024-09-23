@@ -11,7 +11,7 @@ import {
 } from "../helpers/jwt_helper.js";
 import { userController } from "../controllers/index.js";
 import jwt from "jsonwebtoken";
-
+import BankAccount from "../models/bankAccounts.js";
 const usersRouter = express.Router();
 usersRouter.put("/changepass/:username", userController.changePass);
 usersRouter.post("/forgot-password", userController.forgetPass);
@@ -49,6 +49,44 @@ const loginSchema = Joi.object({
     "string.empty": `"password" không được bỏ trống`,
     "any.required": `"password" là bắt buộc`,
   }),
+});
+//Update tài khoản mặc định cho người dùng
+
+usersRouter.put("/def/:userId", async (req, res, next) => {
+  const { userId } = req.params; // Lấy userId từ URL
+  const { defaultBankAccountId } = req.body; // Lấy defaultBankAccountId từ body
+
+  try {
+    // Kiểm tra xem tài khoản ngân hàng có tồn tại hay không
+    const bankAccount = await BankAccount.findById(defaultBankAccountId);
+    if (!bankAccount) {
+      return res
+        .status(404)
+        .json({ error: "Tài khoản ngân hàng không tồn tại" });
+    }
+
+    // Kiểm tra xem tài khoản ngân hàng có thuộc về người dùng không
+    if (bankAccount.user.toString() !== userId) {
+      return res
+        .status(403)
+        .json({ error: "Tài khoản ngân hàng không thuộc về người dùng này" });
+    }
+
+    // Cập nhật tài khoản ngân hàng mặc định cho người dùng
+    const updatedUser = await Users.findByIdAndUpdate(
+      userId,
+      { defaultBankAccount: defaultBankAccountId }, // Cập nhật trường defaultBankAccount
+      { new: true } // Trả về phiên bản đã cập nhật
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ error: "Người dùng không tìm thấy" });
+    }
+
+    res.json(updatedUser); // Gửi phản hồi với thông tin người dùng đã cập nhật
+  } catch (err) {
+    next(createError(500, "Lỗi khi cập nhật tài khoản ngân hàng mặc định"));
+  }
 });
 
 // Đăng ký người dùng mới
@@ -187,9 +225,29 @@ usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
 });
 usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
   try {
-    const users = await Users.find({}).exec();
-    if (users.length === 0) throw createError(404, "Không tìm thấy người dùng");
-    res.send(users);
+    const user = await Users.findOne({})
+      .populate({
+        path: "bankAccounts",
+        select: "bank accountNumber",
+        populate: {
+          path: "bank",
+          select: "bankName ",
+        },
+      })
+      .populate({
+        path: "defaultBankAccount",
+        select: "bank accountNumber",
+        populate: {
+          path: "bank",
+          select: "bankName",
+        },
+      })
+      .exec();
+
+    if (!user) {
+      return res.status(404).json({ message: "Username not found" });
+    }
+    res.send(user);
   } catch (error) {
     next(error);
   }
@@ -197,13 +255,35 @@ usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
 usersRouter.get("/:username", async (req, res, next) => {
   const { username } = req.params;
   try {
-    const users = await Users.findOne({ username: username }).exec();
-    if (users.length === 0) throw createError(404, "Username not found");
-    res.send(users);
+    const user = await Users.findOne({ username })
+      .populate({
+        path: "bankAccounts",
+        select: "bank accountNumber",
+        populate: {
+          path: "bank",
+          select: "bankName",
+        },
+      })
+      .populate({
+        path: "defaultBankAccount",
+        select: "bank accountNumber",
+        populate: {
+          path: "bank",
+          select: "bankName",
+        },
+      })
+      .exec();
+
+    if (!user) {
+      return res.status(404).json({ message: "Username not found" });
+    }
+
+    res.json(user);
   } catch (error) {
     next(error);
   }
 });
+
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
     const { id, token } = req.params;
     const { password } = req.body;

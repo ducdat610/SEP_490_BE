@@ -1,11 +1,11 @@
 import { reasonsDao } from "../dao/index.js";
 
-const getReportBySId = async (req, res) => {
+const getAllReasons = async (req, res) => {
   try {
-    const report = await reasonsDao.fetchReportBySId(req.params.id).exec();
-    res.status(200).json(report);
+    const allReasons = await reasonsDao.fetchAllReasons();
+    res.status(200).json(allReasons);
   } catch (error) {
-    res.status(500).json({ message: error.toString() });
+    res.status(500).json({ error: error.toString() });
   }
 };
-export default { getReportBySId };
+export default { getAllReasons };
