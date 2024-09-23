@@ -1,0 +1,24 @@
+[
+  {
+    "reasonId": {
+      "$oid": "650c9e5d1234567890abcdf1"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c2"
+    },
+    "spaceId": {
+      "$oid": "66eafc44cb37101e8e8f8951"
+    }
+  },
+  {
+    "reasonId": {
+      "$oid": "650c9e5d1234567890abcdf4"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c1"
+    },
+    "spaceId": {
+      "$oid": "66eafc44cb37101e8e8f8954"
+    }
+  }
+]

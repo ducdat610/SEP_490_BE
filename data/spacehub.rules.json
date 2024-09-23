@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "rules": [
+      " Thời gian sử dụng: Người thuê phải sử dụng studio đúng theo thời gian đã đăng ký. Nếu muốn kéo dài thời gian, cần phải thông báo và được sự đồng ý từ chủ sở hữu.",
+      " Sử dụng thiết bị: Sử dụng thiết bị và không gian một cách cẩn thận. Mọi thiết bị hoặc dụng cụ trong studio cần được bảo quản, không được làm hỏng hoặc mất. Nếu xảy ra thiệt hại, người thuê phải bồi thường.",
+      " Mục đích sử dụng: Studio chỉ được sử dụng cho các hoạt động đã đăng ký (chụp ảnh, quay phim, thu âm, v.v.), không được sử dụng cho các mục đích khác nếu không được sự cho phép."
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66ed8eca5af2082abdf9727f"
+    },
+    "rules": [
+      " Thời gian làm việc: Người thuê cần tuân thủ giờ làm việc đã thỏa thuận. Nếu cần sử dụng ngoài giờ, phải được sự chấp thuận của chủ sở hữu văn phòng.",
+      " Trang thiết bị văn phòng: Người thuê phải sử dụng các trang thiết bị văn phòng (bàn, ghế, máy in, v.v.) một cách cẩn thận. Nếu có hư hỏng, người thuê chịu trách nhiệm sửa chữa hoặc bồi thường.",
+      " Vệ sinh văn phòng: Người thuê phải giữ vệ sinh chung trong văn phòng, không xả rác bừa bãi. Sau khi sử dụng, cần dọn dẹp để giữ gìn sự ngăn nắp, sạch sẽ."
+    ]
+  }
+]

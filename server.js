@@ -12,6 +12,9 @@ import {
   cartRouter,
   bankRouter,
   bankAccountRouter,
+  appliancesRouter,
+  reportRouter,
+  reasonsRouter,
 } from "./routes/index.js";
 
 dotenv.config();
@@ -32,6 +35,9 @@ app.use("/rules", rulesRouter);
 app.use("/categories", categoriesRouter);
 app.use("/bank", bankRouter);
 app.use("/bankaccount", bankAccountRouter);
+app.use("/appliances", appliancesRouter);
+app.use("/reports", reportRouter);
+app.use("/reasons", reasonsRouter);
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
