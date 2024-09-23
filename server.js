@@ -10,6 +10,8 @@ import {
   categoriesRouter,
   reviewRouter,
   cartRouter,
+  bankRouter,
+  bankAccountRouter,
   appliancesRouter,
   reportRouter,
   reasonsRouter,
@@ -31,6 +33,8 @@ app.use("/users", userRouter);
 app.use("/spaces", spaceRouter);
 app.use("/rules", rulesRouter);
 app.use("/categories", categoriesRouter);
+app.use("/bank", bankRouter);
+app.use("/bankaccount", bankAccountRouter);
 app.use("/appliances", appliancesRouter);
 app.use("/reports", reportRouter);
 app.use("/reasons", reasonsRouter);

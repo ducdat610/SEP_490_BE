@@ -2,12 +2,12 @@ import mongoose, { Schema } from "mongoose";
 
 const bankAccountSchema = new Schema(
   {
-    bankId: {
+    bank: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "banks",
+      ref: "bank",
       required: true,
     },
-    userId: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
       required: true,
