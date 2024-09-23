@@ -8,7 +8,10 @@ import {
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
 import { spaceController } from "../controllers/index.js";
+
 const spaceRouter = express();
+
+// POST route for creating a space
 spaceRouter.post("/", async (req, res, next) => {
   const {
     name,
@@ -21,13 +24,33 @@ spaceRouter.post("/", async (req, res, next) => {
     appliancesId,
     reviews,
   } = req.body;
+
   try {
-  } catch (error) {}
+    const newSpace = new Spaces({
+      name,
+      description,
+      location,
+      area,
+      rulesId,
+      pricePerHour,
+      categories,
+      appliancesId,
+      reviews,
+    });
+
+    await newSpace.save();
+    res.status(201).json(newSpace);
+  } catch (error) {
+    next(createError(500, "Unable to create space"));
+  }
 });
+
+// GET route to fetch a specific space by ID
 spaceRouter.get("/:id", async (req, res, next) => {
-  const { spaceId } = req.body;
+  const { id } = req.params;
+
   try {
-    const space = await Spaces.findOne({ spaceId }).exec();
+    const space = await Spaces.findById(id);
     if (!space) {
       throw createError(400, "Space not found");
     }
@@ -36,6 +59,8 @@ spaceRouter.get("/:id", async (req, res, next) => {
     next(error);
   }
 });
+
+// GET route to fetch similar spaces based on category
 spaceRouter.get("/similar/:id", async (req, res, next) => {
   try {
     const spaceId = req.params.id;
@@ -52,12 +77,25 @@ spaceRouter.get("/similar/:id", async (req, res, next) => {
       .exec();
 
     if (similarSpaces.length === 0) {
-      throw createError(404, "Không tìm thấy không giantương tự");
+      throw createError(404, "Không tìm thấy không gian tương tự");
     }
 
-    res.send(similarSpaces);
+    res.status(200).json(similarSpaces);
   } catch (error) {
     next(error);
+  }
+});
+
+// GET route to fetch all spaces
+spaceRouter.get("/", async (req, res, next) => {
+  try {
+    const spaces = await Spaces.find({}).populate("categoriesId").exec();
+    if (spaces.length === 0) {
+      throw createError(404, "Not found");
+    }
+    res.status(200).json(spaces);
+  } catch (error) {
+    next(createError(500, "Unable to fetch spaces"));
   }
 });
 
