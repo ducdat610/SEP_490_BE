@@ -8,7 +8,6 @@ import {
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
 import { spaceController } from "../controllers/index.js";
-import Spaces from "../models/spaces.js";
 const spaceRouter = express();
 spaceRouter.post("/", async (req, res, next) => {
   const {

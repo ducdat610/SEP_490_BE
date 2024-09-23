@@ -9,6 +9,7 @@ import bankAccountRouter from "./bankAccount.js";
 import appliancesRouter from "./appliances.js";
 import reportRouter from "./reports.js";
 import reasonsRouter from "./reasons.js";
+import messageRouter from "./message.js";
 export {
   userRouter,
   spaceRouter,
@@ -20,5 +21,6 @@ export {
   bankAccountRouter,
   appliancesRouter,
   reportRouter,
-  reasonsRouter
+  reasonsRouter,
+  messageRouter
 };
