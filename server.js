@@ -30,6 +30,7 @@ app.use("/categories", categoriesRouter);
 app.use("/appliances", appliancesRouter);
 app.use("/reports", reportRouter);
 app.use("/reasons", reasonsRouter);
+// app.use("/reasons", reasonsRouter);
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
