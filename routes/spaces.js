@@ -17,7 +17,7 @@ spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.get('/search/:name', async (req, res, next) => {
   try {
     const name = req.params.name
-    const rgx = (pattern) => new RegExp(.*${pattern}.*);
+    const rgx = (pattern) => new RegExp(`.*${pattern}.*`);
     const searchRgx = rgx(name);
 
     const searchResult = await Spaces.find({ name: { $regex: searchRgx, $options: "i" } })
@@ -37,11 +37,11 @@ spaceRouter.get("/filter", async (req, res, next) => {
 
     // Lọc theo địa chỉ
     if (location) {
-      const rgx = (pattern) => new RegExp(.*${pattern}.*, 'i'); // i: không phân biệt chữ hoa/thường
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, 'i'); // i: không phân biệt chữ hoa/thường
       filter.location = { $regex: rgx(location) };
     }
     if (area) {
-      const rgx = (pattern) => new RegExp(.*${pattern}.*, 'i');
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, 'i');
       filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
     }
 
