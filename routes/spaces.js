@@ -1,4 +1,5 @@
 import express from "express";
+import Spaces from "../models/spaces.js";
 import createError from "http-errors";
 import {
   signAccessToken,
@@ -7,7 +8,6 @@ import {
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
 import { spaceController } from "../controllers/index.js";
-import Spaces from "../models/spaces.js";
 const spaceRouter = express();
 spaceRouter.post("/", async (req, res, next) => {
   const {
@@ -100,5 +100,3 @@ spaceRouter.get("/:id", async (req, res, next) => {
 });
 
 export default spaceRouter;
-
-
