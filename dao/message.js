@@ -2,12 +2,12 @@ import Message from "../models/Message.js";
 
 const sendMessage = async (userId, receiverId, messageContent, spaceId) => {
   try {
-    const message = await Message.create(
+    const message = await Message.create({
       userId,
       receiverId,
       messageContent,
-      spaceId
-    );
+      spaceId,
+    });
     await message.save();
   } catch (error) {
     throw new Error(error.toString());
