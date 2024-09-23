@@ -22,7 +22,7 @@ const getMessages = async (userId, receiverId, spaceId) => {
       ],
     })
       .sort({ createdAt: 1 })
-      .populate("userId", "name");
+      .populate("userId", "fullname");
 
     return messages;
   } catch (error) {
