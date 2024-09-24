@@ -47,16 +47,12 @@ const usersSchema = new Schema(
       type: Boolean,
       default: false,
     },
-    bankAccounts: {
-      type: [mongoose.Schema.Types.ObjectId],
-      ref: "bankAccount",
-      validate: {
-        validator: function (v) {
-          return v.length >= 1 && v.length <= 5; // Kiểm tra số lượng tài khoản ngân hàng
-        },
-        message: (props) => `Số lượng tài khoản ngân hàng đã quá giới hạn`,
+    bankAccounts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "bankAccount",
       },
-    },
+    ],
     defaultBankAccount: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "bankAccount",
@@ -71,6 +67,5 @@ const usersSchema = new Schema(
     timestamps: true,
   }
 );
-// user
 const Users = mongoose.model("users", usersSchema);
 export default Users;
