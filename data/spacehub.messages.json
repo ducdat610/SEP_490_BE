@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "66f12b95f8f6b96eb8fd0e84"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c1"
+  },
+  "receiverId": {
+    "$oid": "6639786d743f79c9b97fc1c2"
+  },
+  "messageContent": "gui cho thang a",
+  "createdAt": {
+    "$date": "2024-09-23T08:49:25.767Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T08:49:25.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f4157b28dc4fea3bde40e5"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c1"
+  },
+  "receiverId": {
+    "$oid": "6639786d743f79c9b97fc1c2"
+  },
+  "messageContent": "gui cho thang a",
+  "spaceId": {
+    "$oid": "66eafc44cb37101e8e8f8951"
+  },
+  "createdAt": {
+    "$date": "2024-09-25T13:51:55.295Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:51:55.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f4161328dc4fea3bde40ed"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c1"
+  },
+  "receiverId": {
+    "$oid": "6639786d743f79c9b97fc1c2"
+  },
+  "messageContent": "aa",
+  "spaceId": {
+    "$oid": "66eafc44cb37101e8e8f8951"
+  },
+  "createdAt": {
+    "$date": "2024-09-25T13:54:27.286Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:54:27.286Z"
+  },
+  "__v": 0
+}]
