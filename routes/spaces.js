@@ -75,7 +75,7 @@ spaceRouter.post("/", spaceController.createNewSpace);
 
 
 // get theo id
-spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)
+spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)  
 
 // so sánh
 spaceRouter.get("/compare-spaces", async (req, res) => {
@@ -147,9 +147,6 @@ spaceRouter.get("/:id", async (req, res, next) => {
     next(error);
   }
 });
-
-spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)
-
 
 // Từ chối post 
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
