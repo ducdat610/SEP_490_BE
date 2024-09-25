@@ -22,17 +22,13 @@ const registerSchema = Joi.object({
     "string.empty": `"username" không được bỏ trống`,
     "string.min": `"username" phải có ít nhất 3 ký tự`,
     "string.max": `"username" không được vượt quá 30 ký tự`,
-    "any.required": `"username" là bắt buộc`,
   }),
   password: Joi.string().min(8).required().messages({
     "string.empty": `"password" không được bỏ trống`,
     "string.min": `"password" phải có ít nhất 8 ký tự`,
     "any.required": `"password" là bắt buộc`,
   }),
-  fullname: Joi.string().required().messages({
-    "string.empty": `"fullname" không được bỏ trống`,
-    "any.required": `"fullname" là bắt buộc`,
-  }),
+
   gmail: Joi.string().email().required().messages({
     "string.email": `"gmail" phải đúng định dạng email`,
     "any.required": `"gmail" là bắt buộc`,
@@ -144,7 +140,7 @@ usersRouter.post("/register", async (req, res, next) => {
       throw createError.BadRequest(error.details[0].message); // Trả về lỗi validation
     }
 
-    const { username, password, fullname, gmail } = req.body;
+    const { username, password, gmail } = req.body;
 
     // Kiểm tra xem username đã tồn tại chưa
     const existingUserByUsername = await Users.findOne({ username }).exec();
@@ -164,7 +160,6 @@ usersRouter.post("/register", async (req, res, next) => {
 
     // Tạo người dùng mới với thông tin được cung cấp
     const newUser = new Users({
-      fullname,
       username,
       gmail,
       password: hashPass,
@@ -302,6 +297,24 @@ usersRouter.post("/reset-password/:id/:token", (req, res) => {
         .catch((err) => res.send({ Status: err }));
     }
   });
+});
+// Ban user from account
+usersRouter.put("/ban/:id", async (req, res, next) => {
+  const { id } = req.params;
+  const data = req.body;
+  try {
+    const updatedUser = await Users.findOneAndUpdate({ _id: id }, data, {
+      new: true,
+    }).exec();
+
+    if (!updatedUser) {
+      throw createError(404, "User not found");
+    }
+
+    res.send(updatedUser);
+  } catch (error) {
+    next(error);
+  }
 });
 
 export default usersRouter;
