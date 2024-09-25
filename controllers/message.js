@@ -1,10 +1,18 @@
 import { messageDao } from "../dao/index.js";
+import Spaces from "../models/spaces.js";
 import Users from "../models/users.js";
 
 const sendMessage = async (req, res) => {
   try {
-    const { userId, receiverId, messageContent, spaceId } = req.body;
+    const { userId, messageContent, spaceId } = req.body;
+    const space = await Spaces.findById(spaceId);
 
+    if (!space) {
+      return res.status(400).json({ message: "Không gian không tồn tại" });
+    }
+
+    const receiverId = space.userId;
+    
     const userExists = await Users.findById(userId);
     const receiverExists = await Users.findById(receiverId);
 

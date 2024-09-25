@@ -9,6 +9,8 @@ const sendMessage = async (userId, receiverId, messageContent, spaceId) => {
       spaceId,
     });
     await message.save();
+    return message;
+
   } catch (error) {
     throw new Error(error.toString());
   }
