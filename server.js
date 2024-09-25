@@ -42,7 +42,7 @@ app.use("/message", messageRouter);
 
 
 
-app.use(function (req, res, next) {
+app.use(function (req, res, next) { // AAAA
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
