@@ -16,7 +16,7 @@ categoriesRouter.get("/", async (req, res, next) => {
     }
     res.status(200).json(categories);
   } catch (error) {
-    console.error(error); // Ghi log lỗi để dễ dàng theo dõi
+    console.error(error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 });

@@ -1,6 +1,7 @@
 import { spaceController } from "../controllers/index.js";
 import express from "express";
 
+import Spaces from "../models/spaces.js";
 import createError from "http-errors";
 import {
   signAccessToken,
@@ -8,7 +9,6 @@ import {
   verifyRefreshToken,
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
-import Spaces from "../models/spaces.js";
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
@@ -137,9 +137,8 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
 });
 
 spaceRouter.get("/:id", async (req, res, next) => {
-  const { spaceId } = req.body;
-  try {
-    const space = await Spaces.findOne({ spaceId }).exec();
+  try { 
+    const space = await Spaces.findById(req.params.id).exec();
     if (!space) {
       throw createError(400, "Space not found");
     }
@@ -174,5 +173,3 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
 
 
 export default spaceRouter;
-
-
