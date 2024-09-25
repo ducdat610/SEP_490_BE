@@ -1,0 +1,23 @@
+[
+    {
+        "rules": [
+            " Phải đăng nhập để truy cập",
+            " Không được chia sẻ mật khẩu",
+            " Hạn chế số lần thử đăng nhập"
+        ]
+    },
+    {
+        "rules": [
+            " Tôn trọng người khác",
+            " Không sử dụng ngôn từ thô tục",
+            " Không phát tán thông tin sai lệch"
+        ]
+    },
+    {
+        "rules": [
+            " Lưu trữ dữ liệu một cách an toàn",
+            " Sao lưu dữ liệu định kỳ",
+            " Tuân thủ các quy định pháp luật"
+        ]
+    }
+]

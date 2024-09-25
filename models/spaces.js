@@ -27,7 +27,7 @@ const spacesSchema = new Schema(
     ],
 
     pricePerHour: {
-      type: String,
+      type: Number,
       required: true,
     },
     images: [{ type: String }],
@@ -38,19 +38,21 @@ const spacesSchema = new Schema(
     },
     status: {
       type: String,
-      enum: ["not available", "Đang dọn dẹp ", "Còn trống"],
-      default: "available",
+      enum: ["Đang sử dụng", "Đang dọn dẹp ", "Còn trống"],
+      default: "Đang sử dụng",
     },
     categoriesId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "categories",
       required: true,
     },
-    appliancesId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "appliances",
-      required: true,
-    },
+    appliancesId: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "appliances",
+        required: true,
+      },
+    ],
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
