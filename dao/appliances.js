@@ -1,5 +1,5 @@
 import Appliances from "../models/appliances.js";
-//abc
+//abcdc
 const fetchAllAppliances = async () => {
   try {
     const allAppliances = await Appliances.find({}).exec();
