@@ -38,5 +38,25 @@
     "updatedAt": {
       "$date": "2024-09-17T14:55:42.809Z"
     }
+  },
+  {
+    "_id": {
+      "$oid": "6639786d743f79c9b97fc1c3"
+    },
+    "fullname": "Nguyen Van B",
+    "username": "vanb",
+    "gmail": "nguyenducdat0610@gmail.com",
+    "password": "$2b$10$7vF54QkF6KjtkuffbjpZHeNwkFjeLJD7ZtEYk7LSLBn0ZFB/7x4lu",
+    "gender": "Male",
+    "birthday": "2002-02-05",
+    "avatar": "https://cdn.pixabay.com/photo/2022/06/05/07/04/person-7243410_1280.png",
+    "phone": "03682338",
+    "address": "Hà Nội",
+    "role": 0,
+    "isBan": true,
+    "createdAt": "2024-09-17T08:00:00.000Z",
+    "updatedAt": {
+      "$date": "2024-09-17T14:55:42.809Z"
+    }
   }
 ]

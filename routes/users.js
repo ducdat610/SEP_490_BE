@@ -14,6 +14,7 @@ import jwt from "jsonwebtoken";
 import BankAccount from "../models/bankAccounts.js";
 const usersRouter = express.Router();
 usersRouter.put("/changepass/:username", userController.changePass);
+usersRouter.get("/", userController.getAllUsers);
 usersRouter.post("/forgot-password", userController.forgetPass);
 // Schema validation bằng Joi cho đăng ký người dùng
 const registerSchema = Joi.object({
@@ -218,39 +219,11 @@ usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
     next(error);
   }
 });
-usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
-  try {
-    const user = await Users.findOne({})
-      .populate({
-        path: "bankAccounts",
-        select: "bank accountNumber",
-        populate: {
-          path: "bank",
-          select: "bankName ",
-        },
-      })
-      .populate({
-        path: "defaultBankAccount",
-        select: "bank accountNumber",
-        populate: {
-          path: "bank",
-          select: "bankName",
-        },
-      })
-      .exec();
 
-    if (!user) {
-      return res.status(404).json({ message: "Username not found" });
-    }
-    res.send(user);
-  } catch (error) {
-    next(error);
-  }
-});
-usersRouter.get("/:username", async (req, res, next) => {
-  const { username } = req.params;
+usersRouter.get("/:id", async (req, res, next) => {
+  const { id } = req.params;
   try {
-    const user = await Users.findOne({ username })
+    const user = await Users.findById(id)
       .populate({
         path: "bankAccounts",
         select: "bank accountNumber",
@@ -270,7 +243,7 @@ usersRouter.get("/:username", async (req, res, next) => {
       .exec();
 
     if (!user) {
-      return res.status(404).json({ message: "Username not found" });
+      return res.status(404).json({ message: "User ID not found" });
     }
 
     res.json(user);

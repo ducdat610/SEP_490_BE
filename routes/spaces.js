@@ -147,10 +147,8 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
 });
 
 spaceRouter.get("/:id", async (req, res, next) => {
-  const { id } = req.params;
-
   try {
-    const space = await Spaces.findById(id);
+    const space = await Spaces.findById(req.params.id).exec();
     if (!space) {
       throw createError(400, "Space not found");
     }
@@ -179,5 +177,25 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
     next(error);
   }
 });
+// Duyệt bài post
+spaceRouter.put("/update/:postId", async (req, res, next) => {
+  const { postId } = req.params;
+  const { censorship } = req.body;
 
+  try {
+    const postSpace = await Spaces.findOneAndUpdate(
+      { _id: postId },
+      { censorship: censorship },
+      { new: true }
+    );
+
+    if (!postSpace) {
+      return res.status(404).json({ message: "PostSpace not found" });
+    }
+
+    res.status(200).json(postSpace);
+  } catch (error) {
+    next(error);
+  }
+});
 export default spaceRouter;

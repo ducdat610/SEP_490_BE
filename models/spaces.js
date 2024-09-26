@@ -25,7 +25,11 @@ const spacesSchema = new Schema(
         required: true,
       },
     ],
-
+    userId:{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "users",
+      required: true,
+    },
     pricePerHour: {
       type: Number,
       required: true,
