@@ -7,8 +7,11 @@
     "description": "Một studio được trang bị đầy đủ, hoàn hảo cho cả nhiếp ảnh gia chuyên nghiệp và nghiệp dư. Với trần nhà cao, hệ thống chiếu sáng tùy chỉnh và nhiều phông nền, không gian này lý tưởng cho các buổi chụp ảnh, chụp ảnh sản phẩm, chụp ảnh chân dung, v.v. Studio cung cấp các bố cục linh hoạt và thiết bị hiện đại, có thể dễ dàng điều chỉnh để phù hợp với các tầm nhìn sáng tạo khác nhau. Cho dù bạn là nhiếp ảnh gia đơn lẻ hay làm việc theo nhóm, studio của chúng tôi đều cung cấp một môi trường thoải mái và chuyên nghiệp cho mọi nhu cầu chụp ảnh của bạn.",
     "location": "City Center Studio Hub",
     "area": "30m2",
-    "rules": {
+    "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c2"
     },
     "pricePerHour": "40",
     "images": [
@@ -24,6 +27,7 @@
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   },
+
   {
     "_id": {
       "$oid": "66eafc44cb37101e8e8f8952"
@@ -32,8 +36,11 @@
     "description": "Vision Room Studios được trang bị đầy đủ hệ thống đèn chuyên nghiệp và phông nền đa dạng, phù hợp với mọi nhu cầu chụp ảnh từ cá nhân, nhóm đến chụp sản phẩm. Với không gian rộng rãi và thiết kế trang nhã, studio mang đến cho bạn sự linh hoạt và sáng tạo tối đa. Đặc biệt, Vision Room Studios cung cấp đầy đủ các thiết bị cần thiết để bạn có thể tự do thiết kế và chụp những bức ảnh chất lượng cao theo ý muốn.",
     "location": "Tech Hub Building",
     "area": "42m2",
-    "rules": {
+    "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c3"
     },
     "pricePerHour": "20",
     "images": [
@@ -49,6 +56,7 @@
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   },
+
   {
     "_id": {
       "$oid": "66eafc44cb37101e8e8f8953"
@@ -57,8 +65,11 @@
     "description": "Serepok Coworking Space là một trong những nơi có văn phòng trọn gói lớn nhất ở trung tâm Quận 1. Các văn phòng tràn ngập ánh sáng tự nhiên được thiết kế để tối đa hiệu quả công việc và giảm thiểu sự phân tâm",
     "location": "District 1",
     "area": "42m2",
-    "rules": {
+    "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c4"
     },
     "pricePerHour": "20",
     "images": [
@@ -74,6 +85,7 @@
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   },
+
   {
     "_id": {
       "$oid": "66eafc44cb37101e8e8f8954"
@@ -82,8 +94,11 @@
     "description": "Hanoi Secret Garden tất cả các căn có thiết kế gồm khu vực ghế ngồi, TV màn hình phẳng có truyền hình cáp, cùng phòng tắm riêng có trang bị đồ vệ sinh cá nhân miễn phí, vòi xịt/chậu rửa vệ sinh và vòi sen. Một số căn có ban công và/hoặc sân trong nhìn ra thành phố hoặc khu vườn.",
     "location": "Ha Noi",
     "area": "42m2",
-    "rules": {
+    "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c5"
     },
     "pricePerHour": "20",
     "images": [
@@ -94,20 +109,6 @@
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f894a"
     },
-    "name": "Hanoi Secret Garden",
-    "description": "Hanoi Secret Garden tất cả các căn có thiết kế gồm khu vực ghế ngồi, TV màn hình phẳng có truyền hình cáp, cùng phòng tắm riêng có trang bị đồ vệ sinh cá nhân miễn phí, vòi xịt/chậu rửa vệ sinh và vòi sen. Một số căn có ban công và/hoặc sân trong nhìn ra thành phố hoặc khu vườn.",
-    "location": "Ha Noi",
-    "area": "42m2",
-    "rules": {
-      "$oid": "66ed8eca5af2082abdf9727e"
-    },
-    "pricePerHour": "20",
-    "images": [
-      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415708123.jpg?k=7f399bb9b10c049c6c7a1c98f45b13b3b5df0b9d6a23733627bd60866ee61ff8&o=&hp=1",
-      "https://cf.bstatic.com/xdata/images/hotel/max1280x900/415707997.jpg?k=5392b9f3efe2d7f1c4b7f48ee4fa14df3056dc99fbf7856a1527eaf668abe03d&o=&hp=1"
-    ],
-    "status": "cleaning",
-    "categories": "",
     "appliancesId": "",
     "reviews": [],
     "createdAt": "2024-09-17T12:00:00Z",
