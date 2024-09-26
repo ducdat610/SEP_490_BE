@@ -53,9 +53,10 @@ app.use(function (req, res, next) {
 
 const Port = process.env.PORT || 9999;
 
-//Lắng nghe các request gửi tới web server tại port
+//Lắng nghe các request gửi tới web server tại portt
 
 app.listen(Port, async () => {
   connectDB();
   console.log(`web server running on http://localhost:${Port}`);
 });
+
