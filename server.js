@@ -38,7 +38,7 @@ app.use("/bankaccount", bankAccountRouter);
 app.use("/appliances", appliancesRouter);
 app.use("/reports", reportRouter);
 app.use("/reasons", reasonsRouter);
-app.use("/message", messageRouter);
+app.use("/message", messageRouter);  
 
 
 
