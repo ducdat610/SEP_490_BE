@@ -11,7 +11,6 @@ const getAllUsers = async (req, res) =>{
     res.status(500).json({error:error.toString()})
   }
 }
-//use
 const getUserByUserName = async (req, res) =>{
   try {
     const username = await userDao.fetchUserByUsername(req.params.username)
