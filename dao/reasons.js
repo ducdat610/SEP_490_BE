@@ -1,11 +1,12 @@
 import Reasons from "../models/reasons.js";
 
-const fetchReportBySId = async (spaceId) => {
-  try {
-    const report = await Reasons.findById({ spaceId: spaceId }).exec();
-    return report;
-  } catch (error) {
-    throw new Error({ message: error.toString() });
-  }
-};
-export default { fetchReportBySId };
+const fetchAllReasons = async () =>{
+    try {
+        const reason = await Reasons.find({}).exec()
+        return reason
+    } catch (error) {
+        throw new Error(error.toString())
+    }
+}
+
+export default { fetchAllReasons }

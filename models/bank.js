@@ -1,11 +1,15 @@
 import mongoose, { Schema } from "mongoose";
-
 const bankSchema = new Schema(
   {
     bankName: {
       type: String,
       required: true,
       unique: true,
+      trim: true,
+    },
+    imageUrl: {
+      type: String,
+      default: "",
     },
   },
   {
@@ -13,6 +17,6 @@ const bankSchema = new Schema(
   }
 );
 
-const Bank = mongoose.model("banks", bankSchema);
+const Bank = mongoose.model("bank", bankSchema);
 
 export default Bank;

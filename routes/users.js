@@ -11,9 +11,10 @@ import {
 } from "../helpers/jwt_helper.js";
 import { userController } from "../controllers/index.js";
 import jwt from "jsonwebtoken";
-
+import BankAccount from "../models/bankAccounts.js";
 const usersRouter = express.Router();
 usersRouter.put("/changepass/:username", userController.changePass);
+usersRouter.get("/", userController.getAllUsers);
 usersRouter.post("/forgot-password", userController.forgetPass);
 // Schema validation bằng Joi cho đăng ký người dùng
 const registerSchema = Joi.object({
@@ -22,17 +23,13 @@ const registerSchema = Joi.object({
     "string.empty": `"username" không được bỏ trống`,
     "string.min": `"username" phải có ít nhất 3 ký tự`,
     "string.max": `"username" không được vượt quá 30 ký tự`,
-    "any.required": `"username" là bắt buộc`,
   }),
   password: Joi.string().min(8).required().messages({
     "string.empty": `"password" không được bỏ trống`,
     "string.min": `"password" phải có ít nhất 8 ký tự`,
     "any.required": `"password" là bắt buộc`,
   }),
-  fullname: Joi.string().required().messages({
-    "string.empty": `"fullname" không được bỏ trống`,
-    "any.required": `"fullname" là bắt buộc`,
-  }),
+
   gmail: Joi.string().email().required().messages({
     "string.email": `"gmail" phải đúng định dạng email`,
     "any.required": `"gmail" là bắt buộc`,
@@ -50,56 +47,6 @@ const loginSchema = Joi.object({
     "any.required": `"password" là bắt buộc`,
   }),
 });
-
-// Đăng ký người dùng mới
-usersRouter.post("/register", async (req, res, next) => {
-  try {
-    // Validate dữ liệu nhập vào
-    const { error } = registerSchema.validate(req.body);
-    if (error) {
-      throw createError.BadRequest(error.details[0].message); // Trả về lỗi validation
-    }
-
-    const { username, password, fullname, gmail } = req.body;
-
-    // Kiểm tra xem username đã tồn tại chưa
-    const existingUserByUsername = await Users.findOne({ username }).exec();
-    if (existingUserByUsername)
-      throw createError.Conflict("Tên người dùng đã tồn tại");
-
-    // Kiểm tra xem gmail đã tồn tại chưa
-    const existingUserByGmail = await Users.findOne({ gmail }).exec();
-    if (existingUserByGmail)
-      throw createError.Conflict("Gmail đã được đăng ký");
-
-    // Mã hóa mật khẩu
-    const hashPass = await bcrypt.hash(
-      password,
-      parseInt(process.env.PASSWORD_SECRET)
-    );
-
-    // Tạo người dùng mới với thông tin được cung cấp
-    const newUser = new Users({
-      fullname,
-      username,
-      gmail,
-      password: hashPass,
-    });
-
-    // Lưu người dùng mới vào cơ sở dữ liệu
-    const savedUser = await newUser.save();
-
-    // Tạo access token sau khi đăng ký thành công
-    const accessToken = await signAccessToken(savedUser._id);
-
-    // Gửi phản hồi cho client
-    res.status(201).send({ accessToken, newUser });
-  } catch (error) {
-    next(error);
-  }
-});
-
-// Đăng nhập người dùng
 usersRouter.post("/login", async (req, res, next) => {
   try {
     // Validate dữ liệu nhập vào
@@ -146,6 +93,93 @@ usersRouter.post("/login", async (req, res, next) => {
     next(error);
   }
 });
+//Update tài khoản mặc định cho người dùng
+
+usersRouter.put("/def/:userId", async (req, res, next) => {
+  const { userId } = req.params; // Lấy userId từ URL
+  const { defaultBankAccountId } = req.body; // Lấy defaultBankAccountId từ body
+
+  try {
+    // Kiểm tra xem tài khoản ngân hàng có tồn tại hay không
+    const bankAccount = await BankAccount.findById(defaultBankAccountId);
+    if (!bankAccount) {
+      return res
+        .status(404)
+        .json({ error: "Tài khoản ngân hàng không tồn tại" });
+    }
+
+    // Kiểm tra xem tài khoản ngân hàng có thuộc về người dùng không
+    if (bankAccount.user.toString() !== userId) {
+      return res
+        .status(403)
+        .json({ error: "Tài khoản ngân hàng không thuộc về người dùng này" });
+    }
+
+    // Cập nhật tài khoản ngân hàng mặc định cho người dùng
+    const updatedUser = await Users.findByIdAndUpdate(
+      userId,
+      { defaultBankAccount: defaultBankAccountId }, // Cập nhật trường defaultBankAccount
+      { new: true } // Trả về phiên bản đã cập nhật
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ error: "Người dùng không tìm thấy" });
+    }
+
+    res.json(updatedUser); // Gửi phản hồi với thông tin người dùng đã cập nhật
+  } catch (err) {
+    next(createError(500, "Lỗi khi cập nhật tài khoản ngân hàng mặc định"));
+  }
+});
+
+// Đăng ký người dùng mới
+usersRouter.post("/register", async (req, res, next) => {
+  try {
+    // Validate dữ liệu nhập vào
+    const { error } = registerSchema.validate(req.body);
+    if (error) {
+      throw createError.BadRequest(error.details[0].message); // Trả về lỗi validation
+    }
+
+    const { username, password, gmail } = req.body;
+
+    // Kiểm tra xem username đã tồn tại chưa
+    const existingUserByUsername = await Users.findOne({ username }).exec();
+    if (existingUserByUsername)
+      throw createError.Conflict("Tên người dùng đã tồn tại");
+
+    // Kiểm tra xem gmail đã tồn tại chưa
+    const existingUserByGmail = await Users.findOne({ gmail }).exec();
+    if (existingUserByGmail)
+      throw createError.Conflict("Gmail đã được đăng ký");
+
+    // Mã hóa mật khẩu
+    const hashPass = await bcrypt.hash(
+      password,
+      parseInt(process.env.PASSWORD_SECRET)
+    );
+
+    // Tạo người dùng mới với thông tin được cung cấp
+    const newUser = new Users({
+      username,
+      gmail,
+      password: hashPass,
+    });
+
+    // Lưu người dùng mới vào cơ sở dữ liệu
+    const savedUser = await newUser.save();
+
+    // Tạo access token sau khi đăng ký thành công
+    const accessToken = await signAccessToken(savedUser._id);
+
+    // Gửi phản hồi cho client
+    res.status(201).send({ accessToken, newUser });
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Đăng nhập người dùng
 
 usersRouter.delete("/logout", async (req, res, next) => {
   res.send("Đường dẫn Đăng xuất");
@@ -185,25 +219,39 @@ usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
     next(error);
   }
 });
-usersRouter.get("/", verifyAccessToken, async (req, res, next) => {
+
+usersRouter.get("/:id", async (req, res, next) => {
+  const { id } = req.params;
   try {
-    const users = await Users.find({}).exec();
-    if (users.length === 0) throw createError(404, "Không tìm thấy người dùng");
-    res.send(users);
+    const user = await Users.findById(id)
+      .populate({
+        path: "bankAccounts",
+        select: "bank accountNumber",
+        populate: {
+          path: "bank",
+          select: "bankName",
+        },
+      })
+      .populate({
+        path: "defaultBankAccount",
+        select: "bank accountNumber",
+        populate: {
+          path: "bank",
+          select: "bankName",
+        },
+      })
+      .exec();
+
+    if (!user) {
+      return res.status(404).json({ message: "User ID not found" });
+    }
+
+    res.json(user);
   } catch (error) {
     next(error);
   }
 });
-usersRouter.get("/:username", async (req, res, next) => {
-  const { username } = req.params;
-  try {
-    const users = await Users.findOne({ username: username }).exec();
-    if (users.length === 0) throw createError(404, "Username not found");
-    res.send(users);
-  } catch (error) {
-    next(error);
-  }
-});
+
 usersRouter.post("/reset-password/:id/:token", (req, res) => {
   const { id, token } = req.params;
   const { password } = req.body;
@@ -222,6 +270,24 @@ usersRouter.post("/reset-password/:id/:token", (req, res) => {
         .catch((err) => res.send({ Status: err }));
     }
   });
+});
+// Ban user from account
+usersRouter.put("/ban/:id", async (req, res, next) => {
+  const { id } = req.params;
+  const data = req.body;
+  try {
+    const updatedUser = await Users.findOneAndUpdate({ _id: id }, data, {
+      new: true,
+    }).exec();
+
+    if (!updatedUser) {
+      throw createError(404, "User not found");
+    }
+
+    res.send(updatedUser);
+  } catch (error) {
+    next(error);
+  }
 });
 
 export default usersRouter;
