@@ -66,6 +66,9 @@
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
     },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c4"
+    },
     "pricePerHour": "20",
     "images": [
       "http://noithat247.net/n280/uu-nhuoc-diem-cua-viec-xay-dung-phong-lam-viec-rieng.html",
@@ -90,6 +93,9 @@
     "area": "42m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c5"
     },
     "pricePerHour": "20",
     "images": [
