@@ -13,7 +13,7 @@ const messageSchema = new Schema(
       required: true,
     },
     messageContent: {
-      type: String,
+      type: [String],
       required: true,
     },
     spaceId: {
