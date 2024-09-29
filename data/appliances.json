@@ -58,5 +58,10 @@
     "name": "Bếp nướng",
     "description": "Thiết bị nướng thực phẩm",
     "isCustom": true
+  },
+  {
+    "name": "Bếp ga",
+    "description": "Thiết bị nướng thực phẩm",
+    "isCustom": true
   }
 ]
