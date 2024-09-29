@@ -135,7 +135,6 @@ usersRouter.put("/def/:userId", async (req, res, next) => {
 // Đăng ký người dùng mới
 usersRouter.post("/register", async (req, res, next) => {
   try {
-    // Validate dữ liệu nhập vào
     const { error } = registerSchema.validate(req.body);
     if (error) {
       throw createError.BadRequest(error.details[0].message); // Trả về lỗi validation
@@ -143,36 +142,29 @@ usersRouter.post("/register", async (req, res, next) => {
 
     const { username, password, gmail } = req.body;
 
-    // Kiểm tra xem username đã tồn tại chưa
     const existingUserByUsername = await Users.findOne({ username }).exec();
     if (existingUserByUsername)
       throw createError.Conflict("Tên người dùng đã tồn tại");
 
-    // Kiểm tra xem gmail đã tồn tại chưa
     const existingUserByGmail = await Users.findOne({ gmail }).exec();
     if (existingUserByGmail)
       throw createError.Conflict("Gmail đã được đăng ký");
 
-    // Mã hóa mật khẩu
     const hashPass = await bcrypt.hash(
       password,
       parseInt(process.env.PASSWORD_SECRET)
     );
 
-    // Tạo người dùng mới với thông tin được cung cấp
     const newUser = new Users({
       username,
       gmail,
       password: hashPass,
     });
 
-    // Lưu người dùng mới vào cơ sở dữ liệu
     const savedUser = await newUser.save();
 
-    // Tạo access token sau khi đăng ký thành công
     const accessToken = await signAccessToken(savedUser._id);
 
-    // Gửi phản hồi cho client
     res.status(201).send({ accessToken, newUser });
   } catch (error) {
     next(error);
