@@ -13,11 +13,7 @@ const messageSchema = new Schema(
       required: true,
     },
     messageContent: {
-<<<<<<< HEAD
       type: [String],
-=======
-      type: [String] ,
->>>>>>> 63bd77bf9366b67713fd015ecce615b15df893d6
       required: true,
     },
     spaceId: {
