@@ -137,9 +137,8 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
 });
 
 spaceRouter.get("/:id", async (req, res, next) => {
-  const { spaceId } = req.body;
-  try {
-    const space = await Spaces.findOne({ spaceId }).exec();
+  try { 
+    const space = await Spaces.findById(req.params.id).exec();
     if (!space) {
       throw createError(400, "Space not found");
     }
