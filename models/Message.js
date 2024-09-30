@@ -13,9 +13,11 @@ const messageSchema = new Schema(
       required: true,
     },
     messageContent: {
-      type: String,
+      type: [String],
       required: true,
     },
+
+    //AAAA
     spaceId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "spaces",
