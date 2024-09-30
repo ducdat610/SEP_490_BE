@@ -113,10 +113,18 @@ const forgetPass = async (req, res) => {
       return res.send({ Status: "Error", Error: error.message });
     }
   };
-
+  const updateUser = async (req, res) => {
+    try {
+      const updateUser = await userDao.updateUser(req.params.id, req.body);
+      res.status(200).json(updateUser);
+    } catch (error) {
+      res.status(500).json({ error: error.toString() });
+    }
+  };
 export default {
   getAllUsers,
   changePass,
   forgetPass,
-  getUserByUserName
+  getUserByUserName,
+  updateUser
 };

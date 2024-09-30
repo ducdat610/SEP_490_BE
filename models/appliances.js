@@ -3,7 +3,7 @@ import mongoose, { Schema } from "mongoose";
 const appliancesSchema = new Schema(
   {
     name: {
-      type: String,
+      type: [String],
       required: true,
     },
     description: {

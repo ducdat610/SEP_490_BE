@@ -47,15 +47,17 @@ const usersSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    firstLogin: {
+      type: Boolean,
+      default: true,
+    },
+    needs: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "UserNeeds",
+    },
     bankAccounts: {
       type: [mongoose.Schema.Types.ObjectId],
       ref: "bankAccount",
-      // validate: {
-      //   validator: function (v) {
-      //     return v.length >= 1 && v.length <= 5; // Kiểm tra số lượng tài khoản ngân hàng
-      //   },
-      //   message: (props) => `Số lượng tài khoản ngân hàng đã quá giới hạn`,
-      // },
     },
     defaultBankAccount: {
       type: mongoose.Schema.Types.ObjectId,

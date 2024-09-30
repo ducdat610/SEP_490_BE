@@ -12,6 +12,7 @@ import {
 import { userController } from "../controllers/index.js";
 import jwt from "jsonwebtoken";
 import BankAccount from "../models/bankAccounts.js";
+import UserNeeds from "../models/userNeeds.js";
 const usersRouter = express.Router();
 usersRouter.put("/changepass/:username", userController.changePass);
 usersRouter.get("/", userController.getAllUsers);
@@ -88,6 +89,7 @@ usersRouter.post("/login", async (req, res, next) => {
       id: user._id,
       fullname: user.fullname,
       role: user.role,
+      firstLogin: user.firstLogin,
     });
   } catch (error) {
     next(error);
@@ -191,26 +193,7 @@ usersRouter.post("/refresh-token", async (req, res, next) => {
     next(error);
   }
 });
-usersRouter.put("/:username", verifyAccessToken, async (req, res, next) => {
-  try {
-    const { username } = req.params;
-    const updatedUserData = req.body; // Dữ liệu người dùng được gửi từ client
-
-    const updatedUser = await Users.findOneAndUpdate(
-      { username: username },
-      updatedUserData,
-      { new: true }
-    );
-
-    if (!updatedUser) {
-      throw createError(404, `Người dùng ${username} không tồn tại`);
-    }
-
-    res.send(updatedUser); // Trả về thông tin người dùng đã được cập nhật
-  } catch (error) {
-    next(error);
-  }
-});
+usersRouter.put("/:id", userController.updateUser);
 
 usersRouter.get("/:id", async (req, res, next) => {
   const { id } = req.params;
@@ -232,6 +215,7 @@ usersRouter.get("/:id", async (req, res, next) => {
           select: "bankName",
         },
       })
+      .populate("needs")
       .exec();
 
     if (!user) {

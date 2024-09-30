@@ -37,7 +37,7 @@
     "location": "Tech Hub Building",
     "area": "42m2",
     "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727e"
+      "$oid": "66ed8da40fae7afb62b28df8"
     },
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c3"
@@ -45,7 +45,13 @@
     "pricePerHour": "20",
     "images": [
       "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
-      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/1704388518510-UZYFGU4IA0F9DCJ97PLU/317A8133-HDR.jpg"
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/1704388518510-UZYFGU4IA0F9DCJ97PLU/317A8133-HDR.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg"
     ],
     "censorship": "Chờ duyệt",
     "status": "cleaning",
@@ -67,6 +73,9 @@
     "area": "42m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c4"
     },
     "pricePerHour": "20",
     "images": [
@@ -93,6 +102,9 @@
     "area": "42m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c5"
     },
     "pricePerHour": "20",
     "images": [
