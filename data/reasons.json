@@ -26,6 +26,24 @@
   },
   {
     "_id": {
+      "$oid": "66fa8f546fc5fc679b1b10f1"
+    },
+    "text": "Đã xảy ra lỗi trên trang này"
+  },
+  {
+    "_id": {
+      "$oid": "66fa8f546fc5fc679b1b10f2"
+    },
+    "text": "Chủ không gian yêu cầu thêm tiền"
+  },
+  {
+    "_id": {
+      "$oid": "66fa8f546fc5fc679b1b10f3"
+    },
+    "text": "Nó có vẻ không sạch sẽ và không an toàn"
+  },
+  {
+    "_id": {
       "$oid": "650c9e5d1234567890abcdf3"
     },
     "text": "Vấn đề khác"
