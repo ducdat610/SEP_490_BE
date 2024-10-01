@@ -7,6 +7,7 @@ import appliancesDao from "./appliances.js";
 import reportsDao from "./reports.js";
 import reasonsDao from "./reasons.js";
 import messageDao from "./message.js";
+import communityStandardsDao from "./communityStandards.js";
 
 export {
   userDao,
@@ -18,4 +19,5 @@ export {
   reportsDao,
   reasonsDao,
   messageDao,
+  communityStandardsDao
 };
