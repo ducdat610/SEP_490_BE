@@ -42,7 +42,7 @@ const spacesSchema = new Schema(
     },
     status: {
       type: String,
-      enum: ["Đang sử dụng", "Đang dọn dẹp ", "Còn trống"],
+      enum: ["Đang sử dụng", "Đang dọn dẹp", "Còn trống"],
       default: "Đang sử dụng",
     },
     categoriesId: {

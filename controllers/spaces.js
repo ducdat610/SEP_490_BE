@@ -9,6 +9,15 @@ const getAllSpaces = async (req, res) => {
   }
 }
 
+//get space favorite
+const getAllSpaceFavorites = async (req, res) => {
+  try {
+    const allSpaces = await spaceDao.fetchAllSpaceFavorite();
+    res.status(200).json(allSpaces)
+  } catch (error) {
+    res.status(500).json({ error: error.toString() })
+  }
+}
 
 const getSimilarSpaces = async (req, res) => {
   try {
@@ -98,4 +107,4 @@ const changeFavoriteStatus = async (req, res) => {
 };
 
 
-export default { getAllSpaces, getSimilarSpaces,createNewSpace,changeFavoriteStatus }
+export default { getAllSpaces, getSimilarSpaces,createNewSpace,changeFavoriteStatus,getAllSpaceFavorites }

@@ -1,6 +1,6 @@
 import Spaces from "../models/spaces.js";
 
-const fetchAllSpaces = async() =>{
+const fetchAllSpaces = async () => {
   try {
     return await Spaces.find({}).populate("appliancesId").exec()
   } catch (error) {
@@ -8,18 +8,25 @@ const fetchAllSpaces = async() =>{
   }
 }
 
+const fetchAllSpaceFavorite = async () => {
+  try {
+    return await Spaces.find({ favorite: true }).populate("appliancesId").exec()
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+}
 
-const fetchSimilarSpaces = async (id) =>{
-    try {
-        const spaceId = await Spaces.find({categoriesId: id})
-        // .populate('rules')
-        // .populate('appliances')
-        .populate('categoriesId')
-        .populate('reviews')
-        return spaceId
-    } catch (error) {
-        throw new Error(error.toString());
-    }
+const fetchSimilarSpaces = async (id) => {
+  try {
+    const spaceId = await Spaces.find({ categoriesId: id })
+      // .populate('rules')
+      // .populate('appliances')
+      .populate('categoriesId')
+      .populate('reviews')
+    return spaceId
+  } catch (error) {
+    throw new Error(error.toString());
+  }
 }
 
 
@@ -33,4 +40,4 @@ export const createSpace = async (spaceData) => {
     throw new Error('Error creating space in DAO');
   }
 };
-export default {fetchAllSpaces,fetchSimilarSpaces,createSpace}
+export default { fetchAllSpaces, fetchSimilarSpaces, createSpace,fetchAllSpaceFavorite }

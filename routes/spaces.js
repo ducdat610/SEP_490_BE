@@ -13,6 +13,7 @@ import {
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
+spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
 
 
 // tim kiem space
