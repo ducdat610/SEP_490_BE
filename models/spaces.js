@@ -25,7 +25,7 @@ const spacesSchema = new Schema(
         required: true,
       },
     ],
-    userId:{
+    userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
       required: true,
@@ -50,13 +50,12 @@ const spacesSchema = new Schema(
       ref: "categories",
       required: true,
     },
-    appliancesId: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "appliances",
-        required: true,
-      },
-    ],
+    appliancesId:
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "appliances",
+      required: true,
+    },
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -64,10 +63,14 @@ const spacesSchema = new Schema(
         require: false,
       },
     ],
-    reportCount:{
+    reportCount: {
       type: Number,
       default: 0,
-    }
+    },
+    favorite:{
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,

@@ -1,4 +1,5 @@
 import { spaceDao,appliancesDao } from "../dao/index.js";
+import Spaces from "../models/spaces.js";
 const getAllSpaces = async (req, res) => {
   try {
     const allSpaces = await spaceDao.fetchAllSpaces();
@@ -66,4 +67,35 @@ export const createNewSpace = async (req, res) => {
   }
 };
 
-export default { getAllSpaces, getSimilarSpaces,createNewSpace }
+
+const changeFavoriteStatus = async (req, res) => {
+  try {
+    const spaceId = req.params.id;
+
+    // Tìm không gian theo ID
+    const space = await Spaces.findById(spaceId);
+
+    if (!space) {
+      return res.status(404).json({ message: "Không gian không tồn tại" });
+    }
+
+    // Đảo ngược trạng thái của favorite
+    space.favorite = !space.favorite;
+
+    // Lưu lại thay đổi
+    await space.save();
+
+    return res.status(200).json({
+      message: "Đã thay đổi trạng thái yêu thích thành công",
+      favorite: space.favorite,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      message: "Lỗi hệ thống",
+      error: error.message,
+    });
+  }
+};
+
+
+export default { getAllSpaces, getSimilarSpaces,createNewSpace,changeFavoriteStatus }

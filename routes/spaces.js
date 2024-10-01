@@ -12,6 +12,8 @@ import {
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
+spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
+
 
 // tim kiem space
 spaceRouter.get('/search/:name', async (req, res, next) => {
