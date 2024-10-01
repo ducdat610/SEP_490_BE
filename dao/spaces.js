@@ -2,7 +2,7 @@ import Spaces from "../models/spaces.js";
 
 const fetchAllSpaces = async() =>{
   try {
-    return await Spaces.find({}).populate("appliancesId").exec()
+    return await Spaces.find({}).populate("appliancesId").populate("userId").exec()
   } catch (error) {
     throw new Error(error.toString());
   }

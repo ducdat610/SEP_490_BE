@@ -173,5 +173,26 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   }
 });
 
+// chấp nhận post
+spaceRouter.put("/update/:postId", async (req, res, next) => {
+  const { postId } = req.params;
+  const { censorship } = req.body;
+
+  try {
+    const postSpace = await Spaces.findOneAndUpdate(
+      { _id: postId },
+      { censorship: censorship },
+      { new: true }
+    );
+
+    if (!postSpace) {
+      return res.status(404).json({ message: "PostSpace not found" });
+    }
+
+    res.status(200).json(postSpace);
+  } catch (error) {
+    next(error);
+  }
+});
 
 export default spaceRouter;

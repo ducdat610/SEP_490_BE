@@ -3,31 +3,49 @@
     "_id": {
       "$oid": "650c9e5d1234567890abcdf1"
     },
-    "text": "Không gian không sạch sẽ: Không gian không được vệ sinh đúng cách, có mùi hôi hoặc có rác thải."
+    "text": "Nội dung không trung thực hoặc thiếu chính xác"
   },
   {
     "_id": {
       "$oid": "650c9e5d1234567890abcdf4"
     },
-    "text": "Thông tin sai lệch: Mô tả không gian không đúng với thực tế (kích thước, tiện ích, địa điểm...)"
+    "text": "Nơi này không có thực"
   },
 
   {
     "_id": {
       "$oid": "650c9e5d1234567890abcdf8"
     },
-    "text": "Lý do khác"
+    "text": "Đó là lừa đảo"
   },
   {
     "_id": {
       "$oid": "650c9e5d1234567890abcdf2"
     },
-    "text": "Thiếu tiện nghi: Một số tiện nghi được liệt kê không có sẵn tại không gian."
+    "text": "Nội dung xúc phạm"
+  },
+  {
+    "_id": {
+      "$oid": "66fa8f546fc5fc679b1b10f1"
+    },
+    "text": "Đã xảy ra lỗi trên trang này"
+  },
+  {
+    "_id": {
+      "$oid": "66fa8f546fc5fc679b1b10f2"
+    },
+    "text": "Chủ không gian yêu cầu thêm tiền"
+  },
+  {
+    "_id": {
+      "$oid": "66fa8f546fc5fc679b1b10f3"
+    },
+    "text": "Nó có vẻ không sạch sẽ và không an toàn"
   },
   {
     "_id": {
       "$oid": "650c9e5d1234567890abcdf3"
     },
-    "text": "Không gian đang bị chiếm dụng: Không gian đã được thuê nhưng vẫn đang có người sử dụng khi đến."
+    "text": "Vấn đề khác"
   }
 ]
