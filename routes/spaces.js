@@ -156,12 +156,12 @@ spaceRouter.get("/:id", async (req, res, next) => {
 // Từ chối post 
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
-    const { rulesId } = req.body; 
+    const { communityStandardsId } = req.body; 
     const updatedPost = await Spaces.findByIdAndUpdate(
       req.params.id,
-      { censorship: "Từ chối", rulesId }, 
+      { censorship: "Từ chối", communityStandardsId }, 
       { new: true }
-    );
+    ).populate("communityStandardsId");
 
     if (!updatedPost) {
       return res.status(404).json({ message: "Không tìm thấy post" });
