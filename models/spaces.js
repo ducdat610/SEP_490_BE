@@ -25,6 +25,11 @@ const spacesSchema = new Schema(
         required: true,
       },
     ],
+    communityStandardsId:{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "communityStandards",
+      required: true,
+    },
     userId:{
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
