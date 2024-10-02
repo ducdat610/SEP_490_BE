@@ -9,6 +9,7 @@ import appliancesRouter from "./appliances.js";
 import reportRouter from "./reports.js";
 import reasonsRouter from "./reasons.js";
 import messageRouter from "./message.js";
+import communityStandardsRouter from "./communityStandards.js";
 export {
   userRouter,
   spaceRouter,
@@ -20,6 +21,7 @@ export {
   appliancesRouter,
   reportRouter,
   reasonsRouter,
-  messageRouter
+  messageRouter,
+  communityStandardsRouter
 };
 

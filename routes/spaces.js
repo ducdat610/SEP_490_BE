@@ -12,6 +12,9 @@ import {
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
+spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
+spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
+
 
 // tim kiem space
 spaceRouter.get('/search/:name', async (req, res, next) => {
@@ -156,12 +159,12 @@ spaceRouter.get("/:id", async (req, res, next) => {
 // Từ chối post 
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
-    const { rulesId } = req.body; 
+    const { communityStandardsId } = req.body; 
     const updatedPost = await Spaces.findByIdAndUpdate(
       req.params.id,
-      { censorship: "Từ chối", rulesId }, 
+      { censorship: "Từ chối", communityStandardsId }, 
       { new: true }
-    );
+    ).populate("communityStandardsId");
 
     if (!updatedPost) {
       return res.status(404).json({ message: "Không tìm thấy post" });
@@ -173,5 +176,26 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   }
 });
 
+// chấp nhận post
+spaceRouter.put("/update/:postId", async (req, res, next) => {
+  const { postId } = req.params;
+  const { censorship } = req.body;
+
+  try {
+    const postSpace = await Spaces.findOneAndUpdate(
+      { _id: postId },
+      { censorship: censorship },
+      { new: true }
+    );
+
+    if (!postSpace) {
+      return res.status(404).json({ message: "PostSpace not found" });
+    }
+
+    res.status(200).json(postSpace);
+  } catch (error) {
+    next(error);
+  }
+});
 
 export default spaceRouter;

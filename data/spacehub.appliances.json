@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "name": "Studio làm nhạc",
+  "appliances": [
+    "Loa kiểm âm",
+    "Tai nghe kiểm âm",
+    "Micro thu âm chuyên nghiệp",
+    "Pop filter",
+    "Audio Interface",
+    "MIDI Controller",
+    "Bàn phím điện tử",
+    "Phần mềm Digital Audio Workstation (DAW)",
+    "Bộ khuếch đại tiền âm (Preamp)",
+    "Máy tính cấu hình cao",
+    "Tấm tiêu âm",
+    "Bass traps",
+    "Điều hòa",
+    "Ghế thoải mái"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66fb94f0e758c49d8a023763"
+  },
+  "name": "Không gian tổ chức sự kiện",
+  "appliances": [
+    "Hệ thống âm thanh",
+    "Máy chiếu",
+    "WiFi",
+    "Đèn chiếu sáng sân khấu",
+    "Micro không dây",
+    "Điều hòa",
+    "Ghế và bàn sự kiện",
+    "Hệ thống an ninh",
+    "Màn hình lớn",
+    "Bộ xử lý âm thanh",
+    "Bục sân khấu"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66fb94f0e758c49d8a023764"
+  },
+  "name": "Tiệc cưới",
+  "appliances": [
+    "Dàn âm thanh",
+    "Đèn trang trí",
+    "Điều hòa",
+    "Bàn tiệc",
+    "Ghế có nơ",
+    "Bục lễ",
+    "Màn hình lớn",
+    "Máy chiếu hình ảnh",
+    "Micro không dây",
+    "Hoa trang trí",
+    "Hệ thống ánh sáng tiệc cưới"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66fb94f0e758c49d8a023765"
+  },
+  "name": "Studio chụp ảnh",
+  "appliances": [
+    "Đèn flash studio",
+    "Đèn chiếu sáng liên tục",
+    "Phông nền chụp ảnh",
+    "Máy ảnh chuyên nghiệp",
+    "Chân máy (Tripod)",
+    "Gương lớn",
+    "Điều hòa",
+    "Quạt không gây tiếng ồn",
+    "Máy tính và phần mềm chỉnh sửa ảnh",
+    "Bàn trang điểm",
+    "Ghế và đạo cụ chụp ảnh"
+  ]
+}]

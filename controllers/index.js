@@ -8,6 +8,7 @@ import reportsController from "./reports.js";
 import reasonsController from "./reasons.js";
 import sendEmailBookingCompleted from "./bookings.js";
 import messageController from "./message.js";
+import communityStandardsController from "./communityStandards.js";
 
 export {
   userController,
@@ -20,4 +21,5 @@ export {
   reasonsController,
   sendEmailBookingCompleted,
   messageController,
+  communityStandardsController
 };
