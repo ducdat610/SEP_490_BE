@@ -18,14 +18,21 @@
       "https://www.yourstudiovn.com/uploads/14480652_1228352917223552_1893527332350591752_o.jpg",
       "https://shop28decor.com/ct/uploads/2023/03/Screenshot-2023-03-24-115858.jpg"
     ],
-    "status": "available",
+    "status": "Đang sử dụng",
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8945"
     },
-    "appliancesId": "",
+    "appliancesId": {
+      "$oid": "66fb94f0e758c49d8a023762"
+    },
     "reviews": [],
     "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": "2024-09-17T12:00:00Z"
+    "updatedAt": {
+      "$date": "2024-10-01T10:29:32.171Z"
+    },
+    "reportCount": 0,
+    "censorship": "Chấp nhận",
+    "favorite": true
   },
 
   {
@@ -37,7 +44,7 @@
     "location": "Tech Hub Building",
     "area": "42m2",
     "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727e"
+      "$oid": "66ed8eca5af2082abdf9727f"
     },
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c3"
@@ -45,16 +52,28 @@
     "pricePerHour": "20",
     "images": [
       "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
-      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/1704388518510-UZYFGU4IA0F9DCJ97PLU/317A8133-HDR.jpg"
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/1704388518510-UZYFGU4IA0F9DCJ97PLU/317A8133-HDR.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg"
     ],
-    "status": "cleaning",
+    "status": "Đang dọn dẹp",
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8945"
     },
-    "appliancesId": "",
+    "appliancesId": {
+      "$oid": "66fb94f0e758c49d8a023762"
+    },
     "reviews": [],
     "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": "2024-09-17T12:00:00Z"
+    "updatedAt": {
+      "$date": "2024-10-01T10:29:34.116Z"
+    },
+    "censorship": "Chấp nhận",
+    "favorite": true
   },
 
   {
@@ -73,17 +92,24 @@
     },
     "pricePerHour": "20",
     "images": [
-      "http://noithat247.net/n280/uu-nhuoc-diem-cua-viec-xay-dung-phong-lam-viec-rieng.html",
-      "https://saigoncoworking.com/vi/van-phong-rieng-coworking/"
+      "https://serepok.com/static/img/home/product-2.jpg",
+      "https://serepok.com/static/img/home/future.jpg"
     ],
-    "status": "cleaning",
+    "status": "Đang dọn dẹp",
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8948"
     },
-    "appliancesId": "",
+    "appliancesId": {
+      "$oid": "66fb94f0e758c49d8a023762"
+    },
     "reviews": [],
     "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": "2024-09-17T12:00:00Z"
+    "updatedAt": {
+      "$date": "2024-10-01T10:29:39.744Z"
+    },
+    "censorship": "Chấp nhận",
+    "reportCount": 2,
+    "favorite": true
   },
 
   {
@@ -105,13 +131,22 @@
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415708123.jpg?k=7f399bb9b10c049c6c7a1c98f45b13b3b5df0b9d6a23733627bd60866ee61ff8&o=&hp=1",
       "https://cf.bstatic.com/xdata/images/hotel/max1280x900/415707997.jpg?k=5392b9f3efe2d7f1c4b7f48ee4fa14df3056dc99fbf7856a1527eaf668abe03d&o=&hp=1"
     ],
-    "status": "cleaning",
+    "status": "Đang dọn dẹp",
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f894a"
     },
-    "appliancesId": "",
+    "appliancesId": {
+      "$oid": "66fb94f0e758c49d8a023762"
+    },
     "reviews": [],
     "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": "2024-09-17T12:00:00Z"
+    "updatedAt": {
+      "$date": "2024-10-01T13:01:52.518Z"
+    },
+    "censorship": "Chờ duyệt",
+    "communityStandardsId": {
+      "$oid": "66ed8eca5af2082abdf97286"
+    },
+    "favorite": true
   }
 ]

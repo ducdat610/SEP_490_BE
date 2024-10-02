@@ -6,14 +6,7 @@ const appliancesSchema = new Schema(
       type: String,
       required: true,
     },
-    description: {
-      type: String,
-      required: false,
-    },
-    isCustom: {
-      type: Boolean,
-      default: false,
-    },
+    appliances: [String],
   },
   {
     timestamps: true,
