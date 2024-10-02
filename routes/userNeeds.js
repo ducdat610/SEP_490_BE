@@ -14,7 +14,7 @@ userNeedRouter.get("/", async (req, res, next) => {
     next(error);
   }
 });
-//Cập nhật nhu cầu của người dùng
+//Cập nhật nhu cầu của người dùng.
 userNeedRouter.post("/:userId/needs", async (req, res) => {
   const { userId } = req.params;
   const { productPreferences, goals } = req.body;
