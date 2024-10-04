@@ -16,11 +16,11 @@ const fetchAllAppliances = async () => {
   } catch (error) {
     throw new Error(error.message);
   }
-};
+};  
 
 
 
-// Thêm tiện ích tùy chỉnh vào database
+// Thêm tiện ích tùy chỉnh vào data
 export const addCustomAppliance = async (applianceData) => {
   try {
     const newAppliance = new Appliances(applianceData);
