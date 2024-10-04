@@ -62,7 +62,6 @@ const spacesSchema = new Schema(
     },
     room:{
       type:String,
-      required: true,
     },
     reviews: [
       {
