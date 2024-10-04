@@ -63,5 +63,10 @@
     "name": "Điều hòa",
     "description": "Hệ thống gió",
     "isCustom": true
+  },
+  {
+    "name": "Quạt",
+    "description": "Hệ thống gió",
+    "isCustom": true
   }
 ]
