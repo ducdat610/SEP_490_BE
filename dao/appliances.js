@@ -11,7 +11,7 @@ const fetchAllAppliances = async () => {
 
 const fetchAllAppliancesCategories = async (cateid) => {
   try {
-    const appliances = await Appliances.find({categoryId:cateid}).exec();
+    const appliances = await Appliances.findOne({categoryId:cateid}).exec();
     return appliances;
   } catch (error) {
     throw new Error(error.message);
