@@ -60,6 +60,9 @@ const spacesSchema = new Schema(
       ref: "appliances",
       required: true,
     },
+    room:{
+      type:String,
+    },
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
