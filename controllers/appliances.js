@@ -12,4 +12,15 @@ export const getAllAppliances = async (req, res) => {
   }
 };
 
-export default { getAllAppliances };
+export const getAllAppliancesByCategories = async (req, res) => {
+  try {
+    const categoryId = req.params.cateid
+    const appliances = await appliancesDao.fetchAllAppliancesCategories(categoryId);
+    return res.status(200).json(appliances);
+  } catch (error) {
+    console.error("Error fetching appliances:", error);
+    return res.status(500).json({ success: false, message: "Internal server error" });
+  }
+};
+
+export default { getAllAppliances, getAllAppliancesByCategories };

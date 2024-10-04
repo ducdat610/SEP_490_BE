@@ -6,8 +6,25 @@ const appliancesSchema = new Schema(
       type: String,
       required: true,
     },
-    appliances: [String],
+    appliances: [
+      {
+        name: {
+          type: String,
+          required: true,
+        },
+        iconName: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
+    categoryId: {
+      type: Schema.Types.ObjectId, 
+      ref: "categories", 
+      required: true,
+    },
   },
+  
   {
     timestamps: true,
   }

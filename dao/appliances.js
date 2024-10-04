@@ -9,6 +9,15 @@ const fetchAllAppliances = async () => {
   }
 };
 
+const fetchAllAppliancesCategories = async (cateid) => {
+  try {
+    const appliances = await Appliances.find({categoryId:cateid}).exec();
+    return appliances;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
 
 
-export default { fetchAllAppliances };
+
+export default { fetchAllAppliances, fetchAllAppliancesCategories };

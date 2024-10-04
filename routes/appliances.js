@@ -4,5 +4,6 @@ import { appliancesController } from "../controllers/index.js";
 const appliancesRouter = express.Router();
 
 appliancesRouter.get("/", appliancesController.getAllAppliances);
+appliancesRouter.get("/:cateid", appliancesController.getAllAppliancesByCategories);
 
 export default appliancesRouter;
