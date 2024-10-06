@@ -25,6 +25,10 @@ const spacesSchema = new Schema(
         required: true,
       },
     ],
+    communityStandardsId:{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "communityStandards",
+    },
     userId:{
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
@@ -37,12 +41,12 @@ const spacesSchema = new Schema(
     images: [{ type: String }],
     censorship: {
       type: String,
-      enum: ["Chờ duyệt", "Chấp nhận ", "Từ chối"],
+      enum: ["Chờ duyệt", "Chấp nhận", "Từ chối"],
       default: "Chờ duyệt",
     },
     status: {
       type: String,
-      enum: ["Đang sử dụng", "Đang dọn dẹp ", "Còn trống"],
+      enum: ["Đang sử dụng", "Đang dọn dẹp", "Còn trống"],
       default: "Đang sử dụng",
     },
     categoriesId: {
@@ -50,13 +54,15 @@ const spacesSchema = new Schema(
       ref: "categories",
       required: true,
     },
-    appliancesId: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "appliances",
-        required: true,
-      },
-    ],
+    appliancesId:
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "appliances",
+      required: true,
+    },
+    room:{
+      type:String,
+    },
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -64,10 +70,14 @@ const spacesSchema = new Schema(
         require: false,
       },
     ],
-    reportCount:{
+    reportCount: {
       type: Number,
       default: 0,
-    }
+    },
+    favorite:{
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,

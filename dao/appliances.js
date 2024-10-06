@@ -1,8 +1,17 @@
 import Appliances from "../models/appliances.js";
 
+const fetchAllAppliancesDefault = async () => {
+  try {
+    const appliancesDefault = await Appliances.find({isCustom: false}).exec();
+    return appliancesDefault;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+
 const fetchAllAppliances = async () => {
   try {
-    const allAppliances = await Appliances.find({isCustom: false}).exec();
+    const allAppliances = await Appliances.find().exec();
     return allAppliances;
   } catch (error) {
     throw new Error(error.message);
@@ -22,4 +31,4 @@ export const addCustomAppliance = async (applianceData) => {
   }
 };
 
-export default { fetchAllAppliances, addCustomAppliance };
+export default { fetchAllAppliancesDefault, addCustomAppliance,fetchAllAppliances };

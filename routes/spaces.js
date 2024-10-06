@@ -12,6 +12,8 @@ import {
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
+spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
+spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
 
 // tim kiem space
 spaceRouter.get("/search/:name", async (req, res, next) => {
@@ -77,7 +79,7 @@ spaceRouter.post("/", spaceController.createNewSpace);
 spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
 
 // so sánh
-spaceRouter.get("/compare-spaces", async (req, res) => {
+spaceRouter.get("/compare-spaces-differences", async (req, res) => {
   const { id1, id2 } = req.query;
 
   try {
@@ -95,15 +97,15 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
     // So sánh các trường in ra những trường khác
     const differences = {};
 
+    const image1 =
+      space1.images && space1.images.length > 0 ? space1.images[0] : null;
+    const image2 =
+      space2.images && space2.images.length > 0 ? space2.images[0] : null;
+
+    differences.images = { space1: image1, space2: image2 };
+
     if (space1.name !== space2.name) {
       differences.name = { space1: space1.name, space2: space2.name };
-    }
-
-    if (space1.description !== space2.description) {
-      differences.description = {
-        space1: space1.description,
-        space2: space2.description,
-      };
     }
 
     if (space1.location !== space2.location) {
@@ -128,11 +130,6 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
       differences.status = { space1: space1.status, space2: space2.status };
     }
 
-    // compare ảnh
-    // if (JSON.stringify(space1.images) !== JSON.stringify(space2.images)) {
-    //   differences.images = { space1: space1.images, space2: space2.images };
-    // }
-
     // nếu k khác
     if (Object.keys(differences).length === 0) {
       return res.json({ message: "Hai sản phẩm giống nhau" });
@@ -140,6 +137,55 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
 
     // return những cái khác
     res.json(differences);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Đã xảy ra lỗi khi so sánh sản phẩm" });
+  }
+});
+
+spaceRouter.get("/compare-spaces", async (req, res) => {
+  const { id1, id2 } = req.query;
+
+  try {
+    // Tìm kiếm hai sản phẩm
+    const space1 = await Spaces.findById(id1);
+    const space2 = await Spaces.findById(id2);
+
+    // Nếu không tìm thấy
+    if (!space1 || !space2) {
+      return res
+        .status(404)
+        .json({ message: "Không tìm thấy một hoặc cả hai sản phẩm" });
+    }
+
+    // Tạo đối tượng để chứa thông tin so sánh
+    const comparisonResult = {
+      space1: {
+        images:
+          space1.images && space1.images.length > 0 ? space1.images[0] : null,
+        // id: space1._id,
+        name: space1.name,
+        location: space1.location,
+        area: space1.area,
+        pricePerHour: space1.pricePerHour,
+        status: space1.status,
+        images:
+          space1.images && space1.images.length > 0 ? space1.images[0] : null,
+      },
+      space2: {
+        images:
+          space2.images && space2.images.length > 0 ? space2.images[0] : null,
+        // id: space2._id,
+        name: space2.name,
+        location: space2.location,
+        area: space2.area,
+        pricePerHour: space2.pricePerHour,
+        status: space2.status,
+      },
+    };
+
+    // Trả về tất cả thông tin của hai sản phẩm
+    res.json(comparisonResult);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Đã xảy ra lỗi khi so sánh sản phẩm" });
@@ -166,12 +212,12 @@ spaceRouter.get("/:id", async (req, res, next) => {
 // Từ chối post
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
-    const { rulesId } = req.body;
+    const { communityStandardsId } = req.body;
     const updatedPost = await Spaces.findByIdAndUpdate(
       req.params.id,
-      { censorship: "Từ chối", rulesId },
+      { censorship: "Từ chối", communityStandardsId },
       { new: true }
-    );
+    ).populate("communityStandardsId");
 
     if (!updatedPost) {
       return res.status(404).json({ message: "Không tìm thấy post" });
@@ -182,7 +228,8 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
     next(error);
   }
 });
-// Duyệt bài post
+
+// chấp nhận post
 spaceRouter.put("/update/:postId", async (req, res, next) => {
   const { postId } = req.params;
   const { censorship } = req.body;
@@ -203,4 +250,5 @@ spaceRouter.put("/update/:postId", async (req, res, next) => {
     next(error);
   }
 });
+
 export default spaceRouter;

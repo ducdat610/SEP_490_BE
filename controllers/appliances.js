@@ -2,6 +2,17 @@ import { appliancesDao } from "../dao/index.js";
 
 
 // Lấy các tiện ích có sẵn
+export const getAllAppliancesDefault = async (req, res) => {
+  try {
+    const appliances = await appliancesDao.fetchAllAppliancesDefault();
+    return res.status(200).json({ success: true, appliances });
+  } catch (error) {
+    console.error("Error fetching appliances:", error);
+    return res.status(500).json({ success: false, message: "Internal server error" });
+  }
+};
+
+//Lấy tất cả tiện ích
 export const getAllAppliances = async (req, res) => {
   try {
     const appliances = await appliancesDao.fetchAllAppliances();
@@ -11,4 +22,4 @@ export const getAllAppliances = async (req, res) => {
     return res.status(500).json({ success: false, message: "Internal server error" });
   }
 };
-export default { getAllAppliances };
+export default { getAllAppliances,getAllAppliancesDefault };
