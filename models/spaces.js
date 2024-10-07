@@ -28,7 +28,6 @@ const spacesSchema = new Schema(
     communityStandardsId:{
       type: mongoose.Schema.Types.ObjectId,
       ref: "communityStandards",
-      required: true,
     },
     userId:{
       type: mongoose.Schema.Types.ObjectId,
@@ -42,7 +41,7 @@ const spacesSchema = new Schema(
     images: [{ type: String }],
     censorship: {
       type: String,
-      enum: ["Chờ duyệt", "Chấp nhận ", "Từ chối"],
+      enum: ["Chờ duyệt", "Chấp nhận", "Từ chối"],
       default: "Chờ duyệt",
     },
     status: {
@@ -60,6 +59,9 @@ const spacesSchema = new Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "appliances",
       required: true,
+    },
+    room:{
+      type:String,
     },
     reviews: [
       {
