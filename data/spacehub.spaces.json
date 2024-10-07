@@ -130,7 +130,7 @@
     ],
     "status": "Đang dọn dẹp",
     "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894a"
+      "$oid": "66eafbb0cb37101e8e8f894c"
     },
     "appliancesId": {
       "$oid": "66fb94f0e758c49d8a023762"
@@ -161,7 +161,7 @@
       "$oid": "66ed8eca5af2082abdf9727f"
     },
     "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
+      "$oid": "6639786d743f79c9b97fc1c1"
     },
     "pricePerHour": "30",
     "images": [
@@ -172,7 +172,7 @@
     ],
     "status": "Còn trống ",
     "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894a"
+      "$oid": "66eafbb0cb37101e8e8f894c"
     },
     "appliancesId": {
       "$oid": "66fb94f0e758c49d8a023762"
@@ -199,7 +199,7 @@
         "$oid": "66ed8eca5af2082abdf9727f"
       },
       "userId": {
-        "$oid": "6639786d743f79c9b97fc1c6"
+        "$oid": "6639786d743f79c9b97fc1c3"
       },
       "pricePerHour": "40",
       "images": [
@@ -211,7 +211,7 @@
       ],
       "status": "Đang dọn dẹp",
       "categoriesId": {
-        "$oid": "66eafbb0cb37101e8e8f894a"
+        "$oid": "66eafbb0cb37101e8e8f894c"
       },
       "appliancesId": {
         "$oid": "66fb94f0e758c49d8a023762"
@@ -236,7 +236,7 @@
       "$oid": "66ed8eca5af2082abdf9727f"
     },
     "userId": {
-      "$oid": "6639786d743f79c9b97fc1c7"
+      "$oid": "6639786d743f79c9b97fc1c6"
     },
     "pricePerHour": "40",
     "images": [
@@ -249,7 +249,7 @@
     ],
     "status": "Đang dọn dẹp",
     "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894a"
+      "$oid": "66eafbb0cb37101e8e8f894c"
     },
     "appliancesId": {
       "$oid": "66fb94f0e758c49d8a023762"
@@ -276,7 +276,7 @@
         "$oid": "66ed8eca5af2082abdf9727f"
       },
       "userId": {
-        "$oid": "6639786d743f79c9b97fc1c7"
+        "$oid": "6639786d743f79c9b97fc1c4"
       },
       "pricePerHour": "55",
       "images": [
@@ -289,7 +289,7 @@
       ],
       "status": "Đang sử dụng",
       "categoriesId": {
-        "$oid": "66eafbb0cb37101e8e8f894a"
+        "$oid": "66eafbb0cb37101e8e8f894c"
       },
       "appliancesId": {
         "$oid": "66fb94f0e758c49d8a023762"
@@ -315,7 +315,7 @@
         "$oid": "66ed8eca5af2082abdf9727f"
       },
       "userId": {
-        "$oid": "6639786d743f79c9b97fc1c7"
+        "$oid": "6639786d743f79c9b97fc1c3"
       },
       "pricePerHour": "35",
       "images": [
@@ -326,7 +326,7 @@
       ],
       "status": "còn trống",
       "categoriesId": {
-        "$oid": "66eafbb0cb37101e8e8f894a"
+        "$oid": "66eafbb0cb37101e8e8f894c"
       },
       "appliancesId": {
         "$oid": "66fb94f0e758c49d8a023762"
@@ -352,7 +352,7 @@
         "$oid": "66ed8eca5af2082abdf9732a"
       },
       "userId": {
-        "$oid": "6639786d743f79c9b97fc1d9"
+        "$oid": "6639786d743f79c9b97fc1c5"
       },
       "pricePerHour": "40",
       "images": [
@@ -364,7 +364,7 @@
       ],
       "status": "còn trống",
       "categoriesId": {
-        "$oid": "66eafbb0cb37101e8e8f8955"
+        "$oid": "66eafbb0cb37101e8e8f894c"
       },
       "appliancesId": {
         "$oid": "66fb94f0e758c49d8a023783"
@@ -379,7 +379,7 @@
     },
     {
       "_id": {
-        "$oid": "66eafc44cb37101e8e8f896b"
+        "$oid": "66eafc44cb37101e8e8f896be"
       },
       "name": "Lee Garden",
       "description": "Lee Garden nằm tại quận Hoàn Kiếm, Hà Nội, là không gian lý tưởng cho những ai muốn tìm kiếm một nơi yên tĩnh, hiện đại để làm việc hoặc tổ chức các sự kiện nhỏ. Với thiết kế mở, không gian tràn ngập ánh sáng tự nhiên và các tiện nghi hiện đại, Lee Garden mang đến cảm giác thoải mái và sáng tạo cho người sử dụng. Địa điểm thuận lợi, gần các khu vực dịch vụ và thương mại sôi động, giúp bạn dễ dàng kết nối và giao lưu.",
@@ -389,7 +389,7 @@
         "$oid": "66ed8eca5af2082abdf9732a"
       },
       "userId": {
-        "$oid": "6639786d743f79c9b97fc1d9"
+        "$oid": "6639786d743f79c9b97fc1c1"
       },
       "pricePerHour": "50",
       "images": [
@@ -405,7 +405,7 @@
       ],
       "status": "còn trống",
       "categoriesId": {
-        "$oid": "66eafbb0cb37101e8e8f8955"
+        "$oid": "66eafbb0cb37101e8e8f894c"
       },
       "appliancesId": {
         "$oid": "66fb94f0e758c49d8a023783"
@@ -430,7 +430,7 @@
         "$oid": "66ed8eca5af2082abdf9732a"
       },
       "userId": {
-        "$oid": "6639786d743f79c9b97fc1d9"
+        "$oid": "6639786d743f79c9b97fc1c1"
       },
       "pricePerHour": "60",
       "images": [
@@ -442,7 +442,7 @@
       ],
       "status": "Đang dọn dẹp",
       "categoriesId": {
-        "$oid": "66eafbb0cb37101e8e8f8955"
+        "$oid": "66eafbb0cb37101e8e8f894c"
       },
       "appliancesId": {
         "$oid": "66fb94f0e758c49d8a023783"
