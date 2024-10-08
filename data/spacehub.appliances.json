@@ -1,79 +1,119 @@
-[{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023762"
+[
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023762" },
+    "name": "Phòng thu",
+    "appliances": [
+      { "name": "Loa kiểm âm", "iconName": "Speaker" },
+      { "name": "Tai nghe kiểm âm", "iconName": "Headphones" },
+      { "name": "Micro thu âm chuyên nghiệp", "iconName": "Mic" },
+      { "name": "Pop filter", "iconName": "FilterAlt" },
+      { "name": "Audio Interface", "iconName": "SettingsInputComponent" },
+      { "name": "MIDI Controller", "iconName": "Piano" },
+      { "name": "Bàn phím điện tử", "iconName": "Keyboard" },
+      { "name": "Phần mềm Digital Audio Workstation (DAW)", "iconName": "Computer" },
+      { "name": "Bộ khuếch đại tiền âm (Preamp)", "iconName": "Amplifier" },
+      { "name": "Máy tính cấu hình cao", "iconName": "Devices" },
+      { "name": "Tấm tiêu âm", "iconName": "GridOn" },
+      { "name": "Bass traps", "iconName": "Wall" },
+      { "name": "Điều hòa", "iconName": "AcUnit" },
+      { "name": "Ghế thoải mái", "iconName": "Chair" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f894b" } 
   },
-  "name": "Studio làm nhạc",
-  "appliances": [
-    "Loa kiểm âm",
-    "Tai nghe kiểm âm",
-    "Micro thu âm chuyên nghiệp",
-    "Pop filter",
-    "Audio Interface",
-    "MIDI Controller",
-    "Bàn phím điện tử",
-    "Phần mềm Digital Audio Workstation (DAW)",
-    "Bộ khuếch đại tiền âm (Preamp)",
-    "Máy tính cấu hình cao",
-    "Tấm tiêu âm",
-    "Bass traps",
-    "Điều hòa",
-    "Ghế thoải mái"
-  ]
-},
-{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023763"
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023763" },
+    "name": "Tổ chức tiệc cưới",
+    "appliances": [
+      { "name": "Hệ thống âm thanh", "iconName": "Speaker" },
+      { "name": "Máy chiếu", "iconName": "Videocam" },
+      { "name": "WiFi", "iconName": "Wifi" },
+      { "name": "Đèn chiếu sáng sân khấu", "iconName": "Lightbulb" },
+      { "name": "Micro không dây", "iconName": "Mic" },
+      { "name": "Điều hòa", "iconName": "AcUnit" },
+      { "name": "Ghế và bàn sự kiện", "iconName": "Chair" },
+      { "name": "Hệ thống an ninh", "iconName": "Security" },
+      { "name": "Màn hình lớn", "iconName": "Tv" },
+      { "name": "Bộ xử lý âm thanh", "iconName": "Equalizer" },
+      { "name": "Bục sân khấu", "iconName": "Podium" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f8948" } 
   },
-  "name": "Không gian tổ chức sự kiện",
-  "appliances": [
-    "Hệ thống âm thanh",
-    "Máy chiếu",
-    "WiFi",
-    "Đèn chiếu sáng sân khấu",
-    "Micro không dây",
-    "Điều hòa",
-    "Ghế và bàn sự kiện",
-    "Hệ thống an ninh",
-    "Màn hình lớn",
-    "Bộ xử lý âm thanh",
-    "Bục sân khấu"
-  ]
-},
-{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023764"
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023764" },
+    "name": "Phim trường",
+    "appliances": [
+      { "name": "Dàn âm thanh", "iconName": "Speaker" },
+      { "name": "Đèn trang trí", "iconName": "Lightbulb" },
+      { "name": "Điều hòa", "iconName": "AcUnit" },
+      { "name": "Bàn tiệc", "iconName": "TableBar" },
+      { "name": "Ghế có nơ", "iconName": "Chair" },
+      { "name": "Bục lễ", "iconName": "Podium" },
+      { "name": "Màn hình lớn", "iconName": "Tv" },
+      { "name": "Máy chiếu hình ảnh", "iconName": "Videocam" },
+      { "name": "Micro không dây", "iconName": "Mic" },
+      { "name": "Hoa trang trí", "iconName": "LocalFlorist" },
+      { "name": "Hệ thống ánh sáng tiệc cưới", "iconName": "Lightbulb" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f8946" } 
   },
-  "name": "Tiệc cưới",
-  "appliances": [
-    "Dàn âm thanh",
-    "Đèn trang trí",
-    "Điều hòa",
-    "Bàn tiệc",
-    "Ghế có nơ",
-    "Bục lễ",
-    "Màn hình lớn",
-    "Máy chiếu hình ảnh",
-    "Micro không dây",
-    "Hoa trang trí",
-    "Hệ thống ánh sáng tiệc cưới"
-  ]
-},
-{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023765"
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023765" },
+    "name": "Studio chụp hình",
+    "appliances": [
+      { "name": "Đèn flash studio", "iconName": "FlashOn" },
+      { "name": "Đèn chiếu sáng liên tục", "iconName": "Lightbulb" },
+      { "name": "Phông nền chụp ảnh", "iconName": "Wallpaper" },
+      { "name": "Máy ảnh chuyên nghiệp", "iconName": "PhotoCamera" },
+      { "name": "Chân máy (Tripod)", "iconName": "CameraEnhance" },
+      { "name": "Gương lớn", "iconName": "PanoramaWideAngle" },
+      { "name": "Điều hòa", "iconName": "AcUnit" },
+      { "name": "Quạt không gây tiếng ồn", "iconName": "Toys" },
+      { "name": "Máy tính và phần mềm chỉnh sửa ảnh", "iconName": "Computer" },
+      { "name": "Bàn trang điểm", "iconName": "TableBar" },
+      { "name": "Ghế và đạo cụ chụp ảnh", "iconName": "Chair" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f8945" } 
   },
-  "name": "Studio chụp ảnh",
-  "appliances": [
-    "Đèn flash studio",
-    "Đèn chiếu sáng liên tục",
-    "Phông nền chụp ảnh",
-    "Máy ảnh chuyên nghiệp",
-    "Chân máy (Tripod)",
-    "Gương lớn",
-    "Điều hòa",
-    "Quạt không gây tiếng ồn",
-    "Máy tính và phần mềm chỉnh sửa ảnh",
-    "Bàn trang điểm",
-    "Ghế và đạo cụ chụp ảnh"
-  ]
-}]
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023766" },
+    "name": "Phòng họp",
+    "appliances": [
+      { "name": "Máy chiếu", "iconName": "Videocam" },
+      { "name": "Màn hình lớn", "iconName": "Tv" },
+      { "name": "Hệ thống âm thanh", "iconName": "Speaker" },
+      { "name": "Bàn và ghế họp", "iconName": "Chair" },
+      { "name": "Bục thuyết trình", "iconName": "Podium" },
+      { "name": "Điều hòa", "iconName": "AcUnit" },
+      { "name": "Hệ thống đèn chiếu sáng", "iconName": "Lightbulb" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f8947" } 
+  },
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023767" },
+    "name": "PentHouse",
+    "appliances": [
+      { "name": "Loa âm thanh cao cấp", "iconName": "Speaker" },
+      { "name": "Đèn chùm", "iconName": "Lightbulb" },
+      { "name": "Tivi màn hình lớn", "iconName": "Tv" },
+      { "name": "Bàn ghế cao cấp", "iconName": "Chair" },
+      { "name": "Hệ thống điều hòa", "iconName": "AcUnit" },
+      { "name": "Máy chiếu cao cấp", "iconName": "Videocam" },
+      { "name": "Hệ thống an ninh hiện đại", "iconName": "Security" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f894a" } 
+  },
+  {
+    "_id": { "$oid": "66fb94f0e758c49d8a023768" },
+    "name": "Không gian thể thao",
+    "appliances": [
+      { "name": "Loa ngoài trời", "iconName": "Speaker" },
+      { "name": "Đèn sân vận động", "iconName": "Lightbulb" },
+      { "name": "Màn hình lớn", "iconName": "Tv" },
+      { "name": "Ghế khán giả", "iconName": "Chair" },
+      { "name": "Thiết bị quay phim trực tiếp", "iconName": "Videocam" },
+      { "name": "Hệ thống điều hòa", "iconName": "AcUnit" },
+      { "name": "Hệ thống an ninh", "iconName": "Security" }
+    ],
+    "categoryId": { "$oid": "66eafbb0cb37101e8e8f8949" } 
+  }
+]
