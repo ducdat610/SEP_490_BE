@@ -60,4 +60,14 @@
   "description": "Service Space là một khu vực đa năng được thiết kế để hỗ trợ nhiều nhu cầu chuyên môn và hoạt động khác nhau. Lý tưởng cho các hoạt động dịch vụ khách hàng, chức năng hỗ trợ hoặc dịch vụ kinh doanh, không gian này được trang bị các tiện nghi và công nghệ thiết yếu để đảm bảo cung cấp dịch vụ hiệu quả và hiệu suất cao.",
   "createdAt": "2024-09-17T12:00:00Z",
   "updatedAt": "2024-09-17T12:00:00Z"
-}]
+},
+{
+  "_id": {
+    "$oid": "66eafbb0cb37101e8e8f894c"  
+  },
+  "name": "Workspace",
+  "description": "Không gian làm việc hiện đại, được trang bị đầy đủ tiện nghi, lý tưởng cho các cá nhân, đội nhóm nhỏ làm việc, họp hành hoặc dự án sáng tạo. Với môi trường yên tĩnh và thoải mái, Workspace cung cấp một nền tảng lý tưởng để tăng cường hiệu suất và sáng tạo.",
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": "2024-09-17T12:00:00Z"
+}
+]
