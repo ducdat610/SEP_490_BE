@@ -23,4 +23,32 @@ export const getAllAppliancesByCategories = async (req, res) => {
   }
 };
 
-export default { getAllAppliances, getAllAppliancesByCategories };
+
+// Hàm thêm appliance mới
+ const createAppliance = async (req, res) => {
+  try {
+    const { name, appliances, categoryId } = req.body;
+
+    // Kiểm tra các trường hợp thiếu dữ liệu cần thiết
+    if (!name || !appliances || appliances.length === 0) {
+      return res.status(400).json({ success: false, message: 'Missing required fields' });
+    }
+
+    // Tạo dữ liệu appliance mới
+    const applianceData = {
+      name,
+      appliances,
+      categoryId: categoryId || '', // Có thể để trống nếu không có categoryId
+    };
+
+    // Thêm appliance mới qua DAO
+    const newAppliance = await appliancesDao.addAppliance(applianceData);
+
+    return res.status(201).json({ success: true, appliance: newAppliance });
+  } catch (error) {
+    console.error('Error creating appliance:', error);
+    return res.status(500).json({ success: false, message: 'Error creating appliance' });
+  }
+};
+
+export default { getAllAppliances, getAllAppliancesByCategories,createAppliance };

@@ -4,7 +4,6 @@ const appliancesSchema = new Schema(
   {
     name: {
       type: String,
-      required: true,
     },
     appliances: [
       {
@@ -21,7 +20,6 @@ const appliancesSchema = new Schema(
     categoryId: {
       type: Schema.Types.ObjectId, 
       ref: "categories", 
-      required: true,
     },
   },
   

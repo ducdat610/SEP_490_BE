@@ -18,6 +18,17 @@ const fetchAllAppliancesCategories = async (cateid) => {
   }
 };
 
+ const addAppliance = async (applianceData) => {
+  try {
+    const newAppliance = new Appliances(applianceData);
+    await newAppliance.save();
+    return newAppliance; // Trả về appliance mới sau khi lưu thành công
+  } catch (error) {
+    console.error('Error creating new appliance:', error);
+    throw new Error('Error creating new appliance in DAO');
+  }
+};
 
 
-export default { fetchAllAppliances, fetchAllAppliancesCategories };
+
+export default { fetchAllAppliances, fetchAllAppliancesCategories,addAppliance };
