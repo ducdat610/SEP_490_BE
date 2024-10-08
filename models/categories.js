@@ -11,6 +11,10 @@ const categoriesSchema = new Schema(
           type: String,
           required: true,
         },
+        iconName:{
+          type: String,
+          required: true,
+        }
       },
       {
         timestamps: true,
