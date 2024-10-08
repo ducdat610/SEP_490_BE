@@ -18,12 +18,8 @@
       "https://www.yourstudiovn.com/uploads/14480652_1228352917223552_1893527332350591752_o.jpg",
       "https://shop28decor.com/ct/uploads/2023/03/Screenshot-2023-03-24-115858.jpg"
     ],
-<<<<<<< HEAD
     "censorship": "Chờ duyệt",
     "status": "available",
-=======
-    "status": "Đang sử dụng",
->>>>>>> 051ae5de1447d4a28731e61a825dc0d46e8b7572
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8945"
     },
@@ -64,12 +60,8 @@
       "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
       "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg"
     ],
-<<<<<<< HEAD
     "censorship": "Chờ duyệt",
     "status": "cleaning",
-=======
-    "status": "Đang dọn dẹp",
->>>>>>> 051ae5de1447d4a28731e61a825dc0d46e8b7572
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8945"
     },
@@ -103,12 +95,8 @@
       "https://serepok.com/static/img/home/product-2.jpg",
       "https://serepok.com/static/img/home/future.jpg"
     ],
-<<<<<<< HEAD
     "censorship": "Chờ duyệt",
     "status": "cleaning",
-=======
-    "status": "Đang dọn dẹp",
->>>>>>> 051ae5de1447d4a28731e61a825dc0d46e8b7572
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f8948"
     },
@@ -143,12 +131,8 @@
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415708123.jpg?k=7f399bb9b10c049c6c7a1c98f45b13b3b5df0b9d6a23733627bd60866ee61ff8&o=&hp=1",
       "https://cf.bstatic.com/xdata/images/hotel/max1280x900/415707997.jpg?k=5392b9f3efe2d7f1c4b7f48ee4fa14df3056dc99fbf7856a1527eaf668abe03d&o=&hp=1"
     ],
-<<<<<<< HEAD
     "censorship": "Chờ duyệt",
     "status": "cleaning",
-=======
-    "status": "Đang dọn dẹp",
->>>>>>> 051ae5de1447d4a28731e61a825dc0d46e8b7572
     "categoriesId": {
       "$oid": "66eafbb0cb37101e8e8f894a"
     },

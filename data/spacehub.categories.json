@@ -1,63 +1,65 @@
-[{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+[
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "name": "Studios",
+    "description": "Studio chuyên nghiệp được trang bị đèn và phông nền, lý tưởng cho các buổi chụp ảnh, quay video hoặc các dự án sáng tạo.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   },
-  "name": "Studios",
-  "description": "Studio chuyên nghiệp được trang bị đèn và phông nền, lý tưởng cho các buổi chụp ảnh, quay video hoặc các dự án sáng tạo.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-},
-{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f8946"
+    },
+    "name": "Không gian sự kiện",
+    "description": "Không gian rộng rãi thích hợp để tổ chức sự kiện, tiệc tùng hoặc hoạt động cộng đồng.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   },
-  "name": "Không gian sự kiện",
-  "description": "Không gian rộng rãi thích hợp để tổ chức sự kiện, tiệc tùng hoặc hoạt động cộng đồng.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-},
-{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "name": "Phòng trưng bày",
+    "description": "Không gian trưng bày sản phẩm, thường được sử dụng để ra mắt sản phẩm hoặc triển lãm.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   },
-  "name": "Phòng trưng bày",
-  "description": "Không gian trưng bày sản phẩm, thường được sử dụng để ra mắt sản phẩm hoặc triển lãm.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-},
-{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "name": "Địa điểm tổ chức hội thảo",
+    "description": "Không gian được thiết kế để tổ chức các buổi làm việc, đào tạo hoặc sự kiện liên quan đến hoạt động học tập và thực hành.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   },
-  "name": "Địa điểm tổ chức hội thảo",
-  "description": "Không gian được thiết kế để tổ chức các buổi làm việc, đào tạo hoặc sự kiện liên quan đến hoạt động học tập và thực hành.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-},
-{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f8949"
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f8949"
+    },
+    "name": "Không gian giải trí",
+    "description": "Không gian giải trí được thiết kế để tổ chức nhiều hoạt động khác nhau, bao gồm biểu diễn trực tiếp, chiếu phim, sự kiện chơi game và tụ họp xã hội. Địa điểm đa năng này có thiết bị nghe nhìn hiện đại, sắp xếp chỗ ngồi linh hoạt và bầu không khí năng động để nâng cao mọi trải nghiệm giải trí. Cho dù là buổi hòa nhạc, tiệc tùng hay sự kiện tương tác, không gian giải trí của chúng tôi đều mang đến bối cảnh hoàn hảo cho những trải nghiệm đáng nhớ và hấp dẫn.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   },
-  "name": "Không gian giải trí",
-  "description": "Không gian giải trí được thiết kế để tổ chức nhiều hoạt động khác nhau, bao gồm biểu diễn trực tiếp, chiếu phim, sự kiện chơi game và tụ họp xã hội. Địa điểm đa năng này có thiết bị nghe nhìn hiện đại, sắp xếp chỗ ngồi linh hoạt và bầu không khí năng động để nâng cao mọi trải nghiệm giải trí. Cho dù là buổi hòa nhạc, tiệc tùng hay sự kiện tương tác, không gian giải trí của chúng tôi đều mang đến bối cảnh hoàn hảo cho những trải nghiệm đáng nhớ và hấp dẫn.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-},
-{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f894a"
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f894a"
+    },
+    "name": "PentHouse",
+    "description": "PentHouse là địa điểm giải trí sang trọng được thiết kế cho các sự kiện độc quyền và các cuộc tụ họp cấp cao. Với tầm nhìn toàn cảnh tuyệt đẹp, phong cách trang trí hiện đại và thiết bị nghe nhìn hàng đầu, PentHouse mang đến bối cảnh vô song để tổ chức các bữa tiệc cao cấp, sự kiện của công ty và lễ kỷ niệm riêng tư. Môi trường rộng rãi và phong cách đảm bảo một trải nghiệm đáng nhớ, kết hợp sự thanh lịch với các tiện nghi hiện đại cho một sự kiện đặc biệt.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
   },
-  "name": "PentHouse",
-  "description": "PentHouse là địa điểm giải trí sang trọng được thiết kế cho các sự kiện độc quyền và các cuộc tụ họp cấp cao. Với tầm nhìn toàn cảnh tuyệt đẹp, phong cách trang trí hiện đại và thiết bị nghe nhìn hàng đầu, PentHouse mang đến bối cảnh vô song để tổ chức các bữa tiệc cao cấp, sự kiện của công ty và lễ kỷ niệm riêng tư. Môi trường rộng rãi và phong cách đảm bảo một trải nghiệm đáng nhớ, kết hợp sự thanh lịch với các tiện nghi hiện đại cho một sự kiện đặc biệt.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-},
-{
-  "_id": {
-    "$oid": "66eafbb0cb37101e8e8f894b"
-  },
-  "name": "Service Space",
-  "description": "Service Space là một khu vực đa năng được thiết kế để hỗ trợ nhiều nhu cầu chuyên môn và hoạt động khác nhau. Lý tưởng cho các hoạt động dịch vụ khách hàng, chức năng hỗ trợ hoặc dịch vụ kinh doanh, không gian này được trang bị các tiện nghi và công nghệ thiết yếu để đảm bảo cung cấp dịch vụ hiệu quả và hiệu suất cao.",
-  "createdAt": "2024-09-17T12:00:00Z",
-  "updatedAt": "2024-09-17T12:00:00Z"
-}]
+  {
+    "_id": {
+      "$oid": "66eafbb0cb37101e8e8f894b"
+    },
+    "name": "Service Space",
+    "description": "Service Space là một khu vực đa năng được thiết kế để hỗ trợ nhiều nhu cầu chuyên môn và hoạt động khác nhau. Lý tưởng cho các hoạt động dịch vụ khách hàng, chức năng hỗ trợ hoặc dịch vụ kinh doanh, không gian này được trang bị các tiện nghi và công nghệ thiết yếu để đảm bảo cung cấp dịch vụ hiệu quả và hiệu suất cao.",
+    "createdAt": "2024-09-17T12:00:00Z",
+    "updatedAt": "2024-09-17T12:00:00Z"
+  }
+]
