@@ -133,7 +133,7 @@
     ],
     "status": "Đang dọn dẹp",
     "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894a"
+      "$oid": "66eafbb0cb37101e8e8f894c"
     },
     "appliancesId": {
       "$oid": "66fb94f0e758c49d8a023762"
@@ -143,10 +143,319 @@
     "updatedAt": {
       "$date": "2024-10-01T13:01:52.518Z"
     },
-    "censorship": "Chờ duyệt",
+    "censorship": "Chấp nhận",
     "communityStandardsId": {
       "$oid": "66ed8eca5af2082abdf97286"
     },
     "favorite": true
-  }
-]
+
+
+    
+  },   
+  {
+    "_id": {
+      "$oid": "66eafc44cb37101e8e8f8955"
+    },
+    "name": "CR Land Tower",
+    "description": "Nằm ở Thành phố Hà Nội hiện đại và nghệ thuật, CR Land Tower mang đến cho bạn trải nghiệm làm việc mới. Nằm trong khu vực trung tâm với giao thông thuận tiện và khu kinh doanh với nhiều thương hiệu nổi tiếng, CR Land Tower sẽ mang đến cho bạn sự thuận tiện kép giữa công việc và cuộc sống.",
+    "location": "Ha Noi",
+    "area": "40m2",
+    "rulesId": {
+      "$oid": "66ed8eca5af2082abdf9727f"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c5"
+    },
+    "pricePerHour": "30",
+    "images": [
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728311732/BUILDING-AVATAR-0ff88c16-25b6-418d-8935-6ee320fcdd9d_rbfoz0.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728311732/5ddcbef0-cf5b-11e9-bbca-0a80a47aa582_p1d586.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728311732/5e2d9870-cf5b-11e9-bbca-0a80a47aa582_zzgu8a.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728311732/5da30eee-cf5b-11e9-bbca-0a80a47aa582_eqllla.jpg"
+    ],
+    "status": "Còn trống ",
+    "categoriesId": {
+      "$oid": "66eafbb0cb37101e8e8f894c"
+    },
+    "appliancesId": {
+      "$oid": "66fb94f0e758c49d8a023762"
+    },
+    "reviews": [],
+    "createdAt": "2024-10-07T12:00:00Z",
+    "updatedAt": {
+      "$date": "2024-10-07T12:30:00.000Z"
+    },
+    "censorship": "Chấp nhận",
+    "favorite": true
+  },
+
+  
+    {
+      "_id": {
+        "$oid": "66eafc44cb37101e8e8f8956"
+      },
+      "name": "Modern Office Tower",
+      "description": "Nằm tại Quận Ba Đình, Hà Nội, Modern Office Tower mang đến một không gian làm việc hiện đại và chuyên nghiệp. Với vị trí đắc địa, dễ dàng di chuyển đến các trung tâm hành chính và thương mại của thành phố, tòa nhà này hứa hẹn cung cấp sự thuận lợi tối đa cho mọi nhu cầu sử dụng. Tòa nhà được trang bị đầy đủ tiện nghi và hệ thống an ninh 24/7, mang đến sự yên tâm và tiện lợi cho khách hàng.",
+      "location": "Ba Dinh, Ha Noi",
+      "area": "45m2",
+      "rulesId": {
+        "$oid": "66ed8eca5af2082abdf9727f"
+      },
+      "userId": {
+        "$oid": "6639786d743f79c9b97fc1c5"
+      },
+      "pricePerHour": "40",
+      "images": [
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312157/f4f8780a-94a5-11ea-9a32-0e478a462aa9_tkdip6.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/ea494ee8-94a5-11ea-a858-0e478a462aa9_zy7eyo.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/f50cda20-94a5-11ea-a862-0e478a462aa9_u3ejun.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/8da2a468-94a6-11ea-a864-0e478a462aa9_n0xnya.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/f4f436aa-94a5-11ea-94c5-0e478a462aa9_jyctm7.jpg"
+      ],
+      "status": "Đang dọn dẹp",
+      "categoriesId": {
+        "$oid": "66eafbb0cb37101e8e8f894c"
+      },
+      "appliancesId": {
+        "$oid": "66fb94f0e758c49d8a023762"
+      },
+      "reviews": [],
+      "createdAt": "2024-10-07T12:00:00Z",
+      "updatedAt": {
+        "$date": "2024-10-07T12:30:00.000Z"
+      },
+      "censorship": "Chấp nhận",
+      "favorite": true
+    },
+  {
+    "_id": {
+      "$oid": "66eafc44cb37101e8e8f8957"
+    },
+    "name": "Khu công nghệ phần mềm Weixin",
+    "description": "Tọa lạc tại Quận Cầu Giấy, Hà Nội, Khu công nghệ phần mềm Weixin là một không gian lý tưởng dành cho các cá nhân về công nghệ và đội nhóm startup. Với hệ thống văn phòng hiện đại, không gian thoáng đãng và tiện nghi đầy đủ, nơi đây cung cấp một môi trường làm việc chuyên nghiệp và sáng tạo. Gần các khu vực tiện ích công cộng và có giao thông thuận tiện, Khu công nghệ phần mềm Weixin mang đến sự kết hợp hoàn hảo giữa công nghệ và cuộc sống đô thị.",
+    "location": "Cau Giay, Ha Noi",
+    "area": "50m2",
+    "rulesId": {
+      "$oid": "66ed8eca5af2082abdf9727f"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c5"
+    },
+    "pricePerHour": "40",
+    "images": [
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/3d1b0218-af57-4628-a718-1bad68b77c70-1675240376381_b7jysd.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312357/6aba1391-3463-4963-acb4-529182d12b49-1675240407068_ix5d0f.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/bf294891-e9e1-4f7d-9569-d8a78eb1214e-1675240388934_sjxisp.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/380ef249-86fc-45b5-980a-c178ec1861a7-1675240383098_f6w6hx.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/51895ca6-f76c-427c-acc2-a44b1f7dfb14-1675240361574_ysijot.jpg",
+      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/64bec28b-b616-4c0d-9b0f-3ea92944ced6-1675240395345_o54r2o.jpg"
+    ],
+    "status": "Đang dọn dẹp",
+    "categoriesId": {
+      "$oid": "66eafbb0cb37101e8e8f894c"
+    },
+    "appliancesId": {
+      "$oid": "66fb94f0e758c49d8a023762"
+    },
+    "reviews": [],
+    "createdAt": "2024-10-07T12:00:00Z",
+    "updatedAt": {
+      "$date": "2024-10-07T12:30:00.000Z"
+    },
+    "censorship": "Chấp nhận",
+    "favorite": true
+  }, 
+  
+  
+    {
+      "_id": {
+        "$oid": "66eafc44cb37101e8e8f8959"
+      },
+      "name": "Tòa nhà R&D",
+      "description": "Tòa nhà R&D nằm ở Quận Hoàng Mai, Hà Nội, là nơi lý tưởng cho các hoạt động nghiên cứu và phát triển. Được trang bị đầy đủ tiện nghi hiện đại, toà nhà có không gian làm việc rộng rãi và an ninh đảm bảo. Với vị trí thuận lợi, gần các khu công nghiệp và giao thông thuận tiện, tòa nhà R&D phù hợp cho người sử dụng  muốn tìm kiếm địa điểm làm việc năng động và sáng tạo.",
+      "location": "Hoang Mai, Ha Noi",
+      "area": "100m2",
+      "rulesId": {
+        "$oid": "66ed8eca5af2082abdf9727f"
+      },
+      "userId": {
+        "$oid": "6639786d743f79c9b97fc1c5"
+      },
+      "pricePerHour": "55",
+      "images": [
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/30032c71-3239-439b-960b-228966ccc769-1658112944060_iose0w.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/eb335cc3-3703-4172-8d46-bf9044d891cf-1658112938993_kcgcqz.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/f78eb9e3-1a59-43b9-8bac-c06fb0f57802-1658112913683_uox2jk.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312620/1f45a25b-1a45-475e-9fc3-aef6211aed73-1658112947723_fdlmkn.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312621/dec67064-06d9-43bb-ac3e-a0bf85a0f1d6-1658112951362_ehoyht.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312621/a270db32-6bb0-4285-8aed-5ecfe7f2016f-1658112928178_ae53oo.jpg"
+      ],
+      "status": "Đang sử dụng",
+      "categoriesId": {
+        "$oid": "66eafbb0cb37101e8e8f894c"
+      },
+      "appliancesId": {
+        "$oid": "66fb94f0e758c49d8a023762"
+      },
+      "reviews": [],
+      "createdAt": "2024-10-07T12:00:00Z",
+      "updatedAt": {
+        "$date": "2024-10-07T12:30:00.000Z"
+      },
+      "censorship": "Chấp nhận",
+      "favorite": true
+    },
+
+    {
+      "_id": {
+        "$oid": "66eafc44cb37101e8e8f895a"
+      },
+      "name": "YF Life Tower",
+      "description": "YF Life Tower tọa lạc tại huyện Gia Lâm, Hà Nội, là không gian làm việc lý tưởng cho các cá nhân và đội nhóm nhỏ. Tòa nhà cung cấp môi trường làm việc thoải mái với các tiện nghi hiện đại, giúp bạn dễ dàng thực hiện các cuộc họp nhóm, làm việc từ xa hoặc phát triển các dự án cá nhân. Với không gian sạch sẽ và yên tĩnh, đây là lựa chọn hoàn hảo cho những người cần sự tập trung và hiệu quả cao trong công việc.",
+      "location": "Gia Lam, Ha Noi",
+      "area": "50m2",
+      "rulesId": {
+        "$oid": "66ed8eca5af2082abdf9727f"
+      },
+      "userId": {
+        "$oid": "6639786d743f79c9b97fc1c5"
+      },
+      "pricePerHour": "35",
+      "images": [
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312916/8ffd8ff0-5783-11e8-a68d-1202be33576a_ji4k2n.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312916/BUILDING-AVATAR-173a736a-06c3-46ae-8c95-390e93adfcce_wovfrc.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312915/7794ff3e-5783-11e8-a68d-1202be33576a_guhnzn.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728312915/6c149b56-5783-11e8-9c72-1202be33576a_mr95pz.jpg"
+      ],
+      "status": "còn trống",
+      "categoriesId": {
+        "$oid": "66eafbb0cb37101e8e8f894c"
+      },
+      "appliancesId": {
+        "$oid": "66fb94f0e758c49d8a023762"
+      },
+      "reviews": [],
+      "createdAt": "2024-10-07T12:45:00Z",
+      "updatedAt": {
+        "$date": "2024-10-07T13:00:00.000Z"
+      },
+      "censorship": "Chấp nhận",
+      "favorite": false
+    },
+
+    {
+      "_id": {
+        "$oid": "66eafc44cb37101e8e8f896e"
+      },
+      "name": "Working Building ",
+      "description": "Working Building mang đến không gian làm việc hiện đại và năng động. Với thiết kế thoáng đãng, nhiều ánh sáng tự nhiên, đây là nơi lý tưởng cho những buổi họp mặt đội nhóm, làm việc cá nhân hoặc các cuộc gặp gỡ đối tác. Tòa nhà cung cấp đầy đủ tiện nghi cần thiết để bạn có thể làm việc một cách hiệu quả và thoải mái. Vị trí trung tâm quận Ba Đình, thuận tiện di chuyển đến các khu vực trọng điểm của thành phố.",
+      "location": "Tầng 2 của tòa nhà 381 Đội Cấn, Liễu Giai, Ba Đình, Hà Nội",
+      "area": "65m2",
+      "rulesId": {
+        "$oid": "66ed8eca5af2082abdf9732a"
+      },
+      "userId": {
+        "$oid": "6639786d743f79c9b97fc1c5"
+      },
+      "pricePerHour": "40",
+      "images": [
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313293/312a0932-5d26-11e9-ba38-0ec6db7d2a3c_pi0u3m.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31b50c26-5d26-11e9-ba38-0ec6db7d2a3c_dklhbu.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/318a24ac-5d26-11e9-ba38-0ec6db7d2a3c_ojekdj.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31538c26-5d26-11e9-ba38-0ec6db7d2a3c_gtcfgc.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/30ecdecc-5d26-11e9-ba38-0ec6db7d2a3c_mkmjvt.jpg"
+      ],
+      "status": "còn trống",
+      "categoriesId": {
+        "$oid": "66eafbb0cb37101e8e8f894c"
+      },
+      "appliancesId": {
+        "$oid": "66fb94f0e758c49d8a023783"
+      },
+      "reviews": [],
+      "createdAt": "2024-10-07T14:15:00Z",
+      "updatedAt": {
+        "$date": "2024-10-07T14:30:00.000Z"
+      },
+      "censorship": "Chấp nhận",
+      "favorite": false
+    },
+    {
+      "_id": {
+        "$oid": "66eafc44cb37101e8e8f896b"
+      },
+      "name": "Lee Garden",
+      "description": "Lee Garden nằm tại quận Hoàn Kiếm, Hà Nội, là không gian lý tưởng cho những ai muốn tìm kiếm một nơi yên tĩnh, hiện đại để làm việc hoặc tổ chức các sự kiện nhỏ. Với thiết kế mở, không gian tràn ngập ánh sáng tự nhiên và các tiện nghi hiện đại, Lee Garden mang đến cảm giác thoải mái và sáng tạo cho người sử dụng. Địa điểm thuận lợi, gần các khu vực dịch vụ và thương mại sôi động, giúp bạn dễ dàng kết nối và giao lưu.",
+      "location": "Hoan Kiem, Ha Noi",
+      "area": "80m2",
+      "rulesId": {
+        "$oid": "66ed8eca5af2082abdf9732a"
+      },
+      "userId": {
+        "$oid": "6639786d743f79c9b97fc1c5"
+      },
+      "pricePerHour": "50",
+      "images": [
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/b026cde8-8de5-11e9-aef8-0ec6db7d2a3c_ceaejg.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313497/aff73b6e-8de5-11e9-aef8-0ec6db7d2a3c_bajn0f.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/afe133f0-8de5-11e9-aef8-0ec6db7d2a3c_ygpqgz.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313499/afc75318-8de5-11e9-aef8-0ec6db7d2a3c_oqltfo.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313500/b00dfa20-8de5-11e9-aef8-0ec6db7d2a3c_a9skmp.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313501/b050ee02-8de5-11e9-aef8-0ec6db7d2a3c_ibzfjq.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313501/b03a69b6-8de5-11e9-aef8-0ec6db7d2a3c_asqzzu.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313502/afacf1da-8de5-11e9-aef8-0ec6db7d2a3c_pgwilm.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313503/BUILDING-AVATAR-2d523233-ab90-44cd-93fc-c528841e7ff2_kk15xh.jpg"
+      ],
+      "status": "còn trống",
+      "categoriesId": {
+        "$oid": "66eafbb0cb37101e8e8f894c"
+      },
+      "appliancesId": {
+        "$oid": "66fb94f0e758c49d8a023783"
+      },
+      "reviews": [],
+      "createdAt": "2024-10-07T14:15:00Z",
+      "updatedAt": {
+        "$date": "2024-10-07T14:30:00.000Z"
+      },
+      "censorship": "Chấp nhận",
+      "favorite": false
+    },
+    {
+      "_id": {
+        "$oid": "66eb0d8bcb37101e8e8f896b"
+      },
+      "name": "Green Space",
+      "description": "Green Space là một địa điểm lý tưởng dành cho các cá nhân và nhóm nhỏ muốn tìm kiếm không gian làm việc sáng tạo và thoải mái. Với thiết kế hiện đại, không gian xanh mát, và ánh sáng tự nhiên, nơi đây sẽ mang lại cảm giác thư giãn và năng động. Green Space nằm tại quận Thanh Xuân, nơi có nhiều tiện ích và giao thông thuận lợi.",
+      "location": "Thanh Xuan, Ha Noi",
+      "area": "75m2",
+      "rulesId": {
+        "$oid": "66ed8eca5af2082abdf9732a"
+      },
+      "userId": {
+        "$oid": "6639786d743f79c9b97fc1c5"
+      },
+      "pricePerHour": "60",
+      "images": [
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313735/2070d826-dc92-47b8-8370-8510f3ae9149-1618297875422_e3vmao.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/1214ed97-23f3-4f8f-9dbd-0309465e50f5-1618297852697_hvmjts.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/2cb2db15-8640-4bb9-85ae-8e921386795e-1618297892122_qkrpro.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313738/7afe14d8-6c76-4e17-b6e3-76a4d841b72e-1618297840943_thnh50.jpg",
+        "https://res.cloudinary.com/doqzlygge/image/upload/v1728313739/da8a065b-2b3c-46f6-995a-5ab53c918e8b-1618297834172_mgfopb.jpg"
+      ],
+      "status": "Đang dọn dẹp",
+      "categoriesId": {
+        "$oid": "66eafbb0cb37101e8e8f894c"
+      },
+      "appliancesId": {
+        "$oid": "66fb94f0e758c49d8a023783"
+      },
+      "reviews": [],
+      "createdAt": "2024-10-07T14:45:00Z",
+      "updatedAt": {
+        "$date": "2024-10-07T15:00:00.000Z"
+      },
+      "censorship": "Chấp nhận",
+      "favorite": false
+    }
+  ]

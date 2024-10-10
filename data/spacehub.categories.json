@@ -59,14 +59,28 @@
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   },
-  {
-    "_id": {
-      "$oid": "66eafbb0cb37101e8e8f894b"
-    },
-    "name": "Phòng thu",
-    "description": "Service Space là một khu vực đa năng được thiết kế để hỗ trợ nhiều nhu cầu chuyên môn và hoạt động khác nhau. Lý tưởng cho các hoạt động dịch vụ khách hàng, chức năng hỗ trợ hoặc dịch vụ kinh doanh, không gian này được trang bị các tiện nghi và công nghệ thiết yếu để đảm bảo cung cấp dịch vụ hiệu quả và hiệu suất cao.",
-    "iconName": "Audiotrack",
-    "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": "2024-09-17T12:00:00Z"
-  }
+  "name": "PentHouse",
+  "description": "PentHouse là địa điểm giải trí sang trọng được thiết kế cho các sự kiện độc quyền và các cuộc tụ họp cấp cao. Với tầm nhìn toàn cảnh tuyệt đẹp, phong cách trang trí hiện đại và thiết bị nghe nhìn hàng đầu, PentHouse mang đến bối cảnh vô song để tổ chức các bữa tiệc cao cấp, sự kiện của công ty và lễ kỷ niệm riêng tư. Môi trường rộng rãi và phong cách đảm bảo một trải nghiệm đáng nhớ, kết hợp sự thanh lịch với các tiện nghi hiện đại cho một sự kiện đặc biệt.",
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": "2024-09-17T12:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "66eafbb0cb37101e8e8f894b"
+  },
+  "name": "Service Space",
+  "description": "Service Space là một khu vực đa năng được thiết kế để hỗ trợ nhiều nhu cầu chuyên môn và hoạt động khác nhau. Lý tưởng cho các hoạt động dịch vụ khách hàng, chức năng hỗ trợ hoặc dịch vụ kinh doanh, không gian này được trang bị các tiện nghi và công nghệ thiết yếu để đảm bảo cung cấp dịch vụ hiệu quả và hiệu suất cao.",
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": "2024-09-17T12:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "66eafbb0cb37101e8e8f894c"  
+  },
+  "name": "Workspace",
+  "description": "Không gian làm việc hiện đại, được trang bị đầy đủ tiện nghi, lý tưởng cho các cá nhân, đội nhóm nhỏ làm việc, họp hành hoặc dự án sáng tạo. Với môi trường yên tĩnh và thoải mái, Workspace cung cấp một nền tảng lý tưởng để tăng cường hiệu suất và sáng tạo.",
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": "2024-09-17T12:00:00Z"
+}
+
 ]

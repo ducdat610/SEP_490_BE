@@ -78,6 +78,10 @@ const spacesSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    isUpdate:{
+      type: Boolean,
+      default: false
+    }
   },
   {
     timestamps: true,
