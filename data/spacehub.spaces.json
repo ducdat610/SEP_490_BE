@@ -415,6 +415,7 @@
       "updatedAt": {
         "$date": "2024-10-07T14:30:00.000Z"
       },
+      "reportCount": 0,
       "censorship": "Chấp nhận",
       "favorite": false
     },
