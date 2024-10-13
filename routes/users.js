@@ -180,6 +180,7 @@ usersRouter.post("/login", async (req, res, next) => {
       id: user._id,
       fullname: user.fullname,
       role: user.role,
+      firstLogin: user.firstLogin,
     });
   } catch (error) {
     next(error);
