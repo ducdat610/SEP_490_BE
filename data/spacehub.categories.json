@@ -53,15 +53,9 @@
     "_id": {
       "$oid": "66eafbb0cb37101e8e8f894a"
     },
-    "name": "PentHouse",
-    "description": "PentHouse là địa điểm giải trí sang trọng được thiết kế cho các sự kiện độc quyền và các cuộc tụ họp cấp cao. Với tầm nhìn toàn cảnh tuyệt đẹp, phong cách trang trí hiện đại và thiết bị nghe nhìn hàng đầu, PentHouse mang đến bối cảnh vô song để tổ chức các bữa tiệc cao cấp, sự kiện của công ty và lễ kỷ niệm riêng tư. Môi trường rộng rãi và phong cách đảm bảo một trải nghiệm đáng nhớ, kết hợp sự thanh lịch với các tiện nghi hiện đại cho một sự kiện đặc biệt.",
+    "name": "Khu làm việc",
+    "description": "Khu làm việc là địa điểm giải trí sang trọng được thiết kế cho các sự kiện độc quyền và các cuộc tụ họp cấp cao. Với tầm nhìn toàn cảnh tuyệt đẹp, phong cách trang trí hiện đại và thiết bị nghe nhìn hàng đầu, Khu làm việc mang đến bối cảnh vô song để tổ chức các bữa tiệc cao cấp, sự kiện của công ty và lễ kỷ niệm riêng tư. Môi trường rộng rãi và phong cách đảm bảo một trải nghiệm đáng nhớ, kết hợp sự thanh lịch với các tiện nghi hiện đại cho một sự kiện đặc biệt.",
     "iconName": "Apartment",
-    "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": "2024-09-17T12:00:00Z"
-  },
-  {
-    "name": "PentHouse",
-    "description": "PentHouse là địa điểm giải trí sang trọng được thiết kế cho các sự kiện độc quyền và các cuộc tụ họp cấp cao. Với tầm nhìn toàn cảnh tuyệt đẹp, phong cách trang trí hiện đại và thiết bị nghe nhìn hàng đầu, PentHouse mang đến bối cảnh vô song để tổ chức các bữa tiệc cao cấp, sự kiện của công ty và lễ kỷ niệm riêng tư. Môi trường rộng rãi và phong cách đảm bảo một trải nghiệm đáng nhớ, kết hợp sự thanh lịch với các tiện nghi hiện đại cho một sự kiện đặc biệt.",
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   },
