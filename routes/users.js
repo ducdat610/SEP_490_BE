@@ -117,7 +117,7 @@ usersRouter.put("/def/:userId", async (req, res, next) => {
         .json({ error: "Tài khoản ngân hàng không thuộc về người dùng này" });
     }
 
-    // Cập nhật tài khoản ngân hàng mặc định cho người dùng
+    // Cập nhật tài khoản ngân hàng mặc định cho người
     const updatedUser = await Users.findByIdAndUpdate(
       userId,
       { defaultBankAccount: defaultBankAccountId }, // Cập nhật trường defaultBankAccount
