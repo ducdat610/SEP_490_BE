@@ -15,21 +15,21 @@ spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
 
-
 // tim kiem space
-spaceRouter.get('/search/:name', async (req, res, next) => {
+spaceRouter.get("/search/:name", async (req, res, next) => {
   try {
-    const name = req.params.name
+    const name = req.params.name;
     const rgx = (pattern) => new RegExp(`.*${pattern}.*`);
     const searchRgx = rgx(name);
 
-    const searchResult = await Spaces.find({ name: { $regex: searchRgx, $options: "i" } })
-    res.send(searchResult)
+    const searchResult = await Spaces.find({
+      name: { $regex: searchRgx, $options: "i" },
+    });
+    res.send(searchResult);
   } catch (error) {
     throw new Error(error.toString());
-
   }
-})
+});
 
 spaceRouter.get("/filter", async (req, res, next) => {
   try {
@@ -40,11 +40,11 @@ spaceRouter.get("/filter", async (req, res, next) => {
 
     // Lọc theo địa chỉ
     if (location) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, 'i'); // i: không phân biệt chữ hoa/thường
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i"); // i: không phân biệt chữ hoa/thường
       filter.location = { $regex: rgx(location) };
     }
     if (area) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, 'i');
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
       filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
     }
 
@@ -65,20 +65,18 @@ spaceRouter.get("/filter", async (req, res, next) => {
     // Thực hiện truy vấn với filter đã tạo
     const filteredSpaces = await Spaces.find(filter)
       .populate("categories") // Nếu cần populate thêm thông tin của thể loại
-      .populate("rules")      // Nếu cần populate thêm thông tin khác
+      .populate("rules") // Nếu cần populate thêm thông tin khác
       .exec();
 
     res.status(200).json(filteredSpaces);
   } catch (error) {
     throw new Error(error.toString());
-
   }
-})
+});
 spaceRouter.post("/", spaceController.createNewSpace);
 
-
 // get theo id
-spaceRouter.get('/cate/:id', spaceController.getSimilarSpaces)  
+spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
 
 // so sánh
 spaceRouter.get("/compare-spaces-differences", async (req, res) => {
@@ -91,23 +89,30 @@ spaceRouter.get("/compare-spaces-differences", async (req, res) => {
 
     // nếu not found
     if (!space1 || !space2) {
-      return res.status(404).json({ message: "Không tìm thấy một hoặc cả hai sản phẩm" });
+      return res
+        .status(404)
+        .json({ message: "Không tìm thấy một hoặc cả hai sản phẩm" });
     }
 
-    // So sánh các trường in ra những trường khác 
+    // So sánh các trường in ra những trường khác
     const differences = {};
 
-    const image1 = space1.images && space1.images.length > 0 ? space1.images[0] : null;
-    const image2 = space2.images && space2.images.length > 0 ? space2.images[0] : null;
+    const image1 =
+      space1.images && space1.images.length > 0 ? space1.images[0] : null;
+    const image2 =
+      space2.images && space2.images.length > 0 ? space2.images[0] : null;
 
     differences.images = { space1: image1, space2: image2 };
-    
+
     if (space1.name !== space2.name) {
       differences.name = { space1: space1.name, space2: space2.name };
     }
 
     if (space1.location !== space2.location) {
-      differences.location = { space1: space1.location, space2: space2.location };
+      differences.location = {
+        space1: space1.location,
+        space2: space2.location,
+      };
     }
 
     if (space1.area !== space2.area) {
@@ -115,7 +120,10 @@ spaceRouter.get("/compare-spaces-differences", async (req, res) => {
     }
 
     if (space1.pricePerHour !== space2.pricePerHour) {
-      differences.pricePerHour = { space1: space1.pricePerHour, space2: space2.pricePerHour };
+      differences.pricePerHour = {
+        space1: space1.pricePerHour,
+        space2: space2.pricePerHour,
+      };
     }
 
     if (space1.status !== space2.status) {
@@ -145,30 +153,34 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
 
     // Nếu không tìm thấy
     if (!space1 || !space2) {
-      return res.status(404).json({ message: "Không tìm thấy một hoặc cả hai sản phẩm" });
+      return res
+        .status(404)
+        .json({ message: "Không tìm thấy một hoặc cả hai sản phẩm" });
     }
 
     // Tạo đối tượng để chứa thông tin so sánh
     const comparisonResult = {
       space1: {
-        images: space1.images && space1.images.length > 0 ? space1.images[0] : null,
+        images:
+          space1.images && space1.images.length > 0 ? space1.images[0] : null,
         // id: space1._id,
         name: space1.name,
         location: space1.location,
         area: space1.area,
         pricePerHour: space1.pricePerHour,
         status: space1.status,
-        images: space1.images && space1.images.length > 0 ? space1.images[0] : null,
+        images:
+          space1.images && space1.images.length > 0 ? space1.images[0] : null,
       },
       space2: {
-        images: space2.images && space2.images.length > 0 ? space2.images[0] : null,
+        images:
+          space2.images && space2.images.length > 0 ? space2.images[0] : null,
         // id: space2._id,
         name: space2.name,
         location: space2.location,
         area: space2.area,
         pricePerHour: space2.pricePerHour,
         status: space2.status,
-       
       },
     };
 
@@ -180,15 +192,14 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
   }
 });
 
-
 spaceRouter.get("/:id", async (req, res, next) => {
-  try { 
+  try {
     const space = await Spaces.findById(req.params.id)
-    .populate("userId")
-    .populate("rulesId")
-    .populate("appliancesId")
-    .populate("categoriesId")
-    .exec();
+      .populate("userId")
+      .populate("rulesId")
+      .populate("appliancesId")
+      .populate("categoriesId")
+      .exec();
     if (!space) {
       throw createError(400, "Space not found");
     }
@@ -198,13 +209,13 @@ spaceRouter.get("/:id", async (req, res, next) => {
   }
 });
 
-// Từ chối post 
+// Từ chối post
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
-    const { communityStandardsId } = req.body; 
+    const { communityStandardsId } = req.body;
     const updatedPost = await Spaces.findByIdAndUpdate(
       req.params.id,
-      { censorship: "Từ chối", communityStandardsId }, 
+      { censorship: "Từ chối", communityStandardsId },
       { new: true }
     ).populate("communityStandardsId");
 
