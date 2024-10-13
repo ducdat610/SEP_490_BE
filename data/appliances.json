@@ -68,5 +68,10 @@
     "name": "Quạt",
     "description": "Hệ thống gió",
     "isCustom": true
+  },
+  {
+    "name": "Máy Xông",
+    "description": "Thiết bị làm ấm không khí",
+    "isCustom": false
   }
 ]
