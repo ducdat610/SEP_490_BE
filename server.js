@@ -18,6 +18,7 @@ import {
   reasonsRouter,
   messageRouter,
   userNeedRouter,
+  communityStandardsRouter,
 } from "./routes/index.js";
 
 dotenv.config();
@@ -44,6 +45,7 @@ app.use("/reports", reportRouter);
 app.use("/reasons", reasonsRouter);
 app.use("/message", messageRouter);
 app.use("/userNeed", userNeedRouter);
+app.use("/communityStandards", communityStandardsRouter);
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
