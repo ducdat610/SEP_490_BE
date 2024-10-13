@@ -47,6 +47,14 @@ const usersSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    firstLogin: {
+      type: Boolean,
+      default: true,
+    },
+    needs: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "UserNeeds",
+    },
     bankAccounts: {
       type: [mongoose.Schema.Types.ObjectId],
       ref: "bankAccount",
