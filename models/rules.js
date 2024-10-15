@@ -9,6 +9,10 @@ const rulesSchema = new Schema(
       type: [String], 
       required: true,
     },
+    customeRules:{
+      type: [String],
+      required: false,
+    }
   },
   {
     timestamps: true, 
