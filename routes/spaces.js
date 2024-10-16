@@ -9,6 +9,7 @@ import {
   verifyRefreshToken,
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
+import Users from "../models/users.js";
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
@@ -203,12 +204,28 @@ spaceRouter.get("/:id", async (req, res, next) => {
     if (!space) {
       throw createError(400, "Space not found");
     }
+
     res.status(200).json(space);
   } catch (error) {
     next(error);
   }
 });
+// Get Space theo UseId
+spaceRouter.get("/for/:id", async (req, res, next) => {
+  try {
+    const userId = req.params.id;
+    const user = await Spaces.find({ userId: userId }).exec();
 
+    if (!user) {
+      return res.status(404).json({ message: "Space not found" });
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    console.error("Lỗi khi lấy thông tin ", error);
+    res.status(500).json({ message: "Đã xảy ra lỗi khi lấy thông tin " });
+  }
+});
 // Từ chối post
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
