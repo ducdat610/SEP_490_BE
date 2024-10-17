@@ -18,18 +18,17 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    rulesId: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "rules",
-        required: true,
-      },
-    ],
-    communityStandardsId:{
+    rulesId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "rules",
+      required: true,
+    },
+
+    communityStandardsId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "communityStandards",
     },
-    userId:{
+    userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
       required: true,
@@ -72,8 +71,8 @@ const spacesSchema = new Schema(
       ref: "appliances",
       required: true,
     },
-    room:{
-      type:String,
+    room: {
+      type: String,
     },
     reviews: [
       {
@@ -86,11 +85,11 @@ const spacesSchema = new Schema(
       type: Number,
       default: 0,
     },
-    favorite:{
+    favorite: {
       type: Boolean,
       default: false,
     },
-    isUpdate:{
+    isUpdate: {
       type: Boolean,
       default: false
     }

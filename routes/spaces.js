@@ -1,5 +1,6 @@
 import { spaceController } from "../controllers/index.js";
 import express from "express";
+import uploadCloud from "../cloudinary.config.js";
 
 import Spaces from "../models/spaces.js";
 import createError from "http-errors";
@@ -14,6 +15,9 @@ const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
+spaceRouter.post('/', uploadCloud.array('image',10), spaceController.createNewSpace);
+// spaceRouter.post("/", spaceController.createNewSpace);
+
 
 // tim kiem space
 spaceRouter.get("/search/:name", async (req, res, next) => {
@@ -73,7 +77,6 @@ spaceRouter.get("/filter", async (req, res, next) => {
     throw new Error(error.toString());
   }
 });
-spaceRouter.post("/", spaceController.createNewSpace);
 
 // get theo id
 spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);

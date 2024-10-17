@@ -35,6 +35,8 @@ const getSimilarSpaces = async (req, res) => {
 
 // Tạo mới một không gian
 export const createNewSpace = async (req, res) => {
+
+  
   try {
     const { 
       name, 
@@ -47,7 +49,7 @@ export const createNewSpace = async (req, res) => {
       pricePerDay,
       pricePerWeek,
       pricePerMonth,
-      images,   
+      image,   
       censorship,
       status,
       categoriesId, 
@@ -56,6 +58,10 @@ export const createNewSpace = async (req, res) => {
       favorite
     } = req.body; // Lưu appliancesId từ request body
 
+    let images = image;
+    if (!Array.isArray(images)) {
+      images = [images];
+    }
     const spaceData = {
       name, 
       description, 
@@ -67,7 +73,7 @@ export const createNewSpace = async (req, res) => {
       pricePerDay,
       pricePerWeek,
       pricePerMonth,
-      images,   
+      images:images,   
       censorship,
       status,
       categoriesId, 
