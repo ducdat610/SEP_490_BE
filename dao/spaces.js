@@ -7,7 +7,14 @@ const fetchAllSpaces = async () => {
     throw new Error(error.toString());
   }
 }
-
+const fetchSpaceByUserId = async (id) => {
+  try {
+    const userId = await Spaces.find({userId: id}).populate("userId").exec()
+    return userId
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+}
 const fetchAllSpaceFavorite = async () => {
   try {
     return await Spaces.find({ favorite: true }).populate("appliancesId").exec()
@@ -19,8 +26,6 @@ const fetchAllSpaceFavorite = async () => {
 const fetchSimilarSpaces = async (id) => {
   try {
     const spaceId = await Spaces.find({ categoriesId: id })
-      // .populate('rules')
-      // .populate('appliances')
       .populate('categoriesId')
       .populate('reviews')
     return spaceId
@@ -36,8 +41,8 @@ export const createSpace = async (spaceData) => {
     await newSpace.save();
     return newSpace;
   } catch (error) {
-    console.error("Error saving space to database:", error); // Log lỗi chi tiết
+    console.error("Error saving space to database:", error); 
     throw new Error('Error creating space in DAO');
   }
 };
-export default { fetchAllSpaces, fetchSimilarSpaces, createSpace,fetchAllSpaceFavorite }
+export default { fetchAllSpaces, fetchSimilarSpaces, createSpace,fetchAllSpaceFavorite, fetchSpaceByUserId }
