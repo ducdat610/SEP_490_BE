@@ -13,7 +13,7 @@
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c2"
     },
-    "pricePerHour": "40",
+    "pricePerHour": "400000",
     "images": [
       "https://www.yourstudiovn.com/uploads/14480652_1228352917223552_1893527332350591752_o.jpg",
       "https://shop28decor.com/ct/uploads/2023/03/Screenshot-2023-03-24-115858.jpg"
@@ -49,7 +49,7 @@
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c3"
     },
-    "pricePerHour": "20",
+    "pricePerHour": "200000",
     "images": [
       "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/c3c0a6e1-a4a1-4f20-818a-cd716dc5c00d/1000007648.jpg",
       "https://images.squarespace-cdn.com/content/v1/5e09296ef5af2f048ce79066/1704388518510-UZYFGU4IA0F9DCJ97PLU/317A8133-HDR.jpg",
@@ -90,7 +90,7 @@
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c4"
     },
-    "pricePerHour": "20",
+    "pricePerHour": "200000",
     "images": [
       "https://serepok.com/static/img/home/product-2.jpg",
       "https://serepok.com/static/img/home/future.jpg"
@@ -126,7 +126,7 @@
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c5"
     },
-    "pricePerHour": "20",
+    "pricePerHour": "200000",
     "images": [
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415708123.jpg?k=7f399bb9b10c049c6c7a1c98f45b13b3b5df0b9d6a23733627bd60866ee61ff8&o=&hp=1",
       "https://cf.bstatic.com/xdata/images/hotel/max1280x900/415707997.jpg?k=5392b9f3efe2d7f1c4b7f48ee4fa14df3056dc99fbf7856a1527eaf668abe03d&o=&hp=1"
@@ -166,7 +166,7 @@
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c5"
     },
-    "pricePerHour": "30",
+    "pricePerHour": "300000",
     "images": [
       "https://res.cloudinary.com/doqzlygge/image/upload/v1728311732/BUILDING-AVATAR-0ff88c16-25b6-418d-8935-6ee320fcdd9d_rbfoz0.jpg",
       "https://res.cloudinary.com/doqzlygge/image/upload/v1728311732/5ddcbef0-cf5b-11e9-bbca-0a80a47aa582_p1d586.jpg",
@@ -204,7 +204,7 @@
       "userId": {
         "$oid": "6639786d743f79c9b97fc1c5"
       },
-      "pricePerHour": "40",
+      "pricePerHour": "400000",
       "images": [
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728312157/f4f8780a-94a5-11ea-9a32-0e478a462aa9_tkdip6.jpg",
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/ea494ee8-94a5-11ea-a858-0e478a462aa9_zy7eyo.jpg",
@@ -241,7 +241,7 @@
     "userId": {
       "$oid": "6639786d743f79c9b97fc1c5"
     },
-    "pricePerHour": "40",
+    "pricePerHour": "400000",
     "images": [
       "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/3d1b0218-af57-4628-a718-1bad68b77c70-1675240376381_b7jysd.jpg",
       "https://res.cloudinary.com/doqzlygge/image/upload/v1728312357/6aba1391-3463-4963-acb4-529182d12b49-1675240407068_ix5d0f.jpg",
@@ -281,7 +281,7 @@
       "userId": {
         "$oid": "6639786d743f79c9b97fc1c5"
       },
-      "pricePerHour": "55",
+      "pricePerHour": "550000",
       "images": [
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/30032c71-3239-439b-960b-228966ccc769-1658112944060_iose0w.jpg",
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/eb335cc3-3703-4172-8d46-bf9044d891cf-1658112938993_kcgcqz.jpg",
@@ -320,7 +320,7 @@
       "userId": {
         "$oid": "6639786d743f79c9b97fc1c5"
       },
-      "pricePerHour": "35",
+      "pricePerHour": "350000",
       "images": [
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728312916/8ffd8ff0-5783-11e8-a68d-1202be33576a_ji4k2n.jpg",
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728312916/BUILDING-AVATAR-173a736a-06c3-46ae-8c95-390e93adfcce_wovfrc.jpg",
@@ -357,7 +357,7 @@
       "userId": {
         "$oid": "6639786d743f79c9b97fc1c5"
       },
-      "pricePerHour": "40",
+      "pricePerHour": "400000",
       "images": [
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728313293/312a0932-5d26-11e9-ba38-0ec6db7d2a3c_pi0u3m.jpg",
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31b50c26-5d26-11e9-ba38-0ec6db7d2a3c_dklhbu.jpg",
@@ -394,7 +394,7 @@
       "userId": {
         "$oid": "6639786d743f79c9b97fc1c5"
       },
-      "pricePerHour": "50",
+      "pricePerHour": "500000",
       "images": [
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/b026cde8-8de5-11e9-aef8-0ec6db7d2a3c_ceaejg.jpg",
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728313497/aff73b6e-8de5-11e9-aef8-0ec6db7d2a3c_bajn0f.jpg",
@@ -418,6 +418,7 @@
       "updatedAt": {
         "$date": "2024-10-07T14:30:00.000Z"
       },
+      "reportCount": 0,
       "censorship": "Chấp nhận",
       "favorite": false
     },
@@ -435,7 +436,7 @@
       "userId": {
         "$oid": "6639786d743f79c9b97fc1c5"
       },
-      "pricePerHour": "60",
+      "pricePerHour": "600000",
       "images": [
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728313735/2070d826-dc92-47b8-8370-8510f3ae9149-1618297875422_e3vmao.jpg",
         "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/1214ed97-23f3-4f8f-9dbd-0309465e50f5-1618297852697_hvmjts.jpg",
