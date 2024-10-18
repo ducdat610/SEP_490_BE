@@ -38,6 +38,18 @@ const spacesSchema = new Schema(
       type: Number,
       required: true,
     },
+    dailyPrice:{
+      type: Number,
+      required: true,
+    },
+    weeklyPrice:{
+      type: Number,
+      required: true,
+    },
+    monthlyPrice:{
+      type: Number,
+      required: true,
+    },
     images: [{ type: String }],
     censorship: {
       type: String,
