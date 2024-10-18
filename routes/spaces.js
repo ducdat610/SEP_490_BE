@@ -262,6 +262,6 @@ spaceRouter.put("/update/:postId", async (req, res, next) => {
     next(error);
   }
 });
-spaceRouter.get("/spaces/:id", spaceController.getSpaceByUserId);
+// spaceRouter.get("/spaces/:id", spaceController.getSpaceByUserId);
 
 export default spaceRouter;

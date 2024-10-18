@@ -19,19 +19,19 @@ const getAllSpaceFavorites = async (req, res) => {
   }
 }
 
-const getSpaceByUserId = async (req, res) => {
-  try {
-    const userId = req.params.id;
-    const allSpaceByUserId = await spaceDao.fetchSpaceByUserId(userId);
-    if (allSpaceByUserId) {
-      res.status(200).json(allSpaceByUserId);
-    } else {
-      res.status(404).json({ message: "Not found space" });
-    }
-  } catch (error) {
-    res.status(500).json({ message: error.toString() });
-  }
-};
+// const getSpaceByUserId = async (req, res) => {
+//   try {
+//     const userId = req.params.id;
+//     const allSpaceByUserId = await spaceDao.fetchSpaceByUserId(userId);
+//     if (allSpaceByUserId) {
+//       res.status(200).json(allSpaceByUserId);
+//     } else {
+//       res.status(404).json({ message: "Not found space" });
+//     }
+//   } catch (error) {
+//     res.status(500).json({ message: error.toString() });
+//   }
+// };
 
 const getSimilarSpaces = async (req, res) => {
   try {
@@ -169,4 +169,4 @@ const changeFavoriteStatus = async (req, res) => {
 };
 
 
-export default { getAllSpaces, getSimilarSpaces,createNewSpace,changeFavoriteStatus,getAllSpaceFavorites,getSpaceByUserId }
+export default { getAllSpaces, getSimilarSpaces,createNewSpace,changeFavoriteStatus,getAllSpaceFavorites }
