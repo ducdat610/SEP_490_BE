@@ -12,6 +12,7 @@ import {
 import { userController } from "../controllers/index.js";
 import jwt from "jsonwebtoken";
 import BankAccount from "../models/bankAccounts.js";
+import UserNeeds from "../models/userNeeds.js";
 const usersRouter = express.Router();
 usersRouter.put("/changepass/:username", userController.changePass);
 usersRouter.get("/", userController.getAllUsers);
@@ -88,6 +89,7 @@ usersRouter.post("/login", async (req, res, next) => {
       id: user._id,
       fullname: user.fullname,
       role: user.role,
+      firstLogin: user.firstLogin,
     });
   } catch (error) {
     next(error);
@@ -135,7 +137,6 @@ usersRouter.put("/def/:userId", async (req, res, next) => {
 // Đăng ký người dùng mới
 usersRouter.post("/register", async (req, res, next) => {
   try {
-    // Validate dữ liệu nhập vào
     const { error } = registerSchema.validate(req.body);
     if (error) {
       throw createError.BadRequest(error.details[0].message); // Trả về lỗi validation
@@ -143,36 +144,29 @@ usersRouter.post("/register", async (req, res, next) => {
 
     const { username, password, gmail } = req.body;
 
-    // Kiểm tra xem username đã tồn tại chưa
     const existingUserByUsername = await Users.findOne({ username }).exec();
     if (existingUserByUsername)
       throw createError.Conflict("Tên người dùng đã tồn tại");
 
-    // Kiểm tra xem gmail đã tồn tại chưa
     const existingUserByGmail = await Users.findOne({ gmail }).exec();
     if (existingUserByGmail)
       throw createError.Conflict("Gmail đã được đăng ký");
 
-    // Mã hóa mật khẩu
     const hashPass = await bcrypt.hash(
       password,
       parseInt(process.env.PASSWORD_SECRET)
     );
 
-    // Tạo người dùng mới với thông tin được cung cấp
     const newUser = new Users({
       username,
       gmail,
       password: hashPass,
     });
 
-    // Lưu người dùng mới vào cơ sở dữ liệu
     const savedUser = await newUser.save();
 
-    // Tạo access token sau khi đăng ký thành công
     const accessToken = await signAccessToken(savedUser._id);
 
-    // Gửi phản hồi cho client
     res.status(201).send({ accessToken, newUser });
   } catch (error) {
     next(error);
@@ -180,6 +174,53 @@ usersRouter.post("/register", async (req, res, next) => {
 });
 
 // Đăng nhập người dùng
+usersRouter.post("/login", async (req, res, next) => {
+  try {
+    // Validate dữ liệu nhập vào
+    const { error } = loginSchema.validate(req.body);
+    if (error) {
+      throw createError.BadRequest(error.details[0].message);
+    }
+
+    const { username, password } = req.body;
+
+    // Tìm người dùng bằng username hoặc gmail đã đăng kí
+    const user = await Users.findOne({
+      $or: [{ username: username }, { gmail: username }],
+    }).exec();
+
+    if (!user) throw createError.NotFound("User not registered");
+
+    // Check if the user is banned
+    if (user.isBan) {
+      return res.status(403).json({ message: "User is banned" }); // 403 Forbidden
+    }
+
+    // Kiểm tra mật khẩu
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch)
+      throw createError.Unauthorized(
+        "Username, Gmail, or password is incorrect"
+      );
+
+    // Tạo access token và refresh token
+    const accessToken = await signAccessToken(user._id);
+    const refreshToken = await signRefreshToken(user._id);
+
+    // Trả về phản hồi
+    res.status(200).json({
+      username: user.username,
+      accessToken,
+      refreshToken,
+      id: user._id,
+      fullname: user.fullname,
+      role: user.role,
+      firstLogin: user.firstLogin,
+    });
+  } catch (error) {
+    next(error);
+  }
+});
 
 usersRouter.delete("/logout", async (req, res, next) => {
   res.send("Đường dẫn Đăng xuất");
@@ -221,6 +262,7 @@ usersRouter.get("/:id", async (req, res, next) => {
           select: "bankName",
         },
       })
+      .populate("needs")
       .exec();
 
     if (!user) {

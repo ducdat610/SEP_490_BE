@@ -13,9 +13,9 @@
     "_id": {
       "$oid": "66eafbb0cb37101e8e8f8946"
     },
-    "name": "Phim trường",
+    "name": "Phòng dạy thêm",
     "description": "Không gian rộng rãi thích hợp để tổ chức sự kiện, tiệc tùng hoặc hoạt động cộng đồng.",
-    "iconName": "Movie",
+    "iconName": "School",
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   },
@@ -33,8 +33,9 @@
     "_id": {
       "$oid": "66eafbb0cb37101e8e8f8948"
     },
-    "name": "Tổ chức tiệc cưới",
+    "name": "Phòng thu",
     "description": "Không gian được thiết kế để tổ chức các buổi làm việc, đào tạo hoặc sự kiện liên quan đến hoạt động học tập và thực hành.",
+<<<<<<< HEAD
     "iconName": "Celebration",
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
@@ -74,6 +75,9 @@
     },
     "name": "Workspace",
     "description": "Không gian làm việc hiện đại, được trang bị đầy đủ tiện nghi, lý tưởng cho các cá nhân, đội nhóm nhỏ làm việc, họp hành hoặc dự án sáng tạo. Với môi trường yên tĩnh và thoải mái, Workspace cung cấp một nền tảng lý tưởng để tăng cường hiệu suất và sáng tạo.",
+=======
+    "iconName": "Audiotrack",
+>>>>>>> 1e8af96f22e22a98b2f4fd011b30beb61121515c
     "createdAt": "2024-09-17T12:00:00Z",
     "updatedAt": "2024-09-17T12:00:00Z"
   }

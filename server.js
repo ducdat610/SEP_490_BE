@@ -17,6 +17,7 @@ import {
   reportRouter,
   reasonsRouter,
   messageRouter,
+  userNeedRouter,
   communityStandardsRouter,
 } from "./routes/index.js";
 
@@ -43,6 +44,7 @@ app.use("/appliances", appliancesRouter);
 app.use("/reports", reportRouter);
 app.use("/reasons", reasonsRouter);
 app.use("/message", messageRouter);
+app.use("/userNeed", userNeedRouter);
 app.use("/communityStandards", communityStandardsRouter);
 
 app.use(function (req, res, next) {

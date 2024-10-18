@@ -2,7 +2,7 @@ import Spaces from "../models/spaces.js";
 
 const fetchAllSpaces = async () => {
   try {
-    return await Spaces.find({}).populate("appliancesId").populate("userId").exec()
+    return await Spaces.find({ censorship: "Chấp nhận" }).populate("appliancesId").populate("userId").exec()
   } catch (error) {
     throw new Error(error.toString());
   }
@@ -40,4 +40,4 @@ export const createSpace = async (spaceData) => {
     throw new Error('Error creating space in DAO');
   }
 };
-export default { fetchAllSpaces, fetchSimilarSpaces, createSpace,fetchAllSpaceFavorite }
+export default { fetchAllSpaces, fetchSimilarSpaces, createSpace, fetchAllSpaceFavorite }
