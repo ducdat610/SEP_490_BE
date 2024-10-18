@@ -51,7 +51,7 @@
     },
     "name": "Creative Photography Studio",
     "description": "Một studio được trang bị đầy đủ, hoàn hảo cho cả nhiếp ảnh gia chuyên nghiệp và nghiệp dư. Với trần nhà cao, hệ thống chiếu sáng tùy chỉnh và nhiều phông nền, không gian này lý tưởng cho các buổi chụp ảnh, chụp ảnh sản phẩm, chụp ảnh chân dung, v.v. Studio cung cấp các bố cục linh hoạt và thiết bị hiện đại, có thể dễ dàng điều chỉnh để phù hợp với các tầm nhìn sáng tạo khác nhau. Cho dù bạn là nhiếp ảnh gia đơn lẻ hay làm việc theo nhóm, studio của chúng tôi đều cung cấp một môi trường thoải mái và chuyên nghiệp cho mọi nhu cầu chụp ảnh của bạn.",
-    "location": "Soc Son, Ha Noi",
+    "location": "Sóc Sơn, Hà Nội",
     "area": "50m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
@@ -95,7 +95,7 @@
     },
     "name": "Vision Room Studios",
     "description": "Vision Room Studios được trang bị đầy đủ hệ thống đèn chuyên nghiệp và phông nền đa dạng, phù hợp với mọi nhu cầu chụp ảnh từ cá nhân, nhóm đến chụp sản phẩm. Với không gian rộng rãi và thiết kế trang nhã, studio mang đến cho bạn sự linh hoạt và sáng tạo tối đa. Đặc biệt, Vision Room Studios cung cấp đầy đủ các thiết bị cần thiết để bạn có thể tự do thiết kế và chụp những bức ảnh chất lượng cao theo ý muốn.",
-    "location": "Thuong Tin, Ha Noi",
+    "location": "Thường Tín, Hà Nội",
     "area": "42m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -140,7 +140,7 @@
     },
     "name": "Serepok Coworking Space",
     "description": "Serepok Coworking Space là một trong những nơi có văn phòng trọn gói lớn nhất ở trung tâm Nam Từ Liêm. Các văn phòng tràn ngập ánh sáng tự nhiên được thiết kế để tối đa hiệu quả công việc và giảm thiểu sự phân tâm",
-    "location": "Nam Tu Liem, Ha Noi",
+    "location": "Nam Từ Liêm, Hà Nội",
     "area": "42m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -182,7 +182,7 @@
     },
     "name": "CR Land Tower",
     "description": "Nằm ở Thành phố Hà Nội hiện đại và nghệ thuật, CR Land Tower mang đến cho bạn trải nghiệm làm việc mới. Nằm trong khu vực trung tâm với giao thông thuận tiện và khu kinh doanh với nhiều thương hiệu nổi tiếng, CR Land Tower sẽ mang đến cho bạn sự thuận tiện kép giữa công việc và cuộc sống.",
-    "location": "Thach That, Ha Noi",
+    "location": "Thạch Thất, Hà Nội",
     "area": "40m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -224,7 +224,7 @@
     },
     "name": "Modern Office Tower",
     "description": "Nằm tại Quận Ba Đình, Hà Nội, Modern Office Tower mang đến một không gian làm việc hiện đại và chuyên nghiệp. Với vị trí đắc địa, dễ dàng di chuyển đến các trung tâm hành chính và thương mại của thành phố, tòa nhà này hứa hẹn cung cấp sự thuận lợi tối đa cho mọi nhu cầu sử dụng. Tòa nhà được trang bị đầy đủ tiện nghi và hệ thống an ninh 24/7, mang đến sự yên tâm và tiện lợi cho khách hàng.",
-    "location": "Ba Dinh, Ha Noi",
+    "location": "Ba Đình, Hà Nội",
     "area": "45m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -264,7 +264,7 @@
     },
     "name": "Khu công nghệ phần mềm Weixin",
     "description": "Tọa lạc tại Quận Cầu Giấy, Hà Nội, Khu công nghệ phần mềm Weixin là một không gian lý tưởng dành cho các cá nhân về công nghệ và đội nhóm startup. Với hệ thống văn phòng hiện đại, không gian thoáng đãng và tiện nghi đầy đủ, nơi đây cung cấp một môi trường làm việc chuyên nghiệp và sáng tạo. Gần các khu vực tiện ích công cộng và có giao thông thuận tiện, Khu công nghệ phần mềm Weixin mang đến sự kết hợp hoàn hảo giữa công nghệ và cuộc sống đô thị.",
-    "location": "Cau Giay, Ha Noi",
+    "location": "Cầu Giấy, Hà Nội",
     "area": "50m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -305,7 +305,7 @@
     },
     "name": "Tòa nhà R&D",
     "description": "Tòa nhà R&D nằm ở Quận Hoàng Mai, Hà Nội, là nơi lý tưởng cho các hoạt động nghiên cứu và phát triển. Được trang bị đầy đủ tiện nghi hiện đại, toà nhà có không gian làm việc rộng rãi và an ninh đảm bảo. Với vị trí thuận lợi, gần các khu công nghiệp và giao thông thuận tiện, tòa nhà R&D phù hợp cho người sử dụng  muốn tìm kiếm địa điểm làm việc năng động và sáng tạo.",
-    "location": "Hoang Mai, Ha Noi",
+    "location": "Hoàng Mai, Hà Nội",
     "area": "100m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -346,7 +346,7 @@
     },
     "name": "YF Life Tower",
     "description": "YF Life Tower tọa lạc tại huyện Gia Lâm, Hà Nội, là không gian làm việc lý tưởng cho các cá nhân và đội nhóm nhỏ. Tòa nhà cung cấp môi trường làm việc thoải mái với các tiện nghi hiện đại, giúp bạn dễ dàng thực hiện các cuộc họp nhóm, làm việc từ xa hoặc phát triển các dự án cá nhân. Với không gian sạch sẽ và yên tĩnh, đây là lựa chọn hoàn hảo cho những người cần sự tập trung và hiệu quả cao trong công việc.",
-    "location": "Gia Lam, Ha Noi",
+    "location": "Gia Lâm, Hà Nội",
     "area": "50m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727f"
@@ -390,7 +390,7 @@
     },
     "name": "Working Building ",
     "description": "Working Building mang đến không gian làm việc hiện đại và năng động. Với thiết kế thoáng đãng, nhiều ánh sáng tự nhiên, đây là nơi lý tưởng cho những buổi họp mặt đội nhóm, làm việc cá nhân hoặc các cuộc gặp gỡ đối tác. Tòa nhà cung cấp đầy đủ tiện nghi cần thiết để bạn có thể làm việc một cách hiệu quả và thoải mái. Vị trí trung tâm quận Ba Đình, thuận tiện di chuyển đến các khu vực trọng điểm của thành phố.",
-    "location": "Tầng 2 của tòa nhà 381 Đội Cấn, Liễu Giai, Ba Đình, Hà Nội",
+    "location": "Ba Đình, Hà Nội",
     "area": "65m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9732a"
@@ -430,7 +430,7 @@
     },
     "name": "Lee Garden",
     "description": "Lee Garden nằm tại quận Hoàn Kiếm, Hà Nội, là không gian lý tưởng cho những ai muốn tìm kiếm một nơi yên tĩnh, hiện đại để làm việc hoặc tổ chức các sự kiện nhỏ. Với thiết kế mở, không gian tràn ngập ánh sáng tự nhiên và các tiện nghi hiện đại, Lee Garden mang đến cảm giác thoải mái và sáng tạo cho người sử dụng. Địa điểm thuận lợi, gần các khu vực dịch vụ và thương mại sôi động, giúp bạn dễ dàng kết nối và giao lưu.",
-    "location": "Hoan Kiem, Ha Noi",
+    "location": "Hoàn Kiếm, Hà Nội",
     "area": "80m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9732a"
@@ -475,7 +475,7 @@
     },
     "name": "Green Space",
     "description": "Green Space là một địa điểm lý tưởng dành cho các cá nhân và nhóm nhỏ muốn tìm kiếm không gian làm việc sáng tạo và thoải mái. Với thiết kế hiện đại, không gian xanh mát, và ánh sáng tự nhiên, nơi đây sẽ mang lại cảm giác thư giãn và năng động. Green Space nằm tại quận Thanh Xuân, nơi có nhiều tiện ích và giao thông thuận lợi.",
-    "location": "Thanh Xuan, Ha Noi",
+    "location": "Thanh Xuân, Hà Nội",
     "area": "75m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9732a"
@@ -515,7 +515,7 @@
     },
     "name": "Sound Recording Studio",
     "description": "Phòng thu âm chuyên nghiệp với không gian cách âm hoàn hảo, lý tưởng cho việc thu âm, hòa âm và sản xuất âm nhạc. Studio này được trang bị các thiết bị thu âm hiện đại và hệ thống âm thanh chất lượng cao, tạo điều kiện lý tưởng cho các nghệ sĩ và nhà sản xuất âm nhạc. Với các phần mềm và thiết bị tối tân, đây là không gian lý tưởng để thu âm các dự án âm nhạc hoặc podcast. Ngoài ra, phòng thu cũng có các không gian riêng biệt, giúp tối ưu hóa trải nghiệm thu âm cho mọi khách hàng.",
-    "location": "Thanh Tri, Ha Noi",
+    "location": "Thanh Trì, Hà Nội",
     "area": "40m2",
     "rulesId": {
       "$oid": "66ed8eca5af2082abdf9727e"
@@ -599,7 +599,7 @@
     },
     "name": "Phòng Dạy Học Hà Đông",
     "description": "Phòng dạy học tại Hà Đông, Hà Nội với không gian rộng rãi và đầy đủ các tiện nghi cần thiết. Phòng được trang bị bàn ghế, máy chiếu, bảng trắng và hệ thống ánh sáng tốt, phù hợp cho các lớp học, buổi thuyết trình hoặc tổ chức sự kiện giáo dục. Đây là không gian lý tưởng cho các giáo viên, học sinh hoặc nhóm học tập cần một môi trường thoải mái và chuyên nghiệp.",
-    "location": "Ha Dong, Ha Noi",
+    "location": "Hà Đông, Hà Nội",
     "area": "60m2",
     "rulesId": {
       "$oid": "670d25ac7e9d0f5fab665b7c"
