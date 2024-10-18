@@ -38,15 +38,15 @@ const spacesSchema = new Schema(
       type: Number,
       required: true,
     },
-    dailyPrice:{
+    pricePerDay: {
       type: Number,
       required: true,
     },
-    weeklyPrice:{
+    pricePerWeek: {
       type: Number,
       required: true,
     },
-    monthlyPrice:{
+    pricePerMonth: {
       type: Number,
       required: true,
     },
