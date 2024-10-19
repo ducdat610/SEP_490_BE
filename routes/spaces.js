@@ -65,8 +65,8 @@ spaceRouter.get("/filter", async (req, res, next) => {
 
     // Thực hiện truy vấn với filter đã tạo
     const filteredSpaces = await Spaces.find(filter)
-      .populate("categories") // Nếu cần populate thêm thông tin của thể loại
-      .populate("rules") // Nếu cần populate thêm thông tin khác
+      // .populate("categories") // Nếu cần populate thêm thông tin của thể loại
+      // .populate("rules") // Nếu cần populate thêm thông tin khác
       .exec();
 
     res.status(200).json(filteredSpaces);
