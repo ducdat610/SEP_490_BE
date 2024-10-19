@@ -10,6 +10,7 @@ import {
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
 import Users from "../models/users.js";
+import Appliances from "../models/appliances.js";
 
 const spaceRouter = express.Router();
 spaceRouter.get("/", spaceController.getAllSpaces);
@@ -34,7 +35,8 @@ spaceRouter.get("/search/:name", async (req, res, next) => {
 
 spaceRouter.get("/filter", async (req, res, next) => {
   try {
-    const { location, minPrice, maxPrice, category, area } = req.query;
+    const { location, minPrice, maxPrice, category, area, applianceName } =
+      req.query;
 
     // Khởi tạo đối tượng filter rỗng
     let filter = {};
@@ -62,11 +64,26 @@ spaceRouter.get("/filter", async (req, res, next) => {
     if (category) {
       filter.categories = category; // Nếu category là ObjectId, cần truyền giá trị này là ID
     }
-
+    if (applianceName) {
+      const appliances = await Appliances.find({
+        "appliances.name": { $regex: new RegExp(applianceName, "i") }, // Dùng regex để tìm tên appliance
+      }).select("_id");
+      if (appliances.length > 0) {
+        filter.appliancesId = {
+          $in: appliances.map((appliance) => appliance._id),
+        }; // Thêm vào filter
+      } else {
+        // Nếu không tìm thấy appliance nào, có thể trả về danh sách rỗng hoặc thông báo
+        return res.status(200).json([]);
+      }
+    }
     // Thực hiện truy vấn với filter đã tạo
     const filteredSpaces = await Spaces.find(filter)
       // .populate("categories") // Nếu cần populate thêm thông tin của thể loại
       // .populate("rules") // Nếu cần populate thêm thông tin khác
+      .populate("categoriesId") // Nếu cần populate thêm thông tin của thể loại
+      .populate("rulesId") // Nếu cần populate thêm thông tin khác
+      .populate("appliancesId")
       .exec();
 
     res.status(200).json(filteredSpaces);
@@ -267,5 +284,6 @@ spaceRouter.put("/update/:postId", async (req, res, next) => {
     next(error);
   }
 });
+// spaceRouter.get("/spaces/:id", spaceController.getSpaceByUserId);
 
 export default spaceRouter;

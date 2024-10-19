@@ -37,5 +37,24 @@ rulesRouter.post("/", async (req, res, next) => {
     next(error);
   }
 });
+rulesRouter.post("/addRule", async (req, res, next) => {
+  try {
+    const { name, selectedRules, customRule } = req.body;
+
+    // Tạo rule mới hoặc cập nhật rule luôn mà không cần kiểm tra
+    const ruleSet = new Rules({
+      name,
+      rules: selectedRules, // Thêm các rules đã chọn
+      customeRules: customRule ? [customRule] : [], // Nếu có customRule, thêm vào mảng
+    });
+
+    await ruleSet.save(); // Lưu vào database
+    res.status(201).json(ruleSet); // Trả về rule mới tạo
+  } catch (error) {
+    next(error);
+  }
+});
+
+
 
 export default rulesRouter;

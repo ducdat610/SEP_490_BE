@@ -20,6 +20,7 @@ import {
   userNeedRouter,
   chatRouter,
   messRouter,
+  communityStandardsRouter,
 } from "./routes/index.js";
 import { Server } from "socket.io"; // Import socket.io
 import { createServer } from "http"; // Import createServer cho việc khởi tạo HTTP server
@@ -50,6 +51,7 @@ app.use("/reasons", reasonsRouter);
 app.use("/userNeed", userNeedRouter);
 app.use("/chat", chatRouter);
 app.use("/message", messRouter);
+app.use("/communityStandards", communityStandardsRouter);
 
 // Middleware để xử lý CORS headers
 app.use((req, res, next) => {

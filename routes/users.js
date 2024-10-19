@@ -174,6 +174,53 @@ usersRouter.post("/register", async (req, res, next) => {
 });
 
 // Đăng nhập người dùng
+usersRouter.post("/login", async (req, res, next) => {
+  try {
+    // Validate dữ liệu nhập vào
+    const { error } = loginSchema.validate(req.body);
+    if (error) {
+      throw createError.BadRequest(error.details[0].message);
+    }
+
+    const { username, password } = req.body;
+
+    // Tìm người dùng bằng username hoặc gmail đã đăng kí
+    const user = await Users.findOne({
+      $or: [{ username: username }, { gmail: username }],
+    }).exec();
+
+    if (!user) throw createError.NotFound("User not registered");
+
+    // Check if the user is banned
+    if (user.isBan) {
+      return res.status(403).json({ message: "User is banned" }); // 403 Forbidden
+    }
+
+    // Kiểm tra mật khẩu
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch)
+      throw createError.Unauthorized(
+        "Username, Gmail, or password is incorrect"
+      );
+
+    // Tạo access token và refresh token
+    const accessToken = await signAccessToken(user._id);
+    const refreshToken = await signRefreshToken(user._id);
+
+    // Trả về phản hồi
+    res.status(200).json({
+      username: user.username,
+      accessToken,
+      refreshToken,
+      id: user._id,
+      fullname: user.fullname,
+      role: user.role,
+      firstLogin: user.firstLogin,
+    });
+  } catch (error) {
+    next(error);
+  }
+});
 
 usersRouter.delete("/logout", async (req, res, next) => {
   res.send("Đường dẫn Đăng xuất");
