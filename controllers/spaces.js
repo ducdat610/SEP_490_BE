@@ -1,5 +1,7 @@
-import { spaceDao,appliancesDao } from "../dao/index.js";
+import cloudinary from "../cloudinary.config.js";
+import { spaceDao, appliancesDao } from "../dao/index.js";
 import Spaces from "../models/spaces.js";
+import pkg from 'cloudinary'; // Nhập package cloudinary dưới dạng mặc định
 const getAllSpaces = async (req, res) => {
   try {
     const allSpaces = await spaceDao.fetchAllSpaces();
@@ -50,47 +52,56 @@ const getSimilarSpaces = async (req, res) => {
 // Tạo mới một không gian
 export const createNewSpace = async (req, res) => {
 
-  
+
   try {
-    const { 
-      name, 
-      description, 
-      location, 
-      area, 
-      rulesId, 
+    const {
+      name,
+      description,
+      location,
+      area,
+      rulesId,
       userId,
-      pricePerHour, 
+      pricePerHour,
       pricePerDay,
       pricePerWeek,
       pricePerMonth,
-      image,   
+      images,
       censorship,
       status,
-      categoriesId, 
+      categoriesId,
       appliancesId,
       reportCount,
       favorite
-    } = req.body; // Lưu appliancesId từ request body
+    } = req.body;
 
-    let images = image;
-    if (!Array.isArray(images)) {
-      images = [images];
+    let formattedImages = [];
+    if (Array.isArray(images)) {
+      formattedImages = images.map(img => ({
+        public_id: img.public_id, // Cần đảm bảo bạn gửi đúng public_id và url từ request
+        url: img.url
+      }));
+    } else if (images && images.public_id && images.url) {
+      formattedImages = [{
+        public_id: images.public_id,
+        url: images.url
+      }];
     }
+
     const spaceData = {
-      name, 
-      description, 
-      location, 
-      area, 
-      rulesId, 
+      name,
+      description,
+      location,
+      area,
+      rulesId,
       userId,
-      pricePerHour, 
+      pricePerHour,
       pricePerDay,
       pricePerWeek,
       pricePerMonth,
-      images:images,   
+      images: formattedImages,
       censorship,
       status,
-      categoriesId, 
+      categoriesId,
       appliancesId,
       reportCount,
       favorite // Sử dụng appliancesId từ request
@@ -137,5 +148,33 @@ const changeFavoriteStatus = async (req, res) => {
   }
 };
 
+const removeImages = async (req, res) => {
+  try {
+    const { public_id } = req.body; // Lấy public_id từ body của request
 
-export default { getAllSpaces, getSimilarSpaces,createNewSpace,changeFavoriteStatus,getAllSpaceFavorites }
+    // Sử dụng cloudinary.uploader.destroy với await
+    const result = await cloudinary.uploader.destroy(public_id);
+
+    // Kiểm tra kết quả từ cloudinary và trả về phản hồi thích hợp
+    if (result.result === 'ok') {
+      return res.status(200).json({ message: 'Image deleted successfully' });
+    } else {
+      return res.status(400).json({ message: 'Failed to delete image', result });
+    }
+  } catch (error) {
+    console.error('Error deleting image:', error);
+    return res.status(500).json({ message: 'Server error', error: error.message });
+  }
+};
+
+
+
+
+export default {
+  getAllSpaces,
+  getSimilarSpaces,
+  createNewSpace,
+  changeFavoriteStatus,
+  getAllSpaceFavorites,
+  removeImages
+}

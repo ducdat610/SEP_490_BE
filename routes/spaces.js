@@ -1,6 +1,5 @@
 import { spaceController } from "../controllers/index.js";
 import express from "express";
-import uploadCloud from "../cloudinary.config.js";
 
 import Spaces from "../models/spaces.js";
 import createError from "http-errors";
@@ -11,13 +10,30 @@ import {
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
 import Appliances from "../models/appliances.js";
+import multer from "multer";
+import { CloudinaryStorage } from "multer-storage-cloudinary";
+import cloudinary from "../cloudinary.config.js";
+
+
 
 const spaceRouter = express.Router();
+
+const storage = new CloudinaryStorage({
+  cloudinary :cloudinary,
+  allowedFormats: ['jpg', 'png'],
+  params:{
+    folder:'spacehub'
+  }
+});
+
+const uploadCloud = multer({ storage:storage });
+
 spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
 spaceRouter.post('/', uploadCloud.array('image',10), spaceController.createNewSpace);
-// spaceRouter.post("/", spaceController.createNewSpace);
+spaceRouter.post('/removeImage', spaceController.removeImages);
+
 
 
 // tim kiem space

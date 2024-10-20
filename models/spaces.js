@@ -49,7 +49,17 @@ const spacesSchema = new Schema(
       type: Number,
       required: true,
     },
-    images: [{ type: String }],
+    images: [
+      {
+        public_id: {
+          type: String,
+        },
+        url: {
+          type: String,
+          required: true
+        }
+      }
+    ],
     censorship: {
       type: String,
       enum: ["Chờ duyệt", "Chấp nhận", "Từ chối"],
