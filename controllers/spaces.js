@@ -74,6 +74,7 @@ export const createNewSpace = async (req, res) => {
       favorite
     } = req.body;
 
+
     let formattedImages = [];
     if (Array.isArray(images)) {
       formattedImages = images.map(img => ({
@@ -167,6 +168,24 @@ const removeImages = async (req, res) => {
   }
 };
 
+const uploadImages = async (req, res) => {
+  try {
+      // Lấy thông tin ảnh từ req.files
+      const images = req.files.map(file => ({
+          url: file.path, // URL của ảnh đã được upload
+          public_id: file.filename, // public_id của ảnh
+      }));
+
+      return res.status(200).json({
+          message: 'Images uploaded successfully',
+          images: images, // Trả về danh sách ảnh
+      });
+  } catch (error) {
+      console.error('Error uploading images:', error);
+      return res.status(500).json({ message: 'Server error', error });
+  }
+};
+
 
 
 
@@ -176,5 +195,6 @@ export default {
   createNewSpace,
   changeFavoriteStatus,
   getAllSpaceFavorites,
-  removeImages
+  removeImages,
+  uploadImages
 }

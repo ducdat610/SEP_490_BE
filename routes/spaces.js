@@ -22,7 +22,7 @@ const storage = new CloudinaryStorage({
   cloudinary :cloudinary,
   allowedFormats: ['jpg', 'png'],
   params:{
-    folder:'spacehub'
+    folder:'spacehub/img_space'
   }
 });
 
@@ -31,7 +31,9 @@ const uploadCloud = multer({ storage:storage });
 spaceRouter.get("/", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
-spaceRouter.post('/', uploadCloud.array('image',10), spaceController.createNewSpace);
+spaceRouter.post('/', spaceController.createNewSpace);
+spaceRouter.post('/uploadImages', uploadCloud.array('images', 10), spaceController.uploadImages);
+
 spaceRouter.post('/removeImage', spaceController.removeImages);
 
 
