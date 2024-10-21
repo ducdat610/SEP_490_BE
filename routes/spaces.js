@@ -9,6 +9,7 @@ import {
   verifyRefreshToken,
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
+import Users from "../models/users.js";
 import Appliances from "../models/appliances.js";
 
 const spaceRouter = express.Router();
@@ -34,7 +35,8 @@ spaceRouter.get("/search/:name", async (req, res, next) => {
 
 spaceRouter.get("/filter", async (req, res, next) => {
   try {
-    const { location, minPrice, maxPrice, category, area, applianceName  } = req.query;
+    const { location, minPrice, maxPrice, category, area, applianceName } =
+      req.query;
 
     // Khởi tạo đối tượng filter rỗng
     let filter = {};
@@ -64,10 +66,12 @@ spaceRouter.get("/filter", async (req, res, next) => {
     }
     if (applianceName) {
       const appliances = await Appliances.find({
-        "appliances.name": { $regex: new RegExp(applianceName, "i") } // Dùng regex để tìm tên appliance
+        "appliances.name": { $regex: new RegExp(applianceName, "i") }, // Dùng regex để tìm tên appliance
       }).select("_id");
       if (appliances.length > 0) {
-        filter.appliancesId = { $in: appliances.map(appliance => appliance._id) }; // Thêm vào filter
+        filter.appliancesId = {
+          $in: appliances.map((appliance) => appliance._id),
+        }; // Thêm vào filter
       } else {
         // Nếu không tìm thấy appliance nào, có thể trả về danh sách rỗng hoặc thông báo
         return res.status(200).json([]);
@@ -75,6 +79,8 @@ spaceRouter.get("/filter", async (req, res, next) => {
     }
     // Thực hiện truy vấn với filter đã tạo
     const filteredSpaces = await Spaces.find(filter)
+      // .populate("categories") // Nếu cần populate thêm thông tin của thể loại
+      // .populate("rules") // Nếu cần populate thêm thông tin khác
       .populate("categoriesId") // Nếu cần populate thêm thông tin của thể loại
       .populate("rulesId") // Nếu cần populate thêm thông tin khác
       .populate("appliancesId")
@@ -215,12 +221,28 @@ spaceRouter.get("/:id", async (req, res, next) => {
     if (!space) {
       throw createError(400, "Space not found");
     }
+
     res.status(200).json(space);
   } catch (error) {
     next(error);
   }
 });
+// Get Space theo UseId
+spaceRouter.get("/for/:id", async (req, res, next) => {
+  try {
+    const userId = req.params.id;
+    const user = await Spaces.find({ userId: userId }).exec();
 
+    if (!user) {
+      return res.status(404).json({ message: "Space not found" });
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    console.error("Lỗi khi lấy thông tin ", error);
+    res.status(500).json({ message: "Đã xảy ra lỗi khi lấy thông tin " });
+  }
+});
 // Từ chối post
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
