@@ -39,13 +39,13 @@ rulesRouter.post("/", async (req, res, next) => {
 });
 rulesRouter.post("/addRule", async (req, res, next) => {
   try {
-    const { name, selectedRules, customRule } = req.body;
+    const { name, selectedRules, customRules  } = req.body;
 
     // Tạo rule mới hoặc cập nhật rule luôn mà không cần kiểm tra
     const ruleSet = new Rules({
       name,
       rules: selectedRules, // Thêm các rules đã chọn
-      customeRules: customRule ? [customRule] : [], // Nếu có customRule, thêm vào mảng
+      customeRules: customRules || [],  // Nếu có customRule, thêm vào mảng
     });
 
     await ruleSet.save(); // Lưu vào database
