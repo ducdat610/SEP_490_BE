@@ -21,7 +21,7 @@ const spaceRouter = express.Router();
 
 const storage = new CloudinaryStorage({
   cloudinary :cloudinary,
-  allowedFormats: ['jpg', 'png'],
+  allowedFormats: ['jpg', 'png','webp','jfif'],
   params:{
     folder:'spacehub/img_space'
   }
@@ -29,7 +29,8 @@ const storage = new CloudinaryStorage({
 
 const uploadCloud = multer({ storage:storage });
 
-spaceRouter.get("/", spaceController.getAllSpaces);
+spaceRouter.get("/", spaceController.getAllSpacesApply);
+spaceRouter.get("/all", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
 spaceRouter.post('/', spaceController.createNewSpace);

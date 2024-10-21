@@ -2,6 +2,14 @@ import cloudinary from "../cloudinary.config.js";
 import { spaceDao, appliancesDao } from "../dao/index.js";
 import Spaces from "../models/spaces.js";
 import pkg from 'cloudinary'; // Nhập package cloudinary dưới dạng mặc định
+const getAllSpacesApply = async (req, res) => {
+  try {
+    const allSpaces = await spaceDao.fetchAllSpacesApply();
+    res.status(200).json(allSpaces)
+  } catch (error) {
+    res.status(500).json({ error: error.toString() })
+  }
+}
 const getAllSpaces = async (req, res) => {
   try {
     const allSpaces = await spaceDao.fetchAllSpaces();
@@ -20,20 +28,6 @@ const getAllSpaceFavorites = async (req, res) => {
     res.status(500).json({ error: error.toString() })
   }
 }
-
-// const getSpaceByUserId = async (req, res) => {
-//   try {
-//     const userId = req.params.id;
-//     const allSpaceByUserId = await spaceDao.fetchSpaceByUserId(userId);
-//     if (allSpaceByUserId) {
-//       res.status(200).json(allSpaceByUserId);
-//     } else {
-//       res.status(404).json({ message: "Not found space" });
-//     }
-//   } catch (error) {
-//     res.status(500).json({ message: error.toString() });
-//   }
-// };
 
 const getSimilarSpaces = async (req, res) => {
   try {
@@ -196,5 +190,6 @@ export default {
   changeFavoriteStatus,
   getAllSpaceFavorites,
   removeImages,
-  uploadImages
+  uploadImages,
+  getAllSpacesApply
 }
