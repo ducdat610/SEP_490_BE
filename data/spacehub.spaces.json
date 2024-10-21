@@ -1,683 +1,705 @@
-[
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8950"
-    },
-    "name": "Studio For Rent - Photography Space",
-    "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp và nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được trang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền linh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản phẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải mái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các buổi chụp ảnh chuyên nghiệp.",
-    "location": "Tây Hồ, Hà Nội",
-    "area": "60m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727e"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c3"
-    },
-    "pricePerHour": "300000",
-    "pricePerDay": "1000000",
-    "pricePerWeek":"3000000",
-    "pricePerMonth":"5000000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/j3ys2u1poym5zmdissj3",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ny40dv4thlk1apv0p2xa",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ra2hrznepnqxdnwalno4",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ab8vzsk9ddqpzrjn2wxy",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/vj6emohufaepq2o9sjpi",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/fvwoby4ecpnkwulhefga",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zci6yfchckmjcubwubiu",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/c6umilf0m4osaaeywv38",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/fjm0yneswgpjlxdzlle8",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/equuiggqjuvoadzzn9nt"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8945"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023765"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-15T00:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-15T10:00:00Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": true
+[{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8950"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8951"
-    },
-    "name": "Creative Photography Studio",
-    "description": "Một studio được trang bị đầy đủ, hoàn hảo cho cả nhiếp ảnh gia chuyên nghiệp và nghiệp dư. Với trần nhà cao, hệ thống chiếu sáng tùy chỉnh và nhiều phông nền, không gian này lý tưởng cho các buổi chụp ảnh, chụp ảnh sản phẩm, chụp ảnh chân dung, v.v. Studio cung cấp các bố cục linh hoạt và thiết bị hiện đại, có thể dễ dàng điều chỉnh để phù hợp với các tầm nhìn sáng tạo khác nhau. Cho dù bạn là nhiếp ảnh gia đơn lẻ hay làm việc theo nhóm, studio của chúng tôi đều cung cấp một môi trường thoải mái và chuyên nghiệp cho mọi nhu cầu chụp ảnh của bạn.",
-    "location": "Sóc Sơn, Hà Nội",
-    "area": "50m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727e"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c2"
-    },
-    "pricePerHour": "350000",
-    "pricePerDay": "1500000",
-    "pricePerWeek":"3500000",
-    "pricePerMonth":"5500000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/qiktvne5hghg7jobev4c",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/w5o3dd43lb4rgsbxvcmo",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/fkco8dizcut2vt9e6yhu",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ocwvqrklfvglnxcwkxcx",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zt5llp9oa2sznlgc6urt",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ifje5yjjthluvnsotwen",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ifje5yjjthluvnsotwen",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zf3tjqyb1wc1iaw95pc7"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8945"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-01T10:29:32.171Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "name": "Studio For Rent - Photography Space",
+  "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp và nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được trang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền linh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản phẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải mái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các buổi chụp ảnh chuyên nghiệp.",
+  "location": "Tây Hồ, Hà Nội",
+  "area": "60m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727e"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8952"
-    },
-    "name": "Vision Room Studios",
-    "description": "Vision Room Studios được trang bị đầy đủ hệ thống đèn chuyên nghiệp và phông nền đa dạng, phù hợp với mọi nhu cầu chụp ảnh từ cá nhân, nhóm đến chụp sản phẩm. Với không gian rộng rãi và thiết kế trang nhã, studio mang đến cho bạn sự linh hoạt và sáng tạo tối đa. Đặc biệt, Vision Room Studios cung cấp đầy đủ các thiết bị cần thiết để bạn có thể tự do thiết kế và chụp những bức ảnh chất lượng cao theo ý muốn.",
-    "location": "Thường Tín, Hà Nội",
-    "area": "42m2",
-    "rulesId": {
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c3"
+  },
+  "pricePerHour": "300000",
+  "pricePerDay": "1000000",
+  "pricePerWeek": "3000000",
+  "pricePerMonth": "5000000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/j3ys2u1poym5zmdissj3",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ny40dv4thlk1apv0p2xa",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ra2hrznepnqxdnwalno4",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ab8vzsk9ddqpzrjn2wxy",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/vj6emohufaepq2o9sjpi",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/fvwoby4ecpnkwulhefga",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zci6yfchckmjcubwubiu",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/c6umilf0m4osaaeywv38",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/fjm0yneswgpjlxdzlle8",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/equuiggqjuvoadzzn9nt"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8945"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023765"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-15T00:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-15T10:00:00.000Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8951"
+  },
+  "name": "Creative Photography Studio",
+  "description": "Một studio được trang bị đầy đủ, hoàn hảo cho cả nhiếp ảnh gia chuyên nghiệp và nghiệp dư. Với trần nhà cao, hệ thống chiếu sáng tùy chỉnh và nhiều phông nền, không gian này lý tưởng cho các buổi chụp ảnh, chụp ảnh sản phẩm, chụp ảnh chân dung, v.v. Studio cung cấp các bố cục linh hoạt và thiết bị hiện đại, có thể dễ dàng điều chỉnh để phù hợp với các tầm nhìn sáng tạo khác nhau. Cho dù bạn là nhiếp ảnh gia đơn lẻ hay làm việc theo nhóm, studio của chúng tôi đều cung cấp một môi trường thoải mái và chuyên nghiệp cho mọi nhu cầu chụp ảnh của bạn.",
+  "location": "Sóc Sơn, Hà Nội",
+  "area": "50m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727e"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c2"
+  },
+  "pricePerHour": "350000",
+  "pricePerDay": "1500000",
+  "pricePerWeek": "3500000",
+  "pricePerMonth": "5500000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/qiktvne5hghg7jobev4c",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/w5o3dd43lb4rgsbxvcmo",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/fkco8dizcut2vt9e6yhu",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ocwvqrklfvglnxcwkxcx",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zt5llp9oa2sznlgc6urt",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ifje5yjjthluvnsotwen",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ifje5yjjthluvnsotwen",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zf3tjqyb1wc1iaw95pc7"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8945"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-01T10:29:32.171Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8952"
+  },
+  "name": "Vision Room Studios",
+  "description": "Vision Room Studios được trang bị đầy đủ hệ thống đèn chuyên nghiệp và phông nền đa dạng, phù hợp với mọi nhu cầu chụp ảnh từ cá nhân, nhóm đến chụp sản phẩm. Với không gian rộng rãi và thiết kế trang nhã, studio mang đến cho bạn sự linh hoạt và sáng tạo tối đa. Đặc biệt, Vision Room Studios cung cấp đầy đủ các thiết bị cần thiết để bạn có thể tự do thiết kế và chụp những bức ảnh chất lượng cao theo ý muốn.",
+  "location": "Hà Nam",
+  "area": "42m2",
+  "rulesId": [
+    {
       "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c3"
-    },
-    "pricePerHour": "200000",
-    "pricePerDay": "900000",
-    "pricePerWeek":"2500000",
-    "pricePerMonth":"4000000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/v5zgrhrfnrgblzn0eai3",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/by9nauwwf1ydiko0ai5w",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/yief5liad3vqmmoksntj",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/wsaxlyr276p3ic08txjy",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/rmxnul9th66tyrrqbxll",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/rem6sg09mfdk9fldsl6u",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/siy1bpp1j0wtdjxyedeb",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/pyuhwytseejguhxc0vrx",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/moregxhdpfyfndh0czc9",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/eblqbovmednlu86jhtpi"
-    ],
-    "status": "Đang dọn dẹp",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8945"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-01T10:29:34.116Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": true
+    }
+  ],
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c3"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8953"
-    },
-    "name": "Serepok Coworking Space",
-    "description": "Serepok Coworking Space là một trong những nơi có văn phòng trọn gói lớn nhất ở trung tâm Nam Từ Liêm. Các văn phòng tràn ngập ánh sáng tự nhiên được thiết kế để tối đa hiệu quả công việc và giảm thiểu sự phân tâm",
-    "location": "Nam Từ Liêm, Hà Nội",
-    "area": "42m2",
-    "rulesId": {
+  "pricePerHour": "200000",
+  "pricePerDay": "900000",
+  "pricePerWeek": "2500000",
+  "pricePerMonth": "4000000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/v5zgrhrfnrgblzn0eai3",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/by9nauwwf1ydiko0ai5w",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/yief5liad3vqmmoksntj",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/wsaxlyr276p3ic08txjy",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/rmxnul9th66tyrrqbxll",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/rem6sg09mfdk9fldsl6u",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/siy1bpp1j0wtdjxyedeb",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/pyuhwytseejguhxc0vrx",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/moregxhdpfyfndh0czc9",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/eblqbovmednlu86jhtpi"
+  ],
+  "status": "Đang dọn dẹp",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8945"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-20T15:30:35.040Z"
+  },
+  "censorship": "Chấp nhận",
+  "favorite": true,
+  "__v": 1,
+  "isUpdate": false,
+  "reportCount": 0
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8953"
+  },
+  "name": "Serepok Coworking Space",
+  "description": "Serepok Coworking Space là một trong những nơi có văn phòng trọn gói lớn nhất ở trung tâm Nam Từ Liêm. Các văn phòng tràn ngập ánh sáng tự nhiên được thiết kế để tối đa hiệu quả công việc và giảm thiểu sự phân tâm",
+  "location": "Nam Từ Liêm, Hà Nội",
+  "area": "42m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727f"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c4"
+  },
+  "pricePerHour": "200000",
+  "pricePerDay": "800000",
+  "pricePerWeek": "2200000",
+  "pricePerMonth": "4000000",
+  "images": [
+    "https://serepok.com/static/img/home/product-2.jpg",
+    "https://serepok.com/static/img/home/future.jpg",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/gz5hzyu5tcti9wzdiigq",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/kwcuftddksiccuz6jrik",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zbhvfher75wuhfkvgyrl",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/das5fxvn2sgmvavo9x08"
+  ],
+  "status": "Đang dọn dẹp",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8948"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-09-17T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-01T10:29:39.744Z"
+  },
+  "censorship": "Chấp nhận",
+  "reportCount": 2,
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8954"
+  },
+  "name": "CR Land Tower",
+  "description": "Nằm ở Thành phố Hà Nội hiện đại và nghệ thuật, CR Land Tower mang đến cho bạn trải nghiệm làm việc mới. Nằm trong khu vực trung tâm với giao thông thuận tiện và khu kinh doanh với nhiều thương hiệu nổi tiếng, CR Land Tower sẽ mang đến cho bạn sự thuận tiện kép giữa công việc và cuộc sống.",
+  "location": "Thạch Thất, Hà Nội",
+  "area": "40m2",
+  "rulesId": [
+    {
       "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c4"
-    },
-    "pricePerHour": "200000",
-    "pricePerDay": "800000",
-    "pricePerWeek":"2200000",
-    "pricePerMonth":"4000000",
-    "images": [
-      "https://serepok.com/static/img/home/product-2.jpg",
-      "https://serepok.com/static/img/home/future.jpg",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/gz5hzyu5tcti9wzdiigq",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/kwcuftddksiccuz6jrik",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zbhvfher75wuhfkvgyrl",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/das5fxvn2sgmvavo9x08"
-    ],
-    "status": "Đang dọn dẹp",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8948"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-09-17T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-01T10:29:39.744Z"
-    },
-    "censorship": "Chấp nhận",
-    "reportCount": 2,
-    "favorite": true
+    }
+  ],
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8954"
-    },
-    "name": "CR Land Tower",
-    "description": "Nằm ở Thành phố Hà Nội hiện đại và nghệ thuật, CR Land Tower mang đến cho bạn trải nghiệm làm việc mới. Nằm trong khu vực trung tâm với giao thông thuận tiện và khu kinh doanh với nhiều thương hiệu nổi tiếng, CR Land Tower sẽ mang đến cho bạn sự thuận tiện kép giữa công việc và cuộc sống.",
-    "location": "Thạch Thất, Hà Nội",
-    "area": "40m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "300000",
-    "pricePerDay": "1000000",
-    "pricePerWeek":"3000000",
-    "pricePerMonth":"5000000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/nqyrxllr9w52fwuvd5qp",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/kzbejjjn5vzhgmixm6jc",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hybafprgsimpdpirinfc",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/vob2gzwv2y6nesnibnri",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/dv2mvllf0itljhbgscwu",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/spnchevcylomqkrjshss",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/spnchevcylomqkrjshss"
-    ],
-    "status": "Còn trống ",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T12:30:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "pricePerHour": "300000",
+  "pricePerDay": "1000000",
+  "pricePerWeek": "3000000",
+  "pricePerMonth": "5000000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/nqyrxllr9w52fwuvd5qp",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/kzbejjjn5vzhgmixm6jc",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hybafprgsimpdpirinfc",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/vob2gzwv2y6nesnibnri",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/dv2mvllf0itljhbgscwu",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/spnchevcylomqkrjshss",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/spnchevcylomqkrjshss"
+  ],
+  "status": "Còn trống",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8955"
-    },
-    "name": "Modern Office Tower",
-    "description": "Nằm tại Quận Ba Đình, Hà Nội, Modern Office Tower mang đến một không gian làm việc hiện đại và chuyên nghiệp. Với vị trí đắc địa, dễ dàng di chuyển đến các trung tâm hành chính và thương mại của thành phố, tòa nhà này hứa hẹn cung cấp sự thuận lợi tối đa cho mọi nhu cầu sử dụng. Tòa nhà được trang bị đầy đủ tiện nghi và hệ thống an ninh 24/7, mang đến sự yên tâm và tiện lợi cho khách hàng.",
-    "location": "Ba Đình, Hà Nội",
-    "area": "45m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "400000",
-    "pricePerDay": "1600000",
-    "pricePerWeek":"3600000",
-    "pricePerMonth":"5800000",
-    "images": [
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312157/f4f8780a-94a5-11ea-9a32-0e478a462aa9_tkdip6.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/ea494ee8-94a5-11ea-a858-0e478a462aa9_zy7eyo.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/f50cda20-94a5-11ea-a862-0e478a462aa9_u3ejun.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/8da2a468-94a6-11ea-a864-0e478a462aa9_n0xnya.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/f4f436aa-94a5-11ea-94c5-0e478a462aa9_jyctm7.jpg"
-    ],
-    "status": "Đang dọn dẹp",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T12:30:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8956"
-    },
-    "name": "Khu công nghệ phần mềm Weixin",
-    "description": "Tọa lạc tại Quận Cầu Giấy, Hà Nội, Khu công nghệ phần mềm Weixin là một không gian lý tưởng dành cho các cá nhân về công nghệ và đội nhóm startup. Với hệ thống văn phòng hiện đại, không gian thoáng đãng và tiện nghi đầy đủ, nơi đây cung cấp một môi trường làm việc chuyên nghiệp và sáng tạo. Gần các khu vực tiện ích công cộng và có giao thông thuận tiện, Khu công nghệ phần mềm Weixin mang đến sự kết hợp hoàn hảo giữa công nghệ và cuộc sống đô thị.",
-    "location": "Cầu Giấy, Hà Nội",
-    "area": "50m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "400000",
-    "pricePerDay": "1700000",
-    "pricePerWeek":"3600000",
-    "pricePerMonth":"6000000",
-    "images": [
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/3d1b0218-af57-4628-a718-1bad68b77c70-1675240376381_b7jysd.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312357/6aba1391-3463-4963-acb4-529182d12b49-1675240407068_ix5d0f.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/bf294891-e9e1-4f7d-9569-d8a78eb1214e-1675240388934_sjxisp.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/380ef249-86fc-45b5-980a-c178ec1861a7-1675240383098_f6w6hx.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/51895ca6-f76c-427c-acc2-a44b1f7dfb14-1675240361574_ysijot.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/64bec28b-b616-4c0d-9b0f-3ea92944ced6-1675240395345_o54r2o.jpg"
-    ],
-    "status": "Đang dọn dẹp",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T12:30:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "reviews": [],
+  "createdAt": "2024-10-07T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-20T15:31:50.064Z"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8957"
-    },
-    "name": "Tòa nhà R&D",
-    "description": "Tòa nhà R&D nằm ở Quận Hoàng Mai, Hà Nội, là nơi lý tưởng cho các hoạt động nghiên cứu và phát triển. Được trang bị đầy đủ tiện nghi hiện đại, toà nhà có không gian làm việc rộng rãi và an ninh đảm bảo. Với vị trí thuận lợi, gần các khu công nghiệp và giao thông thuận tiện, tòa nhà R&D phù hợp cho người sử dụng  muốn tìm kiếm địa điểm làm việc năng động và sáng tạo.",
-    "location": "Hoàng Mai, Hà Nội",
-    "area": "100m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "550000",
-    "pricePerDay": "2100000",
-    "pricePerWeek":"3600000",
-    "pricePerMonth":"7000000",
-    "images": [
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/30032c71-3239-439b-960b-228966ccc769-1658112944060_iose0w.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/eb335cc3-3703-4172-8d46-bf9044d891cf-1658112938993_kcgcqz.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/f78eb9e3-1a59-43b9-8bac-c06fb0f57802-1658112913683_uox2jk.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312620/1f45a25b-1a45-475e-9fc3-aef6211aed73-1658112947723_fdlmkn.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312621/dec67064-06d9-43bb-ac3e-a0bf85a0f1d6-1658112951362_ehoyht.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728312621/a270db32-6bb0-4285-8aed-5ecfe7f2016f-1658112928178_ae53oo.jpg"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T12:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T12:30:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "censorship": "Chấp nhận",
+  "favorite": true,
+  "__v": 1,
+  "isUpdate": false,
+  "reportCount": 0
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8955"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8958"
-    },
-    "name": "YF Life Tower",
-    "description": "YF Life Tower tọa lạc tại huyện Gia Lâm, Hà Nội, là không gian làm việc lý tưởng cho các cá nhân và đội nhóm nhỏ. Tòa nhà cung cấp môi trường làm việc thoải mái với các tiện nghi hiện đại, giúp bạn dễ dàng thực hiện các cuộc họp nhóm, làm việc từ xa hoặc phát triển các dự án cá nhân. Với không gian sạch sẽ và yên tĩnh, đây là lựa chọn hoàn hảo cho những người cần sự tập trung và hiệu quả cao trong công việc.",
-    "location": "Gia Lâm, Hà Nội",
-    "area": "50m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727f"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "350000",
-    "pricePerDay": "1800000",
-    "pricePerWeek":"3800000",
-    "pricePerMonth":"6600000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/gadggvnuftvscx6jozui",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/gadggvnuftvscx6jozui",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hldfsx4vjjwegrkwzp6v",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/nqpqjjyhrckugs5afwhs",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ak7qyhmx630bbh3vuxca",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/pzck3xop7pxmaihduuam",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/jz0zbbh5spxpoixzyqdy",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hmto7esqo2hulw7pctkt",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hmto7esqo2hulw7pctkt"
-    ],
-    "status": "còn trống",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T12:45:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T13:00:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": false
+  "name": "Modern Office Tower",
+  "description": "Nằm tại Quận Ba Đình, Hà Nội, Modern Office Tower mang đến một không gian làm việc hiện đại và chuyên nghiệp. Với vị trí đắc địa, dễ dàng di chuyển đến các trung tâm hành chính và thương mại của thành phố, tòa nhà này hứa hẹn cung cấp sự thuận lợi tối đa cho mọi nhu cầu sử dụng. Tòa nhà được trang bị đầy đủ tiện nghi và hệ thống an ninh 24/7, mang đến sự yên tâm và tiện lợi cho khách hàng.",
+  "location": "Ba Đình, Hà Nội",
+  "area": "45m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727f"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8959"
-    },
-    "name": "Working Building ",
-    "description": "Working Building mang đến không gian làm việc hiện đại và năng động. Với thiết kế thoáng đãng, nhiều ánh sáng tự nhiên, đây là nơi lý tưởng cho những buổi họp mặt đội nhóm, làm việc cá nhân hoặc các cuộc gặp gỡ đối tác. Tòa nhà cung cấp đầy đủ tiện nghi cần thiết để bạn có thể làm việc một cách hiệu quả và thoải mái. Vị trí trung tâm quận Ba Đình, thuận tiện di chuyển đến các khu vực trọng điểm của thành phố.",
-    "location": "Ba Đình, Hà Nội",
-    "area": "65m2",
-    "rulesId": {
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
+  },
+  "pricePerHour": "400000",
+  "pricePerDay": "1600000",
+  "pricePerWeek": "3600000",
+  "pricePerMonth": "5800000",
+  "images": [
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312157/f4f8780a-94a5-11ea-9a32-0e478a462aa9_tkdip6.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/ea494ee8-94a5-11ea-a858-0e478a462aa9_zy7eyo.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/f50cda20-94a5-11ea-a862-0e478a462aa9_u3ejun.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/8da2a468-94a6-11ea-a864-0e478a462aa9_n0xnya.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312158/f4f436aa-94a5-11ea-94c5-0e478a462aa9_jyctm7.jpg"
+  ],
+  "status": "Đang dọn dẹp",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-07T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-07T12:30:00.000Z"
+  },
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8956"
+  },
+  "name": "Khu công nghệ phần mềm Weixin",
+  "description": "Tọa lạc tại Quận Cầu Giấy, Hà Nội, Khu công nghệ phần mềm Weixin là một không gian lý tưởng dành cho các cá nhân về công nghệ và đội nhóm startup. Với hệ thống văn phòng hiện đại, không gian thoáng đãng và tiện nghi đầy đủ, nơi đây cung cấp một môi trường làm việc chuyên nghiệp và sáng tạo. Gần các khu vực tiện ích công cộng và có giao thông thuận tiện, Khu công nghệ phần mềm Weixin mang đến sự kết hợp hoàn hảo giữa công nghệ và cuộc sống đô thị.",
+  "location": "Cầu Giấy, Hà Nội",
+  "area": "50m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727f"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
+  },
+  "pricePerHour": "400000",
+  "pricePerDay": "1700000",
+  "pricePerWeek": "3600000",
+  "pricePerMonth": "6000000",
+  "images": [
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/3d1b0218-af57-4628-a718-1bad68b77c70-1675240376381_b7jysd.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312357/6aba1391-3463-4963-acb4-529182d12b49-1675240407068_ix5d0f.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/bf294891-e9e1-4f7d-9569-d8a78eb1214e-1675240388934_sjxisp.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/380ef249-86fc-45b5-980a-c178ec1861a7-1675240383098_f6w6hx.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/51895ca6-f76c-427c-acc2-a44b1f7dfb14-1675240361574_ysijot.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312358/64bec28b-b616-4c0d-9b0f-3ea92944ced6-1675240395345_o54r2o.jpg"
+  ],
+  "status": "Đang dọn dẹp",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-07T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-07T12:30:00.000Z"
+  },
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8957"
+  },
+  "name": "Tòa nhà R&D",
+  "description": "Tòa nhà R&D nằm ở Quận Hoàng Mai, Hà Nội, là nơi lý tưởng cho các hoạt động nghiên cứu và phát triển. Được trang bị đầy đủ tiện nghi hiện đại, toà nhà có không gian làm việc rộng rãi và an ninh đảm bảo. Với vị trí thuận lợi, gần các khu công nghiệp và giao thông thuận tiện, tòa nhà R&D phù hợp cho người sử dụng  muốn tìm kiếm địa điểm làm việc năng động và sáng tạo.",
+  "location": "Hoàng Mai, Hà Nội",
+  "area": "100m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727f"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
+  },
+  "pricePerHour": "550000",
+  "pricePerDay": "2100000",
+  "pricePerWeek": "3600000",
+  "pricePerMonth": "7000000",
+  "images": [
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/30032c71-3239-439b-960b-228966ccc769-1658112944060_iose0w.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/eb335cc3-3703-4172-8d46-bf9044d891cf-1658112938993_kcgcqz.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312619/f78eb9e3-1a59-43b9-8bac-c06fb0f57802-1658112913683_uox2jk.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312620/1f45a25b-1a45-475e-9fc3-aef6211aed73-1658112947723_fdlmkn.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312621/dec67064-06d9-43bb-ac3e-a0bf85a0f1d6-1658112951362_ehoyht.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728312621/a270db32-6bb0-4285-8aed-5ecfe7f2016f-1658112928178_ae53oo.jpg"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-07T12:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-07T12:30:00.000Z"
+  },
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8958"
+  },
+  "name": "YF Life Tower",
+  "description": "YF Life Tower tọa lạc tại huyện Gia Lâm, Hà Nội, là không gian làm việc lý tưởng cho các cá nhân và đội nhóm nhỏ. Tòa nhà cung cấp môi trường làm việc thoải mái với các tiện nghi hiện đại, giúp bạn dễ dàng thực hiện các cuộc họp nhóm, làm việc từ xa hoặc phát triển các dự án cá nhân. Với không gian sạch sẽ và yên tĩnh, đây là lựa chọn hoàn hảo cho những người cần sự tập trung và hiệu quả cao trong công việc.",
+  "location": "Gia Lâm, Hà Nội",
+  "area": "50m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727f"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
+  },
+  "pricePerHour": "350000",
+  "pricePerDay": "1800000",
+  "pricePerWeek": "3800000",
+  "pricePerMonth": "6600000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/gadggvnuftvscx6jozui",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/gadggvnuftvscx6jozui",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hldfsx4vjjwegrkwzp6v",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/nqpqjjyhrckugs5afwhs",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ak7qyhmx630bbh3vuxca",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/pzck3xop7pxmaihduuam",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/jz0zbbh5spxpoixzyqdy",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hmto7esqo2hulw7pctkt",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hmto7esqo2hulw7pctkt"
+  ],
+  "status": "Còn trống",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-07T12:45:00Z",
+  "updatedAt": {
+    "$date": "2024-10-07T13:00:00.000Z"
+  },
+  "censorship": "Chấp nhận",
+  "favorite": false
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8959"
+  },
+  "name": "Working Building ",
+  "description": "Working Building mang đến không gian làm việc hiện đại và năng động. Với thiết kế thoáng đãng, nhiều ánh sáng tự nhiên, đây là nơi lý tưởng cho những buổi họp mặt đội nhóm, làm việc cá nhân hoặc các cuộc gặp gỡ đối tác. Tòa nhà cung cấp đầy đủ tiện nghi cần thiết để bạn có thể làm việc một cách hiệu quả và thoải mái. Vị trí trung tâm quận Ba Đình, thuận tiện di chuyển đến các khu vực trọng điểm của thành phố.",
+  "location": "Ba Đình, Hà Nội",
+  "area": "65m2",
+  "rulesId": [
+    {
       "$oid": "66ed8eca5af2082abdf9732a"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "400000",
-    "pricePerDay": "1600000",
-    "pricePerWeek":"3700000",
-    "pricePerMonth":"5800000",
-    "images": [
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313293/312a0932-5d26-11e9-ba38-0ec6db7d2a3c_pi0u3m.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31b50c26-5d26-11e9-ba38-0ec6db7d2a3c_dklhbu.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/318a24ac-5d26-11e9-ba38-0ec6db7d2a3c_ojekdj.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31538c26-5d26-11e9-ba38-0ec6db7d2a3c_gtcfgc.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/30ecdecc-5d26-11e9-ba38-0ec6db7d2a3c_mkmjvt.jpg"
-    ],
-    "status": "còn trống",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023783"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T14:15:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T14:30:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": false
+    }
+  ],
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8960"
-    },
-    "name": "Lee Garden",
-    "description": "Lee Garden nằm tại quận Hoàn Kiếm, Hà Nội, là không gian lý tưởng cho những ai muốn tìm kiếm một nơi yên tĩnh, hiện đại để làm việc hoặc tổ chức các sự kiện nhỏ. Với thiết kế mở, không gian tràn ngập ánh sáng tự nhiên và các tiện nghi hiện đại, Lee Garden mang đến cảm giác thoải mái và sáng tạo cho người sử dụng. Địa điểm thuận lợi, gần các khu vực dịch vụ và thương mại sôi động, giúp bạn dễ dàng kết nối và giao lưu.",
-    "location": "Hoàn Kiếm, Hà Nội",
-    "area": "80m2",
-    "rulesId": {
+  "pricePerHour": "400000",
+  "pricePerDay": "1600000",
+  "pricePerWeek": "3700000",
+  "pricePerMonth": "5800000",
+  "images": [
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313293/312a0932-5d26-11e9-ba38-0ec6db7d2a3c_pi0u3m.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31b50c26-5d26-11e9-ba38-0ec6db7d2a3c_dklhbu.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/318a24ac-5d26-11e9-ba38-0ec6db7d2a3c_ojekdj.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/31538c26-5d26-11e9-ba38-0ec6db7d2a3c_gtcfgc.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313292/30ecdecc-5d26-11e9-ba38-0ec6db7d2a3c_mkmjvt.jpg"
+  ],
+  "status": "Còn trống",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023783"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-07T14:15:00Z",
+  "updatedAt": {
+    "$date": "2024-10-20T15:31:56.216Z"
+  },
+  "censorship": "Chấp nhận",
+  "favorite": false,
+  "__v": 1,
+  "isUpdate": false,
+  "reportCount": 0
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8960"
+  },
+  "name": "Lee Garden",
+  "description": "Lee Garden nằm tại quận Hoàn Kiếm, Hà Nội, là không gian lý tưởng cho những ai muốn tìm kiếm một nơi yên tĩnh, hiện đại để làm việc hoặc tổ chức các sự kiện nhỏ. Với thiết kế mở, không gian tràn ngập ánh sáng tự nhiên và các tiện nghi hiện đại, Lee Garden mang đến cảm giác thoải mái và sáng tạo cho người sử dụng. Địa điểm thuận lợi, gần các khu vực dịch vụ và thương mại sôi động, giúp bạn dễ dàng kết nối và giao lưu.",
+  "location": "Hoàn Kiếm, Hà Nội",
+  "area": "80m2",
+  "rulesId": [
+    {
       "$oid": "66ed8eca5af2082abdf9732a"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "500000",
-    "pricePerDay": "1800000",
-    "pricePerWeek":"3900000",
-    "pricePerMonth":"6000000",
-    "images": [
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/b026cde8-8de5-11e9-aef8-0ec6db7d2a3c_ceaejg.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313497/aff73b6e-8de5-11e9-aef8-0ec6db7d2a3c_bajn0f.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/afe133f0-8de5-11e9-aef8-0ec6db7d2a3c_ygpqgz.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313499/afc75318-8de5-11e9-aef8-0ec6db7d2a3c_oqltfo.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313500/b00dfa20-8de5-11e9-aef8-0ec6db7d2a3c_a9skmp.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313501/b050ee02-8de5-11e9-aef8-0ec6db7d2a3c_ibzfjq.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313501/b03a69b6-8de5-11e9-aef8-0ec6db7d2a3c_asqzzu.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313502/afacf1da-8de5-11e9-aef8-0ec6db7d2a3c_pgwilm.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313503/BUILDING-AVATAR-2d523233-ab90-44cd-93fc-c528841e7ff2_kk15xh.jpg"
-    ],
-    "status": "còn trống",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023783"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T14:15:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T14:30:00.000Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": false
+    }
+  ],
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8961"
-    },
-    "name": "Green Space",
-    "description": "Green Space là một địa điểm lý tưởng dành cho các cá nhân và nhóm nhỏ muốn tìm kiếm không gian làm việc sáng tạo và thoải mái. Với thiết kế hiện đại, không gian xanh mát, và ánh sáng tự nhiên, nơi đây sẽ mang lại cảm giác thư giãn và năng động. Green Space nằm tại quận Thanh Xuân, nơi có nhiều tiện ích và giao thông thuận lợi.",
-    "location": "Thanh Xuân, Hà Nội",
-    "area": "75m2",
-    "rulesId": {
+  "pricePerHour": "500000",
+  "pricePerDay": "1800000",
+  "pricePerWeek": "3900000",
+  "pricePerMonth": "6000000",
+  "images": [
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/b026cde8-8de5-11e9-aef8-0ec6db7d2a3c_ceaejg.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313497/aff73b6e-8de5-11e9-aef8-0ec6db7d2a3c_bajn0f.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313498/afe133f0-8de5-11e9-aef8-0ec6db7d2a3c_ygpqgz.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313499/afc75318-8de5-11e9-aef8-0ec6db7d2a3c_oqltfo.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313500/b00dfa20-8de5-11e9-aef8-0ec6db7d2a3c_a9skmp.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313501/b050ee02-8de5-11e9-aef8-0ec6db7d2a3c_ibzfjq.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313501/b03a69b6-8de5-11e9-aef8-0ec6db7d2a3c_asqzzu.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313502/afacf1da-8de5-11e9-aef8-0ec6db7d2a3c_pgwilm.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313503/BUILDING-AVATAR-2d523233-ab90-44cd-93fc-c528841e7ff2_kk15xh.jpg"
+  ],
+  "status": "Còn trống",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023783"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-07T14:15:00Z",
+  "updatedAt": {
+    "$date": "2024-10-20T15:31:55.040Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": false,
+  "__v": 1,
+  "isUpdate": false
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8961"
+  },
+  "name": "Green Space",
+  "description": "Green Space là một địa điểm lý tưởng dành cho các cá nhân và nhóm nhỏ muốn tìm kiếm không gian làm việc sáng tạo và thoải mái. Với thiết kế hiện đại, không gian xanh mát, và ánh sáng tự nhiên, nơi đây sẽ mang lại cảm giác thư giãn và năng động. Green Space nằm tại quận Thanh Xuân, nơi có nhiều tiện ích và giao thông thuận lợi.",
+  "location": "Thanh Xuân, Hà Nội",
+  "area": "75m2",
+  "rulesId": [
+    {
       "$oid": "66ed8eca5af2082abdf9732a"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c5"
-    },
-    "pricePerHour": "200000",
-    "pricePerDay": "1000000",
-    "pricePerWeek":"2200000",
-    "pricePerMonth":"4300000",
-    "images": [
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313735/2070d826-dc92-47b8-8370-8510f3ae9149-1618297875422_e3vmao.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/1214ed97-23f3-4f8f-9dbd-0309465e50f5-1618297852697_hvmjts.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/2cb2db15-8640-4bb9-85ae-8e921386795e-1618297892122_qkrpro.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313738/7afe14d8-6c76-4e17-b6e3-76a4d841b72e-1618297840943_thnh50.jpg",
-      "https://res.cloudinary.com/doqzlygge/image/upload/v1728313739/da8a065b-2b3c-46f6-995a-5ab53c918e8b-1618297834172_mgfopb.jpg"
-    ],
-    "status": "Đang dọn dẹp",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f894c"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023783"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-07T14:45:00Z",
-    "updatedAt": {
-      "$date": "2024-10-07T15:00:00.000Z"
-    },
-    "censorship": "Chấp nhận",
-    "favorite": false
+    }
+  ],
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c5"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8962"
-    },
-    "name": "Sound Recording Studio",
-    "description": "Phòng thu âm chuyên nghiệp với không gian cách âm hoàn hảo, lý tưởng cho việc thu âm, hòa âm và sản xuất âm nhạc. Studio này được trang bị các thiết bị thu âm hiện đại và hệ thống âm thanh chất lượng cao, tạo điều kiện lý tưởng cho các nghệ sĩ và nhà sản xuất âm nhạc. Với các phần mềm và thiết bị tối tân, đây là không gian lý tưởng để thu âm các dự án âm nhạc hoặc podcast. Ngoài ra, phòng thu cũng có các không gian riêng biệt, giúp tối ưu hóa trải nghiệm thu âm cho mọi khách hàng.",
-    "location": "Thanh Trì, Hà Nội",
-    "area": "40m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727e"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c3"
-    },
-    "pricePerHour": "300000",
-    "pricePerDay": "1300000",
-    "pricePerWeek":"3500000",
-    "pricePerMonth":"6400000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/t0zqudtnszac1dlue3us",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/dmxasbxwozlmr49dtzoh",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/brwkjqtfdazf8vkezuma",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/bgvjriypcfkeibl2yp6p",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ahs3suz7fanjhjm1rtdy"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8948"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-15T00:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-15T10:00:00Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "pricePerHour": "200000",
+  "pricePerDay": "1000000",
+  "pricePerWeek": "2200000",
+  "pricePerMonth": "4300000",
+  "images": [
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313735/2070d826-dc92-47b8-8370-8510f3ae9149-1618297875422_e3vmao.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/1214ed97-23f3-4f8f-9dbd-0309465e50f5-1618297852697_hvmjts.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313736/2cb2db15-8640-4bb9-85ae-8e921386795e-1618297892122_qkrpro.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313738/7afe14d8-6c76-4e17-b6e3-76a4d841b72e-1618297840943_thnh50.jpg",
+    "https://res.cloudinary.com/doqzlygge/image/upload/v1728313739/da8a065b-2b3c-46f6-995a-5ab53c918e8b-1618297834172_mgfopb.jpg"
+  ],
+  "status": "Đang dọn dẹp",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f894c"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8963"
-    },
-    "name": "Studio Photography Long Bien",
-    "description": "Studio chụp ảnh tại Long Biên với không gian rộng rãi, được trang bị đầy đủ thiết bị hiện đại, lý tưởng cho các buổi chụp ảnh chuyên nghiệp. Với ánh sáng tinh tế và các phông nền linh hoạt, studio này phù hợp với nhiều loại hình chụp ảnh như sản phẩm, chân dung, sự kiện. Phòng được thiết kế thoáng đãng, tạo cảm giác thoải mái cho khách hàng khi làm việc trong không gian sáng tạo này.",
-    "location": "Long Biên, Hà Nội",
-    "area": "50m2",
-    "rulesId": {
-      "$oid": "66ed8eca5af2082abdf9727e"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c3"
-    },
-    "pricePerHour": "166000",
-    "pricePerDay": "8000000",
-    "pricePerWeek":"2700000",
-    "pricePerMonth":"4500000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/errvues91bdwxidsh4dv",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/epsxop2gqr1iq20ri94b",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zgluiyikvgxgbzjk0sn7",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hjuf565qfaqysnxvfrhq",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/o4lstdjgmaeh6wl8ovq6",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ksuifwiyiperswvbwdc8",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/mmufehy8dgeucegrcexf"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8945"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023762"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-15T00:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-15T10:00:00Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023783"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8964"
-    },
-    "name": "Phòng Dạy Học Hà Đông",
-    "description": "Phòng dạy học tại Hà Đông, Hà Nội với không gian rộng rãi và đầy đủ các tiện nghi cần thiết. Phòng được trang bị bàn ghế, máy chiếu, bảng trắng và hệ thống ánh sáng tốt, phù hợp cho các lớp học, buổi thuyết trình hoặc tổ chức sự kiện giáo dục. Đây là không gian lý tưởng cho các giáo viên, học sinh hoặc nhóm học tập cần một môi trường thoải mái và chuyên nghiệp.",
-    "location": "Hà Đông, Hà Nội",
-    "area": "60m2",
-    "rulesId": {
-      "$oid": "670d25ac7e9d0f5fab665b7c"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c4"
-    },
-    "pricePerHour": "100000",
-    "pricePerDay": "1000000",
-    "pricePerWeek":"2300000",
-    "pricePerMonth":"4000000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/bwbvqtsgrueeel1b0jrv",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/bppo9t9g5u6gsb5zn9jb",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/tjwh3wi7jp4tprjrsilt",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/e28tvf67ggqchbsolz0k",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/mzxeis2dx3t1aeay1tte",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zyilxvo4t6sakp5hy9na",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/jk4zb6gbboej1k3gwyf4",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/jk4zb6gbboej1k3gwyf4"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8946"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023763"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-15T00:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-15T10:00:00Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": true
+  "reviews": [],
+  "createdAt": "2024-10-07T14:45:00Z",
+  "updatedAt": {
+    "$date": "2024-10-20T15:31:57.367Z"
   },
-  {
-    "_id": {
-      "$oid": "66eafc44cb37101e8e8f8965"
-    },
-    "name": "Elearning",
-    "description": "Không gian cho thuê lý tưởng để dạy học, tọa lạc tại Hai Bà Trưng, Hà Nội. Phòng được thiết kế rộng rãi, thoáng mát, với trang bị đầy đủ bàn ghế học sinh, bảng từ, màn chiếu và máy chiếu. Đây là lựa chọn tuyệt vời cho các lớp học, buổi dạy kèm, hay tổ chức các hoạt động học nhóm. Không gian yên tĩnh, tập trung, và phù hợp cho việc truyền đạt kiến thức hiệu quả.",
-    "location": "Hai Bà Trưng, Hà Nội",
-    "area": "70m2",
-    "rulesId": {
-      "$oid": "670d25ac7e9d0f5fab665b7c"
-    },
-    "userId": {
-      "$oid": "6639786d743f79c9b97fc1c4"
-    },
-    "pricePerHour": "110000",
-    "pricePerDay": "600000",
-    "pricePerWeek":"2200000",
-    "pricePerMonth":"4100000",
-    "images": [
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/rgelif2ut0xapad9qsir",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hypkqxxxfxq9wqsmm11g",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/eq2cxchf3j8rjzjdtza5",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xsrdlxyhbsunyui39gum",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xr7ibeuhlbaxeisepehv",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xr7ibeuhlbaxeisepehv",
-      "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xr7ibeuhlbaxeisepehv"
-    ],
-    "status": "Đang sử dụng",
-    "categoriesId": {
-      "$oid": "66eafbb0cb37101e8e8f8946"
-    },
-    "appliancesId": {
-      "$oid": "66fb94f0e758c49d8a023763"
-    },
-    "reviews": [],
-    "createdAt": "2024-10-15T00:00:00Z",
-    "updatedAt": {
-      "$date": "2024-10-15T10:00:00Z"
-    },
-    "reportCount": 0,
-    "censorship": "Chấp nhận",
-    "favorite": true
-  }
-]
+  "censorship": "Chấp nhận",
+  "favorite": false,
+  "__v": 1,
+  "isUpdate": false,
+  "reportCount": 0
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8962"
+  },
+  "name": "Sound Recording Studio",
+  "description": "Phòng thu âm chuyên nghiệp với không gian cách âm hoàn hảo, lý tưởng cho việc thu âm, hòa âm và sản xuất âm nhạc. Studio này được trang bị các thiết bị thu âm hiện đại và hệ thống âm thanh chất lượng cao, tạo điều kiện lý tưởng cho các nghệ sĩ và nhà sản xuất âm nhạc. Với các phần mềm và thiết bị tối tân, đây là không gian lý tưởng để thu âm các dự án âm nhạc hoặc podcast. Ngoài ra, phòng thu cũng có các không gian riêng biệt, giúp tối ưu hóa trải nghiệm thu âm cho mọi khách hàng.",
+  "location": "Hà Giang",
+  "area": "40m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727e"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c3"
+  },
+  "pricePerHour": "300000",
+  "pricePerDay": "1300000",
+  "pricePerWeek": "3500000",
+  "pricePerMonth": "6400000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/t0zqudtnszac1dlue3us",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/dmxasbxwozlmr49dtzoh",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/brwkjqtfdazf8vkezuma",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/bgvjriypcfkeibl2yp6p",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ahs3suz7fanjhjm1rtdy"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8948"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-15T00:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-15T10:00:00.000Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8963"
+  },
+  "name": "Studio Photography Hải Phòng",
+  "description": "Studio chụp ảnh tại Hải Phòng với không gian rộng rãi, được trang bị đầy đủ thiết bị hiện đại, lý tưởng cho các buổi chụp ảnh chuyên nghiệp. Với ánh sáng tinh tế và các phông nền linh hoạt, studio này phù hợp với nhiều loại hình chụp ảnh như sản phẩm, chân dung, sự kiện. Phòng được thiết kế thoáng đãng, tạo cảm giác thoải mái cho khách hàng khi làm việc trong không gian sáng tạo này.",
+  "location": "Hải Phòng",
+  "area": "50m2",
+  "rulesId": {
+    "$oid": "66ed8eca5af2082abdf9727e"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c3"
+  },
+  "pricePerHour": "166000",
+  "pricePerDay": "8000000",
+  "pricePerWeek": "2700000",
+  "pricePerMonth": "4500000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/errvues91bdwxidsh4dv",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/epsxop2gqr1iq20ri94b",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zgluiyikvgxgbzjk0sn7",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hjuf565qfaqysnxvfrhq",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/o4lstdjgmaeh6wl8ovq6",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/ksuifwiyiperswvbwdc8",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/mmufehy8dgeucegrcexf"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8945"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023762"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-15T00:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-15T10:00:00.000Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8964"
+  },
+  "name": "Phòng Dạy Học Hải Dương",
+  "description": "Phòng dạy học tại Hải Dương, với không gian rộng rãi và đầy đủ các tiện nghi cần thiết. Phòng được trang bị bàn ghế, máy chiếu, bảng trắng và hệ thống ánh sáng tốt, phù hợp cho các lớp học, buổi thuyết trình hoặc tổ chức sự kiện giáo dục. Đây là không gian lý tưởng cho các giáo viên, học sinh hoặc nhóm học tập cần một môi trường thoải mái và chuyên nghiệp.",
+  "location": "Hải Dương",
+  "area": "60m2",
+  "rulesId": {
+    "$oid": "670d25ac7e9d0f5fab665b7c"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c4"
+  },
+  "pricePerHour": "100000",
+  "pricePerDay": "1000000",
+  "pricePerWeek": "2300000",
+  "pricePerMonth": "4000000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/bwbvqtsgrueeel1b0jrv",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/bppo9t9g5u6gsb5zn9jb",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/tjwh3wi7jp4tprjrsilt",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/e28tvf67ggqchbsolz0k",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/mzxeis2dx3t1aeay1tte",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/zyilxvo4t6sakp5hy9na",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/jk4zb6gbboej1k3gwyf4",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/jk4zb6gbboej1k3gwyf4"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8946"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023763"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-15T00:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-15T10:00:00.000Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": true
+},
+{
+  "_id": {
+    "$oid": "66eafc44cb37101e8e8f8965"
+  },
+  "name": "Elearning",
+  "description": "Không gian cho thuê lý tưởng để dạy học, tọa lạc tại Hai Bà Trưng, Hà Nội. Phòng được thiết kế rộng rãi, thoáng mát, với trang bị đầy đủ bàn ghế học sinh, bảng từ, màn chiếu và máy chiếu. Đây là lựa chọn tuyệt vời cho các lớp học, buổi dạy kèm, hay tổ chức các hoạt động học nhóm. Không gian yên tĩnh, tập trung, và phù hợp cho việc truyền đạt kiến thức hiệu quả.",
+  "location": "Hai Bà Trưng, Hà Nội",
+  "area": "70m2",
+  "rulesId": {
+    "$oid": "670d25ac7e9d0f5fab665b7c"
+  },
+  "userId": {
+    "$oid": "6639786d743f79c9b97fc1c4"
+  },
+  "pricePerHour": "110000",
+  "pricePerDay": "600000",
+  "pricePerWeek": "2200000",
+  "pricePerMonth": "4100000",
+  "images": [
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/rgelif2ut0xapad9qsir",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/hypkqxxxfxq9wqsmm11g",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/eq2cxchf3j8rjzjdtza5",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xsrdlxyhbsunyui39gum",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xr7ibeuhlbaxeisepehv",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xr7ibeuhlbaxeisepehv",
+    "https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/xr7ibeuhlbaxeisepehv"
+  ],
+  "status": "Đang sử dụng",
+  "categoriesId": {
+    "$oid": "66eafbb0cb37101e8e8f8946"
+  },
+  "appliancesId": {
+    "$oid": "66fb94f0e758c49d8a023763"
+  },
+  "reviews": [],
+  "createdAt": "2024-10-15T00:00:00Z",
+  "updatedAt": {
+    "$date": "2024-10-15T10:00:00.000Z"
+  },
+  "reportCount": 0,
+  "censorship": "Chấp nhận",
+  "favorite": true
+}]
