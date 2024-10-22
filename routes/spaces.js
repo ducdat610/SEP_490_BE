@@ -9,12 +9,36 @@ import {
   verifyRefreshToken,
   verifyAccessToken,
 } from "../helpers/jwt_helper.js";
+import Users from "../models/users.js";
 import Appliances from "../models/appliances.js";
+import multer from "multer";
+import { CloudinaryStorage } from "multer-storage-cloudinary";
+import cloudinary from "../cloudinary.config.js";
+
+
 
 const spaceRouter = express.Router();
-spaceRouter.get("/", spaceController.getAllSpaces);
+
+const storage = new CloudinaryStorage({
+  cloudinary :cloudinary,
+  allowedFormats: ['jpg', 'png','webp','jfif'],
+  params:{
+    folder:'spacehub/img_space'
+  }
+});
+
+const uploadCloud = multer({ storage:storage });
+
+spaceRouter.get("/", spaceController.getAllSpacesApply);
+spaceRouter.get("/all", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
+spaceRouter.post('/', spaceController.createNewSpace);
+spaceRouter.post('/uploadImages', uploadCloud.array('images', 10), spaceController.uploadImages);
+
+spaceRouter.post('/removeImage', spaceController.removeImages);
+
+
 
 // tim kiem space
 spaceRouter.get("/search/:name", async (req, res, next) => {
@@ -34,7 +58,8 @@ spaceRouter.get("/search/:name", async (req, res, next) => {
 
 spaceRouter.get("/filter", async (req, res, next) => {
   try {
-    const { location, minPrice, maxPrice, category, area, applianceName  } = req.query;
+    const { location, minPrice, maxPrice, category, area, applianceName } =
+      req.query;
 
     // Khởi tạo đối tượng filter rỗng
     let filter = {};
@@ -49,7 +74,6 @@ spaceRouter.get("/filter", async (req, res, next) => {
       filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
     }
 
-    // Lọc theo giá (nếu có cả minPrice và maxPrice)
     if (minPrice && maxPrice) {
       filter.pricePerHour = { $gte: minPrice, $lte: maxPrice };
     } else if (minPrice) {
@@ -62,22 +86,23 @@ spaceRouter.get("/filter", async (req, res, next) => {
     if (category) {
       filter.categories = category; // Nếu category là ObjectId, cần truyền giá trị này là ID
     }
+
     if (applianceName) {
-      const appliances = await Appliances.find({
-        "appliances.name": { $regex: new RegExp(applianceName, "i") } // Dùng regex để tìm tên appliance
-      }).select("_id");
-      if (appliances.length > 0) {
-        filter.appliancesId = { $in: appliances.map(appliance => appliance._id) }; // Thêm vào filter
-      } else {
-        // Nếu không tìm thấy appliance nào, có thể trả về danh sách rỗng hoặc thông báo
-        return res.status(200).json([]);
-      }
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
+      // Sử dụng populate appliances và thêm điều kiện lọc theo tên appliance
+      filter['appliancesId.appliances.name'] = { $regex: rgx(applianceName) };
     }
-    // Thực hiện truy vấn với filter đã tạo
+
     const filteredSpaces = await Spaces.find(filter)
-      .populate("categoriesId") // Nếu cần populate thêm thông tin của thể loại
-      .populate("rulesId") // Nếu cần populate thêm thông tin khác
-      .populate("appliancesId")
+      .populate("categoriesId") 
+      .populate("rulesId") 
+      .populate({
+        path: "appliancesId",
+        populate: {
+          path: "appliances",
+          match: { name: { $regex: new RegExp(`.*${applianceName || ""}.*`, "i") } }, 
+        },
+      })
       .exec();
 
     res.status(200).json(filteredSpaces);
@@ -85,7 +110,7 @@ spaceRouter.get("/filter", async (req, res, next) => {
     throw new Error(error.toString());
   }
 });
-spaceRouter.post("/", spaceController.createNewSpace);
+
 
 // get theo id
 spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
@@ -215,12 +240,28 @@ spaceRouter.get("/:id", async (req, res, next) => {
     if (!space) {
       throw createError(400, "Space not found");
     }
+
     res.status(200).json(space);
   } catch (error) {
     next(error);
   }
 });
+// Get Space theo UseId
+spaceRouter.get("/for/:id", async (req, res, next) => {
+  try {
+    const userId = req.params.id;
+    const user = await Spaces.find({ userId: userId }).exec();
 
+    if (!user) {
+      return res.status(404).json({ message: "Space not found" });
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    console.error("Lỗi khi lấy thông tin ", error);
+    res.status(500).json({ message: "Đã xảy ra lỗi khi lấy thông tin " });
+  }
+});
 // Từ chối post
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
