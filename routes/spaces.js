@@ -47,11 +47,13 @@ spaceRouter.get("/filter", async (req, res, next) => {
       filter.location = { $regex: rgx(location) };
     }
     if (area) {
+      // Chuyển `area` thành mảng nếu nó là một chuỗi (trong trường hợp chỉ có 1 khu vực được chọn)
+      const areaArray = Array.isArray(area) ? area : [area];
       const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
-      filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
+      // Dùng $in để lọc các khu vực có trong mảng
+      filter.area = { $in: areaArray.map((a) => rgx(a)) };
     }
 
-    // Lọc theo giá (nếu có cả minPrice và maxPrice)
     if (minPrice && maxPrice) {
       filter.pricePerHour = { $gte: minPrice, $lte: maxPrice };
     } else if (minPrice) {
@@ -64,26 +66,23 @@ spaceRouter.get("/filter", async (req, res, next) => {
     if (category) {
       filter.categories = category; // Nếu category là ObjectId, cần truyền giá trị này là ID
     }
+
     if (applianceName) {
-      const appliances = await Appliances.find({
-        "appliances.name": { $regex: new RegExp(applianceName, "i") }, // Dùng regex để tìm tên appliance
-      }).select("_id");
-      if (appliances.length > 0) {
-        filter.appliancesId = {
-          $in: appliances.map((appliance) => appliance._id),
-        }; // Thêm vào filter
-      } else {
-        // Nếu không tìm thấy appliance nào, có thể trả về danh sách rỗng hoặc thông báo
-        return res.status(200).json([]);
-      }
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
+      // Sử dụng populate appliances và thêm điều kiện lọc theo tên appliance
+      filter['appliancesId.appliances.name'] = { $regex: rgx(applianceName) };
     }
-    // Thực hiện truy vấn với filter đã tạo
+
     const filteredSpaces = await Spaces.find(filter)
-      // .populate("categories") // Nếu cần populate thêm thông tin của thể loại
-      // .populate("rules") // Nếu cần populate thêm thông tin khác
-      .populate("categoriesId") // Nếu cần populate thêm thông tin của thể loại
-      .populate("rulesId") // Nếu cần populate thêm thông tin khác
-      .populate("appliancesId")
+      .populate("categoriesId") 
+      .populate("rulesId") 
+      .populate({
+        path: "appliancesId",
+        populate: {
+          path: "appliances",
+          match: { name: { $regex: new RegExp(`.*${applianceName || ""}.*`, "i") } }, 
+        },
+      })
       .exec();
 
     res.status(200).json(filteredSpaces);
