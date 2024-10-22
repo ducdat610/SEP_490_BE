@@ -58,21 +58,26 @@ spaceRouter.get("/search/:name", async (req, res, next) => {
 
 spaceRouter.get("/filter", async (req, res, next) => {
   try {
-    const { location, minPrice, maxPrice, category, area, applianceName } =
-      req.query;
+    const { location, minPrice, maxPrice, category, areaMin, areaMax, applianceNames } = req.query;
 
     // Khởi tạo đối tượng filter rỗng
     let filter = {};
 
     // Lọc theo địa chỉ
     if (location) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i"); // i: không phân biệt chữ hoa/thường
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i"); // Không phân biệt chữ hoa/thường
       filter.location = { $regex: rgx(location) };
     }
-    if (area) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
-      filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
+    
+    // Lọc theo khu vực
+    if (areaMin && areaMax) {
+      filter.area = { $gte: areaMin, $lte: areaMax }; // Lọc theo khoảng giá
+    } else if (areaMin) {
+      filter.area = { $gte: areaMin }; // Lọc chỉ từ giá tối thiểu
+    } else if (areaMax) {
+      filter.area = { $lte: areaMax }; // Lọc chỉ đến giá tối đa
     }
+
 
     if (minPrice && maxPrice) {
       filter.pricePerHour = { $gte: minPrice, $lte: maxPrice };
@@ -82,32 +87,46 @@ spaceRouter.get("/filter", async (req, res, next) => {
       filter.pricePerHour = { $lte: maxPrice };
     }
 
-    // Lọc theo category
+    // Lọc theo danh mục
     if (category) {
-      filter.categories = category; // Nếu category là ObjectId, cần truyền giá trị này là ID
+      filter.categories = category; // categoriesId để lọc theo ObjectId
     }
 
-    if (applianceName) {
+    // Lọc theo tên thiết bị
+    if (applianceNames) {
+      const applianceNamesArray = Array.isArray(applianceNames) ? applianceNames : [applianceNames];
       const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
-      // Sử dụng populate appliances và thêm điều kiện lọc theo tên appliance
-      filter['appliancesId.appliances.name'] = { $regex: rgx(applianceName) };
+
+      // Tìm các spaces mà appliances chứa tên applianceNames
+      const filteredSpaces = await Spaces.find(filter)
+        .populate("categoriesId")
+        .populate("rulesId")
+        .populate({
+          path: "appliancesId",
+          match: { 
+            "appliances.name": { $in: applianceNamesArray.map(name => rgx(name)) } // Lọc theo tên thiết bị
+          },
+        })
+        .exec();
+
+      // Lọc các không gian mà appliances không trống
+      const finalSpaces = filteredSpaces.filter(space => 
+        space.appliancesId && space.appliancesId.appliances.length > 0
+      );
+
+      return res.status(200).json(finalSpaces);
     }
 
+    // Nếu không có applianceNames, chỉ tìm theo filter khác
     const filteredSpaces = await Spaces.find(filter)
-      .populate("categoriesId") 
-      .populate("rulesId") 
-      .populate({
-        path: "appliancesId",
-        populate: {
-          path: "appliances",
-          match: { name: { $regex: new RegExp(`.*${applianceName || ""}.*`, "i") } }, 
-        },
-      })
+      .populate("categoriesId")
+      .populate("rulesId")
+      .populate("appliancesId") // Populate appliancesId nếu không có applianceNames
       .exec();
 
     res.status(200).json(filteredSpaces);
   } catch (error) {
-    throw new Error(error.toString());
+    next(error); // Gọi next với lỗi để xử lý lỗi
   }
 });
 
