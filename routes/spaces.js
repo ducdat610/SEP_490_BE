@@ -89,7 +89,7 @@ spaceRouter.get("/filter", async (req, res, next) => {
 
     // Lọc theo danh mục
     if (category) {
-      filter.categoriesId = category; // categoriesId để lọc theo ObjectId
+      filter.categories = category; // categoriesId để lọc theo ObjectId
     }
 
     // Lọc theo tên thiết bị
