@@ -11,11 +11,34 @@ import {
 } from "../helpers/jwt_helper.js";
 import Users from "../models/users.js";
 import Appliances from "../models/appliances.js";
+import multer from "multer";
+import { CloudinaryStorage } from "multer-storage-cloudinary";
+import cloudinary from "../cloudinary.config.js";
+
+
 
 const spaceRouter = express.Router();
-spaceRouter.get("/", spaceController.getAllSpaces);
+
+const storage = new CloudinaryStorage({
+  cloudinary :cloudinary,
+  allowedFormats: ['jpg', 'png','webp','jfif'],
+  params:{
+    folder:'spacehub/img_space'
+  }
+});
+
+const uploadCloud = multer({ storage:storage });
+
+spaceRouter.get("/", spaceController.getAllSpacesApply);
+spaceRouter.get("/all", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
+spaceRouter.post('/', spaceController.createNewSpace);
+spaceRouter.post('/uploadImages', uploadCloud.array('images', 10), spaceController.uploadImages);
+
+spaceRouter.post('/removeImage', spaceController.removeImages);
+
+
 
 // tim kiem space
 spaceRouter.get("/search/:name", async (req, res, next) => {
@@ -56,7 +79,6 @@ spaceRouter.get("/filter", async (req, res, next) => {
     }
 
 
-    // Lọc theo giá
     if (minPrice && maxPrice) {
       filter.pricePerHour = { $gte: minPrice, $lte: maxPrice };
     } else if (minPrice) {
@@ -107,7 +129,7 @@ spaceRouter.get("/filter", async (req, res, next) => {
     next(error); // Gọi next với lỗi để xử lý lỗi
   }
 });
-spaceRouter.post("/", spaceController.createNewSpace);
+
 
 // get theo id
 spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
