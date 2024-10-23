@@ -269,7 +269,9 @@ spaceRouter.get("/:id", async (req, res, next) => {
 spaceRouter.get("/for/:id", async (req, res, next) => {
   try {
     const userId = req.params.id;
-    const user = await Spaces.find({ userId: userId }).exec();
+    const user = await Spaces.find({ userId: userId })
+    .populate("userId")
+    .exec();
 
     if (!user) {
       return res.status(404).json({ message: "Space not found" });
