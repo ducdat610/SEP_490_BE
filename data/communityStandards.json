@@ -40,6 +40,39 @@
         "$oid": "66ed8eca5af2082abdf97286"
       },
       "reason": "Ngôn ngữ chứa từ cấm"
-    }
+    },
+
+    [
+      {
+        "_id": {
+          "$oid": "66ed8eca5af2082abdf97287"
+        },
+        "reason": "Thiếu giấy tờ hợp pháp"
+      },
+      {
+        "_id": {
+          "$oid": "66ed8eca5af2082abdf97288"
+        },
+        "reason": "Không đủ ảnh minh họa"
+      },
+      {
+        "_id": {
+          "$oid": "66ed8eca5af2082abdf97289"
+        },
+        "reason": "Nội dung có tính chất lừa đảo"
+      },
+      {
+        "_id": {
+          "$oid": "66ed8eca5af2082abdf97290"
+        },
+        "reason": "Sai thông tin liên hệ"
+      },
+      {
+        "_id": {
+          "$oid": "66ed8eca5af2082abdf97291"
+        },
+        "reason": "Mô tả quá ngắn hoặc không đủ chi tiết"
+      }
+  ]  
   ]
   
