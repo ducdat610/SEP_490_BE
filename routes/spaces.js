@@ -247,6 +247,7 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
         status: space1.status,
         images:
           space1.images && space1.images.length > 0 ? space1.images[0] : null,
+          latLng: space1.latLng
       },
       space2: {
         images:
@@ -259,6 +260,8 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
         pricePerWeek: space2.pricePerWeek,
         pricePerMonth: space2.pricePerMonth,
         status: space2.status,
+        latLng: space2.latLng
+
       },
     };
 
