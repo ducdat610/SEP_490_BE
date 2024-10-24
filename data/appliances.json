@@ -73,5 +73,30 @@
     "name": "Máy Xông",
     "description": "Thiết bị làm ấm không khí",
     "isCustom": false
+  },
+  {
+    "name": "Máy lọc không khí",
+    "description": "Thiết bị lọc không khí, loại bỏ bụi và vi khuẩn",
+    "isCustom": true
+  },
+  {
+    "name": "Loa Bluetooth",
+    "description": "Thiết bị phát nhạc không dây",
+    "isCustom": true
+  },
+  {
+    "name": "Đèn thông minh",
+    "description": "Hệ thống đèn có thể điều chỉnh màu sắc và độ sáng",
+    "isCustom": true
+  },
+  {
+    "name": "Robot hút bụi",
+    "description": "Thiết bị hút bụi tự động",
+    "isCustom": true
+  },
+  {
+    "name": "Camera an ninh",
+    "description": "Hệ thống giám sát an ninh",
+    "isCustom": false
   }
 ]
