@@ -71,11 +71,11 @@ spaceRouter.get("/filter", async (req, res, next) => {
     
     // Lọc theo khu vực
     if (areaMin && areaMax) {
-      filter.area = { $gte: areaMin, $lte: areaMax }; // Lọc theo khoảng giá
+      filter.area = { $gte: areaMin, $lte: areaMax }; 
     } else if (areaMin) {
-      filter.area = { $gte: areaMin }; // Lọc chỉ từ giá tối thiểu
+      filter.area = { $gte: areaMin }; 
     } else if (areaMax) {
-      filter.area = { $lte: areaMax }; // Lọc chỉ đến giá tối đa
+      filter.area = { $lte: areaMax }; 
     }
 
 
