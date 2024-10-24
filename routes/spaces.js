@@ -181,6 +181,24 @@ spaceRouter.get("/compare-spaces-differences", async (req, res) => {
         space2: space2.pricePerHour,
       };
     }
+    if (space1.pricePerDay !== space2.pricePerDay) {
+      differences.pricePerDay = {
+        space1: space1.pricePerDay,
+        space2: space2.pricePerDay,
+      };
+    }
+    if (space1.pricePerWeek !== space2.pricePerWeek) {
+      differences.pricePerWeek = {
+        space1: space1.pricePerWeek,
+        space2: space2.pricePerWeek,
+      };
+    }
+    if (space1.pricePerMonth !== space2.pricePerMonth) {
+      differences.pricePerMonth = {
+        space1: space1.pricePerMonth,
+        space2: space2.pricePerMonth,
+      };
+    }
 
     if (space1.status !== space2.status) {
       differences.status = { space1: space1.status, space2: space2.status };
@@ -219,11 +237,13 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
       space1: {
         images:
           space1.images && space1.images.length > 0 ? space1.images[0] : null,
-        // id: space1._id,
         name: space1.name,
         location: space1.location,
         area: space1.area,
         pricePerHour: space1.pricePerHour,
+        pricePerDay: space1.pricePerDay,
+        pricePerWeek: space1.pricePerWeek,
+        pricePerMonth: space1.pricePerMonth,
         status: space1.status,
         images:
           space1.images && space1.images.length > 0 ? space1.images[0] : null,
@@ -231,11 +251,13 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
       space2: {
         images:
           space2.images && space2.images.length > 0 ? space2.images[0] : null,
-        // id: space2._id,
         name: space2.name,
         location: space2.location,
         area: space2.area,
         pricePerHour: space2.pricePerHour,
+        pricePerDay: space2.pricePerDay,
+        pricePerWeek: space2.pricePerWeek,
+        pricePerMonth: space2.pricePerMonth,
         status: space2.status,
       },
     };
