@@ -2,6 +2,10 @@ import mongoose, { Schema } from "mongoose";
 
 const spacesSchema = new Schema(
   {
+    latLng: {
+      type: Array(Number),
+      required: false,
+    },
     name: {
       type: String,
       required: true,

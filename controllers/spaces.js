@@ -67,7 +67,8 @@ export const createNewSpace = async (req, res) => {
       reportCount,
       isGoldenHour,
       goldenHourDetails,
-      favorite
+      favorite,
+      latLng
     } = req.body;
 
 
@@ -103,7 +104,8 @@ export const createNewSpace = async (req, res) => {
       reportCount,
       isGoldenHour,
       goldenHourDetails,
-      favorite // Sử dụng appliancesId từ request
+      favorite,
+      latLng
     };
 
 
