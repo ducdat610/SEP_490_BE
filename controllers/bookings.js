@@ -218,13 +218,26 @@ const checkDayAvailability = async (req, res) => {
   }
 };
 
-
+const getListBookingOfUser = async (req, res) => {
+  try {
+    const bookingByUserId = req.params.id;
+    const bookList = await BookingDAO.fetchListBookingOfUser(bookingByUserId);
+    if (bookList) {
+      res.status(200).json(bookList);
+    } else {
+      res.status(404).json("Not Found");
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.toString() });
+  }
+};
 
 const BookingController = {
   sendEmailBookingCompleted,
   createBooking,
   checkHourAvailability,
   checkDayAvailability,
+  getListBookingOfUser
 }
 
 export default BookingController

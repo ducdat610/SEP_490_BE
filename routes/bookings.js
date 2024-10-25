@@ -29,6 +29,7 @@ bookingRouter.post('/check-day-availability', BookingController.checkDayAvailabi
 
 // Endpoint để tạo đặt phòng mới
 bookingRouter.post('/create', BookingController.createBooking);
+bookingRouter.get("/bookingByUserId/:id", BookingController.getListBookingOfUser);
 
 
 

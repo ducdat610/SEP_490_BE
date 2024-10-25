@@ -54,6 +54,25 @@ class BookingDAO {
   }
 
   // Các phương thức DAO khác có thể thêm vào đây, ví dụ: cập nhật, xoá booking
+
+  static async fetchListBookingOfUser(id) {  
+      try {
+      const orders = await Booking.find({ userId: id })
+        .populate({
+          path: "items",
+          populate: {
+            path: "spaceId",
+            model: "spaces",
+          },
+        })
+        .exec();
+      return orders;
+    } catch (error) {
+      throw new Error(error.toString());
+    }
+  };
 }
+
+
 
 export default BookingDAO;
