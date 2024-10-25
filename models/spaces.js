@@ -83,6 +83,12 @@ const spacesSchema = new Schema(
     room: {
       type: String,
     },
+    isGoldenHour: { type: Boolean, default: false },
+    goldenHourDetails: {
+      startTime: { type: String },
+      endTime: { type: String },
+      priceIncrease: { type: Number },
+    },
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
