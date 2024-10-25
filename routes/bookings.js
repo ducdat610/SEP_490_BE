@@ -1,7 +1,7 @@
 import express from "express";
 import Bookings from "../models/bookings.js";
-import { sendEmailBookingCompleted } from "../controllers/index.js";
-import Users from "../models/users.js";
+import BookingController from "../controllers/bookings.js";
+
 
 const bookingRouter = express.Router();
 
@@ -23,42 +23,12 @@ bookingRouter.get("/", async (req, res, next) => {
   }
 });
 
-// tạo mới booking
+// Endpoint kiểm tra khung giờ khả dụng
+bookingRouter.post('/check-hour-availability', BookingController.checkHourAvailability);
+bookingRouter.post('/check-day-availability', BookingController.checkDayAvailability);
 
-bookingRouter.post("/", async (req, res, next) => {
-  try {
-    const { userId, spaceId, checkIn, checkOut, timeSlot, notes } = req.body;
-
-    // Check for required fields
-    if (!userId || !spaceId || !checkIn || !checkOut || !timeSlot) {
-      return res.status(400).json({ error: "Missing required fields" });
-    }
-
-    // Validate the time slot
-    const { startTime, endTime } = timeSlot;
-    if (!startTime || !endTime) {
-      return res.status(400).json({ error: "Invalid time slot" });
-    }
-
-    // Create a new booking
-    const newBooking = new Bookings({
-      userId,
-      spaceId,
-      checkIn,
-      checkOut,
-      timeSlot: { startTime, endTime },
-      notes,
-      status: "awaiting payment",
-    });
-
-    // Save the new booking
-    const savedBooking = await newBooking.save();
-
-    res.status(201).json(savedBooking);
-  } catch (error) {
-    next(error);
-  }
-});
+// Endpoint để tạo đặt phòng mới
+bookingRouter.post('/create', BookingController.createBooking);
 
 
 
@@ -84,7 +54,7 @@ bookingRouter.put("/update-status/:id", async (req, res, next) => {
     if (status === "completed") {
       const tenantEmail = updatedBooking.userId.gmail; // Giả sử bạn có trường email trong user
       console.log(tenantEmail);
-      
+
       await sendEmailBookingCompleted.sendEmailBookingCompleted(tenantEmail, updatedBooking);
     }
 
@@ -94,4 +64,4 @@ bookingRouter.put("/update-status/:id", async (req, res, next) => {
   }
 });
 
-export default bookingRouter
+export default bookingRouter  
