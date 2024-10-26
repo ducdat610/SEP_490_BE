@@ -11,8 +11,6 @@ const bankSchema = new Schema(
       type: String,
       default: "",
     },
-
-    //a 
   },
   {
     timestamps: true,
