@@ -44,6 +44,9 @@ const bookingsSchema = new Schema(
         ref: "bookingDetails",
       },
     ],
+    totalAmount:{
+      type: String
+    },
     notes: {
       type: String,
       required: false,

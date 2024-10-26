@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer';
 import BookingDAO from '../dao/Booking.js';
 import Bookings from '../models/bookings.js';
+import bookingDetail from '../models/bookingDetails.js';
 
 const sendEmailBookingCompleted = async (tenantEmail, bookingDetails) => {
   const transporter = nodemailer.createTransport({
@@ -28,7 +29,7 @@ const sendEmailBookingCompleted = async (tenantEmail, bookingDetails) => {
 
 export const createBooking = async (req, res) => {
   try {
-    const { userId, spaceId, rentalType, startDate, endDate, selectedSlots, selectedDates, status, notes } = req.body;
+    const { userId, spaceId, rentalType, startDate, endDate, selectedSlots, selectedDates, status, notes, totalAmount } = req.body;
 
     // Kiểm tra các trường dữ liệu trước khi lưu
     if (!userId || !spaceId || !startDate || !endDate || !selectedSlots || !selectedDates) {
@@ -62,6 +63,25 @@ export const createBooking = async (req, res) => {
       return res.status(409).json({ message: "Lịch đã có người đặt trước đó!" });
     }
 
+    // Kiểm tra xem bookingDetail cho spaceId đã tồn tại chưa
+    let bookingDetailEntry = await bookingDetail.findOne({ spaceId });
+
+    if (bookingDetailEntry) {
+      // Nếu tồn tại, tăng `quantity` và cập nhật `totalAmount`
+      bookingDetailEntry.quantity += 1;
+      bookingDetailEntry.totalAmount += totalAmount;
+      await bookingDetailEntry.save();
+    } else {
+      // Nếu chưa tồn tại, tạo mới `bookingDetailEntry`
+      bookingDetailEntry = new bookingDetail({
+        spaceId,
+        quantity: 1,
+        totalAmount: totalAmount
+
+      });
+      await bookingDetailEntry.save();
+    }
+
     // Tạo đối tượng đặt phòng mới
     const newBooking = new Bookings({
       userId,
@@ -72,7 +92,9 @@ export const createBooking = async (req, res) => {
       selectedSlots,
       selectedDates,
       status,
-      notes
+      notes,
+      items: [bookingDetailEntry._id],
+      totalAmount
     });
 
     await newBooking.save();
@@ -82,7 +104,6 @@ export const createBooking = async (req, res) => {
     res.status(500).json({ message: `Error creating booking: ${error.message}` });
   }
 };
-
 
 
 const checkHourAvailability = async (req, res) => {
@@ -200,13 +221,26 @@ const checkDayAvailability = async (req, res) => {
   }
 };
 
-
+const getListBookingOfUser = async (req, res) => {
+  try {
+    const bookingByUserId = req.params.id;
+    const bookList = await BookingDAO.fetchListBookingOfUser(bookingByUserId);
+    if (bookList) {
+      res.status(200).json(bookList);
+    } else {
+      res.status(404).json("Not Found");
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.toString() });
+  }
+};
 
 const BookingController = {
   sendEmailBookingCompleted,
   createBooking,
   checkHourAvailability,
   checkDayAvailability,
+  getListBookingOfUser
 }
 
 export default BookingController
