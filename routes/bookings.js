@@ -1,6 +1,8 @@
 import express from "express";
 import Bookings from "../models/bookings.js";
 import BookingController from "../controllers/bookings.js";
+import bookingDetail from "../models/bookingDetails.js";
+import Spaces from "../models/spaces.js";
 
 
 const bookingRouter = express.Router();
@@ -62,6 +64,65 @@ bookingRouter.put("/update-status/:id", async (req, res, next) => {
     res.json(updatedBooking);
   } catch (error) {
     next(error);
+  }
+});
+
+
+// api lấy 3 spaces có lượt book nhiều nhất theo quantity
+bookingRouter.get("/top-spaces", async (req, res) => {
+  try {
+    const result = await bookingDetail.aggregate([
+      {
+        //Gom nhóm các order item theo productId và tính tổng số lượng của từng sp
+        $group: {
+          _id: "$spaceId",
+          quantity: { $sum: "$quantity" },
+          latestCreatedAt: { $max: "$createdAt" },
+        },
+      },
+      // {
+      //   $match: { quantity: { $gt: 0 } }, // Lọc sản phẩm có quantity > 0
+      // },
+      {
+        $sort: { quantity: -1, latestCreatedAt: -1 },
+      },
+      {
+        $limit: 3,
+      },
+    ]);
+
+    if (result.length === 0) {
+      return res.status(404).json({ message: "No space found" });
+    }
+
+    // Lấy thông tin chi tiết của các sản phẩm bán chạy nhất
+    const topSpaces = await Spaces.find({
+      _id: { $in: result.map((item) => item._id) },
+    });
+
+    // Gộp thông tin chi tiết với số lượng sản phẩm đã bán
+    const topSpaceWithQuantity = topSpaces.map((s) => {
+      const quantitySold = result.find((item) =>
+        item._id.equals(s._id)
+      ).quantity;
+      // const totalPrice = s.price * quantitySold;
+      return {
+        // trả về đối tượng js với các thuộc tính của sp như id, name, price ...
+        ...s.toObject(),
+        quantity: quantitySold,
+        // totalPrice: totalPrice,
+      };
+    });
+
+    // sắp xếp sản phẩm bán nhiều nhất lên đầu
+    topSpaceWithQuantity.sort((a, b) => b.quantity - a.quantity);
+
+    return res.status(200).json(topSpaceWithQuantity);
+  } catch (error) {
+    console.log(error.message);
+    return res
+      .status(500)
+      .json({ message: "Error retrieving the top products" });
   }
 });
 

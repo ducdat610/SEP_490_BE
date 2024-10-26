@@ -67,14 +67,17 @@ export const createBooking = async (req, res) => {
     let bookingDetailEntry = await bookingDetail.findOne({ spaceId });
 
     if (bookingDetailEntry) {
-      // Nếu tồn tại, tăng `quantity`
+      // Nếu tồn tại, tăng `quantity` và cập nhật `totalAmount`
       bookingDetailEntry.quantity += 1;
+      bookingDetailEntry.totalAmount += totalAmount;
       await bookingDetailEntry.save();
     } else {
       // Nếu chưa tồn tại, tạo mới `bookingDetailEntry`
       bookingDetailEntry = new bookingDetail({
         spaceId,
         quantity: 1,
+        totalAmount: totalAmount
+
       });
       await bookingDetailEntry.save();
     }

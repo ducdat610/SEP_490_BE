@@ -10,7 +10,7 @@ const bookingDetailSchema = new Schema(
     quantity: {
       type: Number,
     },
-    totalPrice: {
+    totalAmount: {
       type: Number,
     },
   },
