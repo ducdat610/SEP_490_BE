@@ -4,7 +4,7 @@ class BookingDAO {
   static async getBookingsBySpaceAndDates(spaceId, dates, rentalType) {
     try {
       const bookings = [];
-
+// a
       for (const date of dates) {
         const parsedDate = new Date(date);
         if (isNaN(parsedDate)) {
