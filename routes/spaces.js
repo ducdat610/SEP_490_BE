@@ -11,11 +11,34 @@ import {
 } from "../helpers/jwt_helper.js";
 import Users from "../models/users.js";
 import Appliances from "../models/appliances.js";
+import multer from "multer";
+import { CloudinaryStorage } from "multer-storage-cloudinary";
+import cloudinary from "../cloudinary.config.js";
+
+
 
 const spaceRouter = express.Router();
-spaceRouter.get("/", spaceController.getAllSpaces);
+
+const storage = new CloudinaryStorage({
+  cloudinary :cloudinary,
+  allowedFormats: ['jpg', 'png','webp','jfif'],
+  params:{
+    folder:'spacehub/img_space'
+  }
+});
+
+const uploadCloud = multer({ storage:storage });
+
+spaceRouter.get("/", spaceController.getAllSpacesApply);
+spaceRouter.get("/all", spaceController.getAllSpaces);
 spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
+spaceRouter.post('/', spaceController.createNewSpace);
+spaceRouter.post('/uploadImages', uploadCloud.array('images', 10), spaceController.uploadImages);
+
+spaceRouter.post('/removeImage', spaceController.removeImages);
+
+
 
 // tim kiem space
 spaceRouter.get("/search/:name", async (req, res, next) => {
@@ -35,23 +58,27 @@ spaceRouter.get("/search/:name", async (req, res, next) => {
 
 spaceRouter.get("/filter", async (req, res, next) => {
   try {
-    const { location, minPrice, maxPrice, category, area, applianceName } =
-      req.query;
+    const { location, minPrice, maxPrice, category, areaMin, areaMax, applianceNames } = req.query;
 
     // Khởi tạo đối tượng filter rỗng
     let filter = {};
 
     // Lọc theo địa chỉ
     if (location) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i"); // i: không phân biệt chữ hoa/thường
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i"); // Không phân biệt chữ hoa/thường
       filter.location = { $regex: rgx(location) };
     }
-    if (area) {
-      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
-      filter.area = { $regex: rgx(area) }; // Dùng regex để tìm các giá trị có chứa chuỗi tương tự
+    
+    // Lọc theo khu vực
+    if (areaMin && areaMax) {
+      filter.area = { $gte: areaMin, $lte: areaMax }; 
+    } else if (areaMin) {
+      filter.area = { $gte: areaMin }; 
+    } else if (areaMax) {
+      filter.area = { $lte: areaMax }; 
     }
 
-    // Lọc theo giá (nếu có cả minPrice và maxPrice)
+
     if (minPrice && maxPrice) {
       filter.pricePerHour = { $gte: minPrice, $lte: maxPrice };
     } else if (minPrice) {
@@ -60,38 +87,49 @@ spaceRouter.get("/filter", async (req, res, next) => {
       filter.pricePerHour = { $lte: maxPrice };
     }
 
-    // Lọc theo category
+    // Lọc theo danh mục
     if (category) {
-      filter.categories = category; // Nếu category là ObjectId, cần truyền giá trị này là ID
+      filter.categories = category; // categoriesId để lọc theo ObjectId
     }
-    if (applianceName) {
-      const appliances = await Appliances.find({
-        "appliances.name": { $regex: new RegExp(applianceName, "i") }, // Dùng regex để tìm tên appliance
-      }).select("_id");
-      if (appliances.length > 0) {
-        filter.appliancesId = {
-          $in: appliances.map((appliance) => appliance._id),
-        }; // Thêm vào filter
-      } else {
-        // Nếu không tìm thấy appliance nào, có thể trả về danh sách rỗng hoặc thông báo
-        return res.status(200).json([]);
-      }
+
+    // Lọc theo tên thiết bị
+    if (applianceNames) {
+      const applianceNamesArray = Array.isArray(applianceNames) ? applianceNames : [applianceNames];
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i");
+
+      // Tìm các spaces mà appliances chứa tên applianceNames
+      const filteredSpaces = await Spaces.find(filter)
+        .populate("categoriesId")
+        .populate("rulesId")
+        .populate({
+          path: "appliancesId",
+          match: { 
+            "appliances.name": { $in: applianceNamesArray.map(name => rgx(name)) } // Lọc theo tên thiết bị
+          },
+        })
+        .exec();
+
+      // Lọc các không gian mà appliances không trống
+      const finalSpaces = filteredSpaces.filter(space => 
+        space.appliancesId && space.appliancesId.appliances.length > 0
+      );
+
+      return res.status(200).json(finalSpaces);
     }
-    // Thực hiện truy vấn với filter đã tạo
+
+    // Nếu không có applianceNames, chỉ tìm theo filter khác
     const filteredSpaces = await Spaces.find(filter)
-      // .populate("categories") // Nếu cần populate thêm thông tin của thể loại
-      // .populate("rules") // Nếu cần populate thêm thông tin khác
-      .populate("categoriesId") // Nếu cần populate thêm thông tin của thể loại
-      .populate("rulesId") // Nếu cần populate thêm thông tin khác
-      .populate("appliancesId")
+      .populate("categoriesId")
+      .populate("rulesId")
+      .populate("appliancesId") // Populate appliancesId nếu không có applianceNames
       .exec();
 
     res.status(200).json(filteredSpaces);
   } catch (error) {
-    throw new Error(error.toString());
+    next(error); // Gọi next với lỗi để xử lý lỗi
   }
 });
-spaceRouter.post("/", spaceController.createNewSpace);
+
 
 // get theo id
 spaceRouter.get("/cate/:id", spaceController.getSimilarSpaces);
@@ -143,6 +181,24 @@ spaceRouter.get("/compare-spaces-differences", async (req, res) => {
         space2: space2.pricePerHour,
       };
     }
+    if (space1.pricePerDay !== space2.pricePerDay) {
+      differences.pricePerDay = {
+        space1: space1.pricePerDay,
+        space2: space2.pricePerDay,
+      };
+    }
+    if (space1.pricePerWeek !== space2.pricePerWeek) {
+      differences.pricePerWeek = {
+        space1: space1.pricePerWeek,
+        space2: space2.pricePerWeek,
+      };
+    }
+    if (space1.pricePerMonth !== space2.pricePerMonth) {
+      differences.pricePerMonth = {
+        space1: space1.pricePerMonth,
+        space2: space2.pricePerMonth,
+      };
+    }
 
     if (space1.status !== space2.status) {
       differences.status = { space1: space1.status, space2: space2.status };
@@ -181,24 +237,31 @@ spaceRouter.get("/compare-spaces", async (req, res) => {
       space1: {
         images:
           space1.images && space1.images.length > 0 ? space1.images[0] : null,
-        // id: space1._id,
         name: space1.name,
         location: space1.location,
         area: space1.area,
         pricePerHour: space1.pricePerHour,
+        pricePerDay: space1.pricePerDay,
+        pricePerWeek: space1.pricePerWeek,
+        pricePerMonth: space1.pricePerMonth,
         status: space1.status,
         images:
           space1.images && space1.images.length > 0 ? space1.images[0] : null,
+          latLng: space1.latLng
       },
       space2: {
         images:
           space2.images && space2.images.length > 0 ? space2.images[0] : null,
-        // id: space2._id,
         name: space2.name,
         location: space2.location,
         area: space2.area,
         pricePerHour: space2.pricePerHour,
+        pricePerDay: space2.pricePerDay,
+        pricePerWeek: space2.pricePerWeek,
+        pricePerMonth: space2.pricePerMonth,
         status: space2.status,
+        latLng: space2.latLng
+
       },
     };
 

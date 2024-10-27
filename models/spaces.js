@@ -2,13 +2,16 @@ import mongoose, { Schema } from "mongoose";
 
 const spacesSchema = new Schema(
   {
+    latLng: {
+      type: Array(Number),
+      required: false,
+    },
     name: {
       type: String,
       required: true,
     },
     description: {
       type: String,
-      required: true,
     },
     location: {
       type: String,
@@ -18,18 +21,17 @@ const spacesSchema = new Schema(
       type: String,
       required: true,
     },
-    rulesId: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "rules",
-        required: true,
-      },
-    ],
-    communityStandardsId:{
+    rulesId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "rules",
+      required: true,
+    },
+
+    communityStandardsId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "communityStandards",
     },
-    userId:{
+    userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
       required: true,
@@ -50,7 +52,17 @@ const spacesSchema = new Schema(
       type: Number,
       required: true,
     },
-    images: [{ type: String }],
+    images: [
+      {
+        public_id: {
+          type: String,
+        },
+        url: {
+          type: String,
+          required: true
+        }
+      }
+    ],
     censorship: {
       type: String,
       enum: ["Chờ duyệt", "Chấp nhận", "Từ chối"],
@@ -72,8 +84,14 @@ const spacesSchema = new Schema(
       ref: "appliances",
       required: true,
     },
-    room:{
-      type:String,
+    room: {
+      type: String,
+    },
+    isGoldenHour: { type: Boolean, default: false },
+    goldenHourDetails: {
+      startTime: { type: String },
+      endTime: { type: String },
+      priceIncrease: { type: Number },
     },
     reviews: [
       {
@@ -86,11 +104,11 @@ const spacesSchema = new Schema(
       type: Number,
       default: 0,
     },
-    favorite:{
+    favorite: {
       type: Boolean,
       default: false,
     },
-    isUpdate:{
+    isUpdate: {
       type: Boolean,
       default: false
     }

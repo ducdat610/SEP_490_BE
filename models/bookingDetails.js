@@ -7,9 +7,11 @@ const bookingDetailSchema = new Schema(
       ref: "spaces",
       required: true,
     },
-    totalPrice: {
+    quantity: {
       type: Number,
-      required: true,
+    },
+    totalAmount: {
+      type: Number,
     },
   },
   {
