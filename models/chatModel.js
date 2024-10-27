@@ -4,6 +4,11 @@ const ChatSchema = new mongoose.Schema(
   {
     members: {
       type: Array,
+      required: true,
+    },
+    spacesId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "spaces",
     },
   },
   {
