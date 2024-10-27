@@ -15,7 +15,7 @@ const fetchAllSpaceFavorite = async () => {
     throw new Error(error.toString());
   }
 }
-// a
+
 const fetchSimilarSpaces = async (id) => {
   try {
     const spaceId = await Spaces.find({ categoriesId: id })
