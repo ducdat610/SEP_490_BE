@@ -12,24 +12,40 @@ const bookingsSchema = new Schema(
       ref: "spaces",
       required: true,
     },
-    checkIn: {
+    startDate: { // Trước là checkIn
       type: Date,
       required: true,
     },
-    items: [
-        {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "bookingDetails",
-        },
-      ],
-    checkOut: {
+    endDate: { // Trước là checkOut
       type: Date,
       required: true,
     },
+    rentalType: { // Thêm trường mới để xác định loại hình thuê
+      type: String,
+      enum: ["hour", "day", "week", "month"],
+      required: true,
+    },
+    selectedSlots: [ // Để lưu trữ các khung giờ khi thuê theo giờ
+      {
+        date: { type: Date },
+        startTime: { type: String },
+        endTime: { type: String }
+      }
+    ],
+    selectedDates: [Date],
     status: {
       type: String,
-      enum: ["awaiting payment","completed","canceled"],
+      enum: ["awaiting payment", "completed", "canceled"],
       default: "awaiting payment",
+    },
+    items: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "bookingDetails",
+      },
+    ],
+    totalAmount:{
+      type: String
     },
     notes: {
       type: String,
@@ -40,13 +56,13 @@ const bookingsSchema = new Schema(
       required: false,
     },
     timeSlot: {
-      startTime: { type: String, required: true }, 
-      endTime: { type: String, required: true },   
+      startTime: { type: String, required: false },
+      endTime: { type: String, required: false },
     },
-
   },
-  { timeseries: true }
+  { timestamps: true }
 );
+
 const Bookings = mongoose.model("bookings", bookingsSchema);
 
 export default Bookings;
