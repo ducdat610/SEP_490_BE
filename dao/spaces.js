@@ -41,8 +41,17 @@ export const createSpace = async (spaceData) => {
     await newSpace.save();
     return newSpace;
   } catch (error) {
-    console.error("Error saving space to database:", error); 
+    console.error("Error saving space to database:", error);
     throw new Error('Error creating space in DAO');
   }
 };
-export default { fetchAllSpaces, fetchSimilarSpaces, createSpace, fetchAllSpaceFavorite,fetchAllSpacesApply }
+
+const deleteSpace = async (id) => {
+  try {
+    const deleteProduct = await Spaces.findByIdAndDelete(id).exec();
+    return deleteProduct;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
+export default { fetchAllSpaces, fetchSimilarSpaces, createSpace, fetchAllSpaceFavorite, fetchAllSpacesApply, deleteSpace }

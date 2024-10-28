@@ -35,8 +35,8 @@ spaceRouter.put("/:id/favorite", spaceController.changeFavoriteStatus);
 spaceRouter.get("/favorite", spaceController.getAllSpaceFavorites);
 spaceRouter.post('/', spaceController.createNewSpace);
 spaceRouter.post('/uploadImages', uploadCloud.array('images', 10), spaceController.uploadImages);
-
 spaceRouter.post('/removeImage', spaceController.removeImages);
+spaceRouter.delete('/delete/:id', spaceController.deleteSpace);
 
 
 

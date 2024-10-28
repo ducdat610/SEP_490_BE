@@ -186,7 +186,16 @@ const uploadImages = async (req, res) => {
   }
 };
 
-
+const deleteSpace = async (req, res) => {
+  try {
+    const deleteSpace = await spaceDao.deleteSpace(req.params.id);
+    res.status(200).json(deleteSpace);
+    console.log('Deleted space successfully');
+  } catch (error) {
+    res.status(500).json({ error: error.toString() });
+    console.log('Failed to delete product');
+  }
+};
 
 
 export default {
@@ -197,5 +206,6 @@ export default {
   getAllSpaceFavorites,
   removeImages,
   uploadImages,
-  getAllSpacesApply
+  getAllSpacesApply,
+  deleteSpace
 }
