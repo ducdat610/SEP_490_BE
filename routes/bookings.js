@@ -114,7 +114,7 @@ bookingRouter.get("/top-spaces", async (req, res) => {
       };
     });
 
-    // sắp xếp sản phẩm bán nhiều nhất lên đầu
+    // sắp xếp địa điểm nhiều nhất lên đầu
     topSpaceWithQuantity.sort((a, b) => b.quantity - a.quantity);
 
     return res.status(200).json(topSpaceWithQuantity);
