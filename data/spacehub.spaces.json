@@ -1,10 +1,11 @@
 [{
+	"latLng": [20.996471048187416, 105.7254033150991],
   "_id": {
     "$oid": "67165a1cc805abbf89ee7f25"
   },
-  "name": "Studio For Rent - Photography Space",
+  "name": "Studio Hoa Khẩn",
   "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp\nvà nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được\ntrang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền\nlinh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản\nphẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải\nmái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các\nbuổi chụp ảnh chuyên nghiệp.",
-  "location": "Ba Đình , Hà Nội",
+  "location": "Studio Hoa Khẩn",
   "area": "60",
   "rulesId": {
     "$oid": "671657d24ab4fdd3a3ab86c0"
@@ -189,7 +190,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "67165a1cc805abbf89ee7f14"
@@ -207,12 +208,13 @@
   "__v": 0
 },
 {
+	"latLng": [20.960588405906147, 105.76592931026362],
   "_id": {
     "$oid": "6716600fc805abbf89eea509"
   },
-  "name": "LEIZART STUDIO",
+  "name": "Studio Hà Đông, TT2 Văn Phú",
   "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp\nvà nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được\ntrang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền\nlinh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản\nphẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải\nmái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các\nbuổi chụp ảnh chuyên nghiệp.",
-  "location": "Thanh Trì , Hà Nội",
+  "location": "Studio Hà Đông, TT2 Văn Phú",
   "area": "40",
   "rulesId": {
     "$oid": "6716600fc805abbf89eea4f6"
@@ -306,7 +308,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "6716600fc805abbf89eea4f8"
@@ -324,12 +326,13 @@
   "__v": 0
 },
 {
+"latLng" :[20.989982545731213, 105.77956043848134],
   "_id": {
     "$oid": "671666fb347346a1d77935db"
   },
-  "name": "Studio For Rent - Photography Space",
+  "name": "Shop House Khu Đô Thị Mỗ Lao",
   "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp\nvà nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được\ntrang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền\nlinh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản\nphẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải\nmái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các\nbuổi chụp ảnh chuyên nghiệp.  ",
-  "location": "Tây Hồ, Hà Nội",
+  "location": "Shop House Khu Đô Thị Mỗ Lao",
   "area": "44",
   "rulesId": {
     "$oid": "671666f8b3e150a76b63472c"
@@ -458,7 +461,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "671666fb347346a1d77935cb"
@@ -596,7 +599,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "67166c6c347346a1d779667f"
@@ -734,7 +737,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "671670f4347346a1d7799aae"
@@ -994,7 +997,7 @@
   "censorship": "Chờ duyệt",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "6716a4a50149432e09c4bfe0"

@@ -2,6 +2,10 @@ import mongoose, { Schema } from "mongoose";
 
 const spacesSchema = new Schema(
   {
+    latLng: {
+      type: Array(Number),
+      required: false,
+    },
     name: {
       type: String,
       required: true,
@@ -82,6 +86,12 @@ const spacesSchema = new Schema(
     },
     room: {
       type: String,
+    },
+    isGoldenHour: { type: Boolean, default: false },
+    goldenHourDetails: {
+      startTime: { type: String },
+      endTime: { type: String },
+      priceIncrease: { type: Number },
     },
     reviews: [
       {
