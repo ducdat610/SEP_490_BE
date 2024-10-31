@@ -1,3194 +1,3196 @@
-[{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023762"
-  },
-  "name": "Phòng thu",
-  "appliances": [
-    {
-      "name": "Loa kiểm âm",
-      "iconName": "Speaker"
+[
+  {
+    "_id": {
+      "$oid": "66fb94f0e758c49d8a023762"
     },
-    {
-      "name": "Tai nghe kiểm âm",
-      "iconName": "Headphones"
-    },
-    {
-      "name": "Micro thu âm chuyên nghiệp",
-      "iconName": "Mic"
-    },
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt"
-    },
-    {
-      "name": "Audio Interface",
-      "iconName": "SettingsInputComponent"
-    },
-    {
-      "name": "MIDI Controller",
-      "iconName": "Piano"
-    },
-    {
-      "name": "Bàn phím điện tử",
-      "iconName": "Keyboard"
-    },
-    {
-      "name": "Phần mềm Digital Audio Workstation (DAW)",
-      "iconName": "Computer"
-    },
-    {
-      "name": "Bộ khuếch đại tiền âm (Preamp)",
-      "iconName": "Tune"
-    },
-    {
-      "name": "Máy tính cấu hình cao",
-      "iconName": "Devices"
-    },
-    {
-      "name": "Tấm tiêu âm",
-      "iconName": "GridOn"
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit"
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi"
-    },
-    {
-      "name": "Table",
-      "iconName": "TableBar"
-    },
-    {
-      "name": "Ghế thoải mái",
-      "iconName": "Chair"
+    "name": "Phòng thu",
+    "appliances": [
+      {
+        "name": "Loa kiểm âm",
+        "iconName": "Speaker"
+      },
+      {
+        "name": "Tai nghe kiểm âm",
+        "iconName": "Headphones"
+      },
+      {
+        "name": "Micro thu âm chuyên nghiệp",
+        "iconName": "Mic"
+      },
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt"
+      },
+      {
+        "name": "Audio Interface",
+        "iconName": "SettingsInputComponent"
+      },
+      {
+        "name": "MIDI Controller",
+        "iconName": "Piano"
+      },
+      {
+        "name": "Bàn phím điện tử",
+        "iconName": "Keyboard"
+      },
+      {
+        "name": "Phần mềm Digital Audio Workstation (DAW)",
+        "iconName": "Computer"
+      },
+      {
+        "name": "Bộ khuếch đại tiền âm (Preamp)",
+        "iconName": "Tune"
+      },
+      {
+        "name": "Máy tính cấu hình cao",
+        "iconName": "Devices"
+      },
+      {
+        "name": "Tấm tiêu âm",
+        "iconName": "GridOn"
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit"
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi"
+      },
+      {
+        "name": "Table",
+        "iconName": "TableBar"
+      },
+      {
+        "name": "Ghế thoải mái",
+        "iconName": "Chair"
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
     }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
+  },
+  {
+    "_id": {
+      "$oid": "66fb94f0e758c49d8a023763"
+    },
+    "name": "Phòng dạy thêm",
+    "appliances": [
+      {
+        "name": "Ghế học sinh",
+        "iconName": "ChairAlt"
+      },
+      {
+        "name": "Máy chiếu",
+        "iconName": "Videocam"
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi"
+      },
+      {
+        "name": "Ghế giáo viên",
+        "iconName": "EventSeat"
+      },
+      {
+        "name": "Bảng đen",
+        "iconName": "CallToAction"
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit"
+      },
+      {
+        "name": "Laptop",
+        "iconName": "Laptop"
+      },
+      {
+        "name": "Loa",
+        "iconName": "Speaker"
+      },
+      {
+        "name": "Máy in",
+        "iconName": "Print"
+      },
+      {
+        "name": "Kệ sách",
+        "iconName": "LibraryBooks"
+      },
+      {
+        "name": "Bục sân khấu",
+        "iconName": "PanoramaVerticalSelect"
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8946"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66fb94f0e758c49d8a023765"
+    },
+    "name": "Studio chụp hình",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn"
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper"
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb"
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper"
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera"
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance"
+      },
+      {
+        "name": "Gương lớn",
+        "iconName": "PanoramaWideAngle"
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit"
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys"
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer"
+      },
+      {
+        "name": "Bàn trang điểm",
+        "iconName": "TableBar"
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair"
+      },
+      {
+        "name": "Máy tạo khói",
+        "iconName": "Air"
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi"
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom"
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66fb94f0e758c49d8a023766"
+    },
+    "name": "Phòng họp",
+    "appliances": [
+      {
+        "name": "Máy chiếu",
+        "iconName": "Videocam"
+      },
+      {
+        "name": "Màn hình lớn",
+        "iconName": "Tv"
+      },
+      {
+        "name": "Hệ thống âm thanh",
+        "iconName": "Speaker"
+      },
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair"
+      },
+      {
+        "name": "Bục thuyết trình",
+        "iconName": "PanoramaVerticalSelect"
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit"
+      },
+      {
+        "name": "Bảng viết",
+        "iconName": "CallToAction"
+      },
+      {
+        "name": "TV",
+        "iconName": "Tv"
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi"
+      },
+      {
+        "name": "Tủ đựng tài liệu",
+        "iconName": "Storage"
+      },
+      {
+        "name": "Hệ thống đèn chiếu sáng",
+        "iconName": "Lightbulb"
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "670e334c9e6f8d1cea0f991e"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e334c9e6f8d1cea0f991f"
+        }
+      },
+      {
+        "name": "Micro thu âm chuyên nghiệp",
+        "iconName": "Mic",
+        "_id": {
+          "$oid": "670e334c9e6f8d1cea0f9920"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T09:18:04.383Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:18:04.383Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e34579e6f8d1cea0f994d"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e34579e6f8d1cea0f994e"
+        }
+      },
+      {
+        "name": "Micro thu âm chuyên nghiệp",
+        "iconName": "Mic",
+        "_id": {
+          "$oid": "670e34579e6f8d1cea0f994f"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T09:22:31.721Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:22:31.721Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e36239e6f8d1cea0f9955"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e36239e6f8d1cea0f9956"
+        }
+      },
+      {
+        "name": "Micro thu âm chuyên nghiệp",
+        "iconName": "Mic",
+        "_id": {
+          "$oid": "670e36239e6f8d1cea0f9957"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T09:30:11.582Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:30:11.582Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e37b262ca29f72c5921a5"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Hệ thống âm thanh",
+        "iconName": "Speaker",
+        "_id": {
+          "$oid": "670e37b262ca29f72c5921a6"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T09:36:50.735Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:36:50.735Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e429862ca29f72c5921c9"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "670e429862ca29f72c5921ca"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T10:23:20.176Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:23:20.176Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e42a662ca29f72c5921ce"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "670e42a662ca29f72c5921cf"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T10:23:34.587Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:23:34.587Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e440962ca29f72c592213"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e440962ca29f72c592214"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T10:29:29.110Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:29:29.110Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e440f62ca29f72c592218"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e440f62ca29f72c592219"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T10:29:35.968Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:29:35.968Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e468462ca29f72c592485"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e468462ca29f72c592486"
+        }
+      },
+      {
+        "name": "Micro thu âm chuyên nghiệp",
+        "iconName": "Mic",
+        "_id": {
+          "$oid": "670e468462ca29f72c592487"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T10:40:04.323Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:40:04.323Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e469e62ca29f72c59248b"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Pop filter",
+        "iconName": "FilterAlt",
+        "_id": {
+          "$oid": "670e469e62ca29f72c59248c"
+        }
+      },
+      {
+        "name": "Micro thu âm chuyên nghiệp",
+        "iconName": "Mic",
+        "_id": {
+          "$oid": "670e469e62ca29f72c59248d"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8948"
+    },
+    "createdAt": {
+      "$date": "2024-10-15T10:40:30.882Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:40:30.882Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fc715a272fd9dd2832017"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "670fc715a272fd9dd2832018"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T14:00:53.240Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:00:53.240Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd9de82c16abaa84ece4e"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fd9de82c16abaa84ece4f"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T15:21:02.717Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:21:02.717Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd9ef82c16abaa84ece54"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fd9ef82c16abaa84ece55"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T15:21:19.983Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:21:19.983Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fda1382c16abaa84ece5a"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fda1382c16abaa84ece5b"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T15:21:55.289Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:21:55.289Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fda5c82c16abaa84ece73"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fda5c82c16abaa84ece74"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T15:23:08.069Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:23:08.069Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fdaa382c16abaa84ece7a"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fdaa382c16abaa84ece7b"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T15:24:19.440Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:24:19.440Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fe07227cc4886aa83b1af"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "670fe07227cc4886aa83b1b0"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fe07227cc4886aa83b1b1"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "670fe07227cc4886aa83b1b2"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-16T15:49:06.766Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:49:06.766Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67128f956e416de9780996d6"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67128f956e416de9780996d7"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67128f956e416de9780996d8"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-18T16:40:53.334Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-18T16:40:53.334Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67159414e418519c14e3e25d"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67159414e418519c14e3e25e"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67159414e418519c14e3e25f"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-20T23:36:52.910Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:36:52.910Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671594f7c4d47b43bbec32f3"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671594f7c4d47b43bbec32f4"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671594f7c4d47b43bbec32f5"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-20T23:40:39.311Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:40:39.311Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715950ec4d47b43bbec32fd"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715950ec4d47b43bbec32fe"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715950ec4d47b43bbec32ff"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-20T23:41:02.139Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:41:02.139Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671595afc4d47b43bbec33a5"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671595afc4d47b43bbec33a6"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671595afc4d47b43bbec33a7"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-20T23:43:43.999Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:43:43.999Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671595ccc4d47b43bbec33d4"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671595ccc4d47b43bbec33d5"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671595ccc4d47b43bbec33d6"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-20T23:44:12.119Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:44:12.119Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671595d9c4d47b43bbec33dd"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671595d9c4d47b43bbec33de"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671595d9c4d47b43bbec33df"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-20T23:44:25.859Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:44:25.859Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715b6188f1492f115f29179"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715b6188f1492f115f2917a"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715b6188f1492f115f2917b"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:02:00.124Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:02:00.124Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715b6348f1492f115f291ae"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715b6348f1492f115f291af"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715b6348f1492f115f291b0"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:02:28.779Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:02:28.779Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715bc24b22fc318b25a1df9"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715bc24b22fc318b25a1dfa"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715bc24b22fc318b25a1dfb"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:27:48.892Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:27:48.892Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c2b789658053170240d8"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c2b789658053170240d9"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c2b789658053170240da"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:55:51.381Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:55:51.381Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c2e08965805317024106"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c2e08965805317024107"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c2e08965805317024108"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:56:32.308Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:56:32.308Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c30b8965805317024132"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c30b8965805317024133"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c30b8965805317024134"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:57:15.308Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:57:15.308Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c378896580531702415d"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c378896580531702415e"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c378896580531702415f"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T02:59:04.920Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:59:04.920Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c41eb458fbfee8403b5f"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c41eb458fbfee8403b60"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c41eb458fbfee8403b61"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:01:50.110Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:01:50.110Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c503df7b6ae19abc63e2"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c503df7b6ae19abc63e3"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c503df7b6ae19abc63e4"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:05:39.541Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:05:39.541Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c5f4df7b6ae19abc640c"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c5f4df7b6ae19abc640d"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c5f4df7b6ae19abc640e"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:09:40.136Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:40.136Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c5fcdf7b6ae19abc6414"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c5fcdf7b6ae19abc6415"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c5fcdf7b6ae19abc6416"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:09:48.731Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:48.731Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c5fedf7b6ae19abc641c"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c5fedf7b6ae19abc641d"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c5fedf7b6ae19abc641e"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:09:50.312Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:50.312Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c601df7b6ae19abc6424"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c601df7b6ae19abc6425"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c601df7b6ae19abc6426"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:09:53.837Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:53.837Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c60edf7b6ae19abc642c"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c60edf7b6ae19abc642d"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c60edf7b6ae19abc642e"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:10:06.857Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:10:06.857Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c611df7b6ae19abc6434"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c611df7b6ae19abc6435"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c611df7b6ae19abc6436"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:10:09.071Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:10:09.071Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c613df7b6ae19abc643c"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c613df7b6ae19abc643d"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c613df7b6ae19abc643e"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:10:11.056Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:10:11.056Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c6f5df7b6ae19abc6489"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715c6f5df7b6ae19abc648a"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715c6f5df7b6ae19abc648b"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:13:57.068Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:13:57.068Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715cbf0df7b6ae19abc652e"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715cbf0df7b6ae19abc652f"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715cbf0df7b6ae19abc6530"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:35:12.365Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:35:12.365Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715d039df7b6ae19abc6559"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715d039df7b6ae19abc655a"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715d039df7b6ae19abc655b"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T03:53:29.857Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:53:29.857Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715da78e155f312d9750410"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6715da78e155f312d9750411"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6715da78e155f312d9750412"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T04:37:12.648Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T04:37:12.648Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656d2e46fcf581c34cda8"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656d2e46fcf581c34cda9"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671656d2e46fcf581c34cdaa"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656d2e46fcf581c34cdab"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T13:27:46.385Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:27:46.385Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656d4c22ae041a9337fe0"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656d4c22ae041a9337fe1"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671656d4c22ae041a9337fe2"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656d4c22ae041a9337fe3"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T13:27:48.838Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:27:48.838Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656d6c22ae041a9337fe8"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656d6c22ae041a9337fe9"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671656d6c22ae041a9337fea"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656d6c22ae041a9337feb"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T13:27:50.698Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:27:50.698Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656fbc22ae041a9337ff0"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656fbc22ae041a9337ff1"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671656fbc22ae041a9337ff2"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671656fbc22ae041a9337ff3"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T13:28:27.501Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:28:27.501Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671657d24ab4fdd3a3ab86c2"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671657d24ab4fdd3a3ab86c3"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671657d24ab4fdd3a3ab86c4"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671657d24ab4fdd3a3ab86c5"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T13:32:02.706Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:32:02.706Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67165a1cc805abbf89ee7f14"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f15"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f16"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f17"
+        }
+      },
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f18"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f19"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f1a"
+        }
+      },
+      {
+        "name": "Gương lớn",
+        "iconName": "PanoramaWideAngle",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f1b"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f1c"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f1d"
+        }
+      },
+      {
+        "name": "Bàn trang điểm",
+        "iconName": "TableBar",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f1e"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f1f"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f20"
+        }
+      },
+      {
+        "name": "Máy tạo khói",
+        "iconName": "Air",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f21"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f22"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "67165a1cc805abbf89ee7f23"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T13:41:48.324Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:41:48.324Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716600cc805abbf89eea4d9"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4da"
+        }
+      },
+      {
+        "name": "Bàn trang điểm",
+        "iconName": "TableBar",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4db"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4dc"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4dd"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4de"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4df"
+        }
+      },
+      {
+        "name": "Máy tạo khói",
+        "iconName": "Air",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e0"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e1"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e2"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e3"
+        }
+      },
+      {
+        "name": "Gương lớn",
+        "iconName": "PanoramaWideAngle",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e4"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e5"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e6"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e7"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6716600cc805abbf89eea4e8"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T14:07:08.634Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:07:08.634Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716600fc805abbf89eea4f8"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4f9"
+        }
+      },
+      {
+        "name": "Bàn trang điểm",
+        "iconName": "TableBar",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4fa"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4fb"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4fc"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4fd"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4fe"
+        }
+      },
+      {
+        "name": "Máy tạo khói",
+        "iconName": "Air",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea4ff"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea500"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea501"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea502"
+        }
+      },
+      {
+        "name": "Gương lớn",
+        "iconName": "PanoramaWideAngle",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea503"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea504"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea505"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea506"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6716600fc805abbf89eea507"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T14:07:11.151Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:07:11.151Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671666f9b3e150a76b63472e"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "671666f9b3e150a76b63472f"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634730"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634731"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634732"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634733"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634734"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634735"
+        }
+      },
+      {
+        "name": "Gương lớn",
+        "iconName": "PanoramaWideAngle",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634736"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634737"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634738"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "671666f9b3e150a76b634739"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "671666f9b3e150a76b63473a"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "671666f9b3e150a76b63473b"
+        }
+      },
+      {
+        "name": "Bàn trang điểm",
+        "iconName": "TableBar",
+        "_id": {
+          "$oid": "671666f9b3e150a76b63473c"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T14:36:41.022Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:36:41.022Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671666fb347346a1d77935cb"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "671666fb347346a1d77935cc"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "671666fb347346a1d77935cd"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671666fb347346a1d77935ce"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671666fb347346a1d77935cf"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d0"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d1"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d2"
+        }
+      },
+      {
+        "name": "Gương lớn",
+        "iconName": "PanoramaWideAngle",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d3"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d4"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d5"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d6"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d7"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d8"
+        }
+      },
+      {
+        "name": "Bàn trang điểm",
+        "iconName": "TableBar",
+        "_id": {
+          "$oid": "671666fb347346a1d77935d9"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T14:36:43.167Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:36:43.167Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67166c69347346a1d7796661"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "67166c69347346a1d7796662"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "67166c69347346a1d7796663"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "67166c69347346a1d7796664"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67166c69347346a1d7796665"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "67166c69347346a1d7796666"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "67166c69347346a1d7796667"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "67166c69347346a1d7796668"
+        }
+      },
+      {
+        "name": "Máy tạo khói",
+        "iconName": "Air",
+        "_id": {
+          "$oid": "67166c69347346a1d7796669"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "67166c69347346a1d779666a"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "67166c69347346a1d779666b"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67166c69347346a1d779666c"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T14:59:53.796Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:59:53.796Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67166c6c347346a1d779667f"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796680"
+        }
+      },
+      {
+        "name": "Quần áo và phụ kiện",
+        "iconName": "Checkroom",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796681"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796682"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796683"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796684"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796685"
+        }
+      },
+      {
+        "name": "Máy tính và phần mềm chỉnh sửa ảnh",
+        "iconName": "Computer",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796686"
+        }
+      },
+      {
+        "name": "Máy tạo khói",
+        "iconName": "Air",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796687"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796688"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "67166c6c347346a1d7796689"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67166c6c347346a1d779668a"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T14:59:56.590Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:59:56.590Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671670f1347346a1d7799a92"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a93"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a94"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a95"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a96"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a97"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a98"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a99"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a9a"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "671670f1347346a1d7799a9b"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T15:19:13.674Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:19:13.674Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671670f4347346a1d7799aae"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn flash studio",
+        "iconName": "FlashOn",
+        "_id": {
+          "$oid": "671670f4347346a1d7799aaf"
+        }
+      },
+      {
+        "name": "Phông nền",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab0"
+        }
+      },
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab1"
+        }
+      },
+      {
+        "name": "Máy ảnh chuyên nghiệp",
+        "iconName": "PhotoCamera",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab2"
+        }
+      },
+      {
+        "name": "Chân máy ảnh",
+        "iconName": "CameraEnhance",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab3"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab4"
+        }
+      },
+      {
+        "name": "Quạt không gây tiếng ồn",
+        "iconName": "Toys",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab5"
+        }
+      },
+      {
+        "name": "Ghế và đạo cụ chụp ảnh",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab6"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "671670f4347346a1d7799ab7"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T15:19:16.327Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:19:16.327Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716756c65cf2586bc47245d"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Máy chiếu",
+        "iconName": "Videocam",
+        "_id": {
+          "$oid": "6716756c65cf2586bc47245e"
+        }
+      },
+      {
+        "name": "Màn hình lớn",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "6716756c65cf2586bc47245f"
+        }
+      },
+      {
+        "name": "Bảng viết",
+        "iconName": "CallToAction",
+        "_id": {
+          "$oid": "6716756c65cf2586bc472460"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "6716756c65cf2586bc472461"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "6716756c65cf2586bc472462"
+        }
+      },
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "6716756c65cf2586bc472463"
+        }
+      },
+      {
+        "name": "Hệ thống âm thanh",
+        "iconName": "Speaker",
+        "_id": {
+          "$oid": "6716756c65cf2586bc472464"
+        }
+      },
+      {
+        "name": "TV",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "6716756c65cf2586bc472465"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T15:38:20.234Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:38:20.234Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716756fd830e9144b88260e"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Máy chiếu",
+        "iconName": "Videocam",
+        "_id": {
+          "$oid": "6716756fd830e9144b88260f"
+        }
+      },
+      {
+        "name": "Màn hình lớn",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "6716756fd830e9144b882610"
+        }
+      },
+      {
+        "name": "Bảng viết",
+        "iconName": "CallToAction",
+        "_id": {
+          "$oid": "6716756fd830e9144b882611"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "6716756fd830e9144b882612"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "6716756fd830e9144b882613"
+        }
+      },
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "6716756fd830e9144b882614"
+        }
+      },
+      {
+        "name": "Hệ thống âm thanh",
+        "iconName": "Speaker",
+        "_id": {
+          "$oid": "6716756fd830e9144b882615"
+        }
+      },
+      {
+        "name": "TV",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "6716756fd830e9144b882616"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T15:38:23.040Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:38:23.040Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67167817ec29f2af8f269085"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Máy chiếu",
+        "iconName": "Videocam",
+        "_id": {
+          "$oid": "67167817ec29f2af8f269086"
+        }
+      },
+      {
+        "name": "TV",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "67167817ec29f2af8f269087"
+        }
+      },
+      {
+        "name": "Bảng viết",
+        "iconName": "CallToAction",
+        "_id": {
+          "$oid": "67167817ec29f2af8f269088"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "67167817ec29f2af8f269089"
+        }
+      },
+      {
+        "name": "Tủ đựng tài liệu",
+        "iconName": "Storage",
+        "_id": {
+          "$oid": "67167817ec29f2af8f26908a"
+        }
+      },
+      {
+        "name": "Hệ thống đèn chiếu sáng",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67167817ec29f2af8f26908b"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "67167817ec29f2af8f26908c"
+        }
+      },
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "67167817ec29f2af8f26908d"
+        }
+      },
+      {
+        "name": "Màn hình lớn",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "67167817ec29f2af8f26908e"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T15:49:43.107Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:49:43.107Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67167819ec29f2af8f26909d"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Máy chiếu",
+        "iconName": "Videocam",
+        "_id": {
+          "$oid": "67167819ec29f2af8f26909e"
+        }
+      },
+      {
+        "name": "TV",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "67167819ec29f2af8f26909f"
+        }
+      },
+      {
+        "name": "Bảng viết",
+        "iconName": "CallToAction",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a0"
+        }
+      },
+      {
+        "name": "WiFi",
+        "iconName": "Wifi",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a1"
+        }
+      },
+      {
+        "name": "Tủ đựng tài liệu",
+        "iconName": "Storage",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a2"
+        }
+      },
+      {
+        "name": "Hệ thống đèn chiếu sáng",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a3"
+        }
+      },
+      {
+        "name": "Điều hòa",
+        "iconName": "AcUnit",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a4"
+        }
+      },
+      {
+        "name": "Bàn và ghế họp",
+        "iconName": "Chair",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a5"
+        }
+      },
+      {
+        "name": "Màn hình lớn",
+        "iconName": "Tv",
+        "_id": {
+          "$oid": "67167819ec29f2af8f2690a6"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8947"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T15:49:45.944Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:49:45.944Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67169e10d65cbf190fabc8f8"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67169e10d65cbf190fabc8f9"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67169e10d65cbf190fabc8fa"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T18:31:44.068Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:31:44.068Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67169e48ec543b891dca2a8b"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "67169e48ec543b891dca2a8c"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "67169e48ec543b891dca2a8d"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T18:32:40.393Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:32:40.393Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716a4780149432e09c4bfd9"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6716a4780149432e09c4bfda"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T18:59:04.581Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:59:04.581Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716a4a50149432e09c4bfe0"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6716a4a50149432e09c4bfe1"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T18:59:49.699Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:59:49.699Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716a5550149432e09c4c00a"
+    },
+    "name": "",
+    "appliances": [
+      {
+        "name": "Đèn chiếu sáng liên tục",
+        "iconName": "Lightbulb",
+        "_id": {
+          "$oid": "6716a5550149432e09c4c00b"
+        }
+      },
+      {
+        "name": "Phông nền chụp ảnh",
+        "iconName": "Wallpaper",
+        "_id": {
+          "$oid": "6716a5550149432e09c4c00c"
+        }
+      }
+    ],
+    "categoryId": {
+      "$oid": "66eafbb0cb37101e8e8f8945"
+    },
+    "createdAt": {
+      "$date": "2024-10-21T19:02:45.830Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T19:02:45.830Z"
+    },
+    "__v": 0
   }
-},
-{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023763"
-  },
-  "name": "Phòng dạy thêm",
-  "appliances": [
-    {
-      "name": "Ghế học sinh",
-      "iconName": "ChairAlt"
-    },
-    {
-      "name": "Máy chiếu",
-      "iconName": "Videocam"
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi"
-    },
-    {
-      "name": "Ghế giáo viên",
-      "iconName": "EventSeat"
-    },
-    {
-      "name": "Bảng đen",
-      "iconName": "CallToAction"
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit"
-    },
-    {
-      "name": "Laptop",
-      "iconName": "Laptop"
-    },
-    {
-      "name": "Loa",
-      "iconName": "Speaker"
-    },
-    {
-      "name": "Máy in",
-      "iconName": "Print"
-    },
-    {
-      "name": "Kệ sách",
-      "iconName": "LibraryBooks"
-    },
-    {
-      "name": "Bục sân khấu",
-      "iconName": "PanoramaVerticalSelect"
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
-  }
-},
-{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023765"
-  },
-  "name": "Studio chụp hình",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn"
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper"
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb"
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper"
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera"
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance"
-    },
-    {
-      "name": "Gương lớn",
-      "iconName": "PanoramaWideAngle"
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit"
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys"
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer"
-    },
-    {
-      "name": "Bàn trang điểm",
-      "iconName": "TableBar"
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair"
-    },
-    {
-      "name": "Máy tạo khói",
-      "iconName": "Air"
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi"
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom"
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  }
-},
-{
-  "_id": {
-    "$oid": "66fb94f0e758c49d8a023766"
-  },
-  "name": "Phòng họp",
-  "appliances": [
-    {
-      "name": "Máy chiếu",
-      "iconName": "Videocam"
-    },
-    {
-      "name": "Màn hình lớn",
-      "iconName": "Tv"
-    },
-    {
-      "name": "Hệ thống âm thanh",
-      "iconName": "Speaker"
-    },
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair"
-    },
-    {
-      "name": "Bục thuyết trình",
-      "iconName": "PanoramaVerticalSelect"
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit"
-    },
-    {
-      "name": "Bảng viết",
-      "iconName": "CallToAction"
-    },
-    {
-      "name": "TV",
-      "iconName": "Tv"
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi"
-    },
-    {
-      "name": "Tủ đựng tài liệu",
-      "iconName": "Storage"
-    },
-    {
-      "name": "Hệ thống đèn chiếu sáng",
-      "iconName": "Lightbulb"
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  }
-},
-{
-  "_id": {
-    "$oid": "670e334c9e6f8d1cea0f991e"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e334c9e6f8d1cea0f991f"
-      }
-    },
-    {
-      "name": "Micro thu âm chuyên nghiệp",
-      "iconName": "Mic",
-      "_id": {
-        "$oid": "670e334c9e6f8d1cea0f9920"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T09:18:04.383Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:18:04.383Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e34579e6f8d1cea0f994d"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e34579e6f8d1cea0f994e"
-      }
-    },
-    {
-      "name": "Micro thu âm chuyên nghiệp",
-      "iconName": "Mic",
-      "_id": {
-        "$oid": "670e34579e6f8d1cea0f994f"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T09:22:31.721Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:22:31.721Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e36239e6f8d1cea0f9955"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e36239e6f8d1cea0f9956"
-      }
-    },
-    {
-      "name": "Micro thu âm chuyên nghiệp",
-      "iconName": "Mic",
-      "_id": {
-        "$oid": "670e36239e6f8d1cea0f9957"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T09:30:11.582Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:30:11.582Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e37b262ca29f72c5921a5"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Hệ thống âm thanh",
-      "iconName": "Speaker",
-      "_id": {
-        "$oid": "670e37b262ca29f72c5921a6"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T09:36:50.735Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:36:50.735Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e429862ca29f72c5921c9"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "670e429862ca29f72c5921ca"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T10:23:20.176Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:23:20.176Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e42a662ca29f72c5921ce"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "670e42a662ca29f72c5921cf"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T10:23:34.587Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:23:34.587Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e440962ca29f72c592213"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e440962ca29f72c592214"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T10:29:29.110Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:29:29.110Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e440f62ca29f72c592218"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e440f62ca29f72c592219"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T10:29:35.968Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:29:35.968Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e468462ca29f72c592485"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e468462ca29f72c592486"
-      }
-    },
-    {
-      "name": "Micro thu âm chuyên nghiệp",
-      "iconName": "Mic",
-      "_id": {
-        "$oid": "670e468462ca29f72c592487"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T10:40:04.323Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:40:04.323Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e469e62ca29f72c59248b"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Pop filter",
-      "iconName": "FilterAlt",
-      "_id": {
-        "$oid": "670e469e62ca29f72c59248c"
-      }
-    },
-    {
-      "name": "Micro thu âm chuyên nghiệp",
-      "iconName": "Mic",
-      "_id": {
-        "$oid": "670e469e62ca29f72c59248d"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8948"
-  },
-  "createdAt": {
-    "$date": "2024-10-15T10:40:30.882Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:40:30.882Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fc715a272fd9dd2832017"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "670fc715a272fd9dd2832018"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T14:00:53.240Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:00:53.240Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd9de82c16abaa84ece4e"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fd9de82c16abaa84ece4f"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T15:21:02.717Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:21:02.717Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd9ef82c16abaa84ece54"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fd9ef82c16abaa84ece55"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T15:21:19.983Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:21:19.983Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fda1382c16abaa84ece5a"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fda1382c16abaa84ece5b"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T15:21:55.289Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:21:55.289Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fda5c82c16abaa84ece73"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fda5c82c16abaa84ece74"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T15:23:08.069Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:23:08.069Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fdaa382c16abaa84ece7a"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fdaa382c16abaa84ece7b"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T15:24:19.440Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:24:19.440Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fe07227cc4886aa83b1af"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "670fe07227cc4886aa83b1b0"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fe07227cc4886aa83b1b1"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "670fe07227cc4886aa83b1b2"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-16T15:49:06.766Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:49:06.766Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67128f956e416de9780996d6"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67128f956e416de9780996d7"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67128f956e416de9780996d8"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-18T16:40:53.334Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-18T16:40:53.334Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67159414e418519c14e3e25d"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67159414e418519c14e3e25e"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67159414e418519c14e3e25f"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-20T23:36:52.910Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:36:52.910Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671594f7c4d47b43bbec32f3"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671594f7c4d47b43bbec32f4"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671594f7c4d47b43bbec32f5"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-20T23:40:39.311Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:40:39.311Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715950ec4d47b43bbec32fd"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715950ec4d47b43bbec32fe"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715950ec4d47b43bbec32ff"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-20T23:41:02.139Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:41:02.139Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671595afc4d47b43bbec33a5"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671595afc4d47b43bbec33a6"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671595afc4d47b43bbec33a7"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-20T23:43:43.999Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:43:43.999Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671595ccc4d47b43bbec33d4"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671595ccc4d47b43bbec33d5"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671595ccc4d47b43bbec33d6"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-20T23:44:12.119Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:44:12.119Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671595d9c4d47b43bbec33dd"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671595d9c4d47b43bbec33de"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671595d9c4d47b43bbec33df"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-20T23:44:25.859Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:44:25.859Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715b6188f1492f115f29179"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715b6188f1492f115f2917a"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715b6188f1492f115f2917b"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:02:00.124Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:02:00.124Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715b6348f1492f115f291ae"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715b6348f1492f115f291af"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715b6348f1492f115f291b0"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:02:28.779Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:02:28.779Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715bc24b22fc318b25a1df9"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715bc24b22fc318b25a1dfa"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715bc24b22fc318b25a1dfb"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:27:48.892Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:27:48.892Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c2b789658053170240d8"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c2b789658053170240d9"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c2b789658053170240da"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:55:51.381Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:55:51.381Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c2e08965805317024106"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c2e08965805317024107"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c2e08965805317024108"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:56:32.308Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:56:32.308Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c30b8965805317024132"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c30b8965805317024133"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c30b8965805317024134"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:57:15.308Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:57:15.308Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c378896580531702415d"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c378896580531702415e"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c378896580531702415f"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T02:59:04.920Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:59:04.920Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c41eb458fbfee8403b5f"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c41eb458fbfee8403b60"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c41eb458fbfee8403b61"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:01:50.110Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:01:50.110Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c503df7b6ae19abc63e2"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c503df7b6ae19abc63e3"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c503df7b6ae19abc63e4"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:05:39.541Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:05:39.541Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c5f4df7b6ae19abc640c"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c5f4df7b6ae19abc640d"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c5f4df7b6ae19abc640e"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:09:40.136Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:40.136Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c5fcdf7b6ae19abc6414"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c5fcdf7b6ae19abc6415"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c5fcdf7b6ae19abc6416"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:09:48.731Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:48.731Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c5fedf7b6ae19abc641c"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c5fedf7b6ae19abc641d"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c5fedf7b6ae19abc641e"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:09:50.312Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:50.312Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c601df7b6ae19abc6424"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c601df7b6ae19abc6425"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c601df7b6ae19abc6426"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:09:53.837Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:53.837Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c60edf7b6ae19abc642c"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c60edf7b6ae19abc642d"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c60edf7b6ae19abc642e"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:10:06.857Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:10:06.857Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c611df7b6ae19abc6434"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c611df7b6ae19abc6435"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c611df7b6ae19abc6436"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:10:09.071Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:10:09.071Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c613df7b6ae19abc643c"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c613df7b6ae19abc643d"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c613df7b6ae19abc643e"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:10:11.056Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:10:11.056Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c6f5df7b6ae19abc6489"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715c6f5df7b6ae19abc648a"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715c6f5df7b6ae19abc648b"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:13:57.068Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:13:57.068Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715cbf0df7b6ae19abc652e"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715cbf0df7b6ae19abc652f"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715cbf0df7b6ae19abc6530"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:35:12.365Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:35:12.365Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715d039df7b6ae19abc6559"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715d039df7b6ae19abc655a"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715d039df7b6ae19abc655b"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T03:53:29.857Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:53:29.857Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715da78e155f312d9750410"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6715da78e155f312d9750411"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6715da78e155f312d9750412"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T04:37:12.648Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T04:37:12.648Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656d2e46fcf581c34cda8"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656d2e46fcf581c34cda9"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671656d2e46fcf581c34cdaa"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656d2e46fcf581c34cdab"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T13:27:46.385Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:27:46.385Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656d4c22ae041a9337fe0"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656d4c22ae041a9337fe1"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671656d4c22ae041a9337fe2"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656d4c22ae041a9337fe3"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T13:27:48.838Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:27:48.838Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656d6c22ae041a9337fe8"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656d6c22ae041a9337fe9"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671656d6c22ae041a9337fea"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656d6c22ae041a9337feb"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T13:27:50.698Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:27:50.698Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656fbc22ae041a9337ff0"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656fbc22ae041a9337ff1"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671656fbc22ae041a9337ff2"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671656fbc22ae041a9337ff3"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T13:28:27.501Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:28:27.501Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671657d24ab4fdd3a3ab86c2"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671657d24ab4fdd3a3ab86c3"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671657d24ab4fdd3a3ab86c4"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671657d24ab4fdd3a3ab86c5"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T13:32:02.706Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:32:02.706Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67165a1cc805abbf89ee7f14"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f15"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f16"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f17"
-      }
-    },
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f18"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f19"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f1a"
-      }
-    },
-    {
-      "name": "Gương lớn",
-      "iconName": "PanoramaWideAngle",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f1b"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f1c"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f1d"
-      }
-    },
-    {
-      "name": "Bàn trang điểm",
-      "iconName": "TableBar",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f1e"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f1f"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f20"
-      }
-    },
-    {
-      "name": "Máy tạo khói",
-      "iconName": "Air",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f21"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f22"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "67165a1cc805abbf89ee7f23"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T13:41:48.324Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:41:48.324Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716600cc805abbf89eea4d9"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4da"
-      }
-    },
-    {
-      "name": "Bàn trang điểm",
-      "iconName": "TableBar",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4db"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4dc"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4dd"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4de"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4df"
-      }
-    },
-    {
-      "name": "Máy tạo khói",
-      "iconName": "Air",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e0"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e1"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e2"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e3"
-      }
-    },
-    {
-      "name": "Gương lớn",
-      "iconName": "PanoramaWideAngle",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e4"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e5"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e6"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e7"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6716600cc805abbf89eea4e8"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T14:07:08.634Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:07:08.634Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716600fc805abbf89eea4f8"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4f9"
-      }
-    },
-    {
-      "name": "Bàn trang điểm",
-      "iconName": "TableBar",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4fa"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4fb"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4fc"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4fd"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4fe"
-      }
-    },
-    {
-      "name": "Máy tạo khói",
-      "iconName": "Air",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea4ff"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea500"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea501"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea502"
-      }
-    },
-    {
-      "name": "Gương lớn",
-      "iconName": "PanoramaWideAngle",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea503"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea504"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea505"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea506"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6716600fc805abbf89eea507"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T14:07:11.151Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:07:11.151Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671666f9b3e150a76b63472e"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "671666f9b3e150a76b63472f"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634730"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634731"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634732"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634733"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634734"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634735"
-      }
-    },
-    {
-      "name": "Gương lớn",
-      "iconName": "PanoramaWideAngle",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634736"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634737"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634738"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "671666f9b3e150a76b634739"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "671666f9b3e150a76b63473a"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "671666f9b3e150a76b63473b"
-      }
-    },
-    {
-      "name": "Bàn trang điểm",
-      "iconName": "TableBar",
-      "_id": {
-        "$oid": "671666f9b3e150a76b63473c"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T14:36:41.022Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:36:41.022Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671666fb347346a1d77935cb"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "671666fb347346a1d77935cc"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "671666fb347346a1d77935cd"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671666fb347346a1d77935ce"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671666fb347346a1d77935cf"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d0"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d1"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d2"
-      }
-    },
-    {
-      "name": "Gương lớn",
-      "iconName": "PanoramaWideAngle",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d3"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d4"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d5"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d6"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d7"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d8"
-      }
-    },
-    {
-      "name": "Bàn trang điểm",
-      "iconName": "TableBar",
-      "_id": {
-        "$oid": "671666fb347346a1d77935d9"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T14:36:43.167Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:36:43.167Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67166c69347346a1d7796661"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "67166c69347346a1d7796662"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "67166c69347346a1d7796663"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "67166c69347346a1d7796664"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67166c69347346a1d7796665"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "67166c69347346a1d7796666"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "67166c69347346a1d7796667"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "67166c69347346a1d7796668"
-      }
-    },
-    {
-      "name": "Máy tạo khói",
-      "iconName": "Air",
-      "_id": {
-        "$oid": "67166c69347346a1d7796669"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "67166c69347346a1d779666a"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "67166c69347346a1d779666b"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67166c69347346a1d779666c"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T14:59:53.796Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:59:53.796Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67166c6c347346a1d779667f"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796680"
-      }
-    },
-    {
-      "name": "Quần áo và phụ kiện",
-      "iconName": "Checkroom",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796681"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796682"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796683"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796684"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796685"
-      }
-    },
-    {
-      "name": "Máy tính và phần mềm chỉnh sửa ảnh",
-      "iconName": "Computer",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796686"
-      }
-    },
-    {
-      "name": "Máy tạo khói",
-      "iconName": "Air",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796687"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796688"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "67166c6c347346a1d7796689"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67166c6c347346a1d779668a"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T14:59:56.590Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:59:56.590Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671670f1347346a1d7799a92"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a93"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a94"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a95"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a96"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a97"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a98"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a99"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a9a"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "671670f1347346a1d7799a9b"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T15:19:13.674Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:19:13.674Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671670f4347346a1d7799aae"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn flash studio",
-      "iconName": "FlashOn",
-      "_id": {
-        "$oid": "671670f4347346a1d7799aaf"
-      }
-    },
-    {
-      "name": "Phông nền",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab0"
-      }
-    },
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab1"
-      }
-    },
-    {
-      "name": "Máy ảnh chuyên nghiệp",
-      "iconName": "PhotoCamera",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab2"
-      }
-    },
-    {
-      "name": "Chân máy ảnh",
-      "iconName": "CameraEnhance",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab3"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab4"
-      }
-    },
-    {
-      "name": "Quạt không gây tiếng ồn",
-      "iconName": "Toys",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab5"
-      }
-    },
-    {
-      "name": "Ghế và đạo cụ chụp ảnh",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab6"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "671670f4347346a1d7799ab7"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T15:19:16.327Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:19:16.327Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716756c65cf2586bc47245d"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Máy chiếu",
-      "iconName": "Videocam",
-      "_id": {
-        "$oid": "6716756c65cf2586bc47245e"
-      }
-    },
-    {
-      "name": "Màn hình lớn",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "6716756c65cf2586bc47245f"
-      }
-    },
-    {
-      "name": "Bảng viết",
-      "iconName": "CallToAction",
-      "_id": {
-        "$oid": "6716756c65cf2586bc472460"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "6716756c65cf2586bc472461"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "6716756c65cf2586bc472462"
-      }
-    },
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "6716756c65cf2586bc472463"
-      }
-    },
-    {
-      "name": "Hệ thống âm thanh",
-      "iconName": "Speaker",
-      "_id": {
-        "$oid": "6716756c65cf2586bc472464"
-      }
-    },
-    {
-      "name": "TV",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "6716756c65cf2586bc472465"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T15:38:20.234Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:38:20.234Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716756fd830e9144b88260e"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Máy chiếu",
-      "iconName": "Videocam",
-      "_id": {
-        "$oid": "6716756fd830e9144b88260f"
-      }
-    },
-    {
-      "name": "Màn hình lớn",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "6716756fd830e9144b882610"
-      }
-    },
-    {
-      "name": "Bảng viết",
-      "iconName": "CallToAction",
-      "_id": {
-        "$oid": "6716756fd830e9144b882611"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "6716756fd830e9144b882612"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "6716756fd830e9144b882613"
-      }
-    },
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "6716756fd830e9144b882614"
-      }
-    },
-    {
-      "name": "Hệ thống âm thanh",
-      "iconName": "Speaker",
-      "_id": {
-        "$oid": "6716756fd830e9144b882615"
-      }
-    },
-    {
-      "name": "TV",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "6716756fd830e9144b882616"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T15:38:23.040Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:38:23.040Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67167817ec29f2af8f269085"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Máy chiếu",
-      "iconName": "Videocam",
-      "_id": {
-        "$oid": "67167817ec29f2af8f269086"
-      }
-    },
-    {
-      "name": "TV",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "67167817ec29f2af8f269087"
-      }
-    },
-    {
-      "name": "Bảng viết",
-      "iconName": "CallToAction",
-      "_id": {
-        "$oid": "67167817ec29f2af8f269088"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "67167817ec29f2af8f269089"
-      }
-    },
-    {
-      "name": "Tủ đựng tài liệu",
-      "iconName": "Storage",
-      "_id": {
-        "$oid": "67167817ec29f2af8f26908a"
-      }
-    },
-    {
-      "name": "Hệ thống đèn chiếu sáng",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67167817ec29f2af8f26908b"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "67167817ec29f2af8f26908c"
-      }
-    },
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "67167817ec29f2af8f26908d"
-      }
-    },
-    {
-      "name": "Màn hình lớn",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "67167817ec29f2af8f26908e"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T15:49:43.107Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:49:43.107Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67167819ec29f2af8f26909d"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Máy chiếu",
-      "iconName": "Videocam",
-      "_id": {
-        "$oid": "67167819ec29f2af8f26909e"
-      }
-    },
-    {
-      "name": "TV",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "67167819ec29f2af8f26909f"
-      }
-    },
-    {
-      "name": "Bảng viết",
-      "iconName": "CallToAction",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a0"
-      }
-    },
-    {
-      "name": "WiFi",
-      "iconName": "Wifi",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a1"
-      }
-    },
-    {
-      "name": "Tủ đựng tài liệu",
-      "iconName": "Storage",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a2"
-      }
-    },
-    {
-      "name": "Hệ thống đèn chiếu sáng",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a3"
-      }
-    },
-    {
-      "name": "Điều hòa",
-      "iconName": "AcUnit",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a4"
-      }
-    },
-    {
-      "name": "Bàn và ghế họp",
-      "iconName": "Chair",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a5"
-      }
-    },
-    {
-      "name": "Màn hình lớn",
-      "iconName": "Tv",
-      "_id": {
-        "$oid": "67167819ec29f2af8f2690a6"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8947"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T15:49:45.944Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:49:45.944Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67169e10d65cbf190fabc8f8"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67169e10d65cbf190fabc8f9"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67169e10d65cbf190fabc8fa"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T18:31:44.068Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:31:44.068Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67169e48ec543b891dca2a8b"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "67169e48ec543b891dca2a8c"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "67169e48ec543b891dca2a8d"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T18:32:40.393Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:32:40.393Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716a4780149432e09c4bfd9"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6716a4780149432e09c4bfda"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T18:59:04.581Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:59:04.581Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716a4a50149432e09c4bfe0"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6716a4a50149432e09c4bfe1"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T18:59:49.699Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:59:49.699Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716a5550149432e09c4c00a"
-  },
-  "name": "",
-  "appliances": [
-    {
-      "name": "Đèn chiếu sáng liên tục",
-      "iconName": "Lightbulb",
-      "_id": {
-        "$oid": "6716a5550149432e09c4c00b"
-      }
-    },
-    {
-      "name": "Phông nền chụp ảnh",
-      "iconName": "Wallpaper",
-      "_id": {
-        "$oid": "6716a5550149432e09c4c00c"
-      }
-    }
-  ],
-  "categoryId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "createdAt": {
-    "$date": "2024-10-21T19:02:45.830Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T19:02:45.830Z"
-  },
-  "__v": 0
-}]
+]

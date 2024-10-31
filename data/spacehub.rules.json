@@ -1,1777 +1,1559 @@
-[{
-  "_id": {
-    "$oid": "66ed8eca5af2082abdf9727e"
-  },
-  "name": "Phòng thu",
-  "rules": [
-    " Bảo quản thiết bị và cơ sở vật chất",
-    " Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Số lượng người không được vượt quá giới hạn",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ]
-},
-{
-  "_id": {
-    "$oid": "66ed8eca5af2082abdf9727f"
-  },
-  "name": "Phòng họp",
-  "rules": [
-    " Phòng họp chỉ dành cho họp và thảo luận công việc",
-    " Bảo quản thiết bị và cơ sở vật chất",
-    " Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Số lượng người không được vượt quá giới hạn",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ]
-},
-{
-  "_id": {
-    "$oid": "670d25ac7e9d0f5fab665b7c"
-  },
-  "name": "Phòng dạy thêm",
-  "rules": [
-    " Phòng dạy thêm chỉ được sử dụng cho việc giảng dạy và học tập",
-    " Bảo quản thiết bị và cơ sở vật chất",
-    " Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Số lượng người không được vượt quá giới hạn",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ]
-},
-{
-  "_id": {
-    "$oid": "670d25ac7e9d0f5fab665b7d"
-  },
-  "name": "Studio chụp hình",
-  "rules": [
-    " Studio chụp hình chỉ được sử dụng cho mục đích chụp hình, quay phim",
-    " Bảo quản thiết bị và cơ sở vật chất",
-    " Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Số lượng người không được vượt quá giới hạn",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ]
-},
-{
-  "_id": {
-    "$oid": "670e2ed7e4574988494196e1"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [
-    "quy định mới "
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T08:59:03.937Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T08:59:03.937Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e2ee2e4574988494196e3"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "quy định mới "
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T08:59:14.738Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T08:59:14.738Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e2f24e4574988494196e5"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "quy định mới "
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:00:20.276Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:00:20.276Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e2f2ae4574988494196e7"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "quy định mới "
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:00:26.361Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:00:26.361Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e2f2de4574988494196e9"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "quy định mới "
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:00:29.998Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:00:29.998Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e3033e4574988494196eb"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "quy định mới "
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:04:51.204Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:04:51.204Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e303be4574988494196ed"
-  },
-  "rules": [],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:04:59.408Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:04:59.408Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e3046e4574988494196ef"
-  },
-  "rules": [],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:05:10.683Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:05:10.683Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e3053e4574988494196f1"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:05:23.009Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:05:23.009Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e32f49e6f8d1cea0f98ef"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:16:36.443Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:16:36.443Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e32fa9e6f8d1cea0f98f1"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:16:42.473Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:16:42.473Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e32ff9e6f8d1cea0f98f3"
-  },
-  "rules": [],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:16:47.787Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:16:47.787Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e33139e6f8d1cea0f98f5"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:17:07.020Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:17:07.020Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e33159e6f8d1cea0f98f7"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:17:09.870Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:17:09.870Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e33369e6f8d1cea0f991c"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "thêm mới rule"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:17:42.903Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:17:42.903Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e33b79e6f8d1cea0f9923"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "thêm mới rule"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:19:51.802Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:19:51.802Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e33dc9e6f8d1cea0f9925"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "thêm mới rule"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:20:28.260Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:20:28.260Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e34089e6f8d1cea0f9927"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "sss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T09:21:12.425Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:21:12.425Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e34559e6f8d1cea0f994b"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:22:29.812Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:22:29.812Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e35fb9e6f8d1cea0f9953"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:29:31.076Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:29:31.076Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e37ad62ca29f72c5921a3"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-15T09:36:45.458Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T09:36:45.458Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e429562ca29f72c5921c7"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T10:23:17.688Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:23:17.688Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e440662ca29f72c592211"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T10:29:26.816Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:29:26.816Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670e468162ca29f72c592483"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-15T10:40:01.505Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-15T10:40:01.505Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fc710579eeaf744e0bdca"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T14:00:48.261Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:00:48.261Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd0b5ddccd62b650b8fdb"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:41:57.302Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:41:57.302Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd0bfddccd62b650b8fdd"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:42:07.004Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:42:07.004Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd0cfddccd62b650b8fdf"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:42:23.613Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:42:23.613Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd0e3ddccd62b650b8fe1"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:42:43.861Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:42:43.861Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd23b6d92dff71b0840b9"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:48:27.577Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:48:27.577Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd2506d92dff71b0840bb"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:48:48.927Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:48:48.927Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd26a6d92dff71b0840bd"
-  },
-  "rules": [],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:49:14.181Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:49:14.181Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd3046d92dff71b0840bf"
-  },
-  "rules": [],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-16T14:51:48.967Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:51:48.967Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd38d82c16abaa84ece01"
-  },
-  "rules": [],
-  "customeRules": [
-    "quy định 1",
-    "quy định 2",
-    "2222,2"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T14:54:05.277Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T14:54:05.277Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd83882c16abaa84ece26"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:14:00.705Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:14:00.705Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd83f82c16abaa84ece28"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:14:07.604Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:14:07.604Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd9de82c16abaa84ece4c"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:21:02.711Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:21:02.711Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fd9ef82c16abaa84ece52"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:21:19.977Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:21:19.977Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fda1382c16abaa84ece58"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:21:55.283Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:21:55.283Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fda5c82c16abaa84ece71"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:23:08.065Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:23:08.065Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fdaa382c16abaa84ece78"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Vệ sinh và ngăn nắp",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [
-    "ssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:24:19.434Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:24:19.434Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "670fe07227cc4886aa83b1ad"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước",
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-16T15:49:06.756Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-16T15:49:06.756Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67128f956e416de9780996d4"
-  },
-  "rules": [],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-18T16:40:53.319Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-18T16:40:53.319Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67159414e418519c14e3e25b"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-20T23:36:52.896Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:36:52.896Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671594f7c4d47b43bbec32f1"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-20T23:40:39.304Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:40:39.304Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715950ec4d47b43bbec32fb"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Số lượng người không được vượt quá giới hạn"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-20T23:41:02.134Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:41:02.134Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671595afc4d47b43bbec33a3"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Số lượng người không được vượt quá giới hạn",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-20T23:43:43.994Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:43:43.994Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671595ccc4d47b43bbec33d2"
-  },
-  "rules": [
-    "Số lượng người không được vượt quá giới hạn",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-20T23:44:12.113Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:44:12.113Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671595d9c4d47b43bbec33db"
-  },
-  "rules": [
-    "Số lượng người không được vượt quá giới hạn",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-20T23:44:25.855Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-20T23:44:25.855Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715b6188f1492f115f29177"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ssssss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:02:00.111Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:02:00.111Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715b6348f1492f115f291ac"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:02:28.774Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:02:28.774Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715bc24b22fc318b25a1df7"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:27:48.866Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:27:48.866Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c2b789658053170240d6"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:55:51.354Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:55:51.354Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c2e08965805317024104"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:56:32.296Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:56:32.296Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c30b8965805317024130"
-  },
-  "rules": [
-    "Số lượng người không được vượt quá giới hạn"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:57:15.288Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:57:15.288Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c378896580531702415b"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T02:59:04.883Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T02:59:04.883Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c41eb458fbfee8403b5d"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:01:50.063Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:01:50.063Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c503df7b6ae19abc63e0"
-  },
-  "rules": [
-    "Tuân thủ giờ thuê, không ở quá giờ quy định"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:05:39.515Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:05:39.515Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c5f4df7b6ae19abc640a"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:09:40.118Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:40.118Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c5fcdf7b6ae19abc6412"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:09:48.703Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:48.703Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c5fcdf7b6ae19abc641a"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:09:48.880Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:48.880Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c601df7b6ae19abc6422"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:09:53.820Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:09:53.820Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c60edf7b6ae19abc642a"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:10:06.835Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:10:06.835Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c611df7b6ae19abc6432"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:10:09.059Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:10:09.059Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c613df7b6ae19abc643a"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:10:11.044Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:10:11.044Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715c6f5df7b6ae19abc6487"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T03:13:57.053Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:13:57.053Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715cbf0df7b6ae19abc652c"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T03:35:12.350Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:35:12.350Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715d039df7b6ae19abc6557"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T03:53:29.840Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T03:53:29.840Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6715da78e155f312d975040e"
-  },
-  "rules": [
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T04:37:12.571Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T04:37:12.571Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656d2e46fcf581c34cda6"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T13:27:46.370Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:27:46.370Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656d4c22ae041a9337fde"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T13:27:48.811Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:27:48.811Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656d6c22ae041a9337fe6"
-  },
-  "rules": [],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T13:27:50.684Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:27:50.684Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671656fbc22ae041a9337fee"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T13:28:27.480Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:28:27.480Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671657d24ab4fdd3a3ab86c0"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [
-    "ss"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T13:32:02.665Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:32:02.665Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67165a1cc805abbf89ee7f12"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [
-    "Không mang thú cưng",
-    "Không hút thuốc lá"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T13:41:48.270Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T13:41:48.270Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716600cc805abbf89eea4d7"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [
-    "Cấm mang theo thú cưng",
-    "Cấm hút thuốc"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T14:07:08.604Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:07:08.604Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716600fc805abbf89eea4f6"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [
-    "Cấm mang theo thú cưng",
-    "Cấm hút thuốc"
-  ],
-  "createdAt": {
-    "$date": "2024-10-21T14:07:11.127Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:07:11.127Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671666f8b3e150a76b63472c"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T14:36:40.984Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:36:40.984Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671666fb347346a1d77935c8"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T14:36:43.118Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:36:43.118Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67166c69347346a1d779665f"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T14:59:53.775Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:59:53.775Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67166c6c347346a1d779667d"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T14:59:56.572Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T14:59:56.572Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671670f1347346a1d7799a90"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T15:19:13.654Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:19:13.654Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671670f4347346a1d7799aac"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T15:19:16.316Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:19:16.316Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716756c65cf2586bc47245b"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T15:38:20.207Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:38:20.207Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716756ed830e9144b88260c"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất",
-    "Mọi người vào đều phải được đăng ký trước",
-    "Tuân thủ giờ thuê, không ở quá giờ quy định",
-    "Số lượng người không được vượt quá giới hạn",
-    "Không gây rối, xung đột với nhân viên và người khác"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T15:38:23.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:38:23.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67167817ec29f2af8f269083"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T15:49:43.066Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:49:43.066Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67167819ec29f2af8f26909b"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T15:49:45.926Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T15:49:45.926Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67169e10d65cbf190fabc8f6"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T18:31:44.035Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:31:44.035Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67169e48ec543b891dca2a89"
-  },
-  "rules": [
-    "Vệ sinh và ngăn nắp",
-    "Cấm mang theo vũ khí, chất cấm",
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T18:32:40.340Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:32:40.340Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716a4770149432e09c4bfd7"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T18:59:03.549Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:59:03.549Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716a4a40149432e09c4bfde"
-  },
-  "rules": [
-    "Cấm mang theo vũ khí, chất cấm",
-    "Vệ sinh và ngăn nắp"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T18:59:48.679Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T18:59:48.679Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6716a5550149432e09c4c008"
-  },
-  "rules": [
-    "Bảo quản thiết bị và cơ sở vật chất"
-  ],
-  "customeRules": [],
-  "createdAt": {
-    "$date": "2024-10-21T19:02:45.810Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-21T19:02:45.810Z"
-  },
-  "__v": 0
-}]
+[
+  {
+    "_id": {
+      "$oid": "66ed8eca5af2082abdf9727e"
+    },
+    "name": "Phòng thu",
+    "rules": [
+      " Bảo quản thiết bị và cơ sở vật chất",
+      " Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Số lượng người không được vượt quá giới hạn",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66ed8eca5af2082abdf9727f"
+    },
+    "name": "Phòng họp",
+    "rules": [
+      " Phòng họp chỉ dành cho họp và thảo luận công việc",
+      " Bảo quản thiết bị và cơ sở vật chất",
+      " Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Số lượng người không được vượt quá giới hạn",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "670d25ac7e9d0f5fab665b7c"
+    },
+    "name": "Phòng dạy thêm",
+    "rules": [
+      " Phòng dạy thêm chỉ được sử dụng cho việc giảng dạy và học tập",
+      " Bảo quản thiết bị và cơ sở vật chất",
+      " Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Số lượng người không được vượt quá giới hạn",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "670d25ac7e9d0f5fab665b7d"
+    },
+    "name": "Studio chụp hình",
+    "rules": [
+      " Studio chụp hình chỉ được sử dụng cho mục đích chụp hình, quay phim",
+      " Bảo quản thiết bị và cơ sở vật chất",
+      " Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Số lượng người không được vượt quá giới hạn",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "670e2ed7e4574988494196e1"
+    },
+    "rules": [
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm"
+    ],
+    "customeRules": ["quy định mới "],
+    "createdAt": {
+      "$date": "2024-10-15T08:59:03.937Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T08:59:03.937Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e2ee2e4574988494196e3"
+    },
+    "rules": [
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["quy định mới "],
+    "createdAt": {
+      "$date": "2024-10-15T08:59:14.738Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T08:59:14.738Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e2f24e4574988494196e5"
+    },
+    "rules": [
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["quy định mới "],
+    "createdAt": {
+      "$date": "2024-10-15T09:00:20.276Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:00:20.276Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e2f2ae4574988494196e7"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["quy định mới "],
+    "createdAt": {
+      "$date": "2024-10-15T09:00:26.361Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:00:26.361Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e2f2de4574988494196e9"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["quy định mới "],
+    "createdAt": {
+      "$date": "2024-10-15T09:00:29.998Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:00:29.998Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e3033e4574988494196eb"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["quy định mới "],
+    "createdAt": {
+      "$date": "2024-10-15T09:04:51.204Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:04:51.204Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e303be4574988494196ed"
+    },
+    "rules": [],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:04:59.408Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:04:59.408Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e3046e4574988494196ef"
+    },
+    "rules": [],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:05:10.683Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:05:10.683Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e3053e4574988494196f1"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:05:23.009Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:05:23.009Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e32f49e6f8d1cea0f98ef"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:16:36.443Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:16:36.443Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e32fa9e6f8d1cea0f98f1"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:16:42.473Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:16:42.473Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e32ff9e6f8d1cea0f98f3"
+    },
+    "rules": [],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:16:47.787Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:16:47.787Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e33139e6f8d1cea0f98f5"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:17:07.020Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:17:07.020Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e33159e6f8d1cea0f98f7"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:17:09.870Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:17:09.870Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e33369e6f8d1cea0f991c"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": ["thêm mới rule"],
+    "createdAt": {
+      "$date": "2024-10-15T09:17:42.903Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:17:42.903Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e33b79e6f8d1cea0f9923"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": ["thêm mới rule"],
+    "createdAt": {
+      "$date": "2024-10-15T09:19:51.802Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:19:51.802Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e33dc9e6f8d1cea0f9925"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": ["thêm mới rule"],
+    "createdAt": {
+      "$date": "2024-10-15T09:20:28.260Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:20:28.260Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e34089e6f8d1cea0f9927"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": ["sss"],
+    "createdAt": {
+      "$date": "2024-10-15T09:21:12.425Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:21:12.425Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e34559e6f8d1cea0f994b"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:22:29.812Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:22:29.812Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e35fb9e6f8d1cea0f9953"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:29:31.076Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:29:31.076Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e37ad62ca29f72c5921a3"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-15T09:36:45.458Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T09:36:45.458Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e429562ca29f72c5921c7"
+    },
+    "rules": ["Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-15T10:23:17.688Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:23:17.688Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e440662ca29f72c592211"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-15T10:29:26.816Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:29:26.816Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e468162ca29f72c592483"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-15T10:40:01.505Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-15T10:40:01.505Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fc710579eeaf744e0bdca"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T14:00:48.261Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:00:48.261Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd0b5ddccd62b650b8fdb"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:41:57.302Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:41:57.302Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd0bfddccd62b650b8fdd"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:42:07.004Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:42:07.004Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd0cfddccd62b650b8fdf"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:42:23.613Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:42:23.613Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd0e3ddccd62b650b8fe1"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:42:43.861Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:42:43.861Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd23b6d92dff71b0840b9"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:48:27.577Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:48:27.577Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd2506d92dff71b0840bb"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:48:48.927Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:48:48.927Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd26a6d92dff71b0840bd"
+    },
+    "rules": [],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:49:14.181Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:49:14.181Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd3046d92dff71b0840bf"
+    },
+    "rules": [],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-16T14:51:48.967Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:51:48.967Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd38d82c16abaa84ece01"
+    },
+    "rules": [],
+    "customeRules": ["quy định 1", "quy định 2", "2222,2"],
+    "createdAt": {
+      "$date": "2024-10-16T14:54:05.277Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T14:54:05.277Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd83882c16abaa84ece26"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:14:00.705Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:14:00.705Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd83f82c16abaa84ece28"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:14:07.604Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:14:07.604Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd9de82c16abaa84ece4c"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:21:02.711Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:21:02.711Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fd9ef82c16abaa84ece52"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:21:19.977Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:21:19.977Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fda1382c16abaa84ece58"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:21:55.283Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:21:55.283Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fda5c82c16abaa84ece71"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:23:08.065Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:23:08.065Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fdaa382c16abaa84ece78"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Vệ sinh và ngăn nắp",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Vệ sinh và ngăn nắp"
+    ],
+    "customeRules": ["ssss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:24:19.434Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:24:19.434Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670fe07227cc4886aa83b1ad"
+    },
+    "rules": [
+      "Mọi người vào đều phải được đăng ký trước",
+      "Bảo quản thiết bị và cơ sở vật chất"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-16T15:49:06.756Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-16T15:49:06.756Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67128f956e416de9780996d4"
+    },
+    "rules": [],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-18T16:40:53.319Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-18T16:40:53.319Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67159414e418519c14e3e25b"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-20T23:36:52.896Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:36:52.896Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671594f7c4d47b43bbec32f1"
+    },
+    "rules": [
+      "Mọi người vào đều phải được đăng ký trước",
+      "Cấm mang theo vũ khí, chất cấm"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-20T23:40:39.304Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:40:39.304Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715950ec4d47b43bbec32fb"
+    },
+    "rules": [
+      "Mọi người vào đều phải được đăng ký trước",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Số lượng người không được vượt quá giới hạn"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-20T23:41:02.134Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:41:02.134Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671595afc4d47b43bbec33a3"
+    },
+    "rules": [
+      "Mọi người vào đều phải được đăng ký trước",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Số lượng người không được vượt quá giới hạn",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-20T23:43:43.994Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:43:43.994Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671595ccc4d47b43bbec33d2"
+    },
+    "rules": [
+      "Số lượng người không được vượt quá giới hạn",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-20T23:44:12.113Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:44:12.113Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671595d9c4d47b43bbec33db"
+    },
+    "rules": [
+      "Số lượng người không được vượt quá giới hạn",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-20T23:44:25.855Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-20T23:44:25.855Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715b6188f1492f115f29177"
+    },
+    "rules": [
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước"
+    ],
+    "customeRules": ["ssssss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:02:00.111Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:02:00.111Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715b6348f1492f115f291ac"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:02:28.774Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:02:28.774Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715bc24b22fc318b25a1df7"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:27:48.866Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:27:48.866Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c2b789658053170240d6"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:55:51.354Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:55:51.354Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c2e08965805317024104"
+    },
+    "rules": [
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:56:32.296Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:56:32.296Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c30b8965805317024130"
+    },
+    "rules": ["Số lượng người không được vượt quá giới hạn"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:57:15.288Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:57:15.288Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c378896580531702415b"
+    },
+    "rules": ["Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T02:59:04.883Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T02:59:04.883Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c41eb458fbfee8403b5d"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:01:50.063Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:01:50.063Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c503df7b6ae19abc63e0"
+    },
+    "rules": ["Tuân thủ giờ thuê, không ở quá giờ quy định"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:05:39.515Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:05:39.515Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c5f4df7b6ae19abc640a"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:09:40.118Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:40.118Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c5fcdf7b6ae19abc6412"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:09:48.703Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:48.703Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c5fcdf7b6ae19abc641a"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:09:48.880Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:48.880Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c601df7b6ae19abc6422"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:09:53.820Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:09:53.820Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c60edf7b6ae19abc642a"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:10:06.835Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:10:06.835Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c611df7b6ae19abc6432"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:10:09.059Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:10:09.059Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c613df7b6ae19abc643a"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:10:11.044Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:10:11.044Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715c6f5df7b6ae19abc6487"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T03:13:57.053Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:13:57.053Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715cbf0df7b6ae19abc652c"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T03:35:12.350Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:35:12.350Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715d039df7b6ae19abc6557"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T03:53:29.840Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T03:53:29.840Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6715da78e155f312d975040e"
+    },
+    "rules": ["Mọi người vào đều phải được đăng ký trước"],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T04:37:12.571Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T04:37:12.571Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656d2e46fcf581c34cda6"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T13:27:46.370Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:27:46.370Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656d4c22ae041a9337fde"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T13:27:48.811Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:27:48.811Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656d6c22ae041a9337fe6"
+    },
+    "rules": [],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T13:27:50.684Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:27:50.684Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671656fbc22ae041a9337fee"
+    },
+    "rules": [
+      "Cấm mang theo vũ khí, chất cấm",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T13:28:27.480Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:28:27.480Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671657d24ab4fdd3a3ab86c0"
+    },
+    "rules": [
+      "Cấm mang theo vũ khí, chất cấm",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Bảo quản thiết bị và cơ sở vật chất"
+    ],
+    "customeRules": ["ss"],
+    "createdAt": {
+      "$date": "2024-10-21T13:32:02.665Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:32:02.665Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67165a1cc805abbf89ee7f12"
+    },
+    "rules": [
+      "Cấm mang theo vũ khí, chất cấm",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": ["Không mang thú cưng", "Không hút thuốc lá"],
+    "createdAt": {
+      "$date": "2024-10-21T13:41:48.270Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T13:41:48.270Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716600cc805abbf89eea4d7"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": ["Cấm mang theo thú cưng", "Cấm hút thuốc"],
+    "createdAt": {
+      "$date": "2024-10-21T14:07:08.604Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:07:08.604Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716600fc805abbf89eea4f6"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": ["Cấm mang theo thú cưng", "Cấm hút thuốc"],
+    "createdAt": {
+      "$date": "2024-10-21T14:07:11.127Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:07:11.127Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671666f8b3e150a76b63472c"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T14:36:40.984Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:36:40.984Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671666fb347346a1d77935c8"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T14:36:43.118Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:36:43.118Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67166c69347346a1d779665f"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T14:59:53.775Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:59:53.775Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67166c6c347346a1d779667d"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T14:59:56.572Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T14:59:56.572Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671670f1347346a1d7799a90"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T15:19:13.654Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:19:13.654Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "671670f4347346a1d7799aac"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T15:19:16.316Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:19:16.316Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716756c65cf2586bc47245b"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T15:38:20.207Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:38:20.207Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716756ed830e9144b88260c"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất",
+      "Mọi người vào đều phải được đăng ký trước",
+      "Tuân thủ giờ thuê, không ở quá giờ quy định",
+      "Số lượng người không được vượt quá giới hạn",
+      "Không gây rối, xung đột với nhân viên và người khác"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T15:38:23.000Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:38:23.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67167817ec29f2af8f269083"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T15:49:43.066Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:49:43.066Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67167819ec29f2af8f26909b"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Cấm mang theo vũ khí, chất cấm"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T15:49:45.926Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T15:49:45.926Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67169e10d65cbf190fabc8f6"
+    },
+    "rules": ["Vệ sinh và ngăn nắp", "Bảo quản thiết bị và cơ sở vật chất"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T18:31:44.035Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:31:44.035Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67169e48ec543b891dca2a89"
+    },
+    "rules": [
+      "Vệ sinh và ngăn nắp",
+      "Cấm mang theo vũ khí, chất cấm",
+      "Bảo quản thiết bị và cơ sở vật chất"
+    ],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T18:32:40.340Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:32:40.340Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716a4770149432e09c4bfd7"
+    },
+    "rules": ["Cấm mang theo vũ khí, chất cấm", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T18:59:03.549Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:59:03.549Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716a4a40149432e09c4bfde"
+    },
+    "rules": ["Cấm mang theo vũ khí, chất cấm", "Vệ sinh và ngăn nắp"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T18:59:48.679Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T18:59:48.679Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6716a5550149432e09c4c008"
+    },
+    "rules": ["Bảo quản thiết bị và cơ sở vật chất"],
+    "customeRules": [],
+    "createdAt": {
+      "$date": "2024-10-21T19:02:45.810Z"
+    },
+    "updatedAt": {
+      "$date": "2024-10-21T19:02:45.810Z"
+    },
+    "__v": 0
+  }
+]
