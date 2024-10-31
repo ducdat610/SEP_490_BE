@@ -2,7 +2,7 @@
   "_id": {
     "$oid": "66eafbb0cb37101e8e8f8946"
   },
-  "name": "Phòng dạy thêm",
+  "name": "Không gian học tập",
   "description": "Không gian rộng rãi thích hợp để tổ chức sự kiện, tiệc tùng hoặc hoạt động cộng đồng.",
   "iconName": "School",
   "createdAt": "2024-09-17T12:00:00Z",
@@ -12,7 +12,7 @@
   "_id": {
     "$oid": "66eafbb0cb37101e8e8f8947"
   },
-  "name": "Phòng họp",
+  "name": "Không gian làm việc",
   "description": "Không gian trưng bày sản phẩm, thường được sử dụng để ra mắt sản phẩm hoặc triển lãm.",
   "iconName": "Groups2",
   "createdAt": "2024-09-17T12:00:00Z",

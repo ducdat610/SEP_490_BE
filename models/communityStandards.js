@@ -2,9 +2,14 @@ import mongoose, { Schema } from "mongoose";
 
 const communityStandardsSchema = new Schema(
     {
-        name: {
-            type: String,
+        reasons: {
+            type: [String],
+            required: true,
         },
+        customReason: {
+            type: [String],
+            required: false,
+        }
     },
     {
         timestamps: true,

@@ -1,45 +1,10 @@
-[
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97280"
-      },
-      "reason": "Nội dung không phù hợp"
-    },
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97281"
-      },
-      "reason": "Thiếu thông tin chi tiết, gây không rõ ràng hoặc hiểu nhầm"
-    },
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97282"
-      },
-      "reason": "Ảnh không rõ ràng hoặc không đúng yêu cầu"
-    },
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97283"
-      },
-      "reason": "Vi phạm pháp luật"
-    },
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97284"
-      },
-      "reason": "Không gian không an toàn"
-    },
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97285"
-      },
-      "reason": "Không phù hợp với nhu cầu người dùng"
-    },
-    {
-      "_id": {
-        "$oid": "66ed8eca5af2082abdf97286"
-      },
-      "reason": "Ngôn ngữ chứa từ cấm"
-    }
-  ]
-  
+[{
+  "_id": {
+    "$oid": "672276a4dff81c047a142137"
+  },
+  "selectedReasons": [
+    "Nội dung không phù hợp",
+    "Thiếu thông tin chi tiết, gây không rõ ràng hoặc hiểu nhầm"
+  ],
+  "customReason": "Thông tin không đầy đủ hoặc không chính xác"
+}]

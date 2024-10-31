@@ -14,6 +14,7 @@ import Appliances from "../models/appliances.js";
 import multer from "multer";
 import { CloudinaryStorage } from "multer-storage-cloudinary";
 import cloudinary from "../cloudinary.config.js";
+import CommunityStandards from "../models/communityStandards.js";
 
 
 
@@ -308,13 +309,39 @@ spaceRouter.get("/for/:id", async (req, res, next) => {
     res.status(500).json({ message: "Đã xảy ra lỗi khi lấy thông tin " });
   }
 });
-// Từ chối post
+// // Từ chối post
+// spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
+//   try {
+//     const { communityStandardsId } = req.body;
+//     const updatedPost = await Spaces.findByIdAndUpdate(
+//       req.params.id,
+//       { censorship: "Từ chối", communityStandardsId },
+//       { new: true }
+//     ).populate("communityStandardsId");
+
+//     if (!updatedPost) {
+//       return res.status(404).json({ message: "Không tìm thấy post" });
+//     }
+
+//     res.json(updatedPost);
+//   } catch (error) {
+//     next(error);
+//   }
+// }); 
+
+
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
-    const { communityStandardsId } = req.body;
+    const { selectedReasons, customReason } = req.body;
+    const communityStandards = new CommunityStandards({
+      reasons: selectedReasons,
+      customReason: customReason || null,
+    });
+    const savedCommunityStandards = await communityStandards.save();
+
     const updatedPost = await Spaces.findByIdAndUpdate(
-      req.params.id,
-      { censorship: "Từ chối", communityStandardsId },
+      req.params.id,  
+      { censorship: "Từ chối", communityStandardsId: savedCommunityStandards._id },
       { new: true }
     ).populate("communityStandardsId");
 
@@ -327,6 +354,8 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
     next(error);
   }
 });
+
+
 
 // chấp nhận post
 spaceRouter.put("/update/:postId", async (req, res, next) => {
