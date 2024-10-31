@@ -309,27 +309,8 @@ spaceRouter.get("/for/:id", async (req, res, next) => {
     res.status(500).json({ message: "Đã xảy ra lỗi khi lấy thông tin " });
   }
 });
-// // Từ chối post
-// spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
-//   try {
-//     const { communityStandardsId } = req.body;
-//     const updatedPost = await Spaces.findByIdAndUpdate(
-//       req.params.id,
-//       { censorship: "Từ chối", communityStandardsId },
-//       { new: true }
-//     ).populate("communityStandardsId");
 
-//     if (!updatedPost) {
-//       return res.status(404).json({ message: "Không tìm thấy post" });
-//     }
-
-//     res.json(updatedPost);
-//   } catch (error) {
-//     next(error);
-//   }
-// }); 
-
-
+// Từ chối post
 spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
   try {
     const { selectedReasons, customReason } = req.body;
@@ -354,6 +335,8 @@ spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
     next(error);
   }
 });
+
+
 
 
 
