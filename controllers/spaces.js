@@ -132,8 +132,6 @@ const createNewSpace = async (req, res) => {
 };
 
 
-
-
 const changeFavoriteStatus = async (req, res) => {
   try {
     const spaceId = req.params.id;
@@ -184,19 +182,19 @@ const removeImages = async (req, res) => {
 
 const uploadImages = async (req, res) => {
   try {
-      // Lấy thông tin ảnh từ req.files
-      const images = req.files.map(file => ({
-          url: file.path, // URL của ảnh đã được upload
-          public_id: file.filename, // public_id của ảnh
-      }));
+    // Lấy thông tin ảnh từ req.files
+    const images = req.files.map(file => ({
+      url: file.path, // URL của ảnh đã được upload
+      public_id: file.filename, // public_id của ảnh
+    }));
 
-      return res.status(200).json({
-          message: 'Images uploaded successfully',
-          images: images, // Trả về danh sách ảnh
-      });
+    return res.status(200).json({
+      message: 'Images uploaded successfully',
+      images: images, // Trả về danh sách ảnh
+    });
   } catch (error) {
-      console.error('Error uploading images:', error);
-      return res.status(500).json({ message: 'Server error', error });
+    console.error('Error uploading images:', error);
+    return res.status(500).json({ message: 'Server error', error });
   }
 };
 
@@ -204,10 +202,40 @@ const deleteSpace = async (req, res) => {
   try {
     const deleteSpace = await spaceDao.deleteSpace(req.params.id);
     res.status(200).json(deleteSpace);
-    console.log('Deleted space successfully');
   } catch (error) {
     res.status(500).json({ error: error.toString() });
     console.log('Failed to delete product');
+  }
+};
+
+
+const updateSpaceCensorshipAndCommunityStandards = async (req, res) => {
+  try {
+
+    const spaceId = req.params.id;
+    const { censorship, reasons, customReason } = req.body;
+
+
+    // Cập nhật trạng thái censorship của space
+    const updatedSpace = await Spaces.findByIdAndUpdate(
+      spaceId,
+      { censorship, reasons, customReason }, // Các trường cần thiết
+      { new: true } // Trả về tài liệu đã cập nhật
+    ).populate("communityStandardsId");
+
+    // Cập nhật mảng reasons và customReason của communityStandards
+    const communityStandards = await CommunityStandards.findById(updatedSpace.communityStandardsId);
+    if (communityStandards) {
+      communityStandards.reasons = reasons; // Cập nhật lý do
+      communityStandards.customReason = customReason; // Cập nhật lý do tùy chỉnh
+      await communityStandards.save(); // Lưu thay đổi
+    }
+
+
+    return res.status(200).json({ success: true, space: updatedSpace });
+  } catch (error) {
+    console.error('Error updating space and community standards:', error);
+    return res.status(500).json({ success: false, message: 'Error updating space and community standards' });
   }
 };
 
@@ -221,5 +249,6 @@ export default {
   removeImages,
   uploadImages,
   getAllSpacesApply,
-  deleteSpace
+  deleteSpace,
+  updateSpaceCensorshipAndCommunityStandards
 }

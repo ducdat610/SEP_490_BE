@@ -38,6 +38,8 @@ spaceRouter.post('/', spaceController.createNewSpace);
 spaceRouter.post('/uploadImages', uploadCloud.array('images', 10), spaceController.uploadImages);
 spaceRouter.post('/removeImage', spaceController.removeImages);
 spaceRouter.delete('/delete/:id', spaceController.deleteSpace);
+spaceRouter.put('/update-censorship/:id', spaceController.updateSpaceCensorshipAndCommunityStandards);
+
 
 
 
@@ -310,34 +312,6 @@ spaceRouter.get("/for/:id", async (req, res, next) => {
     res.status(500).json({ message: "Đã xảy ra lỗi khi lấy thông tin " });
   }
 });
-
-// // Từ chối post
-// spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
-//   try {
-//     const { communityStandardsId,selectedReasons,  customReason } = req.body; 
-//     const updatedPost = await Spaces.findByIdAndUpdate(
-//       req.params.id,
-//       { 
-//         censorship: "Từ chối", 
-//         communityStandardsId,
-//         customReason // Thêm customReason vào bản cập nhật
-//       },
-//       { new: true }
-//     ).populate("communityStandardsId");
-
-//     if (!updatedPost) {
-//       return res.status(404).json({ message: "Không tìm thấy post" });
-//     }
-
-//     res.json(updatedPost);
-//   } catch (error) {
-//     next(error);
-//   }
-// });
-
-
-
-
 
 
 // chấp nhận post
