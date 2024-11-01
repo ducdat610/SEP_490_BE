@@ -2,7 +2,11 @@ import Spaces from "../models/spaces.js";
 
 const fetchAllSpacesApply = async () => {
   try {
-    return await Spaces.find({ censorship: "Chấp nhận" }).populate("appliancesId").populate("userId").exec()
+    return await Spaces.find({ censorship: "Chấp nhận" })
+    .populate("communityStandardsId")
+    .populate("appliancesId")
+    .populate("userId")
+    .exec()
   } catch (error) {
     throw new Error(error.toString());
   }

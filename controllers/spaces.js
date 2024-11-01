@@ -1,6 +1,9 @@
 import cloudinary from "../cloudinary.config.js";
 import { spaceDao, appliancesDao } from "../dao/index.js";
+import CommunityStandards from "../models/communityStandards.js";
 import Spaces from "../models/spaces.js";
+import mongoose from "mongoose";
+
 import pkg from 'cloudinary'; // Nhập package cloudinary dưới dạng mặc định
 const getAllSpacesApply = async (req, res) => {
   try {
@@ -43,10 +46,9 @@ const getSimilarSpaces = async (req, res) => {
   }
 }
 
-// Tạo mới một không gian
-export const createNewSpace = async (req, res) => {
 
 
+const createNewSpace = async (req, res) => {
   try {
     const {
       name,
@@ -68,14 +70,13 @@ export const createNewSpace = async (req, res) => {
       isGoldenHour,
       goldenHourDetails,
       favorite,
-      latLng
+      latLng,
     } = req.body;
-
 
     let formattedImages = [];
     if (Array.isArray(images)) {
       formattedImages = images.map(img => ({
-        public_id: img.public_id, // Cần đảm bảo bạn gửi đúng public_id và url từ request
+        public_id: img.public_id,
         url: img.url
       }));
     } else if (images && images.public_id && images.url) {
@@ -84,6 +85,18 @@ export const createNewSpace = async (req, res) => {
         url: images.url
       }];
     }
+    const communityStandardsId = new mongoose.Types.ObjectId();
+
+    const newCommunityStandards = new CommunityStandards({
+      _id: communityStandardsId,
+      reasons: [],
+      customReason: []
+    });
+    await newCommunityStandards.save();
+
+
+
+
 
     const spaceData = {
       name,
@@ -104,12 +117,12 @@ export const createNewSpace = async (req, res) => {
       reportCount,
       isGoldenHour,
       goldenHourDetails,
+      communityStandardsId: communityStandardsId, // Gán ID đã tạo cho space
       favorite,
       latLng
     };
 
-
-    const newSpace = await spaceDao.createSpace(spaceData);
+    const newSpace = await Spaces.create(spaceData); // Tạo không đồng bộ
 
     return res.status(201).json({ success: true, space: newSpace });
   } catch (error) {
@@ -117,6 +130,7 @@ export const createNewSpace = async (req, res) => {
     return res.status(500).json({ success: false, message: `Error creating space: ${error.message}` });
   }
 };
+
 
 
 

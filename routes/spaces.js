@@ -281,6 +281,7 @@ spaceRouter.get("/:id", async (req, res, next) => {
       .populate("rulesId")
       .populate("appliancesId")
       .populate("categoriesId")
+      .populate("communityStandardsId")
       .exec();
     if (!space) {
       throw createError(400, "Space not found");
@@ -310,31 +311,30 @@ spaceRouter.get("/for/:id", async (req, res, next) => {
   }
 });
 
-// Từ chối post
-spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
-  try {
-    const { selectedReasons, customReason } = req.body;
-    const communityStandards = new CommunityStandards({
-      reasons: selectedReasons,
-      customReason: customReason || null,
-    });
-    const savedCommunityStandards = await communityStandards.save();
+// // Từ chối post
+// spaceRouter.put("/update-censorship/:id", async (req, res, next) => {
+//   try {
+//     const { communityStandardsId,selectedReasons,  customReason } = req.body; 
+//     const updatedPost = await Spaces.findByIdAndUpdate(
+//       req.params.id,
+//       { 
+//         censorship: "Từ chối", 
+//         communityStandardsId,
+//         customReason // Thêm customReason vào bản cập nhật
+//       },
+//       { new: true }
+//     ).populate("communityStandardsId");
 
-    const updatedPost = await Spaces.findByIdAndUpdate(
-      req.params.id,  
-      { censorship: "Từ chối", communityStandardsId: savedCommunityStandards._id },
-      { new: true }
-    ).populate("communityStandardsId");
+//     if (!updatedPost) {
+//       return res.status(404).json({ message: "Không tìm thấy post" });
+//     }
 
-    if (!updatedPost) {
-      return res.status(404).json({ message: "Không tìm thấy post" });
-    }
+//     res.json(updatedPost);
+//   } catch (error) {
+//     next(error);
+//   }
+// });
 
-    res.json(updatedPost);
-  } catch (error) {
-    next(error);
-  }
-});
 
 
 
