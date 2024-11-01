@@ -193,7 +193,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "67165a1cc805abbf89ee7f14"
@@ -311,7 +311,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "6716600fc805abbf89eea4f8"
@@ -466,7 +466,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "671666fb347346a1d77935cb"
@@ -608,7 +608,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "67166c6c347346a1d779667f"
@@ -750,7 +750,7 @@
   "censorship": "Chấp nhận",
   "status": "Đang sử dụng",
   "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
+    "$oid": "66eafbb0cb37101e8e8f8947"
   },
   "appliancesId": {
     "$oid": "671670f4347346a1d7799aae"
@@ -1191,6 +1191,7 @@
   "status": "Đang sử dụng",
   "categoriesId": {
     "$oid": "66eafbb0cb37101e8e8f8946"
+
   },
   "appliancesId": {
     "$oid": "671a876acbc454d0c6afb929"
