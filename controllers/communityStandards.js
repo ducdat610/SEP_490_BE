@@ -8,4 +8,12 @@ const getAllCommunityStandards = async (req, res) => {
     throw new Error(error.message);
   }
 };
-export default { getAllCommunityStandards };
+const addCommunityStandard = async (req, res) => {
+  try {
+    const newStandard = await communityStandardsDao.addCommunityStandard(req.body);
+    res.status(201).json(newStandard);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+export default { getAllCommunityStandards, addCommunityStandard };
