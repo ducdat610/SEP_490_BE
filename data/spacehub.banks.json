@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeaaf"
+  },
+  "bankName": "Vietcombank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Logo_Vietcombank.svg/1200px-Logo_Vietcombank.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab0"
+  },
+  "bankName": "VietinBank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logo_VietinBank.svg/1200px-Logo_VietinBank.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab1"
+  },
+  "bankName": "Techcombank",
+  "imageUrl": "https://static.wixstatic.com/media/9d8ed5_263edd01c0b847059f8035fd531145d6~mv2.png/v1/fill/w_1182,h_1182,al_c/9d8ed5_263edd01c0b847059f8035fd531145d6~mv2.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab2"
+  },
+  "bankName": "MB Bank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/MB_Bank_logo.svg/1200px-MB_Bank_logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab3"
+  },
+  "bankName": "ACB",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/ACB_logo.svg/1200px-ACB_logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab4"
+  },
+  "bankName": "Sacombank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sacombank_logo.svg/1200px-Sacombank_logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab5"
+  },
+  "bankName": "SHB",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/SHB_Logo.svg/1200px-SHB_Logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab6"
+  },
+  "bankName": "SeABank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/SeABank_logo.svg/1200px-SeABank_logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab7"
+  },
+  "bankName": "Eximbank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Eximbank_Logo.svg/1200px-Eximbank_Logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab8"
+  },
+  "bankName": "VPBank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/VPBank_logo.svg/1200px-VPBank_logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeab9"
+  },
+  "bankName": "LienVietPostBank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/LienVietPostBank_logo.svg/1200px-LienVietPostBank_logo.svg.png"
+},
+{
+  "_id": {
+    "$oid": "66ec433e484309d4dadaeaba"
+  },
+  "bankName": "HDBank",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/HDBank_logo.svg/1200px-HDBank_logo.svg.png"
+}]

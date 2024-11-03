@@ -55,8 +55,7 @@ spaceRouter.get("/filter", async (req, res, next) => {
     const { location, minPrice, maxPrice, category, areaMin, areaMax, applianceNames } = req.query;
 
     // Khởi tạo đối tượng filter rỗng
-    let filter = {};
-
+    let filter = { censorship: "Chấp nhận" };
     // Lọc theo địa chỉ
     if (location) {
       const rgx = (pattern) => new RegExp(`.*${pattern}.*`, "i"); // Không phân biệt chữ hoa/thường
