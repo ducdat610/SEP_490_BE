@@ -2,9 +2,16 @@
   "_id": {
     "$oid": "67165a1cc805abbf89ee7f25"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "Studio For Rent - Photography Space",
   "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp\nvà nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được\ntrang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền\nlinh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản\nphẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải\nmái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các\nbuổi chụp ảnh chuyên nghiệp.",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "60",
   "rulesId": {
     "$oid": "671657d24ab4fdd3a3ab86c0"
@@ -215,9 +222,16 @@
   "_id": {
     "$oid": "6716600fc805abbf89eea509"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "LEIZART STUDIO",
   "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp\nvà nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được\ntrang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền\nlinh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản\nphẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải\nmái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các\nbuổi chụp ảnh chuyên nghiệp.",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "40",
   "rulesId": {
     "$oid": "6716600fc805abbf89eea4f6"
@@ -335,9 +349,16 @@
   "_id": {
     "$oid": "671666fb347346a1d77935db"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "Studio For Rent - Photography Space",
   "description": "Đây là một studio cho thuê lý tưởng dành cho những nhiếp ảnh gia chuyên nghiệp\nvà nghiệp dư, với không gian rộng rãi và thiết bị hiện đại. Studio này được\ntrang bị đầy đủ, với các hệ thống ánh sáng có thể điều chỉnh và các phông nền\nlinh hoạt. Được thiết kế để phù hợp với mọi loại hình chụp ảnh như chụp ảnh sản\nphẩm, chân dung hoặc sự kiện, studio này sẽ cung cấp không gian làm việc thoải\nmái và sáng tạo. Với diện tích rộng, nơi đây là sự lựa chọn hoàn hảo cho các\nbuổi chụp ảnh chuyên nghiệp.  ",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "44",
   "rulesId": {
     "$oid": "671666f8b3e150a76b63472c"
@@ -491,9 +512,16 @@
   "_id": {
     "$oid": "67166c6c347346a1d779668c"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "FD Photo Studio Yukon",
   "description": "Infinity Photo & video studio với trần RGB hoàn toàn có thể điều khiển Studio\nnày nằm ở tầng trệt với một cổng tải lớn cho phép ô tô và xe đạp chỉ cần lái xe\nvào. Đèn RGB hoàn toàn có thể điều khiển và có thể được đồng bộ hóa với âm nhạc.\nTrần nhà cao 8ft. Tất cả các không gian của chúng tôi được đặt rất nhanh! Thời\ngian có sẵn RẤT nhạy cảm với thời gian. Yêu cầu đặt chỗ của bạn nên bao gồm thời\ngian thiết lập và phân tích. Đặt chỗ được đặt ngược lại. Vui lòng ghi nhớ điều\nnày khi yêu cầu đặt phòng của bạn. Chúc mừng (ảnh/video) shootings!  ",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "60",
   "rulesId": {
     "$oid": "67166c69347346a1d779665f"
@@ -633,9 +661,16 @@
   "_id": {
     "$oid": "671670f4347346a1d7799ab9"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "Multi set Daylight/Blackout Photography/Video Studio",
   "description": "Một studio ảnh / video nhiều bộ có sẵn cho thuê ở Hackney Central, London. Đây\nlà một không gian rộng 600sq. ft có thể được sử dụng cho Nhiếp ảnh, Quay phim,\nSáng tạo Nội dung, Podcast, Hội thảo và nhiều hơn nữa.  ",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "52",
   "rulesId": {
     "$oid": "671670f1347346a1d7799a90"
@@ -776,9 +811,16 @@
   "_id": {
     "$oid": "6716756fd830e9144b882618"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "Spacious Classroom/Meeting Room",
   "description": "Các phòng họp độc đáo và trọn gói của chúng tôi rất dễ đặt, vị trí thuận tiện và\ncó phong cách để liên lạc. Từ các tiện nghi công nghệ miễn phí đến nhân viên tại\nchỗ có thể đáp ứng mọi nhu cầu họp hàng ngày, các phòng họp của chúng tôi cho\nphép trải nghiệm địa điểm họp chuyên nghiệp và hiệu quả. Những phẩm chất này làm\ncho phòng của chúng tôi trở nên hoàn hảo để giúp nhóm của bạn bắt kịp và làm cho\ncuộc họp khách hàng hoặc cuộc họp hội đồng quản trị trở thành một trải nghiệm\nliền mạch. Chưa kể đến những cơ hội chúng tôi cung cấp cho các doanh nghiệp nhỏ.\n ",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "43",
   "rulesId": {
     "$oid": "6716756c65cf2586bc47245b"
@@ -883,9 +925,16 @@
   "_id": {
     "$oid": "6716781aec29f2af8f2690a8"
   },
+  "locationPoint": {
+    "type": "Point",
+    "coordinates": [
+      105.844448,
+      20.946594
+    ]
+  },
   "name": "Production/Meeting Room in Culver City near Sony Studios",
   "description": "Văn phòng mô-đun lớn  MAX 20 khách do COVID. Hoàn hảo để quay phim, các cuộc\nhọp, phỏng vấn, đào tạo, thuyết trình và làm việc ngoài trang web. Bạn có thể\nđiều chỉnh một chút cài đặt để phù hợp với nhu cầu của mình nhưng phải đặt tất\ncả trở lại vị trí để tránh phí $ 50. Chỗ đỗ xe miễn phí ngay trong khuôn viên.\nWIFI, Máy chiếu và Bảng trắng lớn. Có một bàn tiếp tân mà bạn sử dụng nếu cần.\nPhòng vệ sinh bên trong. Tự pha cà phê tại đây. Nước miễn phí. Vui lòng nêu rõ\nnếu bạn cần cả hai phòng. Cảm ơn bạn. Tôi có thể kết hợp cả hai phòng với giá 60\nđô la giờ. Chỗ đậu xe:7. Bãi đậu xe được chia sẻ với những người thuê nhà khác,\ncũng có bãi đậu xe miễn phí và có đồng hồ đo. Vui lòng làm theo HƯỚNG DẪN AN\nTOÀN COVID",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
+  "location": "Việt Long, Sóc Sơn, Hà Nội",
   "area": "53",
   "rulesId": {
     "$oid": "67167817ec29f2af8f269083"
@@ -996,339 +1045,5 @@
     21.244598,
     105.909408
   ]
-},
-{
-  "_id": {
-    "$oid": "671a76b1cb88e35d52917749"
-  },
-  "latLng": [
-    21.257199,
-    105.848028
-  ],
-  "name": "Bánh mỳ",
-  "description": "Bánh mỳ",
-  "location": "Sóc Sơn, Hanoi, Vietnam",
-  "area": "50",
-  "rulesId": {
-    "$oid": "671a76a9cb88e35d52917739"
-  },
-  "userId": {
-    "$oid": "6639786d743f79c9b97fc1c1"
-  },
-  "pricePerHour": 22222,
-  "pricePerDay": 22222,
-  "pricePerWeek": 33333,
-  "pricePerMonth": 33333,
-  "images": [
-    {
-      "public_id": "spacehub/img_space/qmwu2weqnjmfixhojjxh",
-      "url": "https://res.cloudinary.com/dakpa1ph2/image/upload/v1729787369/spacehub/img_space/qmwu2weqnjmfixhojjxh.jpg",
-      "_id": {
-        "$oid": "671a76b1cb88e35d5291774a"
-      }
-    }
-  ],
-  "censorship": "Chấp nhận",
-  "status": "Đang sử dụng",
-  "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
-  },
-  "appliancesId": {
-    "$oid": "671a76b1cb88e35d52917744"
-  },
-  "reviews": [],
-  "reportCount": 0,
-  "favorite": false,
-  "isUpdate": false,
-  "createdAt": {
-    "$date": "2024-10-24T16:32:49.774Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-29T13:28:23.842Z"
-  },
-  "__v": 0,
-  "communityStandardsId": {
-    "$oid": "66ed8eca5af2082abdf97286"
-  }
-},
-{
-  "_id": {
-    "$oid": "671a8073cb88e35d5291846c"
-  },
-  "latLng": [
-    21.225717179210932,
-    105.6942549391303
-  ],
-  "name": "Bánh mỳ",
-  "description": "draggable",
-  "location": "15900, Tiền Châu, Phúc Yên, Vĩnh Phúc, Vietnam",
-  "area": "50",
-  "rulesId": {
-    "$oid": "671a8071cb88e35d5291845c"
-  },
-  "userId": {
-    "$oid": "6639786d743f79c9b97fc1c1"
-  },
-  "pricePerHour": 3,
-  "pricePerDay": 4,
-  "pricePerWeek": 5,
-  "pricePerMonth": 6,
-  "images": [
-    {
-      "public_id": "spacehub/img_space/iaii99hzsbpcyfqn8xcq",
-      "url": "https://res.cloudinary.com/dakpa1ph2/image/upload/v1729789875/spacehub/img_space/iaii99hzsbpcyfqn8xcq.jpg",
-      "_id": {
-        "$oid": "671a8073cb88e35d5291846d"
-      }
-    }
-  ],
-  "censorship": "Từ chối",
-  "status": "Đang sử dụng",
-  "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
-  },
-  "appliancesId": {
-    "$oid": "671a8073cb88e35d52918467"
-  },
-  "reviews": [],
-  "reportCount": 0,
-  "favorite": false,
-  "isUpdate": false,
-  "createdAt": {
-    "$date": "2024-10-24T17:14:27.943Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-29T13:37:33.295Z"
-  },
-  "__v": 0,
-  "communityStandardsId": {
-    "$oid": "66ed8eca5af2082abdf97285"
-  }
-},
-{
-  "_id": {
-    "$oid": "671a86f5cbc454d0c6af8f54"
-  },
-  "latLng": [
-    21.220272704143454,
-    105.69177688827313
-  ],
-  "name": "Bánh mỳ",
-  "description": "DetailForAdmin",
-  "location": "Tiến Thắng, 12900, Mê Linh, Hanoi, Vietnam",
-  "area": "50",
-  "rulesId": {
-    "$oid": "671a86f0cbc454d0c6af8f46"
-  },
-  "userId": {
-    "$oid": "6639786d743f79c9b97fc1c1"
-  },
-  "pricePerHour": 2,
-  "pricePerDay": 3,
-  "pricePerWeek": 4,
-  "pricePerMonth": 5,
-  "images": [
-    {
-      "public_id": "spacehub/img_space/okydva0hlauxtibe7els",
-      "url": "https://res.cloudinary.com/dakpa1ph2/image/upload/v1729791533/spacehub/img_space/okydva0hlauxtibe7els.jpg",
-      "_id": {
-        "$oid": "671a86f5cbc454d0c6af8f55"
-      }
-    }
-  ],
-  "censorship": "Chấp nhận",
-  "status": "Đang sử dụng",
-  "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
-  },
-  "appliancesId": {
-    "$oid": "671a86f5cbc454d0c6af8f51"
-  },
-  "reviews": [],
-  "reportCount": 0,
-  "favorite": false,
-  "isUpdate": false,
-  "createdAt": {
-    "$date": "2024-10-24T17:42:13.804Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-26T04:47:46.056Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671a876acbc454d0c6afb92e"
-  },
-  "latLng": [
-    20.946594,
-    105.844448
-  ],
-  "name": "ABC",
-  "description": "",
-  "location": "Thanh Trì, Hanoi, Vietnam",
-  "area": "50",
-  "rulesId": {
-    "$oid": "671a8768cbc454d0c6afb91e"
-  },
-  "userId": {
-    "$oid": "6639786d743f79c9b97fc1c1"
-  },
-  "pricePerHour": 3,
-  "pricePerDay": 4,
-  "pricePerWeek": 5,
-  "pricePerMonth": 6,
-  "images": [
-    {
-      "public_id": "spacehub/img_space/xdryzfvv36ccnkcoeguj",
-      "url": "https://res.cloudinary.com/dakpa1ph2/image/upload/v1729791661/spacehub/img_space/xdryzfvv36ccnkcoeguj.jpg",
-      "_id": {
-        "$oid": "671a876acbc454d0c6afb92f"
-      }
-    }
-  ],
-  "censorship": "Chấp nhận",
-  "status": "Đang sử dụng",
-  "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
-
-  },
-  "appliancesId": {
-    "$oid": "671a876acbc454d0c6afb929"
-  },
-  "reviews": [],
-  "reportCount": 0,
-  "favorite": false,
-  "isUpdate": false,
-  "createdAt": {
-    "$date": "2024-10-24T17:44:10.875Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-26T04:47:44.877Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "671ba403441adf93c6e40363"
-  },
-  "latLng": [
-    21.257199,
-    105.848028
-  ],
-  "name": "Bánh mỳ",
-  "description": "a",
-  "location": "Sóc Sơn, Hanoi, Vietnam",
-  "area": "50",
-  "rulesId": {
-    "$oid": "671ba400441adf93c6e40351"
-  },
-  "userId": {
-    "$oid": "6639786d743f79c9b97fc1c1"
-  },
-  "pricePerHour": 1,
-  "pricePerDay": 2,
-  "pricePerWeek": 3,
-  "pricePerMonth": 4,
-  "images": [
-    {
-      "public_id": "spacehub/img_space/dwhyhi8dym1avhz6hh4x",
-      "url": "https://res.cloudinary.com/dakpa1ph2/image/upload/v1729864505/spacehub/img_space/dwhyhi8dym1avhz6hh4x.png",
-      "_id": {
-        "$oid": "671ba403441adf93c6e40364"
-      }
-    }
-  ],
-  "censorship": "Từ chối",
-  "status": "Đang sử dụng",
-  "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8945"
-  },
-  "appliancesId": {
-    "$oid": "671ba402441adf93c6e4035d"
-  },
-  "isGoldenHour": true,
-  "goldenHourDetails": {
-    "startTime": "20:00",
-    "endTime": "12:00",
-    "priceIncrease": 5
-  },
-  "reviews": [],
-  "reportCount": 0,
-  "favorite": false,
-  "isUpdate": false,
-  "createdAt": {
-    "$date": "2024-10-25T13:58:27.023Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-29T15:09:35.619Z"
-  },
-  "__v": 0,
-  "communityStandardsId": {
-    "$oid": "66ed8eca5af2082abdf97286"
-  }
-},
-{
-  "_id": {
-    "$oid": "6720f1c4bdb67c4932dad130"
-  },
-  "locationPoint":{
-    "type":"Point",
-    "coordinates":[105.909408,21.244598]
-  },
-  "latLng": [
-    21.244598,
-    105.909408
-  ],
-  "name": "Nguyễn Văn Thắng",
-  "description": "index",
-  "location": "Việt Long, 12200, Sóc Sơn, Hanoi, Vietnam",
-  "area": "50",
-  "rulesId": {
-    "$oid": "6720f1c2bdb67c4932dad11e"
-  },
-  "userId": {
-    "$oid": "6639786d743f79c9b97fc1c1"
-  },
-  "pricePerHour": 1,
-  "pricePerDay": 2,
-  "pricePerWeek": 3,
-  "pricePerMonth": 4,
-  "images": [
-    {
-      "public_id": "spacehub/img_space/rjbj2ikbto1tg4iaogwv",
-      "url": "https://res.cloudinary.com/dakpa1ph2/image/upload/v1730212095/spacehub/img_space/rjbj2ikbto1tg4iaogwv.png",
-      "_id": {
-        "$oid": "6720f1c4bdb67c4932dad131"
-      }
-    }
-  ],
-  "censorship": "Chờ duyệt",
-  "status": "Đang sử dụng",
-  "categoriesId": {
-    "$oid": "66eafbb0cb37101e8e8f8946"
-  },
-  "appliancesId": {
-    "$oid": "6720f1c4bdb67c4932dad12a"
-  },
-  "isGoldenHour": false,
-  "goldenHourDetails": {
-    "startTime": "",
-    "endTime": "",
-    "priceIncrease": 0
-  },
-  "reviews": [],
-  "reportCount": 0,
-  "favorite": false,
-  "isUpdate": false,
-  "createdAt": {
-    "$date": "2024-10-29T14:31:32.892Z"
-  },
-  "updatedAt": {
-    "$date": "2024-10-29T16:30:19.966Z"
-  },
-  "__v": 0,
-  "communityStandardsId": {
-    "$oid": "66ed8eca5af2082abdf97282"
-  }
-}]
+}
+]
