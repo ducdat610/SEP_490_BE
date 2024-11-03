@@ -119,9 +119,9 @@ const createNewSpace = async (req, res) => {
       goldenHourDetails,
       communityStandardsId: communityStandardsId, // Gán ID đã tạo cho space
       favorite,
-      latLng
+      latLng,
+      locationPoint: {type: "Point", coordinates: latLng && latLng.length === 2 ? [latLng[1], latLng[0]] : null}
     };
-
     const newSpace = await Spaces.create(spaceData); // Tạo không đồng bộ
 
     return res.status(201).json({ success: true, space: newSpace });

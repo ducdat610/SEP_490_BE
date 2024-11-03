@@ -3,6 +3,8 @@ import Bookings from "../models/bookings.js";
 import BookingController from "../controllers/bookings.js";
 import bookingDetail from "../models/bookingDetails.js";
 import Spaces from "../models/spaces.js";
+import axios from "axios";
+import { mapboxToken } from "../helpers/constants.js";
 
 
 const bookingRouter = express.Router();
@@ -122,7 +124,59 @@ bookingRouter.get("/top-spaces", async (req, res) => {
     console.log(error.message);
     return res
       .status(500)
-      .json({ message: "Error retrieving the top products" });
+      .json({ message: "Error retrieving the top spaces" });
+  }
+});
+
+bookingRouter.get("/near-spaces", async (req, res) => {
+  try {
+    const {lat, lng} = req.query;
+    let result = []
+    const query = { censorship: "Chấp nhận" };
+    if (lat && lng) {
+      result = await Spaces.find({
+        ...query,
+        locationPoint: {
+              $near: {
+                  $geometry: {
+                      type: "Point",
+                      coordinates: [lng, lat]
+                  }
+              }
+          }
+      })
+      .limit(3);
+    } else {
+      result = await Spaces.find(query)
+        .sort({ updatedAt: -1 }) 
+        .limit(3);
+    }
+
+    if (result.length === 0) {
+      return res.status(200).json([]);
+    }
+    let resData = []
+      for (let i = 0; i < result.length; i++) {
+        resData.push({_id: result[i]._id, images: result[i].images, name: result[i].name, location: result[i].location, pricePerHour: result[i].pricePerHour})
+        try {      
+        const res = await axios.get(`https://api.mapbox.com/directions/v5/mapbox/driving/${lng},${lat};${result[i].locationPoint.coordinates[0]},${result[i].locationPoint.coordinates[1]}`, {
+          params: {
+            access_token: mapboxToken
+          }
+        })
+        if (res?.data?.routes && res.data.routes.length > 0 && res.data.routes[0].distance) {
+          resData[i].distance = res.data.routes[0].distance >= 1000 ? `${Math.floor(res.data.routes[0].distance/1000)}km` : `${res.data.routes[0].distance}m`;
+        }
+      } catch (error) {
+        console.log(error.message);
+      }
+      }
+    return res.status(200).json(resData);
+  } catch (error) {
+    console.log(error.message);
+    return res
+      .status(500)
+      .json({ message: "Lỗi khi lấy địa điểm gần nhất" });
   }
 });
 

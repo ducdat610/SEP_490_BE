@@ -29,7 +29,7 @@ const fetchAllSpaceFavorite = async () => {
 
 const fetchSimilarSpaces = async (id) => {
   try {
-    const spaceId = await Spaces.find({ categoriesId: id })
+    const spaceId = await Spaces.find({ categoriesId: id, censorship: "Chấp nhận" })
       .populate('categoriesId')
       .populate('reviews')
     return spaceId
@@ -41,7 +41,9 @@ const fetchSimilarSpaces = async (id) => {
 
 export const createSpace = async (spaceData) => {
   try {
-    const newSpace = new Spaces(spaceData);
+    console.log(spaceData)
+    console.log({...spaceData, locationPoint: {type: "Point", coordinates: spaceData.latLng ? [spaceData.latLng[1], spaceData.latLng[0]] : null}})
+    const newSpace = new Spaces({...spaceData, locationPoint: {type: "Point", coordinates: spaceData.latLng ? [spaceData.latLng[1], spaceData.latLng[0]] : null}});
     await newSpace.save();
     return newSpace;
   } catch (error) {

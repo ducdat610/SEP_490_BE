@@ -1272,6 +1272,10 @@
   "_id": {
     "$oid": "6720f1c4bdb67c4932dad130"
   },
+  "locationPoint":{
+    "type":"Point",
+    "coordinates":[105.909408,21.244598]
+  },
   "latLng": [
     21.244598,
     105.909408

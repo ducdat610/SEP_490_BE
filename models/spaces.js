@@ -2,6 +2,17 @@ import mongoose, { Schema } from "mongoose";
 
 const spacesSchema = new Schema(
   {
+    locationPoint: {
+      type: {
+          type: String,
+          enum: ['Point'],
+          default: 'Point'
+      },
+      coordinates: {
+          type: [Number],
+          index: '2dsphere'
+      }
+    },
     latLng: {
       type: Array(Number),
       required: false,
