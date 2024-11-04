@@ -8,7 +8,7 @@ const fetchAllAppliancesDefault = async () => {
     throw new Error(error.message);
   }
 };
-// a
+
 const fetchAllAppliances = async () => {
   try {
     const allAppliances = await Appliances.find().exec();
